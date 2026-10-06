@@ -1,0 +1,327 @@
+[    0.001513] recovery filesystem table
+[    0.001762] =========================
+[    0.001770]   0 /system  ext4 system 0
+[    0.001774]   1 /vendor  ext4 vendor 0
+[    0.001778]   2 /product  ext4 product 0
+[    0.001782]   3 /cache  ext4 /dev/block/by-name/cache 0
+[    0.004026]   4 /metadata  ext4 /dev/block/by-name/md_udc 0
+[    0.006186]   5 /data  ext4 /dev/block/by-name/userdata 0
+[    0.009220]   6 /misc  emmc /dev/block/by-name/para 0
+[    0.011858]   7 /boot  emmc /dev/block/by-name/boot 0
+[    0.014808]   8 /recovery  emmc /dev/block/by-name/recovery 0
+[    0.017824]   9 /super  emmc /dev/block/by-name/super 0
+[    0.020711]   10 /tmp  ramdisk ramdisk 0
+[    0.020826]
+[    0.021644] I:Boot command: bootonce-bootloader
+[    0.022563] I:[libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/by-name/cache
+[    0.025903] I:[libfs_mgr]check_fs(): mount(/dev/block/by-name/cache,/cache,ext4)=0: Success
+[    0.045406] I:[libfs_mgr]umount_retry(): unmount(/cache) succeeded
+[    0.045437] I:[libfs_mgr]Not running /system/bin/e2fsck on /dev/block/mmcblk0p34 (executable not in system image)
+[    0.049444] I:[libfs_mgr]__mount(source=/dev/block/by-name/cache,target=/cache,type=ext4)=0: Success
+[    0.054588] Loading make_device from librecovery_ui_ext.so
+[    0.058912] I:vkeys: could not open /sys/board_properties/virtualkeys.mtk-tpd
+[    0.060505] I:vkeys: could not open /sys/board_properties/virtualkeys.axs_ts
+[    0.061188] I:Brightness: 127 (50%)
+[    0.063846] Failed to find/open a drm device: No such file or directory
+[    0.064042] fb0 reports (possibly inaccurate):
+[    0.064051]   vi.bits_per_pixel = 32
+[    0.064057]   vi.red.offset   =   0   .length =   8
+[    0.064062]   vi.green.offset =   8   .length =   8
+[    0.064067]   vi.blue.offset  =  16   .length =   8
+[    0.078054] framebuffer: 5 (384 x 854)
+[    0.826567]           erasing_text: zh-CN (225 x 27 @ 1837)
+[    0.845743]        no_command_text: zh-CN (252 x 27 @ 1814)
+[    0.856283]             error_text: zh-CN (217 x 27 @ 1814)
+[    0.863440] W:Failed to load bitmap cancel_wipe_data_text for locale zh-CN (error -1). Falling back to use default locale.
+[    0.863600] E:Failed to load bitmap cancel_wipe_data_text for locale en-US (error -1)
+[    0.863722] W:Failed to load bitmap factory_data_reset_text for locale zh-CN (error -1). Falling back to use default locale.
+[    0.863836] E:Failed to load bitmap factory_data_reset_text for locale en-US (error -1)
+[    0.863951] W:Failed to load bitmap try_again_text for locale zh-CN (error -1). Falling back to use default locale.
+[    0.864061] E:Failed to load bitmap try_again_text for locale en-US (error -1)
+[    0.864178] W:Failed to load bitmap wipe_data_confirmation_text for locale zh-CN (error -1). Falling back to use default locale.
+[    0.864290] E:Failed to load bitmap wipe_data_confirmation_text for locale en-US (error -1)
+[    0.864405] W:Failed to load bitmap wipe_data_menu_header_text for locale zh-CN (error -1). Falling back to use default locale.
+[    0.864516] E:Failed to load bitmap wipe_data_menu_header_text for locale en-US (error -1)
+[    0.937318] I:Starting recovery (pid 326) on Tue Sep 16 10:39:26 2025
+[    0.937355]
+[    0.937401] I:locale is [zh-CN]
+[    0.940237] SELinux: Loaded file_contexts
+[    0.941779] [libfs_mgr]Invalid ext4 superblock on '/dev/block/by-name/userdata'
+[    0.941928] recovery: [libfs_mgr]Failed to mount /data: File exists
+[    0.943044] stage is []
+[    0.943117] reason is []
+[    0.946437] SELinux: Loaded file_contexts
+[    0.979097] emulated failed to mount /dev/block/by-name/userdata on /mnt/staging/emulated: Invalid argumentI:VolumeManager initialized
+[    0.986213]        installing_text: zh-CN (366 x 27 @ 1912)
+[    1.000861] Command: "/system/bin/recovery"
+[    1.000911]
+[    1.003194] ro.boot.bootreason=rtc
+[    1.003253] ro.boot.mode=recovery
+[    1.003279] ro.boot.vbmeta.size=1472
+[    1.003303] ro.boot.vbmeta.digest=73818d166defd32d24be00058071e6378083ca2abf2bef0131e96838fc471e72
+[    1.003327] ro.boot.vbmeta.hash_alg=sha256
+[    1.003402] ro.boot.vbmeta.avb_version=1.2
+[    1.003449] ro.boot.vbmeta.device_state=unlocked
+[    1.003473] ro.boot.dtb_idx=0
+[    1.003497] ro.boot.dtbo_idx=0
+[    1.003520] ro.boot.hardware=mt6765
+[    1.003543] ro.boot.veritymode=enforcing
+[    1.003566] ro.boot.veritymode.managed=yes
+[    1.003590] ro.boot.boot_devices=bootdevice,soc/11230000.mmc,11230000.mmc,soc/11230000.msdc,11230000.msdc
+[    1.003613] ro.boot.anim_logo_idx=0
+[    1.003636] ro.boot.meta_log_disable=0
+[    1.003659] ro.boot.verifiedbootstate=orange
+[    1.003683] ro.baseband=unknown
+[    1.003706] ro.bootmode=recovery
+[    1.003729] ro.hardware=mt6765
+[    1.003753] ro.revision=0
+[    1.003813] ro.bootloader=unknown
+[    1.004034] ro.boottime.adbd=1590885614
+[    1.004063] ro.boottime.init=1034956999
+[    1.004093] ro.boottime.init.fsck.cache=22
+[    1.004118] ro.boottime.init.mount.cache=3
+[    1.004141] ro.boottime.init.selinux=134558692
+[    1.004165] ro.boottime.init.first_stage=42068000
+[    1.004189] ro.boottime.init.cold_boot_wait=243
+[    1.004212] ro.boottime.charger=1582137845
+[    1.004235] ro.boottime.console=1565460922
+[    1.004259] ro.boottime.ueventd=1309895999
+[    1.004282] ro.boottime.recovery=1586464614
+[    1.004887] ro.odm.build.date=Mon Oct  5 21:26:11 CST 2026
+[    1.004987] ro.odm.build.date.utc=1791206771
+[    1.005013] ro.odm.build.version.incremental=eng.dengxh.20261005.212730
+[    1.005038] ro.odm.build.fingerprint=lvmi/lineage_S17Promini/S17Promini:12/SQ3A.220705.004/dengxh10052126:userdebug/test-keys
+[    1.005062] ro.product.odm.name=lineage_S17Promini
+[    1.005085] ro.product.odm.brand=lvmi
+[    1.005109] ro.product.odm.model=S17 Pro mini
+[    1.005132] ro.product.odm.device=S17Promini
+[    1.005155] ro.product.odm.manufacturer=lvmi
+[    1.005180] ro.adb.secure=1
+[    1.005204] ro.build.id=SQ3A.220705.004
+[    1.005227] ro.build.date=Mon Oct  5 21:26:11 CST 2026
+[    1.005250] ro.build.date.utc=1791206771
+[    1.005274] ro.build.host=DESKTOP-BEKEPJ7
+[    1.005297] ro.build.tags=test-keys
+[    1.005321] ro.build.type=userdebug
+[    1.005384] ro.build.user=dengxh
+[    1.005413] ro.build.flavor=lineage_S17Promini-userdebug
+[    1.005437] ro.build.display.id=lineage_S17Promini-userdebug 12 SQ3A.220705.004 eng.dengxh.20261005.212730 test-keys
+[    1.005460] ro.build.product=S17Promini
+[    1.005484] ro.build.version.sdk=32
+[    1.005507] ro.build.version.base_os=
+[    1.005530] ro.build.version.release=12
+[    1.005554] ro.build.version.codename=REL
+[    1.005577] ro.build.version.incremental=eng.dengxh.20261005.212730
+[    1.005600] ro.build.version.preview_sdk=0
+[    1.005623] ro.build.version.all_codenames=REL
+[    1.005646] ro.build.version.security_patch=2025-03-05
+[    1.005670] ro.build.version.release_or_codename=12
+[    1.005693] ro.build.version.preview_sdk_fingerprint=REL
+[    1.005716] ro.build.version.min_supported_target_sdk=23
+[    1.005739] ro.build.description=lineage_S17Promini-userdebug 12 SQ3A.220705.004 eng.dengxh.20261005.212730 test-keys
+[    1.005762] ro.build.characteristics=default
+[    1.005786] ro.secure=1
+[    1.005809] ro.system.build.id=SQ3A.220705.004
+[    1.005832] ro.system.build.date=Mon Oct  5 21:26:11 CST 2026
+[    1.005855] ro.system.build.date.utc=1791206771
+[    1.005878] ro.system.build.tags=test-keys
+[    1.005901] ro.system.build.type=userdebug
+[    1.005924] ro.system.build.version.sdk=32
+[    1.005947] ro.system.build.version.release=12
+[    1.005971] ro.system.build.version.incremental=eng.dengxh.20261005.212730
+[    1.005995] ro.system.build.version.release_or_codename=12
+[    1.006018] ro.system.build.fingerprint=lvmi/lineage_S17Promini/S17Promini:12/SQ3A.220705.004/dengxh10052126:userdebug/test-keys
+[    1.006042] ro.treble.enabled=true
+[    1.006066] ro.product.cpu.abi=arm64-v8a
+[    1.006090] ro.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    1.006114] ro.product.cpu.abilist32=armeabi-v7a,armeabi
+[    1.006137] ro.product.cpu.abilist64=arm64-v8a
+[    1.006160] ro.product.name=lineage_S17Promini
+[    1.006183] ro.product.brand=lvmi
+[    1.006207] ro.product.build.id=SQ3A.220705.004
+[    1.006230] ro.product.build.date=Mon Oct  5 21:26:11 CST 2026
+[    1.006269] ro.product.build.date.utc=1791206771
+[    1.006294] ro.product.build.tags=test-keys
+[    1.006317] ro.product.build.type=userdebug
+[    1.006341] ro.product.build.version.sdk=32
+[    1.006364] ro.product.build.version.release=12
+[    1.006387] ro.product.build.version.incremental=eng.dengxh.20261005.212730
+[    1.006410] ro.product.build.version.release_or_codename=12
+[    1.006433] ro.product.build.fingerprint=lvmi/lineage_S17Promini/S17Promini:12/SQ3A.220705.004/dengxh10052126:userdebug/test-keys
+[    1.006456] ro.product.model=S17 Pro mini
+[    1.006526] ro.product.device=S17Promini
+[    1.006551] ro.product.system.name=lineage_S17Promini
+[    1.006574] ro.product.system.brand=lvmi
+[    1.006598] ro.product.system.model=S17 Pro mini
+[    1.006621] ro.product.system.device=S17Promini
+[    1.006644] ro.product.system.manufacturer=lvmi
+[    1.006669] ro.product.product.name=lineage_S17Promini
+[    1.006692] ro.product.product.brand=lvmi
+[    1.006715] ro.product.product.model=S17 Pro mini
+[    1.006738] ro.product.product.device=S17Promini
+[    1.006767] ro.product.product.manufacturer=lvmi
+[    1.006791] ro.product.system_ext.name=lineage_S17Promini
+[    1.006814] ro.product.system_ext.brand=lvmi
+[    1.006838] ro.product.system_ext.model=S17 Pro mini
+[    1.006860] ro.product.system_ext.device=S17Promini
+[    1.006886] ro.product.system_ext.manufacturer=lvmi
+[    1.006910] ro.product.manufacturer=lvmi
+[    1.006934] ro.debuggable=1
+[    1.006982] ro.system_ext.build.id=SQ3A.220705.004
+[    1.007009] ro.system_ext.build.date=Mon Oct  5 21:26:11 CST 2026
+[    1.007034] ro.system_ext.build.date.utc=1791206771
+[    1.007057] ro.system_ext.build.tags=test-keys
+[    1.007081] ro.system_ext.build.type=userdebug
+[    1.007105] ro.system_ext.build.version.sdk=32
+[    1.007129] ro.system_ext.build.version.release=12
+[    1.007152] ro.system_ext.build.version.incremental=eng.dengxh.20261005.212730
+[    1.007175] ro.system_ext.build.version.release_or_codename=12
+[    1.007199] ro.system_ext.build.fingerprint=lvmi/lineage_S17Promini/S17Promini:12/SQ3A.220705.004/dengxh10052126:userdebug/test-keys
+[    1.007223] ro.actionable_compatible_property.enabled=true
+[    1.007248] ro.vendor.build.id=SQ3A.220705.004
+[    1.007271] ro.vendor.build.date=Mon Oct  5 21:33:58 CST 2026
+[    1.007294] ro.vendor.build.date.utc=1791207238
+[    1.007317] ro.vendor.build.tags=test-keys
+[    1.007340] ro.vendor.build.type=userdebug
+[    1.007364] ro.vendor.build.version.sdk=32
+[    1.007387] ro.vendor.build.version.release=12
+[    1.007410] ro.vendor.build.version.incremental=eng.dengxh.20261005.213403
+[    1.007433] ro.vendor.build.version.release_or_codename=12
+[    1.007457] ro.vendor.build.fingerprint=lvmi/lineage_S17Promini/S17Promini:12/SQ3A.220705.004/dengxh10052133:userdebug/test-keys
+[    1.007480] ro.vendor.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    1.007503] ro.vendor.product.cpu.abilist32=armeabi-v7a,armeabi
+[    1.007526] ro.vendor.product.cpu.abilist64=arm64-v8a
+[    1.007550] ro.product.board=r65v3_pmz_w1a
+[    1.007573] ro.product.vendor.name=lineage_S17Promini
+[    1.007596] ro.product.vendor.brand=lvmi
+[    1.007619] ro.product.vendor.model=S17 Pro mini
+[    1.007642] ro.product.vendor.device=S17Promini
+[    1.007665] ro.product.vendor.manufacturer=lvmi
+[    1.007688] ro.product.first_api_level=31
+[    1.008970] ro.cold_boot_done=true
+[    1.009258] ro.bionic.arch=arm64
+[    1.009296] ro.bionic.2nd_arch=arm
+[    1.009321] ro.bionic.cpu_variant=cortex-a53
+[    1.009344] ro.bionic.2nd_cpu_variant=cortex-a53
+[    1.011786] ro.dalvik.vm.native.bridge=0
+[    1.011846] ro.zygote=zygote64_32
+[    1.011872] dalvik.vm.isa.arm.variant=cortex-a53
+[    1.011896] dalvik.vm.isa.arm.features=default
+[    1.011920] dalvik.vm.isa.arm64.variant=cortex-a53
+[    1.011944] dalvik.vm.isa.arm64.features=default
+[    1.011968] dalvik.vm.dexopt.secondary=true
+[    1.011991] dalvik.vm.dexopt.thermal-cutoff=2
+[    1.012015] dalvik.vm.usejit=true
+[    1.012039] dalvik.vm.madvise.artfile.size=4294967295
+[    1.012078] dalvik.vm.madvise.odexfile.size=104857600
+[    1.012103] dalvik.vm.madvise.vdexfile.size=104857600
+[    1.012132] dalvik.vm.lockprof.threshold=500
+[    1.012156] dalvik.vm.dex2oat-Xms=64m
+[    1.012180] dalvik.vm.dex2oat-Xmx=512m
+[    1.012203] dalvik.vm.minidebuginfo=true
+[    1.012226] dalvik.vm.appimageformat=lz4
+[    1.012251] dalvik.vm.usejitprofiles=true
+[    1.012274] dalvik.vm.image-dex2oat-Xms=64m
+[    1.012297] dalvik.vm.image-dex2oat-Xmx=64m
+[    1.012320] dalvik.vm.dex2oat-minidebuginfo=true
+[    1.012344] dalvik.vm.dex2oat-max-image-block-size=524288
+[    1.012368] dalvik.vm.dex2oat-resolve-startup-strings=true
+[    1.012392] dalvik.vm.dex2oat-updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt
+[    1.012535] persist.sys.dalvik.vm.lib.2=libart.so
+[    1.012724] debug.atrace.tags.enableflags=0
+[    1.012885] ro.product.debugfs_restrictions.enabled=true
+[    1.012961] ro.adb.secure.recovery=0
+[    1.012987] ro.com.google.clientidbase=android-google
+[    1.013011] ro.wifi.channels=
+[    1.013034] ro.allow.mock.location=0
+[    1.013058] ro.iorapd.enable=true
+[    1.013082] ro.kernel.version=4.19
+[    1.013106] ro.system.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    1.013130] ro.system.product.cpu.abilist32=armeabi-v7a,armeabi
+[    1.013154] ro.system.product.cpu.abilist64=arm64-v8a
+[    1.013177] ro.lineage.build.version=19.1
+[    1.013201] ro.lineage.build.version.plat.rev=0
+[    1.013225] ro.lineage.build.version.plat.sdk=9
+[    1.013248] ro.lineage.device=S17Promini
+[    1.013271] ro.lineage.display.version=19-20261005-UNOFFICIAL-S17Promini
+[    1.013295] ro.lineage.version=19.1-20261005-UNOFFICIAL-S17Promini
+[    1.013318] ro.lineage.releasetype=UNOFFICIAL
+[    1.013342] ro.product.locale=en-US
+[    1.013365] ro.modversion=19.1-20261005-UNOFFICIAL-S17Promini
+[    1.013389] ro.postinstall.fstab.prefix=/system
+[    1.013412] ro.lineagelegal.url=https://lineageos.org/legal
+[    1.013435] ro.support_one_handed_mode=true
+[    1.016233] ro.boot.dynamic_partitions=true
+[    1.016290] ro.hwui.use_vulkan=
+[    1.016315] ro.board.platform=mt6765
+[    1.016339] ro.carrier=unknown
+[    1.016578] pm.dexopt.ab-ota=speed-profile
+[    1.016609] pm.dexopt.shared=speed
+[    1.016633] pm.dexopt.cmdline=verify
+[    1.016657] pm.dexopt.install=speed-profile
+[    1.016681] pm.dexopt.inactive=verify
+[    1.016705] pm.dexopt.bg-dexopt=speed-profile
+[    1.016728] pm.dexopt.first-boot=verify
+[    1.016751] pm.dexopt.install-bulk=speed-profile
+[    1.016775] pm.dexopt.install-fast=skip
+[    1.016799] pm.dexopt.install-bulk-secondary=verify
+[    1.016822] pm.dexopt.install-bulk-downgraded=verify
+[    1.016846] pm.dexopt.install-bulk-secondary-downgraded=extract
+[    1.016975] sys.usb.ffs.aio_compat=1
+[    1.017044] sys.usb.ffs.ready=1
+[    1.017114] ro.build.fingerprint=lvmi/lineage_S17Promini/S17Promini:12/SQ3A.220705.004/eng.dengxh.20261005.212730:userdebug/test-keys
+[    1.017446] ro.gsid.image_running=0
+[    1.017486] gsid.image_installed=0
+[    1.018248] sys.init.perf_lsm_hooks=1
+[    1.018357] init.svc.charger=running
+[    1.018387] init.svc.ueventd=running
+[    1.018412] init.svc.recovery=running
+[    1.018483] init.svc.adbd=restarting
+[    1.018509] init.svc.console=running
+[    1.018663] init.svc_debug_pid.adbd=327
+[    1.018691] init.svc_debug_pid.charger=324
+[    1.018715] init.svc_debug_pid.console=323
+[    1.018739] init.svc_debug_pid.ueventd=313
+[    1.018762] init.svc_debug_pid.recovery=326
+[    1.019628] log.tag.stats_log=I
+[    1.019732] ro.logd.size.stats=64K
+[    1.020316] media.recorder.show_manufacturer_and_model=true
+[    1.021974] ro.control_privapp_permissions=enforce
+[    1.022242] persist.debug.dalvik.vm.core_platform_api_policy=just-warn
+[    1.022546] pm.dexopt.post-boot=extract
+[    1.022582] pm.dexopt.boot-after-ota=verify
+[    1.022902] ro.property_service.version=2
+[    1.023741] ro.minui.pixel_format=BGRA_8888
+[    1.024369] ro.boot.serialno=0123456789ABCDEF
+[    1.024415] ro.serialno=0123456789ABCDEF
+[    1.024529] service.adb.root=1
+[    1.024570] security.perf_harden=1
+[    1.024751] ro.storage_manager.enabled=true
+[    1.024935] ro.sf.lcd_density=180
+[    1.025516] net.bt.name=Android
+[    1.025560] net.tethering.noprovisioning=true
+[    1.025586] persist.sys.usb.config=none
+[    1.025610] persist.sys.strictmode.disable=true
+[    1.025801] ro.config.ringtone=Orion.ogg
+[    1.025829] ro.config.alarm_alert=Hassium.ogg
+[    1.025853] ro.config.notification_sound=Argon.ogg
+[    1.026516] tombstoned.max_tombstone_count=50
+[    1.026681] persist.traced.enable=1
+[    1.027024] sys.usb.state=adb
+[    1.027068] sys.usb.config=adb
+[    1.027092] sys.usb.configfs=1
+[    1.027116] sys.usb.controller=musb-hdrc
+[    1.027801] ro.odm.build.id=SQ3A.220705.004
+[    1.027846] ro.odm.build.tags=test-keys
+[    1.027871] ro.odm.build.type=userdebug
+[    1.027895] ro.odm.build.version.sdk=32
+[    1.027919] ro.odm.build.version.release=12
+[    1.027943] ro.odm.build.version.release_or_codename=12
+[    1.027966] ro.odm.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    1.027990] ro.odm.product.cpu.abilist32=armeabi-v7a,armeabi
+[    1.028014] ro.odm.product.cpu.abilist64=arm64-v8a
+[    1.028392] ro.vendor.build.security_patch=
+[    1.028679] ro.vndk.version=32
+[    1.028715] ro.product.vndk.version=32
+[    1.029721]
+[    1.047767] I:Saving locale "zh-CN"

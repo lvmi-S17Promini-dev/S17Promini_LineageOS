@@ -1,0 +1,12 @@
+The command rsautl was deprecated in version 3.0. Use 'pkeyutl' instead.
+Package: /home/dengxh/android3/lineage/out/target/product/S17Promini/lineage-19.1-20261006-UNOFFICIAL-S17Promini.zip
+Certificate: /home/dengxh/android3/lineage/build/target/product/security/testkey.x509.pem
+Package length: 1009914093
+Comment length: 1738
+Signed data length: 1009912353
+Signature start: 1009912373
+Use SHA-256: False
+Digest: 17a9c116076892f2a0f3ec29bd53cf075ec4768d
+
+Whole package signature VERIFIED
+

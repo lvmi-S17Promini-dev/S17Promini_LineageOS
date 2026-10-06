@@ -1,0 +1,14 @@
+{
+  "change": "Start Lineage system charger in class charger",
+  "device_validation": "pending",
+  "files": {
+    "system.img": {
+      "size": 1975374320,
+      "sha256": "ef268d4a976f55b020b3ad956af4e21fa22b125a7984d5e5e608ab6928258711"
+    },
+    "vbmeta.img": {
+      "size": 4096,
+      "sha256": "840401b97bfbe2e569510fa873738f0adb8b67e2feff767ed40a4e5cbe454408"
+    }
+  }
+}

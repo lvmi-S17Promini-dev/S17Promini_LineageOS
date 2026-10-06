@@ -1,0 +1,44 @@
+{
+  "adb_root": true,
+  "selinux": "Enforcing",
+  "usb_state": "adb",
+  "framebuffer": "384x854 fbdev",
+  "cache_mount": "PASS",
+  "physical_partition_links": "PASS; actual reads/writes not tested",
+  "userdata": "mount failed; stock metadata encryption is a plausible cause, not proven corruption",
+  "fastbootd": "PASS after runtime chcon: userspace connected, logical system recognized, size returned",
+  "dmesg_lines": 5794,
+  "axs_lines": 4667,
+  "flash_wait_lines": 4610,
+  "avc_lines": 20,
+  "axs_result": "firmware readback mismatch, upgrade failed at ~16.8s, work ended; touch usability not yet confirmed",
+  "original_hashes": {
+    "recovery.log": "95373b0c1cd39b58d28620e7a358e566db9defaee3f25d7538af7736c4ef37c4",
+    "misc.txt": "08e8581e399e5bcb7dc7d8314d17dbec4487d74a37a758a684f5c1653898f531",
+    "recovery-dmesg.txt": "1d61d50ff5b1c9ebbbac748c223e569885b88f3db06404b7d23c591cc13b9c11",
+    "recovery-input-devices.txt": "fc62da5f690b9d1aeb0b688bd4a263c1799a290768b5bfb094b79d5a14ff1dd9",
+    "recovery-touch-events.txt": "4e65c2a02e35db2fad6d99f5d04e4db78ea53f48f0b4f687952c431f407853f2"
+  },
+  "touch_usable": false,
+  "touch_devices": {
+    "event3": "axs_ts",
+    "event4": "mtk-tpd"
+  },
+  "touch_capture_event_count": 0,
+  "touch_capture_user_action": "touched for several seconds after starting getevent",
+  "touch_input_inference": "Registered capabilities but no raw events; prioritize driver/firmware/IRQ/suspend diagnosis",
+  "fastbootd_logical_system": {
+    "is_logical": true,
+    "size_hex": "0xB694B000",
+    "size_bytes": 3063197696
+  },
+  "fastbootd_root_cause_status": "Confirmed by runtime label-only intervention: generic block_device -> super_block_device makes query pass",
+  "r5_auto_relabel": {
+    "status": "ready",
+    "uid": 0,
+    "context": "u:r:recovery:s0",
+    "chcon_exit": 0,
+    "is_logical_system": true,
+    "manual_chcon_used": false
+  }
+}

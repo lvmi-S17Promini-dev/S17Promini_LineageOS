@@ -1,0 +1,32 @@
+[
+  {
+    "directory": "vendor/app/ExactCalculator",
+    "files": 1,
+    "bytes": 596911
+  },
+  {
+    "directory": "vendor/app/MtkBrowserExt",
+    "files": 1,
+    "bytes": 4865264
+  },
+  {
+    "directory": "vendor/app/TikTokLiteCN",
+    "files": 3,
+    "bytes": 413304368
+  },
+  {
+    "directory": "vendor/app/WeatherHitqMini",
+    "files": 3,
+    "bytes": 26882068
+  },
+  {
+    "directory": "vendor/app/doudoubirdCalendar",
+    "files": 3,
+    "bytes": 54023189
+  },
+  {
+    "directory": "vendor/operator/app/QQMusic",
+    "files": 161,
+    "bytes": 379969957
+  }
+]

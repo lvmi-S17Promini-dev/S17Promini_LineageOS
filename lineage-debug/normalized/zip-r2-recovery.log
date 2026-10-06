@@ -1,0 +1,1006 @@
+[    0.001035] recovery filesystem table
+[    0.001140] =========================
+[    0.001147]   0 /system  ext4 system 0
+[    0.001848]   1 /vendor  ext4 vendor 0
+[    0.001877]   2 /product  ext4 product 0
+[    0.001881]   3 /cache  ext4 /dev/block/by-name/cache 0
+[    0.004896]   4 /metadata  ext4 /dev/block/by-name/md_udc 0
+[    0.007844]   5 /data  ext4 /dev/block/by-name/userdata 0
+[    0.011513]   6 /misc  emmc /dev/block/by-name/para 0
+[    0.014488]   7 /boot  emmc /dev/block/by-name/boot 0
+[    0.017770]   8 /recovery  emmc /dev/block/by-name/recovery 0
+[    0.020913]   9 /super  emmc /dev/block/by-name/super 0
+[    0.024405]   10 /tmp  ramdisk ramdisk 0
+[    0.024521]
+[    0.025368] I:Boot command: bootonce-bootloader
+[    0.026408] I:[libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/by-name/cache
+[    0.031136] I:[libfs_mgr]check_fs(): mount(/dev/block/by-name/cache,/cache,ext4)=0: Success
+[    0.052505] I:[libfs_mgr]umount_retry(): unmount(/cache) succeeded
+[    0.052539] I:[libfs_mgr]Not running /system/bin/e2fsck on /dev/block/mmcblk0p34 (executable not in system image)
+[    0.056361] I:[libfs_mgr]__mount(source=/dev/block/by-name/cache,target=/cache,type=ext4)=0: Success
+[    0.063513] Loading make_device from librecovery_ui_ext.so
+[    0.066425] I:vkeys: could not open /sys/board_properties/virtualkeys.mtk-tpd
+[    0.068711] I:vkeys: could not open /sys/board_properties/virtualkeys.axs_ts
+[    0.069472] I:Brightness: 127 (50%)
+[    0.072005] Failed to find/open a drm device: No such file or directory
+[    0.072145] fb0 reports (possibly inaccurate):
+[    0.072153]   vi.bits_per_pixel = 32
+[    0.072158]   vi.red.offset   =   0   .length =   8
+[    0.072163]   vi.green.offset =   8   .length =   8
+[    0.072167]   vi.blue.offset  =  16   .length =   8
+[    0.082194] framebuffer: 5 (384 x 854)
+[    0.829833]           erasing_text: zh-CN (225 x 27 @ 1837)
+[    0.849040]        no_command_text: zh-CN (252 x 27 @ 1814)
+[    0.860118]             error_text: zh-CN (217 x 27 @ 1814)
+[    0.867106] W:Failed to load bitmap cancel_wipe_data_text for locale zh-CN (error -1). Falling back to use default locale.
+[    0.867275] E:Failed to load bitmap cancel_wipe_data_text for locale en-US (error -1)
+[    0.867396] W:Failed to load bitmap factory_data_reset_text for locale zh-CN (error -1). Falling back to use default locale.
+[    0.867511] E:Failed to load bitmap factory_data_reset_text for locale en-US (error -1)
+[    0.867626] W:Failed to load bitmap try_again_text for locale zh-CN (error -1). Falling back to use default locale.
+[    0.867738] E:Failed to load bitmap try_again_text for locale en-US (error -1)
+[    0.867854] W:Failed to load bitmap wipe_data_confirmation_text for locale zh-CN (error -1). Falling back to use default locale.
+[    0.867966] E:Failed to load bitmap wipe_data_confirmation_text for locale en-US (error -1)
+[    0.868082] W:Failed to load bitmap wipe_data_menu_header_text for locale zh-CN (error -1). Falling back to use default locale.
+[    0.868192] E:Failed to load bitmap wipe_data_menu_header_text for locale en-US (error -1)
+[    0.940218] I:Starting recovery (pid 327) on Tue Oct  6 01:57:10 2026
+[    0.940283]
+[    0.940401] I:locale is [zh-CN]
+[    0.943197] SELinux: Loaded file_contexts
+[    0.944623] [libfs_mgr]Invalid ext4 superblock on '/dev/block/by-name/userdata'
+[    0.944766] recovery: [libfs_mgr]Failed to mount /data: File exists
+[    0.945723] stage is []
+[    0.945789] reason is []
+[    0.949203] SELinux: Loaded file_contexts
+[    0.981255] emulated failed to mount /dev/block/by-name/userdata on /mnt/staging/emulated: Invalid argumentI:VolumeManager initialized
+[    0.988633]        installing_text: zh-CN (366 x 27 @ 1912)
+[    1.003267] Command: "/system/bin/recovery"
+[    1.003322]
+[    1.005848] ro.boot.bootreason=lk_crash
+[    1.005912] ro.boot.mode=recovery
+[    1.005943] ro.boot.vbmeta.size=1472
+[    1.005973] ro.boot.vbmeta.digest=73818d166defd32d24be00058071e6378083ca2abf2bef0131e96838fc471e72
+[    1.006001] ro.boot.vbmeta.hash_alg=sha256
+[    1.006029] ro.boot.vbmeta.avb_version=1.2
+[    1.006078] ro.boot.vbmeta.device_state=unlocked
+[    1.006106] ro.boot.dtb_idx=0
+[    1.006134] ro.boot.dtbo_idx=0
+[    1.006162] ro.boot.hardware=mt6765
+[    1.006190] ro.boot.veritymode=enforcing
+[    1.006222] ro.boot.veritymode.managed=yes
+[    1.006251] ro.boot.boot_devices=bootdevice,soc/11230000.mmc,11230000.mmc,soc/11230000.msdc,11230000.msdc
+[    1.006279] ro.boot.anim_logo_idx=0
+[    1.006306] ro.boot.meta_log_disable=0
+[    1.006334] ro.boot.verifiedbootstate=orange
+[    1.006362] ro.baseband=unknown
+[    1.006389] ro.bootmode=recovery
+[    1.006418] ro.hardware=mt6765
+[    1.006445] ro.revision=0
+[    1.006473] ro.bootloader=unknown
+[    1.006724] ro.boottime.adbd=1564749152
+[    1.006764] ro.boottime.init=1016036614
+[    1.006793] ro.boottime.init.fsck.cache=25
+[    1.006821] ro.boottime.init.mount.cache=3
+[    1.006849] ro.boottime.init.selinux=126090077
+[    1.006877] ro.boottime.init.first_stage=41941231
+[    1.006904] ro.boottime.init.cold_boot_wait=251
+[    1.006932] ro.boottime.charger=1552771691
+[    1.006960] ro.boottime.console=1536803999
+[    1.006989] ro.boottime.ueventd=1273320614
+[    1.007017] ro.boottime.recovery=1556694383
+[    1.007045] ro.boottime.s17-super-label=1560227614
+[    1.007749] ro.odm.build.date=Mon Oct  5 21:26:11 CST 2026
+[    1.007795] ro.odm.build.date.utc=1791206771
+[    1.007831] ro.odm.build.version.incremental=eng.dengxh.20261005.212730
+[    1.007860] ro.odm.build.fingerprint=lvmi/lineage_S17Promini/S17Promini:12/SQ3A.220705.004/dengxh10052126:userdebug/test-keys
+[    1.007890] ro.product.odm.name=lineage_S17Promini
+[    1.007918] ro.product.odm.brand=lvmi
+[    1.007946] ro.product.odm.model=S17 Pro mini
+[    1.007974] ro.product.odm.device=S17Promini
+[    1.008002] ro.product.odm.manufacturer=lvmi
+[    1.008031] ro.adb.secure=1
+[    1.008060] ro.build.id=SQ3A.220705.004
+[    1.008088] ro.build.date=Mon Oct  5 21:26:11 CST 2026
+[    1.008117] ro.build.date.utc=1791206771
+[    1.008146] ro.build.host=DESKTOP-BEKEPJ7
+[    1.008174] ro.build.tags=test-keys
+[    1.008203] ro.build.type=userdebug
+[    1.008230] ro.build.user=dengxh
+[    1.008258] ro.build.flavor=lineage_S17Promini-userdebug
+[    1.008286] ro.build.display.id=lineage_S17Promini-userdebug 12 SQ3A.220705.004 eng.dengxh.20261005.212730 test-keys
+[    1.008314] ro.build.product=S17Promini
+[    1.008342] ro.build.version.sdk=32
+[    1.008370] ro.build.version.base_os=
+[    1.008398] ro.build.version.release=12
+[    1.008425] ro.build.version.codename=REL
+[    1.008453] ro.build.version.incremental=eng.dengxh.20261005.212730
+[    1.008480] ro.build.version.preview_sdk=0
+[    1.008531] ro.build.version.all_codenames=REL
+[    1.008562] ro.build.version.security_patch=2025-03-05
+[    1.008590] ro.build.version.release_or_codename=12
+[    1.008618] ro.build.version.preview_sdk_fingerprint=REL
+[    1.008646] ro.build.version.min_supported_target_sdk=23
+[    1.008674] ro.build.description=lineage_S17Promini-userdebug 12 SQ3A.220705.004 eng.dengxh.20261005.212730 test-keys
+[    1.008702] ro.build.characteristics=default
+[    1.008730] ro.secure=1
+[    1.008758] ro.system.build.id=SQ3A.220705.004
+[    1.008785] ro.system.build.date=Mon Oct  5 21:26:11 CST 2026
+[    1.008813] ro.system.build.date.utc=1791206771
+[    1.008841] ro.system.build.tags=test-keys
+[    1.008869] ro.system.build.type=userdebug
+[    1.008897] ro.system.build.version.sdk=32
+[    1.008925] ro.system.build.version.release=12
+[    1.008952] ro.system.build.version.incremental=eng.dengxh.20261005.212730
+[    1.009015] ro.system.build.version.release_or_codename=12
+[    1.009047] ro.system.build.fingerprint=lvmi/lineage_S17Promini/S17Promini:12/SQ3A.220705.004/dengxh10052126:userdebug/test-keys
+[    1.009076] ro.treble.enabled=true
+[    1.009103] ro.product.cpu.abi=arm64-v8a
+[    1.009131] ro.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    1.009159] ro.product.cpu.abilist32=armeabi-v7a,armeabi
+[    1.009187] ro.product.cpu.abilist64=arm64-v8a
+[    1.009214] ro.product.name=lineage_S17Promini
+[    1.009242] ro.product.brand=lvmi
+[    1.009288] ro.product.build.id=SQ3A.220705.004
+[    1.009317] ro.product.build.date=Mon Oct  5 21:26:11 CST 2026
+[    1.009345] ro.product.build.date.utc=1791206771
+[    1.009373] ro.product.build.tags=test-keys
+[    1.009400] ro.product.build.type=userdebug
+[    1.009428] ro.product.build.version.sdk=32
+[    1.009459] ro.product.build.version.release=12
+[    1.009487] ro.product.build.version.incremental=eng.dengxh.20261005.212730
+[    1.009515] ro.product.build.version.release_or_codename=12
+[    1.009543] ro.product.build.fingerprint=lvmi/lineage_S17Promini/S17Promini:12/SQ3A.220705.004/dengxh10052126:userdebug/test-keys
+[    1.009571] ro.product.model=S17 Pro mini
+[    1.009598] ro.product.device=S17Promini
+[    1.009626] ro.product.system.name=lineage_S17Promini
+[    1.009654] ro.product.system.brand=lvmi
+[    1.009682] ro.product.system.model=S17 Pro mini
+[    1.009711] ro.product.system.device=S17Promini
+[    1.009739] ro.product.system.manufacturer=lvmi
+[    1.009767] ro.product.product.name=lineage_S17Promini
+[    1.009795] ro.product.product.brand=lvmi
+[    1.009822] ro.product.product.model=S17 Pro mini
+[    1.009850] ro.product.product.device=S17Promini
+[    1.009877] ro.product.product.manufacturer=lvmi
+[    1.009905] ro.product.system_ext.name=lineage_S17Promini
+[    1.009933] ro.product.system_ext.brand=lvmi
+[    1.009961] ro.product.system_ext.model=S17 Pro mini
+[    1.009989] ro.product.system_ext.device=S17Promini
+[    1.010017] ro.product.system_ext.manufacturer=lvmi
+[    1.010044] ro.product.manufacturer=lvmi
+[    1.010072] ro.debuggable=1
+[    1.010101] ro.system_ext.build.id=SQ3A.220705.004
+[    1.010129] ro.system_ext.build.date=Mon Oct  5 21:26:11 CST 2026
+[    1.010156] ro.system_ext.build.date.utc=1791206771
+[    1.010184] ro.system_ext.build.tags=test-keys
+[    1.010211] ro.system_ext.build.type=userdebug
+[    1.010239] ro.system_ext.build.version.sdk=32
+[    1.010267] ro.system_ext.build.version.release=12
+[    1.010294] ro.system_ext.build.version.incremental=eng.dengxh.20261005.212730
+[    1.010322] ro.system_ext.build.version.release_or_codename=12
+[    1.010350] ro.system_ext.build.fingerprint=lvmi/lineage_S17Promini/S17Promini:12/SQ3A.220705.004/dengxh10052126:userdebug/test-keys
+[    1.010378] ro.actionable_compatible_property.enabled=true
+[    1.010408] ro.vendor.build.id=SQ3A.220705.004
+[    1.010437] ro.vendor.build.date=Mon Oct  5 21:33:58 CST 2026
+[    1.010465] ro.vendor.build.date.utc=1791207238
+[    1.010493] ro.vendor.build.tags=test-keys
+[    1.010520] ro.vendor.build.type=userdebug
+[    1.010548] ro.vendor.build.version.sdk=32
+[    1.010575] ro.vendor.build.version.release=12
+[    1.010603] ro.vendor.build.version.incremental=eng.dengxh.20261005.213403
+[    1.010631] ro.vendor.build.version.release_or_codename=12
+[    1.010658] ro.vendor.build.fingerprint=lvmi/lineage_S17Promini/S17Promini:12/SQ3A.220705.004/dengxh10052133:userdebug/test-keys
+[    1.010686] ro.vendor.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    1.010713] ro.vendor.product.cpu.abilist32=armeabi-v7a,armeabi
+[    1.010741] ro.vendor.product.cpu.abilist64=arm64-v8a
+[    1.010769] ro.product.board=r65v3_pmz_w1a
+[    1.010796] ro.product.vendor.name=lineage_S17Promini
+[    1.010824] ro.product.vendor.brand=lvmi
+[    1.010851] ro.product.vendor.model=S17 Pro mini
+[    1.010879] ro.product.vendor.device=S17Promini
+[    1.010906] ro.product.vendor.manufacturer=lvmi
+[    1.010934] ro.product.first_api_level=31
+[    1.012306] ro.cold_boot_done=true
+[    1.012638] ro.bionic.arch=arm64
+[    1.012693] ro.bionic.2nd_arch=arm
+[    1.012723] ro.bionic.cpu_variant=cortex-a53
+[    1.012752] ro.bionic.2nd_cpu_variant=cortex-a53
+[    1.015996] ro.dalvik.vm.native.bridge=0
+[    1.016058] ro.zygote=zygote64_32
+[    1.016088] dalvik.vm.isa.arm.variant=cortex-a53
+[    1.016115] dalvik.vm.isa.arm.features=default
+[    1.016142] dalvik.vm.isa.arm64.variant=cortex-a53
+[    1.016168] dalvik.vm.isa.arm64.features=default
+[    1.016194] dalvik.vm.dexopt.secondary=true
+[    1.016221] dalvik.vm.dexopt.thermal-cutoff=2
+[    1.016248] dalvik.vm.usejit=true
+[    1.016292] dalvik.vm.madvise.artfile.size=4294967295
+[    1.016320] dalvik.vm.madvise.odexfile.size=104857600
+[    1.016347] dalvik.vm.madvise.vdexfile.size=104857600
+[    1.016373] dalvik.vm.lockprof.threshold=500
+[    1.016401] dalvik.vm.dex2oat-Xms=64m
+[    1.016427] dalvik.vm.dex2oat-Xmx=512m
+[    1.016453] dalvik.vm.minidebuginfo=true
+[    1.016480] dalvik.vm.appimageformat=lz4
+[    1.016507] dalvik.vm.usejitprofiles=true
+[    1.016533] dalvik.vm.image-dex2oat-Xms=64m
+[    1.016559] dalvik.vm.image-dex2oat-Xmx=64m
+[    1.016585] dalvik.vm.dex2oat-minidebuginfo=true
+[    1.016611] dalvik.vm.dex2oat-max-image-block-size=524288
+[    1.016638] dalvik.vm.dex2oat-resolve-startup-strings=true
+[    1.016664] dalvik.vm.dex2oat-updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt
+[    1.016829] persist.sys.dalvik.vm.lib.2=libart.so
+[    1.017470] debug.atrace.tags.enableflags=0
+[    1.017706] ro.product.debugfs_restrictions.enabled=true
+[    1.017798] ro.adb.secure.recovery=0
+[    1.017825] ro.com.google.clientidbase=android-google
+[    1.017851] ro.wifi.channels=
+[    1.017877] ro.allow.mock.location=0
+[    1.017902] ro.iorapd.enable=true
+[    1.017928] ro.kernel.version=4.19
+[    1.017954] ro.system.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    1.017979] ro.system.product.cpu.abilist32=armeabi-v7a,armeabi
+[    1.018004] ro.system.product.cpu.abilist64=arm64-v8a
+[    1.018029] ro.lineage.build.version=19.1
+[    1.018055] ro.lineage.build.version.plat.rev=0
+[    1.018081] ro.lineage.build.version.plat.sdk=9
+[    1.018108] ro.lineage.device=S17Promini
+[    1.018133] ro.lineage.display.version=19-20261005-UNOFFICIAL-S17Promini
+[    1.018159] ro.lineage.version=19.1-20261005-UNOFFICIAL-S17Promini
+[    1.018183] ro.lineage.releasetype=UNOFFICIAL
+[    1.018208] ro.product.locale=en-US
+[    1.018233] ro.modversion=19.1-20261005-UNOFFICIAL-S17Promini
+[    1.018258] ro.postinstall.fstab.prefix=/system
+[    1.018282] ro.lineagelegal.url=https://lineageos.org/legal
+[    1.018307] ro.support_one_handed_mode=true
+[    1.021920] ro.boot.dynamic_partitions=true
+[    1.021980] ro.hwui.use_vulkan=
+[    1.022007] ro.board.platform=mt6765
+[    1.022033] ro.carrier=unknown
+[    1.022317] pm.dexopt.ab-ota=speed-profile
+[    1.022355] pm.dexopt.shared=speed
+[    1.022381] pm.dexopt.cmdline=verify
+[    1.022407] pm.dexopt.install=speed-profile
+[    1.022432] pm.dexopt.inactive=verify
+[    1.022457] pm.dexopt.bg-dexopt=speed-profile
+[    1.022482] pm.dexopt.first-boot=verify
+[    1.022506] pm.dexopt.install-bulk=speed-profile
+[    1.022532] pm.dexopt.install-fast=skip
+[    1.022557] pm.dexopt.install-bulk-secondary=verify
+[    1.022582] pm.dexopt.install-bulk-downgraded=verify
+[    1.022607] pm.dexopt.install-bulk-secondary-downgraded=extract
+[    1.022741] sys.usb.ffs.aio_compat=1
+[    1.022814] sys.usb.ffs.ready=1
+[    1.022886] ro.build.fingerprint=lvmi/lineage_S17Promini/S17Promini:12/SQ3A.220705.004/eng.dengxh.20261005.212730:userdebug/test-keys
+[    1.023359] ro.gsid.image_running=0
+[    1.023398] gsid.image_installed=0
+[    1.024322] sys.init.perf_lsm_hooks=1
+[    1.024414] init.svc.charger=running
+[    1.024447] init.svc.ueventd=running
+[    1.024473] init.svc.recovery=running
+[    1.024498] init.svc.s17-super-label=stopped
+[    1.024571] init.svc.adbd=restarting
+[    1.024598] init.svc.console=running
+[    1.024778] init.svc_debug_pid.adbd=329
+[    1.024807] init.svc_debug_pid.charger=326
+[    1.024833] init.svc_debug_pid.console=325
+[    1.024858] init.svc_debug_pid.ueventd=315
+[    1.024882] init.svc_debug_pid.recovery=327
+[    1.024906] init.svc_debug_pid.s17-super-label=
+[    1.026200] log.tag.stats_log=I
+[    1.026306] ro.logd.size.stats=64K
+[    1.027035] media.recorder.show_manufacturer_and_model=true
+[    1.029087] ro.control_privapp_permissions=enforce
+[    1.029383] persist.debug.dalvik.vm.core_platform_api_policy=just-warn
+[    1.029745] pm.dexopt.post-boot=extract
+[    1.029776] pm.dexopt.boot-after-ota=verify
+[    1.030136] ro.property_service.version=2
+[    1.030934] ro.minui.pixel_format=BGRA_8888
+[    1.031699] ro.boot.serialno=0123456789ABCDEF
+[    1.031748] ro.serialno=0123456789ABCDEF
+[    1.031862] service.adb.root=1
+[    1.031890] security.perf_harden=1
+[    1.032080] ro.storage_manager.enabled=true
+[    1.032306] ro.sf.lcd_density=180
+[    1.033255] net.bt.name=Android
+[    1.033310] net.tethering.noprovisioning=true
+[    1.033336] persist.sys.usb.config=none
+[    1.033360] persist.sys.strictmode.disable=true
+[    1.033581] ro.config.ringtone=Orion.ogg
+[    1.033609] ro.config.alarm_alert=Hassium.ogg
+[    1.033633] ro.config.notification_sound=Argon.ogg
+[    1.034413] tombstoned.max_tombstone_count=50
+[    1.034592] persist.traced.enable=1
+[    1.034979] sys.usb.state=adb
+[    1.035013] sys.usb.config=adb
+[    1.035037] sys.usb.configfs=1
+[    1.035060] sys.usb.controller=musb-hdrc
+[    1.035822] ro.odm.build.id=SQ3A.220705.004
+[    1.035868] ro.odm.build.tags=test-keys
+[    1.035894] ro.odm.build.type=userdebug
+[    1.035918] ro.odm.build.version.sdk=32
+[    1.035942] ro.odm.build.version.release=12
+[    1.035965] ro.odm.build.version.release_or_codename=12
+[    1.035989] ro.odm.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+[    1.036013] ro.odm.product.cpu.abilist32=armeabi-v7a,armeabi
+[    1.036036] ro.odm.product.cpu.abilist64=arm64-v8a
+[    1.036060] vendor.recovery.super_label.status=ready
+[    1.036544] ro.vendor.build.security_patch=
+[    1.036871] ro.vndk.version=32
+[    1.036913] ro.product.vndk.version=32
+[    1.038153]
+[    1.066647] I:Saving locale "zh-CN"
+[    6.170894]
+[    6.170960]
+[    6.170984] Now send the package you want to apply
+[    6.171007] to the device with "adb sideload <filename>"...
+[    6.241298] minadbd I 10-06 01:57:16   370   371 usb_ffs.cpp:275] opening control endpoint /dev/usb-ffs/adb/ep0
+[    6.242528] minadbd I 10-06 01:57:16   370   371 usb.cpp:152] UsbFfsConnection constructed
+[    6.242858] minadbd I 10-06 01:57:16   370   372 usb.cpp:259] UsbFfs-monitor thread spawned
+[    6.244192] minadbd I 10-06 01:57:16   370   372 usb.cpp:298] USB event: FUNCTIONFS_BIND
+[    6.555498] minadbd I 10-06 01:57:16   370   372 usb.cpp:298] USB event: FUNCTIONFS_ENABLE
+[    6.555665] minadbd I 10-06 01:57:16   370   374 usb.cpp:405] UsbFfs-worker thread spawned
+[    6.972712] minadbd I 10-06 01:57:17   370   370 adb.cpp:141] UsbFfs: already offline
+[    6.972749] minadbd I 10-06 01:57:17   370   370 adb.cpp:358] authentication not required
+[   12.540531] minadbd I 10-06 01:57:22   370   375 minadbd_services.cpp:111] sideload-host file size 1142214334, block size 65536
+[   13.542513] unknown fuse request opcode 2016
+[   13.549103] I:current maximum temperature: 34500
+[   13.549278] Supported API: 3
+[   13.563295] Finding update package...
+[   13.579366] I:Update package id: /sideload/package.zip
+[   13.588563] I:[libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/by-name/cache
+[   13.594730] I:[libfs_mgr]check_fs(): mount(/dev/block/by-name/cache,/cache,ext4)=0: Success
+[   13.611640] I:[libfs_mgr]umount_retry(): unmount(/cache) succeeded
+[   13.611911] I:[libfs_mgr]Not running /system/bin/e2fsck on /dev/block/mmcblk0p34 (executable not in system image)
+[   13.612945] libc: Unable to set property "ro.boottime.init.fsck.cache" to "23": error code: 0xb
+[   13.619258] I:[libfs_mgr]__mount(source=/dev/block/by-name/cache,target=/cache,type=ext4)=0: Success
+[   13.619771] libc: Unable to set property "ro.boottime.init.mount.cache" to "5": error code: 0xb
+[   13.677531] I:2 key(s) loaded from /system/etc/security/otacerts.zip
+[   13.677652] Verifying update package...
+[   13.710835] I:comment is 1738 bytes; signature is 1720 bytes from end
+[   36.038205] scudo: Stats: SizeClassAllocator64: 261M mapped (0M rss) in 21951 allocations; remains 4602
+[   36.038305]   00 (    64): mapped:    256K popped:    1014 pushed:     936 inuse:     78 total:    104 rss:      0K releases:      0 last released:      0K region: 0x7d3b422000 (0x7d3b41e000)
+[   36.038333]   01 (    32): mapped:    256K popped:      39 pushed:       0 inuse:     39 total:     52 rss:      0K releases:      0 last released:      0K region: 0x7d4b42c000 (0x7d4b41e000)
+[   36.038410]   02 (    48): mapped:    256K popped:    8255 pushed:    8216 inuse:     39 total:    104 rss:      0K releases:      0 last released:      0K region: 0x7d5b423000 (0x7d5b41e000)
+[   36.038436]   03 (    64): mapped:    256K popped:    4147 pushed:    4082 inuse:     65 total:    104 rss:      0K releases:      0 last released:      0K region: 0x7d6b427000 (0x7d6b41e000)
+[   36.038458]   04 (    80): mapped:    256K popped:      26 pushed:       0 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x7d7b42e000 (0x7d7b41e000)
+[   36.038727] scudo:   05 (    96): mapped:    256K popped:      13 pushed:       0 inuse:     13 total:     52 rss:      0K releases:      0 last released:      0K region: 0x7d8b428000 (0x7d8b41e000)
+[   36.038760]   06 (   112): mapped:    256K popped:      26 pushed:       0 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x7d9b42d000 (0x7d9b41e000)
+[   36.038783]   07 (   144): mapped:    256K popped:      39 pushed:       0 inuse:     39 total:     52 rss:      0K releases:      0 last released:      0K region: 0x7dab423000 (0x7dab41e000)
+[   36.038805]   08 (   176): mapped:    256K popped:      26 pushed:       0 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x7dbb429000 (0x7dbb41e000)
+[   36.038827]   10 (   224): mapped:    256K popped:      26 pushed:       0 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x7ddb42a000 (0x7ddb41e000)
+[   36.039062] scudo:   11 (   288): mapped:    256K popped:      52 pushed:      26 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x7deb427000 (0x7deb41e000)
+[   36.039094]   12 (   352): mapped:    256K popped:      26 pushed:       0 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x7dfb428000 (0x7dfb41e000)
+[   36.039117]   13 (   448): mapped:    256K popped:      26 pushed:       0 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x7e0b42c000 (0x7e0b41e000)
+[   36.039138]   14 (   592): mapped:    256K popped:      13 pushed:       0 inuse:     13 total:     52 rss:      0K releases:      0 last released:      0K region: 0x7e1b42b000 (0x7e1b41e000)
+[   36.039159]   15 (   800): mapped:    256K popped:      10 pushed:       0 inuse:     10 total:     40 rss:      0K releases:      0 last released:      0K region: 0x7e2b42e000 (0x7e2b41e000)
+[   36.039391] scudo:   16 (  1104): mapped:    256K popped:       7 pushed:       0 inuse:      7 total:     28 rss:      0K releases:      0 last released:      0K region: 0x7e3b42c000 (0x7e3b41e000)
+[   36.039423]   17 (  1648): mapped:    256K popped:       4 pushed:       0 inuse:      4 total:     16 rss:      0K releases:      0 last released:      0K region: 0x7e4b421000 (0x7e4b41e000)
+[   36.039446]   20 (  3120): mapped:    256K popped:       2 pushed:       0 inuse:      2 total:      8 rss:      0K releases:      0 last released:      0K region: 0x7e7b422000 (0x7e7b41e000)
+[   36.039467]   21 (  4112): mapped:    256K popped:       4 pushed:       0 inuse:      4 total:      4 rss:      0K releases:      0 last released:      0K region: 0x7e8b427000 (0x7e8b41e000)
+[   36.039488]   23 (  7120): mapped:    256K popped:       1 pushed:       0 inuse:      1 total:      4 rss:      0K releases:      0 last released:      0K region: 0x7eab429000 (0x7eab41e000)
+[   36.039716] scudo:   25 ( 11664): mapped:    256K popped:       1 pushed:       0 inuse:      1 total:      4 rss:      0K releases:      0 last released:      0K region: 0x7ecb42a000 (0x7ecb41e000)
+[   36.039747]   27 ( 16400): mapped:    256K popped:    4102 pushed:    4089 inuse:     13 total:     15 rss:      0K releases:     45 last released:     40K region: 0x7eeb42d000 (0x7eeb41e000)
+[   36.039770]   30 ( 29456): mapped:    256K popped:       1 pushed:       0 inuse:      1 total:      4 rss:      0K releases:      0 last released:      0K region: 0x7f1b428000 (0x7f1b41e000)
+[   36.039812] F 32 ( 65552): mapped: 261888K popped:    4091 pushed:       0 inuse:   4091 total:   4091 rss:      0K releases:      0 last released:      0K region: 0x7f3b428000 (0x7f3b41e000)
+[   36.039835] Scudo OOM: The process has exhausted 256M for size class 65552.
+[   36.039857]
+[  115.443029] I:signature (offset: 4414c806, length: 6b2): 308206ae06092a864886f70d010702a082069f3082069b020101310b300906052b0e03021a0500300b06092a864886f70d010701a08204ac308204a830820390a003020102020900936eacbe07f201df300d06092a864886f70d0101050500308194310b3009060355040613025553311330110603550408130a43616c69666f726e6961311630140603550407130d4d6f756e7461696e20566965773110300e060355040a1307416e64726f69643110300e060355040b1307416e64726f69643110300e06035504031307416e64726f69643122302006092a864886f70d0109011613616e64726f696440616e64726f69642e636f6d301e170d3038303232393031333334365a170d3335303731373031333334365a308194310b3009060355040613025553311330110603550408130a43616c69666f726e6961311630140603550407130d4d6f756e7461696e20566965773110300e060355040a1307416e64726f69643110300e060355040b1307416e64726f69643110300e06035504031307416e64726f69643122302006092a864886f70d0109011613616e64726f696440616e64726f69642e636f6d30820120300d06092a864886f70d01010105000382010d00308201080282010100d6931904dec60b24b1edc762e0d9d8253e3ecd6ceb1de2ff068ca8e8bca8cd6bd3786ea70aa76ce60ebb0f993559ffd93e77a943e7e83d4b64b8e4fea2d3e656f1e267a81bbfb230b578c20443be4c7218b846f5211586f038a14e89c2be387f8ebecf8fcac3da1ee330c9ea93d0a7c3dc4af350220d50080732e0809717ee6a053359e6a694ec2cb3f284a0a466c87a94d83b31093a67372e2f6412c06e6d42f15818dffe0381cc0cd444da6cddc3b82458194801b32564134fbfde98c9287748dbf5676a540d8154c8bbca07b9e247553311c46b9af76fdeeccc8e69e7c8a2d08e782620943f99727d3c04fe72991d99df9bae38a0b2177fa31d5b6afee91f020103a381fc3081f9301d0603551d0e04160414485900563d272c46ae118605a47419ac09ca8c113081c90603551d230481c13081be8014485900563d272c46ae118605a47419ac09ca8c11a1819aa48197308194310b3009060355040613025553311330110603550408130a43616c69666f726e6961311630140603550407130d4d6f756e7461696e20566965773110300e060355040a1307416e64726f69643110300e060355040b1307416e64726f69643110300e06035504031307416e64726f69643122302006092a864886f70d0109011613616e64726f696440616e64726f69642e636f6d820900936eacbe07f201df300c0603551d13040530030101ff300d06092a864886f70d010105050003820101007aaf968ceb50c441055118d0daabaf015b8a765a27a715a2c2b44f221415ffdace03095abfa42df70708726c2069e5c36eddae0400be29452c084bc27eb6a17eac9dbe182c204eb15311f455d824b656dbe4dc2240912d7586fe88951d01a8feb5ae5a4260535df83431052422468c36e22c2a5ef994d61dd7306ae4c9f6951ba3c12f1d1914ddc61f1a62da2df827f603fea5603b2c540dbd7c019c36bab29a4271c117df523cdbc5f3817a49e0efa60cbd7f74177e7a4f193d43f4220772666e4c4d83e1bd5a86087cf34f2dec21e245ca6c2bb016e683638050d2c430eea7c26a1c49d3760a58ab7f1a82cc938b4831384324bd0401fa12163a50570e684d318201ca308201c60201013081a2308194310b3009060355040613025553311330110603550408130a43616c69666f726e6961311630140603550407130d4d6f756e7461696e20566965773110300e060355040a1307416e64726f69643110300e060355040b1307416e64726f69643110300e06035504031307416e64726f69643122302006092a864886f70d0109011613616e64726f696440616e64726f69642e636f6d020900936eacbe07f201df300906052b0e03021a0500300d06092a864886f70d010101050004820100424c24bb29094809031d456f35f91f190be2b80df4d778904a45294f2ff6f5fe79c9410b5d83f27808e59b90b1e0cf0d298f85a8f0761d96b5b8e51be735d2d439425d4941117335fca760af608979b51fbb1cc100a89172c2a14f71f1c3eadad59e90a78a484c74d1facf40bce94d0f8f086222539b8876a6ff4334fd39305ff0f1851dd7434c74a951499e3c0394f2396aa63a0dfcd174b390797fdf7f310f33eedd98029d93eaccc27a7dac4369ad3d058b77d132ae9d30fd345fb2c54a3fbe1645c9a680fcb56288d1152ec46462a8c75a50f46a20b788a11e5757b2a2d67445ef47450d92420870529c4d612f63b867fba7f00dbc5168d65903fc90c459
+[  115.443665] I:whole-file signature verified against RSA key 0
+[  115.443864] Update package verification took 101.7 s (result 0).
+[  115.474829] Installing update...
+[  115.507578] W:Failed to find META-INF/com/android/metadata.pb treating this as non-spl-downgrade, permit OTA install. If device bricks after installing, check kernel log to see if /data failed to decrypt
+[  115.526925] I:[libfs_mgr]Created logical partition product on device /dev/block/dm-0
+[  115.528721] I:[libfs_mgr]Created logical partition system on device /dev/block/dm-1
+[  115.530561] I:[libfs_mgr]Created logical partition vendor on device /dev/block/dm-2
+[  115.590665] SELinux: Loaded file_contexts
+[  115.856401] unknown fuse request opcode 2016
+[  115.861619] LineageOS 19.1 - S17Promini full install
+[  115.865468] Failed to unmount /system_root: No such volume
+[  115.865514] script aborted (no error message)
+[  115.952186] E:Error in /sideload/package.zip (status 1)
+[  115.983390]
+[  116.017852] W:failed to read uncrypt status: No such file or directory
+[  116.021377] I:current maximum temperature: 39500
+[  116.021689] I:/sideload/package.zip
+[  116.021708] 0
+[  116.021721] time_total: 102
+[  116.021732] retry: 0
+[  116.021743] error: 25
+[  116.021754] temperature_start: 34500
+[  116.021765] temperature_end: 39500
+[  116.021775] temperature_max: 39500
+[  116.021786]
+[  116.022322] I:Command 0 finished with 0
+[  117.377604] minadbd W 10-06 01:59:07   370   370 sockets.cpp:279] timeout expired while flushing socket, closing
+[  117.377937] minadbd I 10-06 01:59:07   370   375 minadbd_services.cpp:159] revents: 16
+[  117.542200] I:Socket has been closed
+[  237.637778] I:Brightness: 63 (25%)
+[  357.639374] I:Brightness: 0 (off)
+[  546.558138] I:Brightness: 127 (50%)
+[  547.883272]
+[  547.883341]
+[  547.883365] Now send the package you want to apply
+[  547.883388] to the device with "adb sideload <filename>"...
+[  547.990653] minadbd I 10-06 02:06:18   396   397 usb_ffs.cpp:275] opening control endpoint /dev/usb-ffs/adb/ep0
+[  547.993599] minadbd I 10-06 02:06:18   396   397 usb.cpp:152] UsbFfsConnection constructed
+[  547.994675] minadbd I 10-06 02:06:18   396   398 usb.cpp:259] UsbFfs-monitor thread spawned
+[  547.996465] minadbd I 10-06 02:06:18   396   398 usb.cpp:298] USB event: FUNCTIONFS_BIND
+[  548.296235] minadbd I 10-06 02:06:18   396   398 usb.cpp:298] USB event: FUNCTIONFS_ENABLE
+[  548.297306] minadbd I 10-06 02:06:18   396   401 usb.cpp:405] UsbFfs-worker thread spawned
+[  548.937350] minadbd I 10-06 02:06:19   396   396 adb.cpp:141] UsbFfs: already offline
+[  548.937764] minadbd I 10-06 02:06:19   396   396 adb.cpp:358] authentication not required
+[  549.312885] minadbd I 10-06 02:06:19   396   402 minadbd_services.cpp:111] sideload-host file size 1142214360, block size 65536
+[  550.314908] unknown fuse request opcode 2016
+[  550.319037] I:current maximum temperature: 33500
+[  550.319200] Supported API: 3
+[  550.368889] Finding update package...
+[  550.416532] I:Update package id: /sideload/package.zip
+[  550.528944] I:2 key(s) loaded from /system/etc/security/otacerts.zip
+[  550.529119] Verifying update package...
+[  550.595123] I:comment is 1738 bytes; signature is 1720 bytes from end
+[  571.626775] scudo: Stats: SizeClassAllocator64: 261M mapped (0M rss) in 21951 allocations; remains 4602
+[  571.626852]   00 (    64): mapped:    256K popped:    1014 pushed:     936 inuse:     78 total:    104 rss:      0K releases:      0 last released:      0K region: 0x741590d000 (0x741590b000)
+[  571.626878]   01 (    32): mapped:    256K popped:      39 pushed:       0 inuse:     39 total:     52 rss:      0K releases:      0 last released:      0K region: 0x7425915000 (0x742590b000)
+[  571.626901]   02 (    48): mapped:    256K popped:    8255 pushed:    8216 inuse:     39 total:    104 rss:      0K releases:      0 last released:      0K region: 0x7435917000 (0x743590b000)
+[  571.626922]   03 (    64): mapped:    256K popped:    4147 pushed:    4082 inuse:     65 total:    104 rss:      0K releases:      0 last released:      0K region: 0x744590c000 (0x744590b000)
+[  571.626943]   04 (    80): mapped:    256K popped:      26 pushed:       0 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x745591b000 (0x745590b000)
+[  571.627339] scudo:   05 (    96): mapped:    256K popped:      13 pushed:       0 inuse:     13 total:     52 rss:      0K releases:      0 last released:      0K region: 0x746590e000 (0x746590b000)
+[  571.627375]   06 (   112): mapped:    256K popped:      26 pushed:       0 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x747591b000 (0x747590b000)
+[  571.627399]   07 (   144): mapped:    256K popped:      39 pushed:       0 inuse:     39 total:     52 rss:      0K releases:      0 last released:      0K region: 0x748591a000 (0x748590b000)
+[  571.627421]   08 (   176): mapped:    256K popped:      26 pushed:       0 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x7495915000 (0x749590b000)
+[  571.627442]   10 (   224): mapped:    256K popped:      26 pushed:       0 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x74b5912000 (0x74b590b000)
+[  571.627678] scudo:   11 (   288): mapped:    256K popped:      52 pushed:      26 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x74c590d000 (0x74c590b000)
+[  571.627710]   12 (   352): mapped:    256K popped:      26 pushed:       0 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x74d5914000 (0x74d590b000)
+[  571.627734]   13 (   448): mapped:    256K popped:      26 pushed:       0 inuse:     26 total:     52 rss:      0K releases:      0 last released:      0K region: 0x74e5915000 (0x74e590b000)
+[  571.627756]   14 (   592): mapped:    256K popped:      13 pushed:       0 inuse:     13 total:     52 rss:      0K releases:      0 last released:      0K region: 0x74f5912000 (0x74f590b000)
+[  571.627777]   15 (   800): mapped:    256K popped:      10 pushed:       0 inuse:     10 total:     40 rss:      0K releases:      0 last released:      0K region: 0x750590f000 (0x750590b000)
+[  571.628006] scudo:   16 (  1104): mapped:    256K popped:       7 pushed:       0 inuse:      7 total:     28 rss:      0K releases:      0 last released:      0K region: 0x751591b000 (0x751590b000)
+[  571.628036]   17 (  1648): mapped:    256K popped:       4 pushed:       0 inuse:      4 total:     16 rss:      0K releases:      0 last released:      0K region: 0x752591a000 (0x752590b000)
+[  571.628060]   20 (  3120): mapped:    256K popped:       2 pushed:       0 inuse:      2 total:      8 rss:      0K releases:      0 last released:      0K region: 0x7555913000 (0x755590b000)
+[  571.628081]   21 (  4112): mapped:    256K popped:       4 pushed:       0 inuse:      4 total:      4 rss:      0K releases:      0 last released:      0K region: 0x756590d000 (0x756590b000)
+[  571.628102]   23 (  7120): mapped:    256K popped:       1 pushed:       0 inuse:      1 total:      4 rss:      0K releases:      0 last released:      0K region: 0x7585916000 (0x758590b000)
+[  571.628324] scudo:   25 ( 11664): mapped:    256K popped:       1 pushed:       0 inuse:      1 total:      4 rss:      0K releases:      0 last released:      0K region: 0x75a591b000 (0x75a590b000)
+[  571.628354]   27 ( 16400): mapped:    256K popped:    4102 pushed:    4089 inuse:     13 total:     15 rss:      0K releases:     58 last released:     44K region: 0x75c5914000 (0x75c590b000)
+[  571.628377]   30 ( 29456): mapped:    256K popped:       1 pushed:       0 inuse:      1 total:      4 rss:      0K releases:      0 last released:      0K region: 0x75f5910000 (0x75f590b000)
+[  571.628399] F 32 ( 65552): mapped: 261888K popped:    4091 pushed:       0 inuse:   4091 total:   4091 rss:      0K releases:      0 last released:      0K region: 0x7615915000 (0x761590b000)
+[  571.628421] Scudo OOM: The process has exhausted 256M for size class 65552.
+[  571.628441]
+[  648.893241] I:signature (offset: 4414c820, length: 6b2): 308206ae06092a864886f70d010702a082069f3082069b020101310b300906052b0e03021a0500300b06092a864886f70d010701a08204ac308204a830820390a003020102020900936eacbe07f201df300d06092a864886f70d0101050500308194310b3009060355040613025553311330110603550408130a43616c69666f726e6961311630140603550407130d4d6f756e7461696e20566965773110300e060355040a1307416e64726f69643110300e060355040b1307416e64726f69643110300e06035504031307416e64726f69643122302006092a864886f70d0109011613616e64726f696440616e64726f69642e636f6d301e170d3038303232393031333334365a170d3335303731373031333334365a308194310b3009060355040613025553311330110603550408130a43616c69666f726e6961311630140603550407130d4d6f756e7461696e20566965773110300e060355040a1307416e64726f69643110300e060355040b1307416e64726f69643110300e06035504031307416e64726f69643122302006092a864886f70d0109011613616e64726f696440616e64726f69642e636f6d30820120300d06092a864886f70d01010105000382010d00308201080282010100d6931904dec60b24b1edc762e0d9d8253e3ecd6ceb1de2ff068ca8e8bca8cd6bd3786ea70aa76ce60ebb0f993559ffd93e77a943e7e83d4b64b8e4fea2d3e656f1e267a81bbfb230b578c20443be4c7218b846f5211586f038a14e89c2be387f8ebecf8fcac3da1ee330c9ea93d0a7c3dc4af350220d50080732e0809717ee6a053359e6a694ec2cb3f284a0a466c87a94d83b31093a67372e2f6412c06e6d42f15818dffe0381cc0cd444da6cddc3b82458194801b32564134fbfde98c9287748dbf5676a540d8154c8bbca07b9e247553311c46b9af76fdeeccc8e69e7c8a2d08e782620943f99727d3c04fe72991d99df9bae38a0b2177fa31d5b6afee91f020103a381fc3081f9301d0603551d0e04160414485900563d272c46ae118605a47419ac09ca8c113081c90603551d230481c13081be8014485900563d272c46ae118605a47419ac09ca8c11a1819aa48197308194310b3009060355040613025553311330110603550408130a43616c69666f726e6961311630140603550407130d4d6f756e7461696e20566965773110300e060355040a1307416e64726f69643110300e060355040b1307416e64726f69643110300e06035504031307416e64726f69643122302006092a864886f70d0109011613616e64726f696440616e64726f69642e636f6d820900936eacbe07f201df300c0603551d13040530030101ff300d06092a864886f70d010105050003820101007aaf968ceb50c441055118d0daabaf015b8a765a27a715a2c2b44f221415ffdace03095abfa42df70708726c2069e5c36eddae0400be29452c084bc27eb6a17eac9dbe182c204eb15311f455d824b656dbe4dc2240912d7586fe88951d01a8feb5ae5a4260535df83431052422468c36e22c2a5ef994d61dd7306ae4c9f6951ba3c12f1d1914ddc61f1a62da2df827f603fea5603b2c540dbd7c019c36bab29a4271c117df523cdbc5f3817a49e0efa60cbd7f74177e7a4f193d43f4220772666e4c4d83e1bd5a86087cf34f2dec21e245ca6c2bb016e683638050d2c430eea7c26a1c49d3760a58ab7f1a82cc938b4831384324bd0401fa12163a50570e684d318201ca308201c60201013081a2308194310b3009060355040613025553311330110603550408130a43616c69666f726e6961311630140603550407130d4d6f756e7461696e20566965773110300e060355040a1307416e64726f69643110300e060355040b1307416e64726f69643110300e06035504031307416e64726f69643122302006092a864886f70d0109011613616e64726f696440616e64726f69642e636f6d020900936eacbe07f201df300906052b0e03021a0500300d06092a864886f70d010101050004820100643b4fc418f6db441c081a4661807b765efbc143dd47b69189aed4a08f8c0cde28d07b81da1a4e9eabe6cb1283b0dc470cbfc79f9688e87a9a87ccaad58672618085838bd0c9dc82ec9db03cbd48c9ec2c0d020c256c440b7c25b5f294a846ba99c3f2d622e16c09b9faeeef2b9a3a0e5a6df6a383957196729938e5283ba2e1061f1303b3be96c4c586a725de9dcb3fa544fde36ebfb89d4b3b1e7e8193e76bc420ddb2f8dcdcf11195a4310053c15b886841219b46633dd9a0933a2999bdd838a70f923819675b02f3bda3f8ac3c5b83b4a16f9f3e36ec3ed2bdf786ce5ccea4fc1fd29f1b07105ea854711cbb850e6372f4a42b522801edf25b524282b23f
+[  648.893905] I:whole-file signature verified against RSA key 0
+[  648.894060] Update package verification took 98.3 s (result 0).
+[  648.940675] Installing update...
+[  648.989420] W:Failed to find META-INF/com/android/metadata.pb treating this as non-spl-downgrade, permit OTA install. If device bricks after installing, check kernel log to see if /data failed to decrypt
+[  649.083605] SELinux: Loaded file_contexts
+[  649.351523] unknown fuse request opcode 2016
+[  649.356467] LineageOS 19.1 - S17Promini full install
+[  649.381358] [libfs_mgr]Unmapped logical partition system
+[  649.381446] [liblp]Partition system will resize from 2105671680 bytes to 0 bytes
+[  649.393355] [libfs_mgr]Unmapped logical partition vendor
+[  649.393436] [liblp]Partition vendor will resize from 1427996672 bytes to 0 bytes
+[  649.393891] [liblp]Partition system will resize from 0 bytes to 2107789312 bytes
+[  649.394125] [liblp]Partition vendor will resize from 0 bytes to 1427996672 bytes
+[  649.396547] [liblp]Updated logical partition table at slot 0 on device /dev/block/by-name/super
+[  649.399302] Wrote updated marker to /cache/recovery/dynamic_partition_metadata.UPDATED
+[  649.399397] Writing system
+[  649.401067] performing update
+[  649.429399] [libfs_mgr]Created logical partition system on device /dev/block/dm-1
+[  649.431492] blockimg version is 4
+[  649.431575] maximum stash entries 0
+[  649.431631] creating stash /cache/recovery/cc46ebfd04058569d0c6c1431c6af6c1328458e4
+[  649.431987] 404049920 bytes free on /cache (0 needed)
+[  649.432220] /cache/recovery/last_command doesn't exist.
+[  649.432289]  erasing 29656 blocks
+[  649.472877]  writing 1024 blocks of new data
+[  649.589691]  writing 1024 blocks of new data
+[  649.720241]  writing 1024 blocks of new data
+[  649.855516]  writing 1024 blocks of new data
+[  650.011576]  writing 1024 blocks of new data
+[  650.178382]  writing 1024 blocks of new data
+[  650.336509]  writing 1024 blocks of new data
+[  650.474569]  writing 1024 blocks of new data
+[  650.625335]  writing 1024 blocks of new data
+[  650.775341]  writing 1024 blocks of new data
+[  650.923707]  writing 1024 blocks of new data
+[  651.062698]  writing 1024 blocks of new data
+[  651.221718]  writing 1024 blocks of new data
+[  651.389795]  writing 1024 blocks of new data
+[  651.536889]  writing 1024 blocks of new data
+[  651.701266]  writing 1024 blocks of new data
+[  651.836483]  writing 1024 blocks of new data
+[  651.993227]  writing 1024 blocks of new data
+[  652.135965]  writing 1024 blocks of new data
+[  652.292271]  writing 1024 blocks of new data
+[  652.457872]  writing 1024 blocks of new data
+[  652.628922]  writing 1024 blocks of new data
+[  652.777989]  writing 1024 blocks of new data
+[  652.932531]  writing 1024 blocks of new data
+[  653.091159]  writing 1024 blocks of new data
+[  653.236618]  writing 1024 blocks of new data
+[  653.375214]  writing 1024 blocks of new data
+[  653.530237]  writing 1024 blocks of new data
+[  653.687270]  writing 1024 blocks of new data
+[  653.839005]  writing 1024 blocks of new data
+[  653.984745]  writing 1024 blocks of new data
+[  654.135404]  writing 1024 blocks of new data
+[  654.275375]  writing 1024 blocks of new data
+[  654.452465]  writing 1024 blocks of new data
+[  654.611743]  writing 1024 blocks of new data
+[  654.747282]  writing 1024 blocks of new data
+[  654.909931]  writing 1024 blocks of new data
+[  655.052553]  writing 1024 blocks of new data
+[  655.215912]  writing 1024 blocks of new data
+[  655.365451]  writing 1024 blocks of new data
+[  655.518590]  writing 1024 blocks of new data
+[  655.689108]  writing 1024 blocks of new data
+[  655.900549]  writing 1024 blocks of new data
+[  656.065315]  writing 1024 blocks of new data
+[  656.192950]  writing 1024 blocks of new data
+[  656.352673]  writing 1024 blocks of new data
+[  656.503915]  writing 1024 blocks of new data
+[  656.647476]  writing 1024 blocks of new data
+[  656.782785]  writing 1024 blocks of new data
+[  656.932811]  writing 1024 blocks of new data
+[  657.101089]  writing 1024 blocks of new data
+[  657.265906]  writing 1024 blocks of new data
+[  657.422454]  writing 1024 blocks of new data
+[  657.543814]  writing 1024 blocks of new data
+[  657.692406]  writing 1024 blocks of new data
+[  657.843046]  writing 1024 blocks of new data
+[  657.978644]  writing 1024 blocks of new data
+[  658.123559]  writing 1024 blocks of new data
+[  658.272331]  writing 1024 blocks of new data
+[  658.431194]  writing 1024 blocks of new data
+[  658.599538]  writing 1024 blocks of new data
+[  658.750523]  writing 1024 blocks of new data
+[  658.889379]  writing 1024 blocks of new data
+[  659.027039]  writing 1024 blocks of new data
+[  659.177257]  writing 1024 blocks of new data
+[  659.320703]  writing 1024 blocks of new data
+[  659.465119]  writing 1024 blocks of new data
+[  659.607047]  writing 1024 blocks of new data
+[  659.767159]  writing 1024 blocks of new data
+[  659.924384]  writing 1024 blocks of new data
+[  660.079579]  writing 1024 blocks of new data
+[  660.234799]  writing 1024 blocks of new data
+[  660.376891]  writing 1024 blocks of new data
+[  660.508088]  writing 1024 blocks of new data
+[  660.667861]  writing 1024 blocks of new data
+[  660.818824]  writing 1024 blocks of new data
+[  660.976412]  writing 1024 blocks of new data
+[  661.127629]  writing 1024 blocks of new data
+[  661.305337]  writing 1024 blocks of new data
+[  661.463176]  writing 1024 blocks of new data
+[  661.628364]  writing 1024 blocks of new data
+[  661.766126]  writing 1024 blocks of new data
+[  661.894277]  writing 1024 blocks of new data
+[  662.098703]  writing 1024 blocks of new data
+[  662.298737]  writing 1024 blocks of new data
+[  662.496809]  writing 1024 blocks of new data
+[  662.691269]  writing 1024 blocks of new data
+[  662.894937]  writing 1024 blocks of new data
+[  663.096543]  writing 1024 blocks of new data
+[  663.265981]  writing 1024 blocks of new data
+[  663.419418]  writing 1024 blocks of new data
+[  663.565862]  writing 1024 blocks of new data
+[  663.718547]  writing 1024 blocks of new data
+[  663.908738]  writing 1024 blocks of new data
+[  664.102092]  writing 1024 blocks of new data
+[  664.303288]  writing 1024 blocks of new data
+[  664.513182]  writing 1024 blocks of new data
+[  664.704187]  writing 1024 blocks of new data
+[  664.872842]  writing 1024 blocks of new data
+[  665.022533]  writing 1024 blocks of new data
+[  665.177862]  writing 1024 blocks of new data
+[  665.353066]  writing 1024 blocks of new data
+[  665.515770]  writing 1024 blocks of new data
+[  665.664452]  writing 1024 blocks of new data
+[  665.836530]  writing 1024 blocks of new data
+[  666.029671]  writing 1024 blocks of new data
+[  666.165470]  writing 1024 blocks of new data
+[  666.325291]  writing 1024 blocks of new data
+[  666.495936]  writing 1024 blocks of new data
+[  666.656908]  writing 1024 blocks of new data
+[  666.824092]  writing 1024 blocks of new data
+[  667.011503]  writing 1024 blocks of new data
+[  667.166333]  writing 1024 blocks of new data
+[  667.303598]  writing 1024 blocks of new data
+[  667.437077]  writing 1024 blocks of new data
+[  667.587854]  writing 1024 blocks of new data
+[  667.663554]  writing 1024 blocks of new data
+[  667.745897]  writing 1024 blocks of new data
+[  667.811127]  writing 1024 blocks of new data
+[  667.882321]  writing 1024 blocks of new data
+[  667.947085]  writing 1024 blocks of new data
+[  668.097749]  writing 1024 blocks of new data
+[  668.264325]  writing 1024 blocks of new data
+[  668.412307]  writing 1024 blocks of new data
+[  668.570416]  writing 1024 blocks of new data
+[  668.722856]  writing 1024 blocks of new data
+[  668.879253]  writing 1024 blocks of new data
+[  669.037358]  writing 1024 blocks of new data
+[  669.047750] I:current maximum temperature: 36800
+[  669.189906]  writing 1024 blocks of new data
+[  669.308001]  writing 1024 blocks of new data
+[  669.470126]  writing 1024 blocks of new data
+[  669.647267]  writing 1024 blocks of new data
+[  669.816734]  writing 1024 blocks of new data
+[  669.967284]  writing 1024 blocks of new data
+[  670.114155]  writing 1024 blocks of new data
+[  670.264527]  writing 1024 blocks of new data
+[  670.406275]  writing 1024 blocks of new data
+[  670.546762]  writing 1024 blocks of new data
+[  670.692030]  writing 1024 blocks of new data
+[  670.834877]  writing 1024 blocks of new data
+[  670.973305]  writing 1024 blocks of new data
+[  671.131140]  writing 1024 blocks of new data
+[  671.285422]  writing 1024 blocks of new data
+[  671.450584]  writing 1024 blocks of new data
+[  671.604220]  writing 1024 blocks of new data
+[  671.766031]  writing 1024 blocks of new data
+[  671.918827]  writing 1024 blocks of new data
+[  672.053974]  writing 1024 blocks of new data
+[  672.206198]  writing 1024 blocks of new data
+[  672.337266]  writing 1024 blocks of new data
+[  672.475922]  writing 1024 blocks of new data
+[  672.629368]  writing 1024 blocks of new data
+[  672.780475]  writing 1024 blocks of new data
+[  672.947737]  writing 1024 blocks of new data
+[  673.119907]  writing 1024 blocks of new data
+[  673.268088]  writing 1024 blocks of new data
+[  673.406668]  writing 1024 blocks of new data
+[  673.553149]  writing 1024 blocks of new data
+[  673.710540]  writing 1024 blocks of new data
+[  673.875364]  writing 1024 blocks of new data
+[  674.034179]  writing 1024 blocks of new data
+[  674.188936]  writing 1024 blocks of new data
+[  674.340932]  writing 1024 blocks of new data
+[  674.499822]  writing 1024 blocks of new data
+[  674.665007]  writing 1024 blocks of new data
+[  674.815895]  writing 1024 blocks of new data
+[  674.959508]  writing 1024 blocks of new data
+[  675.079817]  writing 1024 blocks of new data
+[  675.201265]  writing 1024 blocks of new data
+[  675.324370]  writing 1024 blocks of new data
+[  675.459603]  writing 1024 blocks of new data
+[  675.593930]  writing 1024 blocks of new data
+[  675.731436]  writing 1024 blocks of new data
+[  675.867980]  writing 1024 blocks of new data
+[  676.007355]  writing 1024 blocks of new data
+[  676.154879]  writing 1024 blocks of new data
+[  676.282448]  writing 1024 blocks of new data
+[  676.439487]  writing 1024 blocks of new data
+[  676.613407]  writing 1024 blocks of new data
+[  676.770436]  writing 1024 blocks of new data
+[  676.894891]  writing 1024 blocks of new data
+[  677.037185]  writing 1024 blocks of new data
+[  677.188707]  writing 1024 blocks of new data
+[  677.336735]  writing 1024 blocks of new data
+[  677.471290]  writing 1024 blocks of new data
+[  677.621632]  writing 1024 blocks of new data
+[  677.752566]  writing 1024 blocks of new data
+[  677.895006]  writing 1024 blocks of new data
+[  678.028428]  writing 1024 blocks of new data
+[  678.177581]  writing 1024 blocks of new data
+[  678.339729]  writing 1024 blocks of new data
+[  678.500829]  writing 1024 blocks of new data
+[  678.658346]  writing 1024 blocks of new data
+[  678.800888]  writing 1024 blocks of new data
+[  678.949876]  writing 1024 blocks of new data
+[  679.097120]  writing 1024 blocks of new data
+[  679.259228]  writing 1024 blocks of new data
+[  679.409355]  writing 1024 blocks of new data
+[  679.563785]  writing 1024 blocks of new data
+[  679.704740]  writing 1024 blocks of new data
+[  679.865486]  writing 1024 blocks of new data
+[  680.024715]  writing 1024 blocks of new data
+[  680.150930]  writing 1024 blocks of new data
+[  680.278459]  writing 1024 blocks of new data
+[  680.420373]  writing 1024 blocks of new data
+[  680.553531]  writing 1024 blocks of new data
+[  680.677516]  writing 1024 blocks of new data
+[  680.849786]  writing 1024 blocks of new data
+[  680.989485]  writing 1024 blocks of new data
+[  681.147658]  writing 1024 blocks of new data
+[  681.281660]  writing 1024 blocks of new data
+[  681.431610]  writing 1024 blocks of new data
+[  681.569735]  writing 1024 blocks of new data
+[  681.716628]  writing 1024 blocks of new data
+[  681.859412]  writing 1024 blocks of new data
+[  682.008410]  writing 1024 blocks of new data
+[  682.161265]  writing 1024 blocks of new data
+[  682.305920]  writing 1024 blocks of new data
+[  682.428334]  writing 1024 blocks of new data
+[  682.595755]  writing 1024 blocks of new data
+[  682.728275]  writing 1024 blocks of new data
+[  682.851948]  writing 1024 blocks of new data
+[  683.023741]  writing 1024 blocks of new data
+[  683.166300]  writing 1024 blocks of new data
+[  683.341497]  writing 1024 blocks of new data
+[  683.496715]  writing 1024 blocks of new data
+[  683.674093]  writing 1024 blocks of new data
+[  683.842685]  writing 1024 blocks of new data
+[  683.995175]  writing 1024 blocks of new data
+[  684.148152]  writing 1024 blocks of new data
+[  684.291410]  writing 1024 blocks of new data
+[  684.448384]  writing 1024 blocks of new data
+[  684.591036]  writing 1024 blocks of new data
+[  684.742187]  writing 1024 blocks of new data
+[  684.915226]  writing 1024 blocks of new data
+[  685.085600]  writing 1024 blocks of new data
+[  685.210534]  writing 1024 blocks of new data
+[  685.410327]  writing 1024 blocks of new data
+[  685.582222]  writing 1024 blocks of new data
+[  685.767186]  writing 1024 blocks of new data
+[  685.950231]  writing 1024 blocks of new data
+[  686.103539]  writing 1024 blocks of new data
+[  686.262082]  writing 1024 blocks of new data
+[  686.415163]  writing 1024 blocks of new data
+[  686.540302]  writing 1024 blocks of new data
+[  686.717276]  writing 1024 blocks of new data
+[  686.891941]  writing 1024 blocks of new data
+[  687.010746]  writing 1024 blocks of new data
+[  687.127840]  writing 1024 blocks of new data
+[  687.273738]  writing 1024 blocks of new data
+[  687.400694]  writing 1024 blocks of new data
+[  687.555782]  writing 1024 blocks of new data
+[  687.707048]  writing 1024 blocks of new data
+[  687.855965]  writing 1024 blocks of new data
+[  688.016330]  writing 1024 blocks of new data
+[  688.170469]  writing 1024 blocks of new data
+[  688.340007]  writing 1024 blocks of new data
+[  688.477704]  writing 1024 blocks of new data
+[  688.637575]  writing 1024 blocks of new data
+[  688.779834]  writing 1024 blocks of new data
+[  688.942304]  writing 1024 blocks of new data
+[  689.051156] I:current maximum temperature: 36800
+[  689.152060]  writing 1024 blocks of new data
+[  689.295675]  writing 1024 blocks of new data
+[  689.426889]  writing 1024 blocks of new data
+[  689.560319]  writing 1024 blocks of new data
+[  689.709811]  writing 1024 blocks of new data
+[  689.872192]  writing 1024 blocks of new data
+[  690.046262]  writing 1024 blocks of new data
+[  690.200313]  writing 1024 blocks of new data
+[  690.354644]  writing 1024 blocks of new data
+[  690.517283]  writing 1024 blocks of new data
+[  690.663651]  writing 1024 blocks of new data
+[  690.821476]  writing 1024 blocks of new data
+[  691.005936]  writing 1024 blocks of new data
+[  691.187047]  writing 1024 blocks of new data
+[  691.363359]  writing 1024 blocks of new data
+[  691.532045]  writing 1024 blocks of new data
+[  691.708201]  writing 1024 blocks of new data
+[  691.883535]  writing 1024 blocks of new data
+[  692.042509]  writing 1024 blocks of new data
+[  692.200626]  writing 1024 blocks of new data
+[  692.367612]  writing 1024 blocks of new data
+[  692.547487]  writing 1024 blocks of new data
+[  692.728157]  writing 1024 blocks of new data
+[  692.892586]  writing 1024 blocks of new data
+[  693.059373]  writing 1024 blocks of new data
+[  693.223676]  writing 1024 blocks of new data
+[  693.383472]  writing 1024 blocks of new data
+[  693.554178]  writing 1024 blocks of new data
+[  693.706622]  writing 1024 blocks of new data
+[  693.864154]  writing 1024 blocks of new data
+[  694.031750]  writing 1024 blocks of new data
+[  694.206489]  writing 1024 blocks of new data
+[  694.383384]  writing 1024 blocks of new data
+[  694.524179]  writing 1024 blocks of new data
+[  694.656423]  writing 1024 blocks of new data
+[  694.825770]  writing 1024 blocks of new data
+[  694.984091]  writing 1024 blocks of new data
+[  695.116567]  writing 1024 blocks of new data
+[  695.282830]  writing 1024 blocks of new data
+[  695.446811]  writing 1024 blocks of new data
+[  695.610686]  writing 1024 blocks of new data
+[  695.778250]  writing 1024 blocks of new data
+[  695.962560]  writing 1024 blocks of new data
+[  696.145606]  writing 1024 blocks of new data
+[  696.331549]  writing 1024 blocks of new data
+[  696.504859]  writing 1024 blocks of new data
+[  696.689592]  writing 1024 blocks of new data
+[  696.861893]  writing 1024 blocks of new data
+[  697.052563]  writing 1024 blocks of new data
+[  697.247375]  writing 1024 blocks of new data
+[  697.442353]  writing 1024 blocks of new data
+[  697.626864]  writing 1024 blocks of new data
+[  697.802612]  writing 1024 blocks of new data
+[  697.979967]  writing 1024 blocks of new data
+[  698.153994]  writing 1024 blocks of new data
+[  698.320248]  writing 1024 blocks of new data
+[  698.492254]  writing 1024 blocks of new data
+[  698.629501]  writing 1024 blocks of new data
+[  698.797477]  writing 1024 blocks of new data
+[  698.954311]  writing 1024 blocks of new data
+[  699.148677]  writing 1024 blocks of new data
+[  699.352253]  writing 1024 blocks of new data
+[  699.546817]  writing 1024 blocks of new data
+[  699.746321]  writing 1024 blocks of new data
+[  699.938438]  writing 1024 blocks of new data
+[  700.098688]  writing 1024 blocks of new data
+[  700.256257]  writing 1024 blocks of new data
+[  700.427261]  writing 1024 blocks of new data
+[  700.605338]  writing 1024 blocks of new data
+[  700.769520]  writing 1024 blocks of new data
+[  700.921679]  writing 1024 blocks of new data
+[  701.071437]  writing 1024 blocks of new data
+[  701.221879]  writing 1024 blocks of new data
+[  701.388381]  writing 1024 blocks of new data
+[  701.555526]  writing 1024 blocks of new data
+[  701.705925]  writing 1024 blocks of new data
+[  701.887727]  writing 1024 blocks of new data
+[  702.053652]  writing 1024 blocks of new data
+[  702.205760]  writing 1024 blocks of new data
+[  702.358272]  writing 1024 blocks of new data
+[  702.500437]  writing 1024 blocks of new data
+[  702.655501]  writing 1024 blocks of new data
+[  702.790534]  writing 1024 blocks of new data
+[  702.929118]  writing 1024 blocks of new data
+[  703.056621]  writing 1024 blocks of new data
+[  703.203983]  writing 1024 blocks of new data
+[  703.363043]  writing 1024 blocks of new data
+[  703.551417]  writing 1024 blocks of new data
+[  703.685466]  writing 1024 blocks of new data
+[  703.819200]  writing 1024 blocks of new data
+[  703.963564]  writing 1024 blocks of new data
+[  704.106034]  writing 1024 blocks of new data
+[  704.238020]  writing 1024 blocks of new data
+[  704.389914]  writing 1024 blocks of new data
+[  704.541470]  writing 1024 blocks of new data
+[  704.712999]  writing 1024 blocks of new data
+[  704.869702]  writing 1024 blocks of new data
+[  705.029694]  writing 1024 blocks of new data
+[  705.202540]  writing 1024 blocks of new data
+[  705.348682]  writing 1024 blocks of new data
+[  705.502805]  writing 1024 blocks of new data
+[  705.659315]  writing 1024 blocks of new data
+[  705.845863]  writing 1024 blocks of new data
+[  705.998703]  writing 1024 blocks of new data
+[  706.131729]  writing 1024 blocks of new data
+[  706.291988]  writing 1024 blocks of new data
+[  706.455246]  writing 1024 blocks of new data
+[  706.601316]  writing 1024 blocks of new data
+[  706.735908]  writing 1024 blocks of new data
+[  706.890115]  writing 1024 blocks of new data
+[  707.038620]  writing 1024 blocks of new data
+[  707.190162]  writing 1024 blocks of new data
+[  707.328142]  writing 1024 blocks of new data
+[  707.474806]  writing 1024 blocks of new data
+[  707.629197]  writing 1024 blocks of new data
+[  707.784639]  writing 1024 blocks of new data
+[  707.932111]  writing 1024 blocks of new data
+[  708.083843]  writing 1024 blocks of new data
+[  708.216844]  writing 1024 blocks of new data
+[  708.370166]  writing 1024 blocks of new data
+[  708.524651]  writing 1024 blocks of new data
+[  708.684164]  writing 1024 blocks of new data
+[  708.827529]  writing 1024 blocks of new data
+[  708.979130]  writing 1024 blocks of new data
+[  709.055043] I:current maximum temperature: 36800
+[  709.133285]  writing 1024 blocks of new data
+[  709.273203]  writing 1024 blocks of new data
+[  709.416533]  writing 1024 blocks of new data
+[  709.556755]  writing 1024 blocks of new data
+[  709.687020]  writing 1024 blocks of new data
+[  709.844874]  writing 1024 blocks of new data
+[  710.000049]  writing 1024 blocks of new data
+[  710.145266]  writing 1024 blocks of new data
+[  710.286372]  writing 1024 blocks of new data
+[  710.428092]  writing 1024 blocks of new data
+[  710.580211]  writing 1024 blocks of new data
+[  710.736295]  writing 1024 blocks of new data
+[  710.869374]  writing 1024 blocks of new data
+[  710.995727]  writing 1024 blocks of new data
+[  711.147757]  writing 1024 blocks of new data
+[  711.294058]  writing 1024 blocks of new data
+[  711.443716]  writing 1024 blocks of new data
+[  711.611149]  writing 1024 blocks of new data
+[  711.755600]  writing 1024 blocks of new data
+[  711.906909]  writing 1024 blocks of new data
+[  712.047363]  writing 1024 blocks of new data
+[  712.221901]  writing 1024 blocks of new data
+[  712.356642]  writing 1024 blocks of new data
+[  712.477462]  writing 1024 blocks of new data
+[  712.618402]  writing 1024 blocks of new data
+[  712.761890]  writing 1024 blocks of new data
+[  712.904219]  writing 1024 blocks of new data
+[  713.061659]  writing 1024 blocks of new data
+[  713.232252]  writing 1024 blocks of new data
+[  713.374074]  writing 1024 blocks of new data
+[  713.499552]  writing 1024 blocks of new data
+[  713.697487]  writing 1024 blocks of new data
+[  713.823219]  writing 1024 blocks of new data
+[  713.945369]  writing 1024 blocks of new data
+[  714.069349]  writing 1024 blocks of new data
+[  714.195113]  writing 1024 blocks of new data
+[  714.347615]  writing 1024 blocks of new data
+[  714.489765]  writing 1024 blocks of new data
+[  714.614194]  writing 1024 blocks of new data
+[  714.724882]  writing 1024 blocks of new data
+[  714.855944]  writing 1024 blocks of new data
+[  714.992114]  writing 1024 blocks of new data
+[  715.124050]  writing 1024 blocks of new data
+[  715.200092]  writing 1024 blocks of new data
+[  715.342645]  writing 1024 blocks of new data
+[  715.514781]  writing 1024 blocks of new data
+[  715.651636]  writing 1024 blocks of new data
+[  715.817154]  writing 1024 blocks of new data
+[  715.974764]  writing 1024 blocks of new data
+[  716.129383]  writing 1024 blocks of new data
+[  716.274793]  writing 1024 blocks of new data
+[  716.402223]  writing 1024 blocks of new data
+[  716.540182]  writing 1024 blocks of new data
+[  716.663528]  writing 1024 blocks of new data
+[  716.809299]  writing 1024 blocks of new data
+[  717.004286]  writing 1024 blocks of new data
+[  717.152482]  writing 1024 blocks of new data
+[  717.303401]  writing 1024 blocks of new data
+[  717.437881]  writing 1024 blocks of new data
+[  717.576004]  writing 1024 blocks of new data
+[  717.739308]  writing 1024 blocks of new data
+[  717.901962]  writing 1024 blocks of new data
+[  718.055257]  writing 1024 blocks of new data
+[  718.205506]  writing 1024 blocks of new data
+[  718.336597]  writing 1024 blocks of new data
+[  718.471328]  writing 1024 blocks of new data
+[  718.617478]  writing 1024 blocks of new data
+[  718.765603]  writing 1024 blocks of new data
+[  718.922022]  writing 1024 blocks of new data
+[  719.051209]  writing 1024 blocks of new data
+[  719.205486]  writing 1024 blocks of new data
+[  719.345749]  writing 1024 blocks of new data
+[  719.479688]  writing 1024 blocks of new data
+[  719.621201]  writing 1024 blocks of new data
+[  719.742351]  writing 1024 blocks of new data
+[  719.920015]  writing 1024 blocks of new data
+[  720.064951]  writing 1024 blocks of new data
+[  720.195368]  writing 1024 blocks of new data
+[  720.335070]  writing 1024 blocks of new data
+[  720.462746]  writing 1024 blocks of new data
+[  720.582332]  writing 1024 blocks of new data
+[  720.709162]  writing 1024 blocks of new data
+[  720.846367]  writing 1024 blocks of new data
+[  720.973352]  writing 1024 blocks of new data
+[  721.093057]  writing 1024 blocks of new data
+[  721.215117]  writing 1024 blocks of new data
+[  721.322539]  writing 474 blocks of new data
+[  721.383205]   zeroing 1024 blocks
+[  721.431508]   zeroing 1024 blocks
+[  721.484317]   zeroing 115 blocks
+[  721.501123] wrote 484941 blocks; expected 484941
+[  721.501208] stashed 0 blocks
+[  721.501257] max alloc needed was 4096
+[  721.501395] deleting stash cc46ebfd04058569d0c6c1431c6af6c1328458e4
+[  721.505784] Wrote updated marker to /cache/recovery/cc46ebfd04058569d0c6c1431c6af6c1328458e4.UPDATED
+[  722.109618] Invalid range text: 0-474722 491520-491538 491541-491549 506457-514482 514596
+[  722.109748] Check failed: static_cast<bool>(rs) 
+[  722.209055] E:Error in /sideload/package.zip (killed by signal 6)
+[  722.266471]
+[  722.346909] W:failed to read uncrypt status: No such file or directory
+[  722.352602] I:current maximum temperature: 37400
+[  722.353089] I:/sideload/package.zip
+[  722.353119] 0
+[  722.353138] time_total: 172
+[  722.353155] retry: 0
+[  722.353171] bytes_written_dm-1: 1986318336
+[  722.353187] bytes_stashed_dm-1: 0
+[  722.353203] temperature_start: 33500
+[  722.353220] temperature_end: 37400
+[  722.353252] temperature_max: 37400
+[  722.353271]
+[  722.354045] I:Command 0 finished with 0
+[  723.944000] minadbd W 10-06 02:09:14   396   396 sockets.cpp:279] timeout expired while flushing socket, closing
+[  723.944333] minadbd I 10-06 02:09:14   396   402 minadbd_services.cpp:159] revents: 16
+[  724.110475] I:Socket has been closed
+[  829.307224]
+[  829.307292] Install completed with status 1.
+[  829.407616] Installation aborted.
+[  829.518855] I:Saving locale "zh-CN"
+[  837.502107] I:[libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/by-name/cache
+[  837.507935] I:[libfs_mgr]check_fs(): mount(/dev/block/by-name/cache,/cache,ext4)=0: Success
+[  837.531892] I:[libfs_mgr]umount_retry(): unmount(/cache) succeeded
+[  837.532368] I:[libfs_mgr]Not running /system/bin/e2fsck on /dev/block/mmcblk0p34 (executable not in system image)
+[  837.533638] libc: Unable to set property "ro.boottime.init.fsck.cache" to "30": error code: 0xb
+[  837.537850] I:[libfs_mgr]__mount(source=/dev/block/by-name/cache,target=/cache,type=ext4)=0: Success
+[  837.538379] libc: Unable to set property "ro.boottime.init.mount.cache" to "4": error code: 0xb

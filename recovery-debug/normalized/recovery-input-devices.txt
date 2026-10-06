@@ -1,0 +1,45 @@
+add device 1: /dev/input/event4
+  name:     "mtk-tpd"
+  events:
+    KEY (0001): BTN_TOUCH            
+    ABS (0003): ABS_X                 : value 0, min 0, max 384, fuzz 0, flat 0, resolution 384
+                ABS_Y                 : value 0, min 0, max 854, fuzz 0, flat 0, resolution 854
+                ABS_PRESSURE          : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+                ABS_MT_TOUCH_MAJOR    : value 0, min 0, max 100, fuzz 0, flat 0, resolution 0
+                ABS_MT_TOUCH_MINOR    : value 0, min 0, max 100, fuzz 0, flat 0, resolution 0
+                ABS_MT_POSITION_X     : value 0, min 0, max 384, fuzz 0, flat 0, resolution 0
+                ABS_MT_POSITION_Y     : value 0, min 0, max 854, fuzz 0, flat 0, resolution 0
+                ABS_MT_TRACKING_ID    : value 0, min 0, max 10, fuzz 0, flat 0, resolution 0
+  input props:
+    INPUT_PROP_DIRECT
+add device 2: /dev/input/event3
+  name:     "axs_ts"
+  events:
+    KEY (0001): BTN_TOUCH            
+    ABS (0003): ABS_MT_TOUCH_MAJOR    : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+                ABS_MT_POSITION_X     : value 0, min 0, max 384, fuzz 0, flat 0, resolution 0
+                ABS_MT_POSITION_Y     : value 0, min 0, max 854, fuzz 0, flat 0, resolution 0
+                ABS_MT_TRACKING_ID    : value 0, min 0, max 15, fuzz 0, flat 0, resolution 0
+                ABS_MT_PRESSURE       : value 0, min 0, max 255, fuzz 0, flat 0, resolution 0
+  input props:
+    INPUT_PROP_DIRECT
+add device 3: /dev/input/event0
+  name:     "mtk-kpd"
+  events:
+    KEY (0001): KEY_LEFTALT           KEY_RIGHTALT          KEY_VOLUMEDOWN        KEY_VOLUMEUP         
+                KEY_CAMERA            KEY_NUMERIC_POUND    
+  input props:
+    <none>
+add device 4: /dev/input/event1
+  name:     "mtk-pmic-keys"
+  events:
+    KEY (0001): KEY_VOLUMEUP          KEY_POWER            
+  input props:
+    <none>
+add device 5: /dev/input/event2
+  name:     "mt63xx-accdet Headset"
+  events:
+    KEY (0001): KEY_VOLUMEDOWN        KEY_VOLUMEUP          KEY_PLAYPAUSE         KEY_VOICECOMMAND     
+    SW  (0005): SW_HEADPHONE_INSERT   SW_MICROPHONE_INSERT  SW_LINEOUT_INSERT     SW_JACK_PHYSICAL_INS    
+  input props:
+    <none>

@@ -1,0 +1,1133 @@
+[   10.033740] -(4)[0:swapper/4]MCDI bootup check: PASS
+[   10.798315] (5)[256:fan5405_otg_thr]fan5405_otg_routine_thread while(1)
+[   10.810422] (4)[0:swapper/4][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   10.810482] (4)[0:swapper/4]mcdi cpu: 144, 0, 1, 22, 183, 58, 0, 2, cluster : 158, 131, pause = 148, multi core = 155, latency = 0, residency = 0, last core = 148, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   10.870941] -(3)[0:swapper/3]fg_drv_thread_hrtimer_func
+[   10.870963] -(3)[0:swapper/3]fg_update_routine_wakeup
+[   10.871715] (4)[277:battery_thread]mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4eb, adc_result=553
+[   10.873792] (4)[277:battery_thread]mt635x-auxadc mt635x-auxadc: name:VBIF, channel=11, adc_out=0xff0, adc_result=1792
+[   10.875589] (4)[277:battery_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67c7, adc_result=4378
+[   10.875827] (4)[277:battery_thread]car[3,219,-219,219,-222] tmp:32 soc:99 uisoc:98 vbat:4378 ibat:1241 algo:1 gm3:0 0 0 0,boot:2
+[   10.875884] (4)[277:battery_thread][fg_drv_update_daemon]ui_ht_gap:219 ui_lt_gap:222 sw_iavg:-3806 -3806 0 nafg_m:0 0 0
+[   10.877830] (4)[277:battery_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67ca, adc_result=4378
+[   10.877905] (4)[277:battery_thread]battery_update_routine
+[   10.880243] (4)[325:kworker/4:1]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67c4, adc_result=4377
+[   10.881769] -(7)[52:kauditd]kauditd_printk_skb: 515 callbacks suppressed
+[   10.881784] (7)[52:kauditd]audit: type=1400 audit(1758019175.588:526): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33804 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.881938] (7)[52:kauditd]audit: type=1400 audit(1758019175.588:527): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33741 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.882105] (7)[52:kauditd]audit: type=1400 audit(1758019175.592:528): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=34525 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.882219] (7)[52:kauditd]audit: type=1400 audit(1758019175.592:529): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=35543 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.882328] (7)[52:kauditd]audit: type=1400 audit(1758019175.592:530): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=35477 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.882441] (7)[52:kauditd]audit: type=1400 audit(1758019175.592:531): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=34564 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.882556] (7)[52:kauditd]audit: type=1400 audit(1758019175.592:532): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=34487 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.882713] (7)[52:kauditd]audit: type=1400 audit(1758019175.592:533): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=30200 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.882731] (5)[324:charger]healthd: battery none chg=
+[   10.882950] (7)[52:kauditd]audit: type=1400 audit(1758019175.592:534): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33804 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.883059] (7)[52:kauditd]audit: type=1400 audit(1758019175.592:535): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33741 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   11.006483] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   11.006504] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   11.006515] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   11.006526] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   11.006919] (3)[126:kworker/3:1][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 664, 390576, 1000000, -1863
+[   11.006930] (3)[126:kworker/3:1][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=34162
+[   11.006958] (3)[126:kworker/3:1][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=664 T=34162
+[   11.006968] (3)[126:kworker/3:1][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=34162
+[   11.011015] (6)[239:kworker/u16:3]accdet_init_once done!
+[   11.011041] (6)[239:kworker/u16:3]delay_init_work_callback() done
+[   11.948620] -(7)[0:swapper/7]mtk_charger_alarm_timer_func: not suspend, wake up charger
+[   11.948763] (7)[300:charger_thread]get_battery_temperature:25
+[   11.950535] -(7)[300:charger_thread]mt635x_auxadc_read_raw: 2 callbacks suppressed
+[   11.950564] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67c5, adc_result=4377
+[   11.950600] (7)[300:charger_thread]get_battery_voltage:4377
+[   11.950625] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   11.951006] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x458, adc_result=488
+[   11.951032] (7)[300:charger_thread]get_pmic_vbus vbus:4617
+[   11.951054] (7)[300:charger_thread]get_ibus: get ibus failed: -524
+[   11.951280] (7)[300:charger_thread]get_battery_current:128
+[   11.951303] (7)[300:charger_thread]get_uisoc:98
+[   11.951325] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   11.951345] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   11.951366] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   11.951388] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   11.951417] (7)[300:charger_thread]Vbat=4377 vbus:4617 ibus:0 I=128 T=25 uisoc:98 type:usb>usb pd:0
+[   11.951437] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   11.951457] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   11.951477] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   11.951499] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   11.951527] (7)[300:charger_thread]mtk_charger_start_timer: alarm timer start:0, 21 917832615
+[   11.951550] -(7)[300:charger_thread]alarmtimer_enqueue, 21917832615
+[   11.951586] (7)[300:charger_thread]is_battery_exist:1
+[   11.951617] (7)[300:charger_thread]is_battery_exist:1
+[   11.951648] (7)[300:charger_thread]is_battery_exist:1
+[   11.951670] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   11.951749] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   11.953564] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67c6, adc_result=4377
+[   11.953590] (7)[300:charger_thread]get_battery_voltage:4377
+[   11.953613] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   11.953634] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   11.953654] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   11.953676] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   11.953762] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   11.955580] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x458, adc_result=488
+[   11.955606] (7)[300:charger_thread]get_pmic_vbus vbus:4617
+[   11.955629] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   11.956005] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x45c, adc_result=490
+[   11.956031] (7)[300:charger_thread]get_pmic_vbus vbus:4636
+[   11.956062] (7)[300:charger_thread]tmp:25 (jeita:0 sm:0 cv:0 en:0) (sm:1) en:1 c:0 s:0 ov:0 1 1
+[   11.956511] (7)[300:charger_thread][psc5425e_read_interface] Reg[0]=0x10
+[   11.956538] (7)[300:charger_thread][psc5425e_read_interface] val=0x1
+[   11.956560] (7)[300:charger_thread]chg_alg_set_current_limit
+[   11.956586] (7)[300:charger_thread]_pd_set_setting cv:4350000 icl:-1,-1 cc:-1,-1
+[   11.956607] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   11.956628] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   11.956650] (7)[300:charger_thread]support_fast_charging pd ret:ALG_TA_CHECKING
+[   11.956690] (7)[300:charger_thread]m:0 chg1:-1,-1,500,500 chg2:-1,-1,0,0 type:4:0 usb_unlimited:0 usbif:0 usbsm:0 aicl:-1 atm:0 bm:2 b:1
+[   11.956713] (7)[300:charger_thread]do_algorithm is_basic:1
+[   11.957616] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   11.957643] (7)[300:charger_thread]&&&&psc5425e_set_input_current register_value = 3
+[   11.958539] (7)[300:charger_thread][psc5425e_config_interface] write Reg[4]=0x6 from 0x6
+[   11.958567] (7)[300:charger_thread]&&&& psc5425e_set_current = 500000,register_value= 0
+[   11.959393] (7)[300:charger_thread][psc5425e_config_interface] write Reg[2]=0xb0 from 0xb0
+[   11.959420] (7)[300:charger_thread]&&&&psc5425e_set_cv_voltage cv reg value = 44
+[   11.959443] (7)[300:charger_thread]psc5425e enable state : 1
+[   11.960060] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   11.965531] (7)[300:charger_thread]charger_routine_thread end , 0
+[   15.811186] (0)[0:swapper/0][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   15.811244] (0)[0:swapper/0]mcdi cpu: 895, 3, 1, 118, 975, 392, 53, 22, cluster : 967, 809, pause = 909, multi core = 910, latency = 0, residency = 0, last core = 908, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   16.126502] (3)[126:kworker/3:1]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5e7, adc_result=664
+[   16.126530] (3)[126:kworker/3:1][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 664, 390576, 1000000, -1863
+[   16.126541] (3)[126:kworker/3:1][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=34162
+[   16.126552] (3)[126:kworker/3:1][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=664 T=34162
+[   16.126563] (3)[126:kworker/3:1][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=34162
+[   16.126950] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5ee, adc_result=667
+[   16.126966] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   16.126976] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   16.126987] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   16.126997] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   16.304495] (4)[125:watchdogd][wdtk] kick watchdog
+[   16.559643] (4)[237:kworker/u16:2][AXS]axs_fwupg_flash_write:func end
+[   16.676728] (4)[237:kworker/u16:2][AXS]axs_fwupg_flash_read_check:read firmware is not same with writed firmware
+[   16.676773] (4)[237:kworker/u16:2][AXS ERROR]axs_Y15205_upgrade:axs_fwupg_flash_read_check fail
+[   16.676795] (4)[237:kworker/u16:2][AXS]axs_reset_proc:axs_reset_proc
+[   16.676821] (4)[237:kworker/u16:2]mtk-tpd:[tpd_gpio_output:155] tpd_gpio_output pin = 0, level = 1
+[   16.678038] (4)[237:kworker/u16:2]mtk-tpd:[tpd_gpio_output:155] tpd_gpio_output pin = 0, level = 0
+[   16.689558] (4)[237:kworker/u16:2]mtk-tpd:[tpd_gpio_output:155] tpd_gpio_output pin = 0, level = 1
+[   16.814246] (4)[237:kworker/u16:2][AXS]axs_fwupg_upgrade:upgrade fw app (times:1) fail
+[   16.814286] (4)[237:kworker/u16:2][AXS]axs_fwupg_work:axs_fwupg_work end
+[   20.705837] -(3)[0:swapper/3][thread:0] 2025-09-16 10:39:45.419043 UTC;android time 2025-09-16 10:39:45.419043
+[   20.820712] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   20.820812] (5)[0:swapper/5]mcdi cpu: 339, 2, 0, 120, 188, 168, 148, 0, cluster : 443, 377, pause = 557, multi core = 283, latency = 0, residency = 0, last core = 555, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   21.246689] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5ef, adc_result=667
+[   21.246718] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   21.246729] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   21.246740] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   21.246751] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   21.247130] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5e9, adc_result=664
+[   21.247144] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 664, 390576, 1000000, -1863
+[   21.247155] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=34162
+[   21.247165] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=664 T=34162
+[   21.247176] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=34162
+[   21.951836] -(7)[0:swapper/7]mtk_charger_alarm_timer_func: not suspend, wake up charger
+[   21.952070] (7)[300:charger_thread]get_battery_temperature:25
+[   21.953888] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d1, adc_result=4379
+[   21.953916] (7)[300:charger_thread]get_battery_voltage:4379
+[   21.953941] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   21.954317] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x45b, adc_result=489
+[   21.954343] (7)[300:charger_thread]get_pmic_vbus vbus:4626
+[   21.954365] (7)[300:charger_thread]get_ibus: get ibus failed: -524
+[   21.954585] (7)[300:charger_thread]get_battery_current:137
+[   21.954608] (7)[300:charger_thread]get_uisoc:98
+[   21.954629] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   21.954650] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   21.954671] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   21.954693] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   21.954721] (7)[300:charger_thread]Vbat=4379 vbus:4626 ibus:0 I=137 T=25 uisoc:98 type:usb>usb pd:0
+[   21.954742] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   21.954762] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   21.954782] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   21.954804] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   21.954832] (7)[300:charger_thread]mtk_charger_start_timer: alarm timer start:0, 31 921137308
+[   21.954855] -(7)[300:charger_thread]alarmtimer_enqueue, 31921137308
+[   21.954891] (7)[300:charger_thread]is_battery_exist:1
+[   21.954923] (7)[300:charger_thread]is_battery_exist:1
+[   21.954954] (7)[300:charger_thread]is_battery_exist:1
+[   21.954976] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   21.955000] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   21.956768] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d7, adc_result=4380
+[   21.956794] (7)[300:charger_thread]get_battery_voltage:4380
+[   21.956817] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   21.956838] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   21.956858] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   21.956880] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   21.956902] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   21.957269] (7)[300:charger_thread]get_pmic_vbus vbus:4655
+[   21.957294] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   21.957659] (7)[300:charger_thread]get_pmic_vbus vbus:4645
+[   21.957692] (7)[300:charger_thread]tmp:25 (jeita:0 sm:0 cv:0 en:0) (sm:1) en:1 c:0 s:0 ov:0 1 1
+[   21.958595] (7)[300:charger_thread][psc5425e_read_interface] Reg[0]=0x10
+[   21.958634] (7)[300:charger_thread][psc5425e_read_interface] val=0x1
+[   21.958658] (7)[300:charger_thread]chg_alg_set_current_limit
+[   21.958684] (7)[300:charger_thread]_pd_set_setting cv:4350000 icl:-1,-1 cc:-1,-1
+[   21.958707] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   21.958731] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   21.958753] (7)[300:charger_thread]support_fast_charging pd ret:ALG_TA_CHECKING
+[   21.958794] (7)[300:charger_thread]m:0 chg1:-1,-1,500,500 chg2:-1,-1,0,0 type:4:0 usb_unlimited:0 usbif:0 usbsm:0 aicl:-1 atm:0 bm:2 b:1
+[   21.958816] (7)[300:charger_thread]do_algorithm is_basic:1
+[   21.959623] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   21.959648] (7)[300:charger_thread]&&&&psc5425e_set_input_current register_value = 3
+[   21.960436] (7)[300:charger_thread][psc5425e_config_interface] write Reg[4]=0x6 from 0x6
+[   21.960462] (7)[300:charger_thread]&&&& psc5425e_set_current = 500000,register_value= 0
+[   21.961226] (7)[300:charger_thread][psc5425e_config_interface] write Reg[2]=0xb0 from 0xb0
+[   21.961250] (7)[300:charger_thread]&&&&psc5425e_set_cv_voltage cv reg value = 44
+[   21.961272] (7)[300:charger_thread]psc5425e enable state : 1
+[   21.962040] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   21.967449] (7)[300:charger_thread]charger_routine_thread end , 0
+[   25.829704] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   25.829804] (5)[0:swapper/5]mcdi cpu: 7, 3, 0, 119, 6, 164, 4, 24, cluster : 127, 172, pause = 277, multi core = 32, latency = 0, residency = 0, last core = 277, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   26.366460] -(3)[356:kworker/3:3]mt635x_auxadc_read_raw: 2 callbacks suppressed
+[   26.366478] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5e9, adc_result=664
+[   26.366510] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 664, 390576, 1000000, -1863
+[   26.366521] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=34162
+[   26.366531] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=664 T=34162
+[   26.366542] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=34162
+[   26.366932] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5ef, adc_result=667
+[   26.366946] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   26.366956] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   26.366967] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   26.366977] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   30.840863] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   30.840961] (5)[0:swapper/5]mcdi cpu: 2, 2, 0, 120, 2, 170, 0, 0, cluster : 124, 172, pause = 261, multi core = 28, latency = 0, residency = 0, last core = 261, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   31.486439] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5ef, adc_result=667
+[   31.486467] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   31.486478] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   31.486489] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   31.486499] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   31.486882] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5e9, adc_result=664
+[   31.486896] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 664, 390576, 1000000, -1863
+[   31.486906] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=34162
+[   31.486916] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=664 T=34162
+[   31.486927] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=34162
+[   31.742375] (5)[294:kworker/5:1]vs1: disabling
+[   31.742430] (5)[294:kworker/5:1]regulator regulator.1: mt6357_regulator_disable:VS1 should not be disable.(use_count=0)
+[   31.742453] (5)[294:kworker/5:1]vs1: couldn't disable: -5
+[   31.742482] (5)[294:kworker/5:1]vmodem: disabling
+[   31.742511] (5)[294:kworker/5:1]regulator regulator.2: mt6357_regulator_disable:VMODEM should not be disable.(use_count=0)
+[   31.742532] (5)[294:kworker/5:1]vmodem: couldn't disable: -5
+[   31.742559] (5)[294:kworker/5:1]vcore: disabling
+[   31.742587] (5)[294:kworker/5:1]regulator regulator.3: mt6357_regulator_disable:VCORE should not be disable.(use_count=0)
+[   31.742608] (5)[294:kworker/5:1]vcore: couldn't disable: -5
+[   31.742636] (5)[294:kworker/5:1]vproc: disabling
+[   31.742663] (5)[294:kworker/5:1]regulator regulator.4: mt6357_regulator_disable:VPROC should not be disable.(use_count=0)
+[   31.742684] (5)[294:kworker/5:1]vproc: couldn't disable: -5
+[   31.742732] (5)[294:kworker/5:1]vxo22: disabling
+[   31.742761] (5)[294:kworker/5:1]regulator regulator.7: mt6357_regulator_disable:VXO22 should not be disable.(use_count=0)
+[   31.742782] (5)[294:kworker/5:1]vxo22: couldn't disable: -5
+[   31.742901] (5)[294:kworker/5:1]vsram_others: disabling
+[   31.742930] (5)[294:kworker/5:1]regulator regulator.19: mt6357_regulator_disable:VSRAM_OTHERS should not be disable.(use_count=0)
+[   31.742951] (5)[294:kworker/5:1]vsram_others: couldn't disable: -5
+[   31.742979] (5)[294:kworker/5:1]vsram_proc: disabling
+[   31.743007] (5)[294:kworker/5:1]regulator regulator.20: mt6357_regulator_disable:VSRAM_PROC should not be disable.(use_count=0)
+[   31.743028] (5)[294:kworker/5:1]vsram_proc: couldn't disable: -5
+[   31.743056] (5)[294:kworker/5:1]vaux18: disabling
+[   31.743084] (5)[294:kworker/5:1]regulator regulator.21: mt6357_regulator_disable:VAUX18 should not be disable.(use_count=0)
+[   31.743104] (5)[294:kworker/5:1]vaux18: couldn't disable: -5
+[   31.743132] (5)[294:kworker/5:1]vaud28: disabling
+[   31.743159] (5)[294:kworker/5:1]regulator regulator.22: mt6357_regulator_disable:VAUD28 should not be disable.(use_count=0)
+[   31.743180] (5)[294:kworker/5:1]vaud28: couldn't disable: -5
+[   31.743207] (5)[294:kworker/5:1]vio28: disabling
+[   31.743235] (5)[294:kworker/5:1]regulator regulator.23: mt6357_regulator_disable:VIO28 should not be disable.(use_count=0)
+[   31.743256] (5)[294:kworker/5:1]vio28: couldn't disable: -5
+[   31.743284] (5)[294:kworker/5:1]vio18: disabling
+[   31.743311] (5)[294:kworker/5:1]regulator regulator.24: mt6357_regulator_disable:VIO18 should not be disable.(use_count=0)
+[   31.743332] (5)[294:kworker/5:1]vio18: couldn't disable: -5
+[   31.743360] (5)[294:kworker/5:1]vdram: disabling
+[   31.743388] (5)[294:kworker/5:1]regulator regulator.25: mt6357_regulator_disable:VDRAM should not be disable.(use_count=0)
+[   31.743408] (5)[294:kworker/5:1]vdram: couldn't disable: -5
+[   31.743476] (5)[294:kworker/5:1]vusb33: disabling
+[   31.743505] (5)[294:kworker/5:1]regulator regulator.32: mt6357_regulator_disable:VUSB33 should not be disable.(use_count=0)
+[   31.743526] (5)[294:kworker/5:1]vusb33: couldn't disable: -5
+[   31.748843] (4)[274:dlpt_notify_thr]mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x6773, adc_result=4364
+[   31.750629] (4)[274:dlpt_notify_thr]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d4, adc_result=4380
+[   31.750661] (4)[274:dlpt_notify_thr][PBM] [ma_to_mw] 4380(mV) * 5500(mA) = 24090(mW)
+[   31.750741] (4)[274:dlpt_notify_thr][DLPT_final] 5500,-19,98,5500
+[   31.750846] (4)[211:pbm][Power/PPM] (0x20)(17275)(0)(0-7)(15)(0)(4)(4) (15)(0)(4)(4) 
+[   31.751149] (6)[293:hps_main]CPU 0 ==>1
+[   31.751161] (6)[293:hps_main]CPU 1 ==>1
+[   31.751171] (6)[293:hps_main]CPU 2 ==>1
+[   31.751180] (6)[293:hps_main]CPU 3 ==>1
+[   31.751188] (6)[293:hps_main]CPU 4 ==>1
+[   31.751197] (6)[293:hps_main]CPU 5 ==>1
+[   31.751206] (6)[293:hps_main]CPU 6 ==>1
+[   31.751214] (6)[293:hps_main]CPU 7 ==>1
+[   31.804978] (4)[125:watchdogd][wdtk] kick watchdog
+[   31.955138] -(7)[0:swapper/7]mtk_charger_alarm_timer_func: not suspend, wake up charger
+[   31.955371] (7)[300:charger_thread]get_battery_temperature:25
+[   31.957174] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d7, adc_result=4380
+[   31.957201] (7)[300:charger_thread]get_battery_voltage:4380
+[   31.957226] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   31.957825] (7)[300:charger_thread]get_pmic_vbus vbus:4645
+[   31.957851] (7)[300:charger_thread]get_ibus: get ibus failed: -524
+[   31.958087] (7)[300:charger_thread]get_battery_current:131
+[   31.958109] (7)[300:charger_thread]get_uisoc:98
+[   31.958130] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   31.958151] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   31.958171] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   31.958193] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   31.958221] (7)[300:charger_thread]Vbat=4380 vbus:4645 ibus:0 I=131 T=25 uisoc:98 type:usb>usb pd:0
+[   31.958242] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   31.958262] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   31.958282] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   31.958304] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   31.958332] (7)[300:charger_thread]mtk_charger_start_timer: alarm timer start:0, 41 924637231
+[   31.958355] -(7)[300:charger_thread]alarmtimer_enqueue, 41924637231
+[   31.958390] (7)[300:charger_thread]is_battery_exist:1
+[   31.958421] (7)[300:charger_thread]is_battery_exist:1
+[   31.958452] (7)[300:charger_thread]is_battery_exist:1
+[   31.958474] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   31.958497] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   31.960261] (7)[300:charger_thread]get_battery_voltage:4380
+[   31.960286] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   31.960307] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   31.960327] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   31.960349] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   31.960371] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   31.960736] (7)[300:charger_thread]get_pmic_vbus vbus:4626
+[   31.960761] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   31.961127] (7)[300:charger_thread]get_pmic_vbus vbus:4636
+[   31.961160] (7)[300:charger_thread]tmp:25 (jeita:0 sm:0 cv:0 en:0) (sm:1) en:1 c:0 s:0 ov:0 1 1
+[   31.961595] (7)[300:charger_thread][psc5425e_read_interface] Reg[0]=0x10
+[   31.961619] (7)[300:charger_thread][psc5425e_read_interface] val=0x1
+[   31.961640] (7)[300:charger_thread]chg_alg_set_current_limit
+[   31.961665] (7)[300:charger_thread]_pd_set_setting cv:4350000 icl:-1,-1 cc:-1,-1
+[   31.961686] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   31.961762] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   31.961784] (7)[300:charger_thread]support_fast_charging pd ret:ALG_TA_CHECKING
+[   31.961825] (7)[300:charger_thread]m:0 chg1:-1,-1,500,500 chg2:-1,-1,0,0 type:4:0 usb_unlimited:0 usbif:0 usbsm:0 aicl:-1 atm:0 bm:2 b:1
+[   31.961847] (7)[300:charger_thread]do_algorithm is_basic:1
+[   31.962677] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   31.962701] (7)[300:charger_thread]&&&&psc5425e_set_input_current register_value = 3
+[   31.963375] (7)[300:charger_thread][psc5425e_config_interface] write Reg[4]=0x6 from 0x6
+[   31.963401] (7)[300:charger_thread]&&&& psc5425e_set_current = 500000,register_value= 0
+[   31.964178] (7)[300:charger_thread][psc5425e_config_interface] write Reg[2]=0xb0 from 0xb0
+[   31.964203] (7)[300:charger_thread]&&&&psc5425e_set_cv_voltage cv reg value = 44
+[   31.964225] (7)[300:charger_thread]psc5425e enable state : 1
+[   31.964967] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   31.970796] (7)[300:charger_thread]charger_routine_thread end , 0
+[   35.852110] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   35.852207] (5)[0:swapper/5]mcdi cpu: 3, 3, 1, 117, 9, 171, 4, 24, cluster : 124, 178, pause = 295, multi core = 32, latency = 0, residency = 0, last core = 294, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   36.606460] -(3)[356:kworker/3:3]mt635x_auxadc_read_raw: 4 callbacks suppressed
+[   36.606478] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5e9, adc_result=664
+[   36.606511] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 664, 390576, 1000000, -1863
+[   36.606521] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=34162
+[   36.606532] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=664 T=34162
+[   36.606543] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=34162
+[   36.606927] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[   36.606942] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   36.606952] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   36.606963] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   36.606973] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   40.052191] -(5)[0:swapper/5][name:spm&]Power/swap CNT(soidle3): [0] = (0), [1] = (0), [2] = (0), [3] = (0), [4] = (0), [5] = (0), [6] = (0), [7] = (0), 
+[   40.052212] -(5)[0:swapper/5][name:spm&]Power/swap soidle3_block_cnt: [BY_FRM] = 2663, 
+[   40.052237] -(5)[0:swapper/5][name:spm&]Power/swap soidle3_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, idle_pll_block_mask: 0x00000000\x0a
+[   40.052248] -(5)[0:swapper/5][name:spm&][resource_req_block] user: 0x4, 0x0
+[   40.705847] -(3)[0:swapper/3][thread:0] 2025-09-16 10:40:05.419054 UTC;android time 2025-09-16 10:40:05.419054
+[   40.854065] (3)[0:swapper/3][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   40.854124] (3)[0:swapper/3]mcdi cpu: 5, 2, 0, 121, 2, 172, 0, 0, cluster : 127, 172, pause = 263, multi core = 33, latency = 0, residency = 0, last core = 262, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   41.726478] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[   41.726505] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   41.726516] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   41.726527] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   41.726538] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   41.726917] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5ea, adc_result=665
+[   41.726932] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[   41.726942] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[   41.726952] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[   41.726963] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[   41.958649] -(7)[0:swapper/7]mtk_charger_alarm_timer_func: not suspend, wake up charger
+[   41.958881] (7)[300:charger_thread]get_battery_temperature:25
+[   41.960684] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d2, adc_result=4379
+[   41.960711] (7)[300:charger_thread]get_battery_voltage:4379
+[   41.960736] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   41.961112] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x45c, adc_result=490
+[   41.961138] (7)[300:charger_thread]get_pmic_vbus vbus:4636
+[   41.961160] (7)[300:charger_thread]get_ibus: get ibus failed: -524
+[   41.961381] (7)[300:charger_thread]get_battery_current:115
+[   41.961403] (7)[300:charger_thread]get_uisoc:98
+[   41.961425] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   41.961445] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   41.961466] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   41.961488] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   41.961517] (7)[300:charger_thread]Vbat=4379 vbus:4636 ibus:0 I=115 T=25 uisoc:98 type:usb>usb pd:0
+[   41.961537] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   41.961557] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   41.961577] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   41.961599] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   41.961627] (7)[300:charger_thread]mtk_charger_start_timer: alarm timer start:0, 51 927932924
+[   41.961650] -(7)[300:charger_thread]alarmtimer_enqueue, 51927932924
+[   41.961687] (7)[300:charger_thread]is_battery_exist:1
+[   41.961841] (7)[300:charger_thread]is_battery_exist:1
+[   41.961872] (7)[300:charger_thread]is_battery_exist:1
+[   41.961895] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   41.961918] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   41.963696] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67cb, adc_result=4378
+[   41.963723] (7)[300:charger_thread]get_battery_voltage:4378
+[   41.963746] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   41.963767] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   41.963787] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   41.963809] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   41.963832] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   41.964198] (7)[300:charger_thread]get_pmic_vbus vbus:4636
+[   41.964223] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   41.964588] (7)[300:charger_thread]get_pmic_vbus vbus:4645
+[   41.964621] (7)[300:charger_thread]tmp:25 (jeita:0 sm:0 cv:0 en:0) (sm:1) en:1 c:0 s:0 ov:0 1 1
+[   41.965065] (7)[300:charger_thread][psc5425e_read_interface] Reg[0]=0x10
+[   41.965090] (7)[300:charger_thread][psc5425e_read_interface] val=0x1
+[   41.965112] (7)[300:charger_thread]chg_alg_set_current_limit
+[   41.965137] (7)[300:charger_thread]_pd_set_setting cv:4350000 icl:-1,-1 cc:-1,-1
+[   41.965157] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   41.965178] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   41.965200] (7)[300:charger_thread]support_fast_charging pd ret:ALG_TA_CHECKING
+[   41.965240] (7)[300:charger_thread]m:0 chg1:-1,-1,500,500 chg2:-1,-1,0,0 type:4:0 usb_unlimited:0 usbif:0 usbsm:0 aicl:-1 atm:0 bm:2 b:1
+[   41.965263] (7)[300:charger_thread]do_algorithm is_basic:1
+[   41.966045] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   41.966070] (7)[300:charger_thread]&&&&psc5425e_set_input_current register_value = 3
+[   41.966822] (7)[300:charger_thread][psc5425e_config_interface] write Reg[4]=0x6 from 0x6
+[   41.966849] (7)[300:charger_thread]&&&& psc5425e_set_current = 500000,register_value= 0
+[   41.967615] (7)[300:charger_thread][psc5425e_config_interface] write Reg[2]=0xb0 from 0xb0
+[   41.967640] (7)[300:charger_thread]&&&&psc5425e_set_cv_voltage cv reg value = 44
+[   41.967662] (7)[300:charger_thread]psc5425e enable state : 1
+[   41.968417] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   41.973825] (7)[300:charger_thread]charger_routine_thread end , 0
+[   43.712055] -(4)[274:dlpt_notify_thr]mt635x_auxadc_read_raw: 2 callbacks suppressed
+[   43.712086] (4)[274:dlpt_notify_thr]mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x6775, adc_result=4364
+[   43.714027] (4)[274:dlpt_notify_thr]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d4, adc_result=4380
+[   43.714059] (4)[274:dlpt_notify_thr][PBM] [ma_to_mw] 4380(mV) * 5500(mA) = 24090(mW)
+[   43.714085] (4)[274:dlpt_notify_thr][DLPT_final] 5500,98,98,5500
+[   45.063907] -(5)[0:swapper/5][name:spm&]Power/swap CNT(dpidle): [0] = (0), [1] = (0), [2] = (0), [3] = (0), [4] = (0), [5] = (0), [6] = (0), [7] = (0), 
+[   45.063929] -(5)[0:swapper/5][name:spm&]Power/swap dpidle_block_cnt: [BY_FRM] = 2954, 
+[   45.063954] -(5)[0:swapper/5][name:spm&]Power/swap dpidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, idle_pll_block_mask: 0x00000000\x0a
+[   45.063965] -(5)[0:swapper/5][name:spm&][resource_req_block] user: 0x4, 0x0
+[   45.870066] (3)[0:swapper/3][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   45.870125] (3)[0:swapper/3]mcdi cpu: 2, 3, 0, 117, 3, 173, 0, 24, cluster : 122, 174, pause = 294, multi core = 27, latency = 0, residency = 0, last core = 291, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   46.846485] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5ea, adc_result=665
+[   46.846513] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[   46.846524] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[   46.846535] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[   46.846546] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[   46.846927] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[   46.846941] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   46.846951] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   46.846962] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   46.846972] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   47.305480] (4)[125:watchdogd][wdtk] kick watchdog
+[   50.074545] -(5)[0:swapper/5][name:spm&]Power/swap CNT(soidle): [0] = (0), [1] = (0), [2] = (0), [3] = (0), [4] = (0), [5] = (0), [6] = (0), [7] = (0), 
+[   50.074567] -(5)[0:swapper/5][name:spm&]Power/swap soidle_block_cnt: [BY_FRM] = 3222, 
+[   50.074592] -(5)[0:swapper/5][name:spm&]Power/swap soidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, idle_pll_block_mask: 0x00000000\x0a
+[   50.074603] -(5)[0:swapper/5][name:spm&][resource_req_block] user: 0x4, 0x0
+[   50.886119] (3)[0:swapper/3][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   50.886174] (3)[0:swapper/3]mcdi cpu: 0, 2, 0, 119, 4, 169, 0, 0, cluster : 120, 167, pause = 269, multi core = 12, latency = 0, residency = 0, last core = 269, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   51.961934] -(7)[0:swapper/7]mtk_charger_alarm_timer_func: not suspend, wake up charger
+[   51.962169] (7)[300:charger_thread]get_battery_temperature:25
+[   51.963976] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d1, adc_result=4379
+[   51.964004] (7)[300:charger_thread]get_battery_voltage:4379
+[   51.964028] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   51.966028] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x457, adc_result=488
+[   51.966055] (7)[300:charger_thread]get_pmic_vbus vbus:4617
+[   51.966078] (7)[300:charger_thread]get_ibus: get ibus failed: -524
+[   51.966293] (7)[300:charger_thread]get_battery_current:115
+[   51.966315] (7)[300:charger_thread]get_uisoc:98
+[   51.966337] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   51.966357] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   51.966377] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   51.966400] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   51.966428] (7)[300:charger_thread]Vbat=4379 vbus:4617 ibus:0 I=115 T=25 uisoc:98 type:usb>usb pd:0
+[   51.966442] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[   51.966456] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   51.966468] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   51.966480] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   51.966491] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   51.966521] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   51.966541] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   51.966561] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   51.966583] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   51.966611] (7)[300:charger_thread]mtk_charger_start_timer: alarm timer start:0, 61 932916617
+[   51.966634] -(7)[300:charger_thread]alarmtimer_enqueue, 61932916617
+[   51.966670] (7)[300:charger_thread]is_battery_exist:1
+[   51.966702] (7)[300:charger_thread]is_battery_exist:1
+[   51.966732] (7)[300:charger_thread]is_battery_exist:1
+[   51.966754] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   51.966778] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   51.966874] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5ea, adc_result=665
+[   51.966923] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[   51.966934] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[   51.966944] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[   51.966955] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[   51.969234] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d3, adc_result=4380
+[   51.969281] (7)[300:charger_thread]get_battery_voltage:4380
+[   51.969307] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   51.969328] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   51.969348] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   51.969371] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   51.969394] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   51.969812] (7)[300:charger_thread]get_pmic_vbus vbus:4617
+[   51.969838] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   51.970214] (7)[300:charger_thread]get_pmic_vbus vbus:4645
+[   51.970248] (7)[300:charger_thread]tmp:25 (jeita:0 sm:0 cv:0 en:0) (sm:1) en:1 c:0 s:0 ov:0 1 1
+[   51.970685] (7)[300:charger_thread][psc5425e_read_interface] Reg[0]=0x10
+[   51.970709] (7)[300:charger_thread][psc5425e_read_interface] val=0x1
+[   51.970731] (7)[300:charger_thread]chg_alg_set_current_limit
+[   51.970757] (7)[300:charger_thread]_pd_set_setting cv:4350000 icl:-1,-1 cc:-1,-1
+[   51.970780] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   51.970803] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   51.970825] (7)[300:charger_thread]support_fast_charging pd ret:ALG_TA_CHECKING
+[   51.970865] (7)[300:charger_thread]m:0 chg1:-1,-1,500,500 chg2:-1,-1,0,0 type:4:0 usb_unlimited:0 usbif:0 usbsm:0 aicl:-1 atm:0 bm:2 b:1
+[   51.970887] (7)[300:charger_thread]do_algorithm is_basic:1
+[   51.971666] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   51.971692] (7)[300:charger_thread]&&&&psc5425e_set_input_current register_value = 3
+[   51.972472] (7)[300:charger_thread][psc5425e_config_interface] write Reg[4]=0x6 from 0x6
+[   51.972498] (7)[300:charger_thread]&&&& psc5425e_set_current = 500000,register_value= 0
+[   51.973263] (7)[300:charger_thread][psc5425e_config_interface] write Reg[2]=0xb0 from 0xb0
+[   51.973288] (7)[300:charger_thread]&&&&psc5425e_set_cv_voltage cv reg value = 44
+[   51.973309] (7)[300:charger_thread]psc5425e enable state : 1
+[   51.974067] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   51.979677] (7)[300:charger_thread]charger_routine_thread end , 0
+[   55.895645] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   55.895744] (5)[0:swapper/5]mcdi cpu: 4, 3, 0, 116, 3, 162, 0, 25, cluster : 121, 164, pause = 292, multi core = 12, latency = 0, residency = 0, last core = 292, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   57.086459] -(3)[356:kworker/3:3]mt635x_auxadc_read_raw: 2 callbacks suppressed
+[   57.086477] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5ea, adc_result=665
+[   57.086509] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[   57.086519] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[   57.086530] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[   57.086540] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[   57.086925] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[   57.086940] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   57.086950] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   57.086960] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   57.086971] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   60.705847] -(3)[0:swapper/3][thread:0] 2025-09-16 10:40:25.419053 UTC;android time 2025-09-16 10:40:25.419053
+[   60.904498] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   60.904597] (5)[0:swapper/5]mcdi cpu: 3, 2, 0, 119, 2, 160, 1, 0, cluster : 124, 160, pause = 266, multi core = 16, latency = 0, residency = 0, last core = 266, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   61.966938] -(7)[0:swapper/7]mtk_charger_alarm_timer_func: not suspend, wake up charger
+[   61.967172] (7)[300:charger_thread]get_battery_temperature:25
+[   61.968969] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d4, adc_result=4380
+[   61.968996] (7)[300:charger_thread]get_battery_voltage:4380
+[   61.969021] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   61.969406] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x462, adc_result=493
+[   61.969432] (7)[300:charger_thread]get_pmic_vbus vbus:4664
+[   61.969454] (7)[300:charger_thread]get_ibus: get ibus failed: -524
+[   61.969684] (7)[300:charger_thread]get_battery_current:114
+[   61.969824] (7)[300:charger_thread]get_uisoc:98
+[   61.969846] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   61.969867] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   61.969887] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   61.969910] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   61.969938] (7)[300:charger_thread]Vbat=4380 vbus:4664 ibus:0 I=114 T=25 uisoc:98 type:usb>usb pd:0
+[   61.969959] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   61.969979] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   61.969999] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   61.970021] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   61.970049] (7)[300:charger_thread]mtk_charger_start_timer: alarm timer start:0, 71 936354541
+[   61.970072] -(7)[300:charger_thread]alarmtimer_enqueue, 71936354541
+[   61.970110] (7)[300:charger_thread]is_battery_exist:1
+[   61.970141] (7)[300:charger_thread]is_battery_exist:1
+[   61.970172] (7)[300:charger_thread]is_battery_exist:1
+[   61.970194] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   61.970217] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   61.971982] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d4, adc_result=4380
+[   61.972008] (7)[300:charger_thread]get_battery_voltage:4380
+[   61.972031] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   61.972051] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   61.972071] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   61.972093] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   61.972115] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   61.972498] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x45f, adc_result=491
+[   61.972523] (7)[300:charger_thread]get_pmic_vbus vbus:4645
+[   61.972545] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   61.972920] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x45e, adc_result=491
+[   61.972945] (7)[300:charger_thread]get_pmic_vbus vbus:4645
+[   61.972975] (7)[300:charger_thread]tmp:25 (jeita:0 sm:0 cv:0 en:0) (sm:1) en:1 c:0 s:0 ov:0 1 1
+[   61.973451] (7)[300:charger_thread][psc5425e_read_interface] Reg[0]=0x10
+[   61.973476] (7)[300:charger_thread][psc5425e_read_interface] val=0x1
+[   61.973498] (7)[300:charger_thread]chg_alg_set_current_limit
+[   61.973523] (7)[300:charger_thread]_pd_set_setting cv:4350000 icl:-1,-1 cc:-1,-1
+[   61.973544] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   61.973565] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   61.973587] (7)[300:charger_thread]support_fast_charging pd ret:ALG_TA_CHECKING
+[   61.973627] (7)[300:charger_thread]m:0 chg1:-1,-1,500,500 chg2:-1,-1,0,0 type:4:0 usb_unlimited:0 usbif:0 usbsm:0 aicl:-1 atm:0 bm:2 b:1
+[   61.973649] (7)[300:charger_thread]do_algorithm is_basic:1
+[   61.974828] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   61.974869] (7)[300:charger_thread]&&&&psc5425e_set_input_current register_value = 3
+[   61.975731] (7)[300:charger_thread][psc5425e_config_interface] write Reg[4]=0x6 from 0x6
+[   61.975757] (7)[300:charger_thread]&&&& psc5425e_set_current = 500000,register_value= 0
+[   61.976513] (7)[300:charger_thread][psc5425e_config_interface] write Reg[2]=0xb0 from 0xb0
+[   61.976539] (7)[300:charger_thread]&&&&psc5425e_set_cv_voltage cv reg value = 44
+[   61.976561] (7)[300:charger_thread]psc5425e enable state : 1
+[   61.977313] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   61.982920] (7)[300:charger_thread]charger_routine_thread end , 0
+[   62.206464] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   62.206488] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   62.206500] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   62.206510] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   62.206893] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[   62.206904] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[   62.206915] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[   62.206925] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[   62.805970] (4)[125:watchdogd][wdtk] kick watchdog
+[   65.534041] (6)[0:swapper/6][mtk_net][rtnl_lock]There is no process hold rtnl lock
+[   65.760205] -(4)[274:dlpt_notify_thr]mt635x_auxadc_read_raw: 2 callbacks suppressed
+[   65.760236] (4)[274:dlpt_notify_thr]mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x6783, adc_result=4366
+[   65.763596] (4)[274:dlpt_notify_thr]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d4, adc_result=4380
+[   65.763629] (4)[274:dlpt_notify_thr][PBM] [ma_to_mw] 4380(mV) * 5500(mA) = 24090(mW)
+[   65.763656] (4)[274:dlpt_notify_thr][DLPT_final] 5500,98,98,5500
+[   65.914151] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   65.914251] (5)[0:swapper/5]mcdi cpu: 3, 3, 1, 119, 7, 159, 3, 24, cluster : 124, 167, pause = 290, multi core = 16, latency = 0, residency = 0, last core = 290, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   67.326492] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5ea, adc_result=665
+[   67.326521] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[   67.326532] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[   67.326542] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[   67.326553] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[   67.326934] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[   67.326949] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   67.326959] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   67.326970] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   67.326980] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   70.070217] -(3)[0:swapper/3][name:spm&]Power/swap CNT(soidle3): [0] = (0), [1] = (0), [2] = (0), [3] = (0), [4] = (0), [5] = (0), [6] = (0), [7] = (0), 
+[   70.070229] -(3)[0:swapper/3][name:spm&]Power/swap soidle3_block_cnt: [BY_FRM] = 1672, 
+[   70.070242] -(3)[0:swapper/3][name:spm&]Power/swap soidle3_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, idle_pll_block_mask: 0x00000000\x0a
+[   70.070247] -(3)[0:swapper/3][name:spm&][resource_req_block] user: 0x4, 0x0
+[   70.878202] -(4)[0:swapper/4]fg_drv_thread_hrtimer_func
+[   70.878241] -(4)[0:swapper/4]fg_update_routine_wakeup
+[   70.879182] (4)[277:battery_thread]mt635x-auxadc mt635x-auxadc: name:BAT_TEMP, channel=3, adc_out=0x4ee, adc_result=554
+[   70.879771] (4)[277:battery_thread]mt635x-auxadc mt635x-auxadc: name:VBIF, channel=11, adc_out=0xff0, adc_result=1792
+[   70.881677] (4)[277:battery_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d8, adc_result=4380
+[   70.882116] (4)[277:battery_thread]car[24,219,-219,219,-222] tmp:32 soc:99 uisoc:98 vbat:4380 ibat:1288 algo:1 gm3:0 0 0 0,boot:2
+[   70.882375] (4)[277:battery_thread][fg_drv_update_daemon]ui_ht_gap:219 ui_lt_gap:222 sw_iavg:1252 1252 0 nafg_m:0 0 0
+[   70.884124] (4)[277:battery_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d5, adc_result=4380
+[   70.884194] (4)[277:battery_thread]battery_update_routine
+[   70.886533] (4)[325:kworker/4:1]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d8, adc_result=4380
+[   70.887852] -(7)[52:kauditd]kauditd_printk_skb: 6 callbacks suppressed
+[   70.887866] (7)[52:kauditd]audit: type=1400 audit(1758019235.596:542): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33804 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   70.887907] (7)[52:kauditd]audit: type=1400 audit(1758019235.596:543): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33741 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   70.888010] (7)[52:kauditd]audit: type=1400 audit(1758019235.596:544): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=34525 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   70.888173] (7)[52:kauditd]audit: type=1400 audit(1758019235.596:545): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=35543 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   70.888333] (7)[52:kauditd]audit: type=1400 audit(1758019235.596:546): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=35477 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   70.888499] (7)[52:kauditd]audit: type=1400 audit(1758019235.596:547): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=34564 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   70.888666] (7)[52:kauditd]audit: type=1400 audit(1758019235.596:548): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=34487 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   70.888837] (7)[52:kauditd]audit: type=1400 audit(1758019235.596:549): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=30200 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   70.888905] (5)[324:charger]healthd: battery none chg=
+[   70.889277] (7)[52:kauditd]audit: type=1400 audit(1758019235.596:550): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33804 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   70.889407] (7)[52:kauditd]audit: type=1400 audit(1758019235.596:551): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33741 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   70.924169] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   70.924267] (5)[0:swapper/5]mcdi cpu: 4, 2, 0, 120, 4, 161, 2, 3, cluster : 125, 163, pause = 267, multi core = 16, latency = 0, residency = 0, last core = 267, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   71.970357] -(7)[0:swapper/7]mtk_charger_alarm_timer_func: not suspend, wake up charger
+[   71.970591] (7)[300:charger_thread]get_battery_temperature:25
+[   71.972388] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d6, adc_result=4380
+[   71.972415] (7)[300:charger_thread]get_battery_voltage:4380
+[   71.972439] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   71.972825] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x461, adc_result=492
+[   71.972850] (7)[300:charger_thread]get_pmic_vbus vbus:4655
+[   71.972873] (7)[300:charger_thread]get_ibus: get ibus failed: -524
+[   71.973099] (7)[300:charger_thread]get_battery_current:121
+[   71.973121] (7)[300:charger_thread]get_uisoc:98
+[   71.973143] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   71.973163] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   71.973183] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   71.973206] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   71.973234] (7)[300:charger_thread]Vbat=4380 vbus:4655 ibus:0 I=121 T=25 uisoc:98 type:usb>usb pd:0
+[   71.973255] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   71.973275] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   71.973295] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   71.973317] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   71.973345] (7)[300:charger_thread]mtk_charger_start_timer: alarm timer start:0, 81 939650234
+[   71.973368] -(7)[300:charger_thread]alarmtimer_enqueue, 81939650234
+[   71.973404] (7)[300:charger_thread]is_battery_exist:1
+[   71.973436] (7)[300:charger_thread]is_battery_exist:1
+[   71.973466] (7)[300:charger_thread]is_battery_exist:1
+[   71.973489] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   71.973513] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   71.975274] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67e0, adc_result=4382
+[   71.975301] (7)[300:charger_thread]get_battery_voltage:4382
+[   71.975324] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   71.975345] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   71.975365] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   71.975387] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   71.975409] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   71.975785] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x465, adc_result=494
+[   71.975810] (7)[300:charger_thread]get_pmic_vbus vbus:4674
+[   71.975832] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   71.976214] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x465, adc_result=494
+[   71.976239] (7)[300:charger_thread]get_pmic_vbus vbus:4674
+[   71.976270] (7)[300:charger_thread]tmp:25 (jeita:0 sm:0 cv:0 en:0) (sm:1) en:1 c:0 s:0 ov:0 1 1
+[   71.976697] (7)[300:charger_thread][psc5425e_read_interface] Reg[0]=0x10
+[   71.976721] (7)[300:charger_thread][psc5425e_read_interface] val=0x1
+[   71.976743] (7)[300:charger_thread]chg_alg_set_current_limit
+[   71.976768] (7)[300:charger_thread]_pd_set_setting cv:4350000 icl:-1,-1 cc:-1,-1
+[   71.976789] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   71.976810] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   71.976832] (7)[300:charger_thread]support_fast_charging pd ret:ALG_TA_CHECKING
+[   71.976871] (7)[300:charger_thread]m:0 chg1:-1,-1,500,500 chg2:-1,-1,0,0 type:4:0 usb_unlimited:0 usbif:0 usbsm:0 aicl:-1 atm:0 bm:2 b:1
+[   71.976894] (7)[300:charger_thread]do_algorithm is_basic:1
+[   71.977679] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   71.977774] (7)[300:charger_thread]&&&&psc5425e_set_input_current register_value = 3
+[   71.979038] (7)[300:charger_thread][psc5425e_config_interface] write Reg[4]=0x6 from 0x6
+[   71.979080] (7)[300:charger_thread]&&&& psc5425e_set_current = 500000,register_value= 0
+[   71.979863] (7)[300:charger_thread][psc5425e_config_interface] write Reg[2]=0xb0 from 0xb0
+[   71.979889] (7)[300:charger_thread]&&&&psc5425e_set_cv_voltage cv reg value = 44
+[   71.979910] (7)[300:charger_thread]psc5425e enable state : 1
+[   71.980679] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   71.986169] (7)[300:charger_thread]charger_routine_thread end , 0
+[   72.446554] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   72.446578] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   72.446589] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   72.446600] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   72.446980] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[   72.446991] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[   72.447002] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[   72.447013] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[   75.086236] -(3)[0:swapper/3][name:spm&]Power/swap CNT(dpidle): [0] = (0), [1] = (0), [2] = (0), [3] = (0), [4] = (0), [5] = (0), [6] = (0), [7] = (0), 
+[   75.086249] -(3)[0:swapper/3][name:spm&]Power/swap dpidle_block_cnt: [BY_FRM] = 1675, 
+[   75.086262] -(3)[0:swapper/3][name:spm&]Power/swap dpidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, idle_pll_block_mask: 0x00000000\x0a
+[   75.086268] -(3)[0:swapper/3][name:spm&][resource_req_block] user: 0x4, 0x0
+[   75.934202] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   75.934300] (5)[0:swapper/5]mcdi cpu: 3, 3, 0, 119, 6, 168, 1, 24, cluster : 123, 174, pause = 298, multi core = 20, latency = 0, residency = 0, last core = 298, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   77.566471] -(3)[356:kworker/3:3]mt635x_auxadc_read_raw: 2 callbacks suppressed
+[   77.566489] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5ea, adc_result=665
+[   77.566521] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[   77.566532] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[   77.566542] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[   77.566553] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[   77.566933] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[   77.566947] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   77.566958] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   77.566968] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   77.566979] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   78.306447] (4)[125:watchdogd][wdtk] kick watchdog
+[   80.100288] -(5)[0:swapper/5][name:spm&]Power/swap CNT(soidle): [0] = (0), [1] = (0), [2] = (0), [3] = (0), [4] = (0), [5] = (0), [6] = (0), [7] = (0), 
+[   80.100309] -(5)[0:swapper/5][name:spm&]Power/swap soidle_block_cnt: [BY_FRM] = 1684, 
+[   80.100335] -(5)[0:swapper/5][name:spm&]Power/swap soidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, idle_pll_block_mask: 0x00000000\x0a
+[   80.100345] -(5)[0:swapper/5][name:spm&][resource_req_block] user: 0x4, 0x0
+[   80.705847] -(3)[0:swapper/3][thread:0] 2025-09-16 10:40:45.419054 UTC;android time 2025-09-16 10:40:45.419054
+[   80.938068] (3)[0:swapper/3][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   80.938127] (3)[0:swapper/3]mcdi cpu: 2, 2, 0, 120, 4, 174, 0, 0, cluster : 124, 177, pause = 274, multi core = 26, latency = 0, residency = 0, last core = 274, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   81.973671] -(7)[0:swapper/7]mtk_charger_alarm_timer_func: not suspend, wake up charger
+[   81.973904] (7)[300:charger_thread]get_battery_temperature:25
+[   81.975700] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67db, adc_result=4381
+[   81.975727] (7)[300:charger_thread]get_battery_voltage:4381
+[   81.975752] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   81.976128] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x466, adc_result=494
+[   81.976153] (7)[300:charger_thread]get_pmic_vbus vbus:4674
+[   81.976176] (7)[300:charger_thread]get_ibus: get ibus failed: -524
+[   81.976398] (7)[300:charger_thread]get_battery_current:113
+[   81.976421] (7)[300:charger_thread]get_uisoc:98
+[   81.976442] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   81.976463] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   81.976484] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   81.976506] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   81.976535] (7)[300:charger_thread]Vbat=4381 vbus:4674 ibus:0 I=113 T=25 uisoc:98 type:usb>usb pd:0
+[   81.976555] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   81.976575] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   81.976596] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   81.976617] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   81.976645] (7)[300:charger_thread]mtk_charger_start_timer: alarm timer start:0, 91 942951157
+[   81.976669] -(7)[300:charger_thread]alarmtimer_enqueue, 91942951157
+[   81.976705] (7)[300:charger_thread]is_battery_exist:1
+[   81.976737] (7)[300:charger_thread]is_battery_exist:1
+[   81.976767] (7)[300:charger_thread]is_battery_exist:1
+[   81.976790] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   81.976813] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   81.978576] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67dc, adc_result=4381
+[   81.978602] (7)[300:charger_thread]get_battery_voltage:4381
+[   81.978625] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   81.978646] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   81.978666] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   81.978688] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   81.978709] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   81.979083] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x460, adc_result=492
+[   81.979109] (7)[300:charger_thread]get_pmic_vbus vbus:4655
+[   81.979130] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   81.979514] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x45f, adc_result=491
+[   81.979538] (7)[300:charger_thread]get_pmic_vbus vbus:4645
+[   81.979569] (7)[300:charger_thread]tmp:25 (jeita:0 sm:0 cv:0 en:0) (sm:1) en:1 c:0 s:0 ov:0 1 1
+[   81.980046] (7)[300:charger_thread][psc5425e_read_interface] Reg[0]=0x10
+[   81.980070] (7)[300:charger_thread][psc5425e_read_interface] val=0x1
+[   81.980092] (7)[300:charger_thread]chg_alg_set_current_limit
+[   81.980117] (7)[300:charger_thread]_pd_set_setting cv:4350000 icl:-1,-1 cc:-1,-1
+[   81.980138] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   81.980159] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   81.980181] (7)[300:charger_thread]support_fast_charging pd ret:ALG_TA_CHECKING
+[   81.980221] (7)[300:charger_thread]m:0 chg1:-1,-1,500,500 chg2:-1,-1,0,0 type:4:0 usb_unlimited:0 usbif:0 usbsm:0 aicl:-1 atm:0 bm:2 b:1
+[   81.980244] (7)[300:charger_thread]do_algorithm is_basic:1
+[   81.981013] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   81.981037] (7)[300:charger_thread]&&&&psc5425e_set_input_current register_value = 3
+[   81.981818] (7)[300:charger_thread][psc5425e_config_interface] write Reg[4]=0x6 from 0x6
+[   81.981844] (7)[300:charger_thread]&&&& psc5425e_set_current = 500000,register_value= 0
+[   81.982617] (7)[300:charger_thread][psc5425e_config_interface] write Reg[2]=0xb0 from 0xb0
+[   81.982642] (7)[300:charger_thread]&&&&psc5425e_set_cv_voltage cv reg value = 44
+[   81.982665] (7)[300:charger_thread]psc5425e enable state : 1
+[   81.983417] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   81.988819] (7)[300:charger_thread]charger_routine_thread end , 0
+[   82.686472] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   82.686497] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   82.686508] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   82.686518] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   82.686900] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[   82.686912] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[   82.686922] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[   82.686933] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[   85.954071] (3)[0:swapper/3][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   85.954129] (3)[0:swapper/3]mcdi cpu: 3, 3, 0, 118, 3, 171, 0, 24, cluster : 124, 173, pause = 285, multi core = 29, latency = 0, residency = 0, last core = 285, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   87.806661] -(3)[356:kworker/3:3]mt635x_auxadc_read_raw: 2 callbacks suppressed
+[   87.806679] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5ea, adc_result=665
+[   87.806738] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[   87.806750] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[   87.806760] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[   87.806771] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[   87.807157] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[   87.807188] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   87.807199] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   87.807210] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   87.807221] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   87.809458] (4)[274:dlpt_notify_thr]mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x6784, adc_result=4367
+[   87.811403] (4)[274:dlpt_notify_thr]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67da, adc_result=4381
+[   87.811436] (4)[274:dlpt_notify_thr][PBM] [ma_to_mw] 4381(mV) * 5500(mA) = 24095(mW)
+[   87.811515] (4)[274:dlpt_notify_thr][DLPT_final] 5500,98,98,5500
+[   90.968803] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   90.968902] (5)[0:swapper/5]mcdi cpu: 16, 9, 5, 119, 13, 175, 7, 0, cluster : 132, 179, pause = 264, multi core = 30, latency = 0, residency = 0, last core = 264, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   91.976952] -(7)[0:swapper/7]mtk_charger_alarm_timer_func: not suspend, wake up charger
+[   91.977188] (7)[300:charger_thread]get_battery_temperature:25
+[   91.978981] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67da, adc_result=4381
+[   91.979009] (7)[300:charger_thread]get_battery_voltage:4381
+[   91.979034] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   91.979419] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x45e, adc_result=491
+[   91.979445] (7)[300:charger_thread]get_pmic_vbus vbus:4645
+[   91.979467] (7)[300:charger_thread]get_ibus: get ibus failed: -524
+[   91.979692] (7)[300:charger_thread]get_battery_current:125
+[   91.979714] (7)[300:charger_thread]get_uisoc:98
+[   91.979736] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   91.979756] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   91.979776] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   91.979799] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   91.979828] (7)[300:charger_thread]Vbat=4381 vbus:4645 ibus:0 I=125 T=25 uisoc:98 type:usb>usb pd:0
+[   91.979848] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   91.979868] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   91.979888] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   91.979910] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   91.979938] (7)[300:charger_thread]mtk_charger_start_timer: alarm timer start:0, 101 946243773
+[   91.979962] -(7)[300:charger_thread]alarmtimer_enqueue, 101946243773
+[   91.979998] (7)[300:charger_thread]is_battery_exist:1
+[   91.980030] (7)[300:charger_thread]is_battery_exist:1
+[   91.980061] (7)[300:charger_thread]is_battery_exist:1
+[   91.980083] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   91.980106] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   91.981875] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67dc, adc_result=4381
+[   91.981902] (7)[300:charger_thread]get_battery_voltage:4381
+[   91.981925] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[   91.981945] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[   91.981965] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[   91.981988] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[   91.982009] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   91.982387] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x462, adc_result=493
+[   91.982413] (7)[300:charger_thread]get_pmic_vbus vbus:4664
+[   91.982434] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[   91.982817] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x460, adc_result=492
+[   91.982842] (7)[300:charger_thread]get_pmic_vbus vbus:4655
+[   91.982873] (7)[300:charger_thread]tmp:25 (jeita:0 sm:0 cv:0 en:0) (sm:1) en:1 c:0 s:0 ov:0 1 1
+[   91.983413] (7)[300:charger_thread][psc5425e_read_interface] Reg[0]=0x10
+[   91.983437] (7)[300:charger_thread][psc5425e_read_interface] val=0x1
+[   91.983459] (7)[300:charger_thread]chg_alg_set_current_limit
+[   91.983483] (7)[300:charger_thread]_pd_set_setting cv:4350000 icl:-1,-1 cc:-1,-1
+[   91.983504] (7)[300:charger_thread]_pd_is_algo_ready 2
+[   91.983525] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[   91.983547] (7)[300:charger_thread]support_fast_charging pd ret:ALG_TA_CHECKING
+[   91.983587] (7)[300:charger_thread]m:0 chg1:-1,-1,500,500 chg2:-1,-1,0,0 type:4:0 usb_unlimited:0 usbif:0 usbsm:0 aicl:-1 atm:0 bm:2 b:1
+[   91.983609] (7)[300:charger_thread]do_algorithm is_basic:1
+[   91.984376] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   91.984401] (7)[300:charger_thread]&&&&psc5425e_set_input_current register_value = 3
+[   91.985169] (7)[300:charger_thread][psc5425e_config_interface] write Reg[4]=0x6 from 0x6
+[   91.985197] (7)[300:charger_thread]&&&& psc5425e_set_current = 500000,register_value= 0
+[   91.985976] (7)[300:charger_thread][psc5425e_config_interface] write Reg[2]=0xb0 from 0xb0
+[   91.986001] (7)[300:charger_thread]&&&&psc5425e_set_cv_voltage cv reg value = 44
+[   91.986023] (7)[300:charger_thread]psc5425e enable state : 1
+[   91.986770] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[   91.992276] (7)[300:charger_thread]charger_routine_thread end , 0
+[   92.927174] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   92.927199] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   92.927210] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   92.927221] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[   92.927596] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[   92.927608] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[   92.927618] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[   92.927629] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[   93.806933] (4)[125:watchdogd][wdtk] kick watchdog
+[   95.980468] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[   95.980566] (5)[0:swapper/5]mcdi cpu: 1, 3, 1, 118, 6, 173, 0, 24, cluster : 122, 179, pause = 290, multi core = 26, latency = 0, residency = 0, last core = 289, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[   98.046473] -(3)[356:kworker/3:3]mt635x_auxadc_read_raw: 2 callbacks suppressed
+[   98.046491] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5ea, adc_result=665
+[   98.046524] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[   98.046534] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[   98.046545] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[   98.046555] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[   98.046936] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[   98.046950] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[   98.046960] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[   98.046971] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[   98.046982] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[  100.076670] -(5)[0:swapper/5][name:spm&]Power/swap CNT(soidle3): [0] = (0), [1] = (0), [2] = (0), [3] = (0), [4] = (0), [5] = (0), [6] = (0), [7] = (0), 
+[  100.076692] -(5)[0:swapper/5][name:spm&]Power/swap soidle3_block_cnt: [BY_FRM] = 1674, 
+[  100.076718] -(5)[0:swapper/5][name:spm&]Power/swap soidle3_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, idle_pll_block_mask: 0x00000000\x0a
+[  100.076728] -(5)[0:swapper/5][name:spm&][resource_req_block] user: 0x4, 0x0
+[  100.705848] -(3)[0:swapper/3][thread:0] 2025-09-16 10:41:05.419055 UTC;android time 2025-09-16 10:41:05.419055
+[  100.990875] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[  100.990974] (5)[0:swapper/5]mcdi cpu: 14, 9, 3, 120, 11, 179, 8, 0, cluster : 132, 179, pause = 272, multi core = 24, latency = 0, residency = 0, last core = 272, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[  101.980257] -(7)[0:swapper/7]mtk_charger_alarm_timer_func: not suspend, wake up charger
+[  101.980493] (7)[300:charger_thread]get_battery_temperature:25
+[  101.982286] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d3, adc_result=4380
+[  101.982313] (7)[300:charger_thread]get_battery_voltage:4380
+[  101.982338] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[  101.982883] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x465, adc_result=494
+[  101.982909] (7)[300:charger_thread]get_pmic_vbus vbus:4674
+[  101.982931] (7)[300:charger_thread]get_ibus: get ibus failed: -524
+[  101.983143] (7)[300:charger_thread]get_battery_current:122
+[  101.983165] (7)[300:charger_thread]get_uisoc:98
+[  101.983187] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[  101.983207] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[  101.983227] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[  101.983250] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[  101.983278] (7)[300:charger_thread]Vbat=4380 vbus:4674 ibus:0 I=122 T=25 uisoc:98 type:usb>usb pd:0
+[  101.983299] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[  101.983319] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[  101.983339] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[  101.983361] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[  101.983390] (7)[300:charger_thread]mtk_charger_start_timer: alarm timer start:0, 111 949694774
+[  101.983413] -(7)[300:charger_thread]alarmtimer_enqueue, 111949694774
+[  101.983450] (7)[300:charger_thread]is_battery_exist:1
+[  101.983486] (7)[300:charger_thread]is_battery_exist:1
+[  101.983517] (7)[300:charger_thread]is_battery_exist:1
+[  101.983539] (7)[300:charger_thread]_pd_is_algo_ready 2
+[  101.983563] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[  101.985329] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d6, adc_result=4380
+[  101.985356] (7)[300:charger_thread]get_battery_voltage:4380
+[  101.985378] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[  101.985398] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[  101.985419] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[  101.985441] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[  101.985463] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[  101.985794] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x463, adc_result=493
+[  101.985820] (7)[300:charger_thread]get_pmic_vbus vbus:4664
+[  101.985842] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[  101.986225] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x463, adc_result=493
+[  101.986251] (7)[300:charger_thread]get_pmic_vbus vbus:4664
+[  101.986281] (7)[300:charger_thread]tmp:25 (jeita:0 sm:0 cv:0 en:0) (sm:1) en:1 c:0 s:0 ov:0 1 1
+[  101.986749] (7)[300:charger_thread][psc5425e_read_interface] Reg[0]=0x10
+[  101.986774] (7)[300:charger_thread][psc5425e_read_interface] val=0x1
+[  101.986796] (7)[300:charger_thread]chg_alg_set_current_limit
+[  101.986821] (7)[300:charger_thread]_pd_set_setting cv:4350000 icl:-1,-1 cc:-1,-1
+[  101.986842] (7)[300:charger_thread]_pd_is_algo_ready 2
+[  101.986863] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[  101.986885] (7)[300:charger_thread]support_fast_charging pd ret:ALG_TA_CHECKING
+[  101.986925] (7)[300:charger_thread]m:0 chg1:-1,-1,500,500 chg2:-1,-1,0,0 type:4:0 usb_unlimited:0 usbif:0 usbsm:0 aicl:-1 atm:0 bm:2 b:1
+[  101.986947] (7)[300:charger_thread]do_algorithm is_basic:1
+[  101.987712] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[  101.987737] (7)[300:charger_thread]&&&&psc5425e_set_input_current register_value = 3
+[  101.988514] (7)[300:charger_thread][psc5425e_config_interface] write Reg[4]=0x6 from 0x6
+[  101.988539] (7)[300:charger_thread]&&&& psc5425e_set_current = 500000,register_value= 0
+[  101.989315] (7)[300:charger_thread][psc5425e_config_interface] write Reg[2]=0xb0 from 0xb0
+[  101.989340] (7)[300:charger_thread]&&&&psc5425e_set_cv_voltage cv reg value = 44
+[  101.989363] (7)[300:charger_thread]psc5425e enable state : 1
+[  101.990075] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[  101.996328] (7)[300:charger_thread]charger_routine_thread end , 0
+[  103.166529] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[  103.166556] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[  103.166567] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[  103.166578] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[  103.166588] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[  103.166968] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5ea, adc_result=665
+[  103.166982] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[  103.166992] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[  103.167002] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[  103.167013] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[  105.087899] -(5)[0:swapper/5][name:spm&]Power/swap CNT(dpidle): [0] = (0), [1] = (0), [2] = (0), [3] = (0), [4] = (0), [5] = (0), [6] = (0), [7] = (0), 
+[  105.087921] -(5)[0:swapper/5][name:spm&]Power/swap dpidle_block_cnt: [BY_FRM] = 1675, 
+[  105.087947] -(5)[0:swapper/5][name:spm&]Power/swap dpidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, idle_pll_block_mask: 0x00000000\x0a
+[  105.087958] -(5)[0:swapper/5][name:spm&][resource_req_block] user: 0x4, 0x0
+[  106.001765] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[  106.001868] (5)[0:swapper/5]mcdi cpu: 21, 12, 1, 118, 16, 174, 12, 24, cluster : 139, 176, pause = 295, multi core = 29, latency = 0, residency = 0, last core = 295, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[  108.286466] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5eb, adc_result=665
+[  108.286494] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[  108.286505] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[  108.286516] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[  108.286527] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[  108.286919] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[  108.286934] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[  108.286944] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[  108.286955] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[  108.286965] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[  109.307426] (4)[125:watchdogd][wdtk] kick watchdog
+[  109.856041] (4)[274:dlpt_notify_thr]mt635x-auxadc mt635x-auxadc: name:BATADC, channel=0, adc_out=0x6781, adc_result=4366
+[  109.857956] (4)[274:dlpt_notify_thr]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67db, adc_result=4381
+[  109.857989] (4)[274:dlpt_notify_thr][PBM] [ma_to_mw] 4381(mV) * 5500(mA) = 24095(mW)
+[  109.858016] (4)[274:dlpt_notify_thr][DLPT_final] 5500,98,98,5500
+[  110.110228] -(3)[0:swapper/3][name:spm&]Power/swap CNT(soidle): [0] = (0), [1] = (0), [2] = (0), [3] = (0), [4] = (0), [5] = (0), [6] = (0), [7] = (0), 
+[  110.110240] -(3)[0:swapper/3][name:spm&]Power/swap soidle_block_cnt: [BY_FRM] = 1665, 
+[  110.110253] -(3)[0:swapper/3][name:spm&]Power/swap soidle_block_mask: 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000, idle_pll_block_mask: 0x00000000\x0a
+[  110.110259] -(3)[0:swapper/3][name:spm&][resource_req_block] user: 0x4, 0x0
+[  111.010723] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[  111.010823] (5)[0:swapper/5]mcdi cpu: 9, 7, 10, 119, 21, 163, 5, 0, cluster : 131, 166, pause = 265, multi core = 19, latency = 0, residency = 0, last core = 265, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[  111.983704] -(7)[0:swapper/7]mtk_charger_alarm_timer_func: not suspend, wake up charger
+[  111.983941] (7)[300:charger_thread]get_battery_temperature:25
+[  111.985823] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d6, adc_result=4380
+[  111.985851] (7)[300:charger_thread]get_battery_voltage:4380
+[  111.985876] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[  111.986255] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x45e, adc_result=491
+[  111.986281] (7)[300:charger_thread]get_pmic_vbus vbus:4645
+[  111.986304] (7)[300:charger_thread]get_ibus: get ibus failed: -524
+[  111.986529] (7)[300:charger_thread]get_battery_current:103
+[  111.986552] (7)[300:charger_thread]get_uisoc:98
+[  111.986574] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[  111.986594] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[  111.986615] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[  111.986637] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[  111.986665] (7)[300:charger_thread]Vbat=4380 vbus:4645 ibus:0 I=103 T=25 uisoc:98 type:usb>usb pd:0
+[  111.986686] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[  111.986706] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[  111.986726] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[  111.986748] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[  111.986776] (7)[300:charger_thread]mtk_charger_start_timer: alarm timer start:0, 121 953081313
+[  111.986799] -(7)[300:charger_thread]alarmtimer_enqueue, 121953081313
+[  111.986836] (7)[300:charger_thread]is_battery_exist:1
+[  111.986867] (7)[300:charger_thread]is_battery_exist:1
+[  111.986898] (7)[300:charger_thread]is_battery_exist:1
+[  111.986920] (7)[300:charger_thread]_pd_is_algo_ready 2
+[  111.986944] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[  111.988713] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67d8, adc_result=4380
+[  111.988740] (7)[300:charger_thread]get_battery_voltage:4380
+[  111.988763] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[  111.988783] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[  111.988803] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[  111.988825] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[  111.988847] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[  111.989222] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x462, adc_result=493
+[  111.989247] (7)[300:charger_thread]get_pmic_vbus vbus:4664
+[  111.989269] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[  111.989652] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x462, adc_result=493
+[  111.989677] (7)[300:charger_thread]get_pmic_vbus vbus:4664
+[  111.989771] (7)[300:charger_thread]tmp:25 (jeita:0 sm:0 cv:0 en:0) (sm:1) en:1 c:0 s:0 ov:0 1 1
+[  111.990195] (7)[300:charger_thread][psc5425e_read_interface] Reg[0]=0x10
+[  111.990220] (7)[300:charger_thread][psc5425e_read_interface] val=0x1
+[  111.990242] (7)[300:charger_thread]chg_alg_set_current_limit
+[  111.990267] (7)[300:charger_thread]_pd_set_setting cv:4350000 icl:-1,-1 cc:-1,-1
+[  111.990288] (7)[300:charger_thread]_pd_is_algo_ready 2
+[  111.990308] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[  111.990330] (7)[300:charger_thread]support_fast_charging pd ret:ALG_TA_CHECKING
+[  111.990370] (7)[300:charger_thread]m:0 chg1:-1,-1,500,500 chg2:-1,-1,0,0 type:4:0 usb_unlimited:0 usbif:0 usbsm:0 aicl:-1 atm:0 bm:2 b:1
+[  111.990392] (7)[300:charger_thread]do_algorithm is_basic:1
+[  111.991157] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[  111.991182] (7)[300:charger_thread]&&&&psc5425e_set_input_current register_value = 3
+[  111.991969] (7)[300:charger_thread][psc5425e_config_interface] write Reg[4]=0x6 from 0x6
+[  111.991996] (7)[300:charger_thread]&&&& psc5425e_set_current = 500000,register_value= 0
+[  111.993195] (7)[300:charger_thread][psc5425e_config_interface] write Reg[2]=0xb0 from 0xb0
+[  111.993236] (7)[300:charger_thread]&&&&psc5425e_set_cv_voltage cv reg value = 44
+[  111.993259] (7)[300:charger_thread]psc5425e enable state : 1
+[  111.994158] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[  111.999469] (7)[300:charger_thread]charger_routine_thread end , 0
+[  113.407778] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[  113.407807] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[  113.407818] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[  113.407829] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[  113.407839] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[  113.408217] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5eb, adc_result=665
+[  113.408231] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[  113.408242] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[  113.408252] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[  113.408262] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[  116.020173] (5)[0:swapper/5][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[  116.020271] (5)[0:swapper/5]mcdi cpu: 6, 3, 0, 117, 3, 160, 0, 24, cluster : 125, 161, pause = 285, multi core = 19, latency = 0, residency = 0, last core = 285, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[  118.526523] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5eb, adc_result=665
+[  118.526550] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[  118.526561] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[  118.526571] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[  118.526582] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[  118.526965] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[  118.526980] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[  118.526990] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[  118.527001] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[  118.527011] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[  120.705846] -(3)[0:swapper/3][thread:0] 2025-09-16 10:41:25.419053 UTC;android time 2025-09-16 10:41:25.419053
+[  121.022064] (3)[0:swapper/3][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[  121.022123] (3)[0:swapper/3]mcdi cpu: 8, 2, 0, 119, 20, 166, 10, 2, cluster : 126, 170, pause = 272, multi core = 22, latency = 0, residency = 0, last core = 272, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000
+[  121.854345] (5)[240:hang_detect][Hang_Detect] hang_detect thread counts down 2147483647:2147483647, status 0.
+[  121.987083] -(7)[0:swapper/7]mtk_charger_alarm_timer_func: not suspend, wake up charger
+[  121.987314] (7)[300:charger_thread]get_battery_temperature:25
+[  121.989120] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67dc, adc_result=4381
+[  121.989147] (7)[300:charger_thread]get_battery_voltage:4381
+[  121.989172] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[  121.989548] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x463, adc_result=493
+[  121.989573] (7)[300:charger_thread]get_pmic_vbus vbus:4664
+[  121.989595] (7)[300:charger_thread]get_ibus: get ibus failed: -524
+[  121.989982] (7)[300:charger_thread]get_battery_current:109
+[  121.990007] (7)[300:charger_thread]get_uisoc:98
+[  121.990030] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[  121.990050] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[  121.990071] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[  121.990093] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[  121.990122] (7)[300:charger_thread]Vbat=4381 vbus:4664 ibus:0 I=109 T=25 uisoc:98 type:usb>usb pd:0
+[  121.990142] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[  121.990163] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[  121.990183] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[  121.990205] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[  121.990233] (7)[300:charger_thread]mtk_charger_start_timer: alarm timer start:0, 131 956538544
+[  121.990257] -(7)[300:charger_thread]alarmtimer_enqueue, 131956538544
+[  121.990293] (7)[300:charger_thread]is_battery_exist:1
+[  121.990325] (7)[300:charger_thread]is_battery_exist:1
+[  121.990355] (7)[300:charger_thread]is_battery_exist:1
+[  121.990377] (7)[300:charger_thread]_pd_is_algo_ready 2
+[  121.990401] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[  121.992179] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:ISENSE, channel=0, adc_out=0x67da, adc_result=4381
+[  121.992205] (7)[300:charger_thread]get_battery_voltage:4381
+[  121.992228] (7)[300:charger_thread]psy_chr_type_get_property: prop:4
+[  121.992248] (7)[300:charger_thread]psy_chr_type_get_property: prop:58
+[  121.992269] (7)[300:charger_thread]psy_chr_type_get_property: prop:59
+[  121.992291] (7)[300:charger_thread]get_charger_type online:1 type:4 usb_type:1
+[  121.992313] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[  121.994107] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x464, adc_result=493
+[  121.994133] (7)[300:charger_thread]get_pmic_vbus vbus:4664
+[  121.994156] (7)[300:charger_thread]psy_chr_type_get_property: prop:12
+[  121.994530] (7)[300:charger_thread]mt635x-auxadc mt635x-auxadc: name:VCDT, channel=2, adc_out=0x465, adc_result=494
+[  121.994556] (7)[300:charger_thread]get_pmic_vbus vbus:4674
+[  121.994587] (7)[300:charger_thread]tmp:25 (jeita:0 sm:0 cv:0 en:0) (sm:1) en:1 c:0 s:0 ov:0 1 1
+[  121.995036] (7)[300:charger_thread][psc5425e_read_interface] Reg[0]=0x10
+[  121.995061] (7)[300:charger_thread][psc5425e_read_interface] val=0x1
+[  121.995083] (7)[300:charger_thread]chg_alg_set_current_limit
+[  121.995108] (7)[300:charger_thread]_pd_set_setting cv:4350000 icl:-1,-1 cc:-1,-1
+[  121.995129] (7)[300:charger_thread]_pd_is_algo_ready 2
+[  121.995150] (7)[300:charger_thread]pd_hal_is_pd_adapter_ready type:0
+[  121.995172] (7)[300:charger_thread]support_fast_charging pd ret:ALG_TA_CHECKING
+[  121.995212] (7)[300:charger_thread]m:0 chg1:-1,-1,500,500 chg2:-1,-1,0,0 type:4:0 usb_unlimited:0 usbif:0 usbsm:0 aicl:-1 atm:0 bm:2 b:1
+[  121.995234] (7)[300:charger_thread]do_algorithm is_basic:1
+[  121.996019] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[  121.996044] (7)[300:charger_thread]&&&&psc5425e_set_input_current register_value = 3
+[  121.996801] (7)[300:charger_thread][psc5425e_config_interface] write Reg[4]=0x6 from 0x6
+[  121.996828] (7)[300:charger_thread]&&&& psc5425e_set_current = 500000,register_value= 0
+[  121.997601] (7)[300:charger_thread][psc5425e_config_interface] write Reg[2]=0xb0 from 0xb0
+[  121.997626] (7)[300:charger_thread]&&&&psc5425e_set_cv_voltage cv reg value = 44
+[  121.997648] (7)[300:charger_thread]psc5425e enable state : 1
+[  121.998510] (7)[300:charger_thread][psc5425e_config_interface] write Reg[1]=0xf8 from 0xf8
+[  122.003911] (7)[300:charger_thread]charger_routine_thread end , 0
+[  122.798945] (7)[326:recovery]mtk_leds backlight_debug_log(119) :[BL] Set Backlight directly T:122.798,L:63 map:63    
+[  122.798980] (7)[326:recovery][PWM] disp_pwm_set_backlight_cmdq: (id = 0x1, level_1024 = 253), old = 509
+[  122.799039] (7)[326:recovery][PWM] disp_pwm_backlight_status: backlight is on (253), power:(1), pwm id: (0)
+[  122.799600] (7)[326:recovery]state_show CONFIGURED
+[  123.646473] (3)[270:kworker/3:2]mt635x-auxadc mt635x-auxadc: name:VCORE_TEMP, channel=4, adc_out=0x5f0, adc_result=667
+[  123.646502] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] 667, 390039, 1000000, -1863
+[  123.646513] (3)[270:kworker/3:2][Thermal/TZ/PMIC] [tsbuck1_raw_to_temp] t_current=32015
+[  123.646523] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp raw=667 T=32015
+[  123.646534] (3)[270:kworker/3:2][Thermal/TZ/PMIC] mt6357tsbuck1_get_hw_temp pre_tsbuck1_temp1=32015
+[  123.646914] (3)[356:kworker/3:3]mt635x-auxadc mt635x-auxadc: name:VPROC_TEMP, channel=4, adc_out=0x5eb, adc_result=665
+[  123.646929] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] 665, 390576, 1000000, -1863
+[  123.646939] (3)[356:kworker/3:3][Thermal/TZ/PMIC] [tsbuck2_raw_to_temp] t_current=33625
+[  123.646949] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp raw=665 T=33625
+[  123.646960] (3)[356:kworker/3:3][Thermal/TZ/PMIC] mt6357tsbuck2_get_hw_temp pre_tsbuck2_temp1=33625
+[  124.807896] (4)[125:watchdogd][wdtk] kick watchdog
+[  124.925971] (2)[0:swapper/2][mtk_net][rtnl_lock]There is no process hold rtnl lock
+[  126.023793] (1)[0:swapper/1][name:spm&]Power/swap DP: No enter --- SODI3: No enter --- SODI: No enter --- 
+[  126.023836] (1)[0:swapper/1]mcdi cpu: 11, 4, 3, 117, 10, 179, 11, 26, cluster : 132, 187, pause = 297, multi core = 41, latency = 0, residency = 0, last core = 296, avail cpu = 00ff, cluster = 0003, enabled = 1, max_s_state = 5, system_idle_hint = 00000000

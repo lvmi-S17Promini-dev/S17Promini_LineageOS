@@ -1,0 +1,38 @@
+{
+  "output": "/home/dengxh/android3/lineage/out/target/product/S17Promini/lineage-19.1-S17Promini.zip",
+  "sha256": "2264bb9065710c1fc33311488785afe727e3f9dc64b819e67451c0952c6de0ff",
+  "size": 1142214364,
+  "dynamic_sizes": {
+    "system": 2107789312,
+    "vendor": 1427996672
+  },
+  "preserved": [
+    "product",
+    "userdata",
+    "LK",
+    "dtbo",
+    "firmware partitions"
+  ],
+  "inputs": {
+    "system": {
+      "path": "/home/dengxh/android3/lineage/out/target/product/S17Promini/system.img",
+      "sha256": "4674c69da7778d7f582d140c62376d1d047048dbbdd3016c04179eb21922e26b"
+    },
+    "vendor": {
+      "path": "/home/dengxh/android3/lineage/out/target/product/S17Promini/vendor.img",
+      "sha256": "7f2411ff41dbaf2dfa7b6a8fa56ebc79baee5ce115908e48b2fb7c30021b4af4"
+    },
+    "boot": {
+      "path": "/home/dengxh/android3/lineage/out/target/product/S17Promini/boot.img",
+      "sha256": "f3da42d23bc3283e99614ad43e80e5f0f15c68a4dc849adcc3db1323055b07d4"
+    },
+    "vbmeta": {
+      "path": "/home/dengxh/android3/lineage/out/target/product/S17Promini/vbmeta.img",
+      "sha256": "9412f577c776e30f7f28dd10e71bc6f1491ddc1eaf3a06f97d9243feaec62d1e"
+    },
+    "recovery": {
+      "path": "/home/dengxh/android3/lineage/device/lvmi/S17Promini/prebuilt/recovery.img",
+      "sha256": "5a2801235d740ff6d02aae0bd17c5e775e3984bf2b5900a985afa312aa827e43"
+    }
+  }
+}

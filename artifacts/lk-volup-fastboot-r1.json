@@ -1,0 +1,46 @@
+{
+  "stock_sha256": "a745cfc9f513aba14bf461f90253e0824a778172621868f53b4d4ac01b6d7864",
+  "output_sha256": "866ab08f07075bb56d413f6d08373f8ff5a1d3541f8a8cf63ba61e115963d9d2",
+  "image_size": 1048576,
+  "code_patch_bytes": 28,
+  "actual_changed_bytes": 313,
+  "ranges": [
+    {
+      "file_offset": "0x3a6a",
+      "virtual_address": "0x4800386a",
+      "size": 4,
+      "before": "01f085f9",
+      "after": "00f042b8"
+    },
+    {
+      "file_offset": "0x3af0",
+      "virtual_address": "0x480038f0",
+      "size": 24,
+      "before": "40f004fa04462148784424f07dfb204640f0fcf93128fad9",
+      "after": "0ae0112001f0faf810b163232b60f8bd01f03af9fff7b3bf"
+    },
+    {
+      "file_offset": "0xaeda3",
+      "size": 32,
+      "purpose": "LK cert2 payload SHA256"
+    },
+    {
+      "file_offset": "0xaee86",
+      "size": 256,
+      "purpose": "LK cert2 RSA-PSS signature"
+    }
+  ],
+  "key_hw_code": 17,
+  "key_evidence": "stock LK unlock affirmative branch",
+  "root_spki_sha256": "edf343d880317d38c6cd9ba2ab77505156045024cd6cfdb0a7addda997bebe68",
+  "image_spki_sha256": "051e3c5a1d927b9c756a339e62ed04124d9e3f54246c66fb3202ecffeae26a87",
+  "signature_scheme": "RSA-PSS/SHA256/MGF1-SHA256, 32-byte salt",
+  "cert1_original_signature_verified": true,
+  "stock_cert2_signature_verified": true,
+  "modified_cert2_signature_verified": true,
+  "header_hash_verified": true,
+  "payload_hash_verified": true,
+  "dtb_and_dtb_certificates_unchanged": true,
+  "hardware_validated": false,
+  "remaining": "Actual preloader acceptance and cold-boot Volume UP test not performed"
+}

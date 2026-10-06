@@ -1,0 +1,117 @@
+6,37,0,-;-(0)[0:swapper]mem auto-init: stack:off, heap alloc:off, heap free:off
+6,135,76069,-; (0)[1:swapper/0]dfd_init: Latch offset is 0x48
+6,136,76133,-; (0)[1:swapper/0]dfd_init: get topdbg base success
+5,162,86825,-; (0)[1:swapper/0][Power/PPM] @ppm_main_data_init: done!
+6,173,87107,-; (0)[1:swapper/0]mrdump_hw_init: init_done.
+5,178,87156,-; (0)[1:swapper/0]mrdump_hw_init: DFD enabled
+5,179,89619,-; (0)[1:swapper/0]mrdump_cblock_init: done.
+6,183,89760,-; (0)[1:swapper/0]mrdump_full_init: MT-RAMDUMP enabled done
+6,652,260288,-; (0)[1:swapper/0][CONN-MD-DFT][I]conn_md_init:init message queue list succeed
+6,653,260296,-; (0)[1:swapper/0][CONN-MD-DFT][I]conn_md_init:init active queue list succeed
+6,654,260302,-; (0)[1:swapper/0][CONN-MD-DFT][I]conn_md_init:init user information list succeed
+6,655,260325,-; (0)[1:swapper/0][CONN_MD_DMP][I]conn_md_dmp_init:alloc msg_log memory done, size:0x00000428
+6,656,260332,-; (0)[1:swapper/0][CONN-MD-DFT][I]conn_md_init:conn_md_dmp_init succeed
+6,657,260403,-; (0)[1:swapper/0][CONN-MD-DFT][I]conn_md_init:create conn_md_thread succeed, wakeup it
+6,666,260782,-; (0)[1:swapper/0][M4U] m4u_pte_allocator_init: gM4u_pte_kmem = 0x(____ptrval____), IMU_BYTES_PER_PTE = 1024
+6,786,437613,-; (0)[1:swapper/0][GPU/FREQ][INFO]@__mt_gpufreq_init: start to initialize gpufreq driver
+6,787,438144,-; (0)[1:swapper/0][GPU/GED][INFO]@ged_init: start to initialize ged driver
+6,788,438542,-; (0)[1:swapper/0][GPU/GED][INFO]@ged_init: ged driver init done
+5,817,456434,-; (3)[1:swapper/0][Power/PPM] @ppm_dlpt_policy_init: register PPM_POLICY_DLPT done!
+5,818,456458,-; (3)[1:swapper/0][Power/PPM] @ppm_sysboost_policy_init: register PPM_POLICY_SYS_BOOST done!
+5,819,456467,-; (3)[1:swapper/0][Power/PPM] @ppm_ptpod_policy_init: register PPM_POLICY_PTPOD done!
+5,823,456493,-; (3)[1:swapper/0][Power/PPM] @ppm_pwrthro_policy_init: register PPM_POLICY_PWR_THRO done!
+5,824,456504,-; (3)[1:swapper/0][Power/PPM] @ppm_thermal_policy_init: register PPM_POLICY_THERMAL done!
+5,825,456519,-; (3)[1:swapper/0][Power/PPM] @ppm_hard_userlimit_policy_init: register PPM_POLICY_HARD_USER_LIMIT done!
+5,826,456535,-; (3)[1:swapper/0][Power/PPM] @ppm_userlimit_policy_init: register PPM_POLICY_USER_LIMIT done!
+5,827,456545,-; (3)[1:swapper/0][Power/PPM] @ppm_forcelimit_policy_init: register PPM_POLICY_FORCE_LIMIT done!
+5,828,456556,-; (3)[1:swapper/0][Power/PPM] @ppm_ut_policy_init: register PPM_POLICY_UT done!
+6,841,463425,-; (2)[1:swapper/0][TMEM]trusted_mem_init:301
+6,861,463746,-; (2)[1:swapper/0][TMEM]trusted_mem_subsys_init:243
+6,862,463752,-; (2)[1:swapper/0][TMEM]trusted_mem_subsys_init:254 (end)
+6,863,463759,-; (2)[1:swapper/0][TMEM]mtee_mchunks_init:228 (1)
+6,867,463928,-; (2)[1:swapper/0][TMEM]mtee_mchunks_init:244 (end)
+6,868,463934,-; (2)[1:swapper/0]tmem_mpu_vio_init:114 vio checker is not registered!
+6,869,463949,-; (2)[1:swapper/0][TMEM]trusted_mem_init:326 (end)
+6,1069,496563,-; (2)[1:swapper/0]MTK-BTIF[I]BTIF_init:p_btif_buffer get memory 0x00000000acaaf4e3
+6,1070,496571,-; (2)[1:swapper/0]MTK-BTIF[I]BTIF_init:p_tx_queue get memory 0x000000000fbb8aba
+6,1071,496578,-; (2)[1:swapper/0]MTK-BTIF[I]BTIF_init:p_rx_queue get memory 0x0000000025d6b314
+6,1079,496754,-; (2)[1:swapper/0]MTK-BTIF[I]_btif_vfifo_init:alloc vFIFO succeed in arch64,vir addr:0x0000000047ccfeff,phy addr:0xff000000
+6,1083,496795,-; (2)[1:swapper/0]MTK-BTIF[I]_btif_vfifo_init:alloc vFIFO succeed in arch64,vir addr:0x00000000dc9a08d7,phy addr:0xff002000
+6,1084,496898,-; (2)[1:swapper/0]MTK-BTIF[I]_btif_rx_btm_init:set RT to workqueue succeed
+6,1086,496920,-; (2)[1:swapper/0]MTK-BTIF[I]_btif_rx_btm_init:btif_rxd start to work!
+6,1087,496930,-; (2)[1:swapper/0]MTK-BTIF[I]_btif_rx_btm_init:rx_spin_lock init succeed
+6,1088,496937,-; (2)[1:swapper/0]MTK-BTIF[I]_btif_tx_ctx_init:nothing is done when btif tx in user's thread
+6,1089,496943,-; (2)[1:swapper/0]MTK-BTIF[I]_btif_tx_ctx_init:succeed
+5,1287,507998,-; (2)[1:swapper/0][Thermal/TZ/PMIC] [mtktspmic_init:768]
+4,1632,574841,-; (0)[1:swapper/0][AXS]tpd_driver_init: Enter
+4,1633,574846,-; (0)[1:swapper/0][AXS]tpd_driver_init:Driver version: V2.2.4
+4,1634,575282,-; (0)[1:swapper/0][AXS]tpd_driver_init:tpd max touch num:5
+4,1635,575289,-; (0)[1:swapper/0][AXS]tpd_driver_init: Exit(2028)
+6,1646,578200,-; (0)[1:swapper/0]mt_i2c_init: driver as platform device
+4,1789,587677,-; (0)[1:swapper/0]charging_hw_init: psc5425e hw_init down!
+6,1981,641372,-; (0)[1:swapper/0][GPU/PVR][INFO]@pvr_init: start to initialize pvrsrvkm driver
+5,2284,690129,-; (0)[53:kworker/0:1][BAT_probe] battery_psy_init: fail to get chg_psy !!
+5,2774,720699,-; (0)[1:swapper/0][Power/PPM] @ppm_lcmoff_policy_init: register PPM_POLICY_LCM_OFF done!
+4,3707,786684,-; (7)[239:kworker/u16:3][AXS]tpd_local_init: Enter
+4,3712,786769,-; (7)[239:kworker/u16:3][AXS]axs_platform_data_init:max touch number:5,resolution:(0,0)~(384,854)
+4,3714,787247,-; (7)[239:kworker/u16:3][AXS]axs_ts_hw_init:irq:122
+14,3753,801105,-; (2)[1:init.stock]init: init first stage started!
+14,3754,801253,-; (2)[1:init.stock]init: Unable to open /lib/modules, skipping module loading.
+14,3765,801453,-; (2)[1:init.stock]init: Copied ramdisk prop to /second_stage_resources/system/etc/ramdisk/build.prop
+14,3776,801752,-; (2)[1:init.stock]init: [libfs_mgr]ReadFstabFromDt(): failed to read fstab from dt
+14,3777,802678,-; (2)[1:init.stock]init: Using Android DT directory /proc/device-tree/firmware/android/
+5,3779,809176,-; (7)[122:pd_dbg_info]<    0.794>TCPC-TYPEC:typec_init: TrySNK\x0a<    0.794>TCPC-TYPEC:** Unattached.SNK
+14,3830,830477,-; (0)[1:init.stock]init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/by-name/md_udc
+14,3831,830542,-; (0)[1:init.stock]init: [libfs_mgr]Filesystem on /dev/block/by-name/md_udc was not cleanly shutdown; state flags: 0x1, incompat feature flags: 0x46
+14,3835,834866,-; (0)[1:init.stock]init: [libfs_mgr]check_fs(): mount(/dev/block/by-name/md_udc,/metadata,ext4)=0: Success
+14,3837,865076,-; (1)[1:init.stock]init: [libfs_mgr]check_fs(): unmount(/metadata) succeeded
+14,3838,865268,-; (1)[1:init.stock]init: [libfs_mgr]Not running /system/bin/e2fsck on /dev/block/mmcblk0p10 (executable not in system image)
+14,3840,869644,-; (1)[1:init.stock]init: [libfs_mgr]__mount(source=/dev/block/by-name/md_udc,target=/metadata,type=ext4)=0: Success
+11,3841,870069,-; (1)[1:init.stock]init: Failed to copy /avb into /metadata/gsi/dsu/avb/: No such file or directory
+14,3842,872548,-; (1)[1:init.stock]init: [libfs_mgr]Created logical partition product on device /dev/block/dm-0
+14,3843,873244,-; (1)[1:init.stock]init: [libfs_mgr]Created logical partition system on device /dev/block/dm-1
+14,3844,873756,-; (0)[1:init.stock]init: [libfs_mgr]Created logical partition vendor on device /dev/block/dm-2
+14,3845,873794,-; (0)[1:init.stock]init: DSU not detected, proceeding with normal boot
+11,3846,876448,-; (1)[1:init.stock]init: [libfs_avb]Invalid hash size: 
+11,3847,876472,-; (1)[1:init.stock]init: [libfs_avb]Failed to verify vbmeta digest
+14,3848,876485,-; (1)[1:init.stock]init: [libfs_avb]Returning avb_handle with status: VerificationDisabled
+11,3849,876501,-; (1)[1:init.stock]init: Top-level vbmeta is disabled, skip Hashtree setup for /system
+14,3850,877308,-; (0)[1:init.stock]init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/dm-1
+14,3852,881411,-; (0)[1:init.stock]init: [libfs_mgr]__mount(source=/dev/block/dm-1,target=/system,type=ext4)=0: Success
+14,3853,881762,-; (0)[1:init.stock]init: Switching root to '/system'
+14,3854,889982,-; (1)[1:init.stock]init: [libfs_mgr]Skip mounting mountpoint: /system_ext
+14,3855,890005,-; (1)[1:init.stock]init: [libfs_mgr]Skip mounting mountpoint: /product
+14,3858,893387,-; (1)[1:init.stock]init: [libfs_avb]AVB HASHTREE disabled on: /vendor
+14,3859,894269,-; (1)[1:init.stock]init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/dm-2
+14,3862,898658,-; (1)[1:init.stock]init: [libfs_mgr]__mount(source=/dev/block/dm-2,target=/vendor,type=ext4)=0: Success
+14,3863,900564,-; (3)[1:init.stock]init: Skipped setting INIT_AVB_VERSION (not in recovery mode)
+4,3866,933419,-; (4)[239:kworker/u16:3][AXS]axs_bus_init: Enter
+4,3867,933436,-; (4)[239:kworker/u16:3][AXS]axs_bus_init: Exit(324)
+4,3870,933870,-; (4)[239:kworker/u16:3][AXS]axs_fwupg_init:function begin
+4,3871,933899,-; (4)[239:kworker/u16:3][AXS]axs_fwupg_init:function end
+4,3890,934388,-; (4)[239:kworker/u16:3][AXS]tpd_local_init: Exit(1706)
+4,3897,936668,-; (6)[7:kworker/u16:0][AXS]axs_fwupg_flash_init:axs_fwupg_flash_init begin
+4,3903,951562,-; (5)[7:kworker/u16:0][AXS]axs_fwupg_flash_init:axs_fwupg_flash_init end
+12,3943,1100555,-; (4)[1:init]init: [libfs_mgr]Warning: unknown flag: resize
+12,3945,1102141,-; (4)[1:init]init: DM_DEV_STATUS failed for system_ext: No such device or address
+11,3946,1102176,-; (4)[1:init]init: Could not update logical partition
+14,3947,1102536,-; (4)[1:init]init: [libfs_mgr]Skip mounting mountpoint: /product
+14,3948,1102578,-; (4)[1:init]init: Opening SELinux policy
+14,3951,1110664,-; (4)[1:init]init: /system/etc/selinux/plat_sepolicy_and_mapping.sha256 and /vendor/etc/selinux/precompiled_sepolicy.plat_sepolicy_and_mapping.sha256 differ
+14,3952,1110696,-; (4)[1:init]init: Compiling SELinux policy
+11,4343,3952204,-; (4)[1:init]init: /system/bin/secilc: linker: Warning: failed to find generated linker configuration from "/linkerconfig/ld.config.txt"
+11,4344,3952311,-; (4)[1:init]init: /system/bin/secilc: WARNING: linker: Warning: failed to find generated linker configuration from "/linkerconfig/ld.config.txt"
+11,4345,3952394,-; (4)[1:init]init: /system/bin/secilc: Problems processing genfscon rules
+11,4346,3952457,-; (4)[1:init]init: /system/bin/secilc: Failed post db handling
+11,4347,3952521,-; (4)[1:init]init: /system/bin/secilc: Failed to compile cildb: -1
+11,4348,3952788,-; (4)[1:init]init: /system/bin/secilc exited with status 255
+10,4349,3952989,-; (4)[1:init]init: Unable to open SELinux policy
+11,4350,3955064,-; (4)[1:init]init: InitFatalReboot: signal 6
+11,4351,3977850,-; (4)[1:init]init: #00 pc 0000000000126590  /system/bin/init (android::init::InitFatalReboot(int)+104)
+11,4352,3977933,-; (4)[1:init]init: #01 pc 00000000000bd894  /system/bin/init (android::init::InitAborter(char const*)+48)
+11,4353,3978016,-; (4)[1:init]init: #02 pc 000000000001595c  /system/lib64/libbase.so (android::base::SetAborter(std::__1::function<void (char const*)>&&)::$_3::__invoke(char const*)+76)
+11,4354,3978081,-; (4)[1:init]init: #03 pc 0000000000014f8c  /system/lib64/libbase.so (android::base::LogMessage::~LogMessage()+364)
+11,4355,3978139,-; (4)[1:init]init: #04 pc 000000000012aee0  /system/bin/init (android::init::SetupSelinux(char**)+1772)
+11,4356,3978194,-; (4)[1:init]init: #05 pc 00000000000ab180  /system/bin/init (main+288)
+11,4357,3978246,-; (4)[1:init]init: #06 pc 0000000000048784  /system/lib64/bootstrap/libc.so (__libc_init+96)
+14,4358,3978283,-; (4)[1:init]init: Reboot ending, jumping to kernel

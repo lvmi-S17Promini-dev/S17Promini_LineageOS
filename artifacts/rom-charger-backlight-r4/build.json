@@ -1,0 +1,14 @@
+{
+  "change": "Set LCD brightness group-write permission before charger starts",
+  "device_validation": "Temporary chmod on r3 confirmed automatic backlight off; r4 cold-start pending",
+  "files": {
+    "system.img": {
+      "size": 1977680368,
+      "sha256": "352a443433540a085e87f72c489b061efdf7a79fd277074b5ebb94c935b5eadf"
+    },
+    "vbmeta.img": {
+      "size": 4096,
+      "sha256": "840401b97bfbe2e569510fa873738f0adb8b67e2feff767ed40a4e5cbe454408"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+Removing 175 files; retaining 1875 blobs and stock symlinks
+{
+  "stock_vendor": "/home/dengxh/S17Promini_LineageOS/extracted/super/vendor.img",
+  "output": "/home/dengxh/android3/lineage/vendor/lvmi/S17Promini/proprietary/vendor.img",
+  "removed_files": 175,
+  "retained_files": 1875,
+  "symlinks": 188,
+  "filesystem_size": 1208631296,
+  "expanded_image_size": 1427996672,
+  "sparse_image_size": 1221694332,
+  "sha256": "7f96a5ca8ac16957df39933a1b6c62bf329720f12263f32929bd3063cf2f9fe3",
+  "checks": [
+    "retained inode metadata",
+    "sample extended attributes",
+    "ext4 e2fsck",
+    "AVB hashtree verification"
+  ]
+}

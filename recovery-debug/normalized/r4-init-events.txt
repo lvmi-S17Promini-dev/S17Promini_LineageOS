@@ -1,0 +1,66 @@
+[    0.994904] (6)[7:kworker/u16:0][AXS]tpd_local_init: Enter
+[    0.994980] (6)[7:kworker/u16:0][AXS]axs_platform_data_init:max touch number:5,resolution:(0,0)~(384,854)
+[    0.995374] (6)[7:kworker/u16:0][AXS]axs_ts_hw_init:irq:122
+[    1.005749] (6)[122:pd_dbg_info]<    1.002>TCPC-TYPEC:typec_init: TrySNK\x0a<    1.002>TCPC-TYPEC:** Unattached.SNK
+[    1.071603] (0)[1:init]init: init first stage started!
+[    1.071696] (0)[1:init]init: Unable to open /lib/modules, skipping module loading.
+[    1.071730] (0)[1:init]init: First stage mount skipped (recovery mode)
+[    1.072023] (0)[1:init]init: [libfs_mgr]ReadFstabFromDt(): failed to read fstab from dt
+[    1.072339] (0)[1:init]init: Using Android DT directory /proc/device-tree/firmware/android/
+[    1.072375] (0)[1:init]init: Skipped setting INIT_AVB_VERSION (not vbmeta compatible)
+[    1.114900] (1)[1:init]init: Failed to open device-mapper: No such file or directory
+[    1.114942] (1)[1:init]init: DM_DEV_STATUS failed for system_ext: Bad file descriptor
+[    1.114954] (1)[1:init]init: Could not update logical partition
+[    1.115151] (1)[1:init]init: DM_DEV_STATUS failed for product: Bad file descriptor
+[    1.115163] (1)[1:init]init: Could not update logical partition
+[    1.115208] (1)[1:init]init: Opening SELinux policy
+[    1.116939] (1)[1:init]init: Loading SELinux policy
+[    1.142469] (7)[7:kworker/u16:0][AXS]axs_bus_init: Enter
+[    1.142509] (7)[7:kworker/u16:0][AXS]axs_bus_init: Exit(324)
+[    1.142922] (7)[7:kworker/u16:0][AXS]axs_fwupg_init:function begin
+[    1.142945] (7)[7:kworker/u16:0][AXS]axs_fwupg_init:function end
+[    1.143308] (7)[7:kworker/u16:0][AXS]tpd_local_init: Exit(1706)
+[    1.145715] (6)[236:kworker/u16:2][AXS]axs_fwupg_flash_init:axs_fwupg_flash_init begin
+[    1.160329] (6)[236:kworker/u16:2][AXS]axs_fwupg_flash_init:axs_fwupg_flash_init end
+[    1.250004] (1)[1:init]init: init second stage started!
+[    1.311692] (0)[1:init]init: Using Android DT directory /proc/device-tree/firmware/android/
+[    1.312724] (0)[1:init]init: Init cannot set 'ro.boot.hardware' to 'mt6765': Read-only property was already set
+[    1.312776] (0)[1:init]init: Init cannot set 'ro.boot.hardware' to 'mt6765': Read-only property was already set
+[    1.312873] (0)[1:init]init: Init cannot set 'ro.boot.serialno' to '0123456789ABCDEF': Read-only property was already set
+[    1.315644] (0)[1:init]init: Overriding previous property 'ro.config.notification_sound':'OnTheHunt.ogg' with new value 'Argon.ogg'
+[    1.315671] (0)[1:init]init: Overriding previous property 'ro.config.alarm_alert':'Alarm_Classic.ogg' with new value 'Hassium.ogg'
+[    1.315699] (0)[1:init]init: Overriding previous property 'ro.config.ringtone':'Ring_Synth_04.ogg' with new value 'Orion.ogg'
+[    1.315881] (0)[1:init]init: Couldn't load property file '/system/build.prop': open() failed: No such file or directory: No such file or directory
+[    1.315918] (0)[1:init]init: Couldn't load property file '/system_ext/etc/build.prop': open() failed: No such file or directory: No such file or directory
+[    1.361641] (6)[52:kauditd]audit: type=1400 audit(1757992071.084:3): avc:  denied  { read } for  pid=312 comm="init" name="bin" dev="rootfs" ino=7573 scontext=u:r:vendor_init:s0 tcontext=u:object_r:rootfs:s0 tclass=dir permissive=0
+[    1.412039] (6)[52:kauditd]audit: type=1400 audit(1757992071.136:4): avc:  denied  { sys_nice } for  pid=313 comm="ueventd" capability=23  scontext=u:r:ueventd:s0 tcontext=u:r:ueventd:s0 tclass=capability permissive=0
+[    1.412232] (2)[313:ueventd]ueventd: ueventd started!
+[    1.414785] (2)[313:ueventd]ueventd: Parsing file /system/etc/ueventd.rc...
+[    1.414844] (2)[313:ueventd]ueventd: Added '/vendor/etc/ueventd.rc' to import list
+[    1.414860] (2)[313:ueventd]ueventd: Added '/odm/etc/ueventd.rc' to import list
+[    1.415152] (2)[313:ueventd]ueventd: Parsing file /vendor/etc/ueventd.rc...
+[    1.415180] (2)[313:ueventd]ueventd: Unable to read config file '/vendor/etc/ueventd.rc': open() failed: No such file or directory
+[    1.415204] (2)[313:ueventd]ueventd: Parsing file /odm/etc/ueventd.rc...
+[    1.415228] (2)[313:ueventd]ueventd: Unable to read config file '/odm/etc/ueventd.rc': open() failed: No such file or directory
+[    1.663869] (6)[52:kauditd]audit: type=1400 audit(1757992071.388:5): avc:  denied  { write } for  pid=1 comm="init" name="cmode" dev="sysfs" ino=27270 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[    1.680573] (6)[52:kauditd]audit: type=1400 audit(1757992071.404:6): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33804 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[    1.680633] (6)[52:kauditd]audit: type=1400 audit(1757992071.404:7): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33741 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[    1.680690] (6)[52:kauditd]audit: type=1400 audit(1757992071.404:8): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=34567 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[    1.680784] (6)[52:kauditd]audit: type=1400 audit(1757992071.404:9): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=35527 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[    1.680823] (6)[52:kauditd]audit: type=1400 audit(1757992071.404:10): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=35461 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[    1.681275] (1)[324:charger]HealthLoop: wakealarm_init: timerfd_create failed
+[    6.718970] (4)[1:init]init: starting service 'adbd'...
+[    6.720433] (4)[1:init]init: Created socket '/dev/socket/adbd', mode 660, user 1000, group 1000
+[    6.725067] (0)[350:init]init: cpuset cgroup controller is not mounted!
+[    6.777364] (6)[1:init]init: processing action (sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1) from (/system/etc/init/hw/init.rc:191)
+[    6.779101] (6)[1:init]init: Command 'symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f1' action=sys.usb.config=adb && sys.usb.configfs=1 && sys.usb.ffs.ready=1 (/system/etc/init/hw/init.rc:194) took 0ms and failed: symlink() failed: File exists
+[   10.861796] (7)[52:kauditd]audit: type=1400 audit(1757992080.584:526): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33804 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.861841] (7)[52:kauditd]audit: type=1400 audit(1757992080.588:527): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33741 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.862001] (7)[52:kauditd]audit: type=1400 audit(1757992080.588:528): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=34567 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.862163] (7)[52:kauditd]audit: type=1400 audit(1757992080.588:529): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=35527 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.862319] (7)[52:kauditd]audit: type=1400 audit(1757992080.588:530): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=35461 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.862491] (7)[52:kauditd]audit: type=1400 audit(1757992080.588:531): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=34606 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.862614] (7)[52:kauditd]audit: type=1400 audit(1757992080.588:532): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=34508 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.862763] (7)[52:kauditd]audit: type=1400 audit(1757992080.588:533): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=30200 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.863016] (7)[52:kauditd]audit: type=1400 audit(1757992080.588:534): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33804 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+[   10.863104] (7)[52:kauditd]audit: type=1400 audit(1757992080.588:535): avc:  denied  { read } for  pid=324 comm="charger" name="type" dev="sysfs" ino=33741 scontext=u:r:charger:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0

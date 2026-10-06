@@ -1,0 +1,56 @@
+{
+  "stock_sha256": "a745cfc9f513aba14bf461f90253e0824a778172621868f53b4d4ac01b6d7864",
+  "output_sha256": "2a664154dafa634e85210d9827b9384de8dfde837f7d761757fc71ee6b10c6e9",
+  "image_size": 1048576,
+  "revision": "r2",
+  "code_patch_bytes": 408,
+  "actual_changed_bytes": 711,
+  "ranges": [
+    {
+      "file_offset": "0x39fc",
+      "virtual_address": "0x480037fc",
+      "size": 408,
+      "before": "f8b5564c564b7c44e3581bb11df0a0ff002835d114f074fa00b1f8bd514f7f4438463bf0c5fb054658b14f4e7e44304625f092fc3146421c284625f0c5fc002838d004f06dfd494b002844d1e55840f0cffd002863d12b68632b72d0444b45f6ec02e3581b689a58b2f14c3f5dd001f085f904f067fd002834d002232b60f8bd1af004fd60b9394be5582b68632bc4d03848784424f0b2fbbde8f84040f0eabe11f080fb314be5582b68632bb5d01af02ffdeae72d4b01222f493846e35879441a603bf081fc0028a7d02c48bde8f840784424f093bbe558632200202a6004f0fdfcb4e740f0a0fc0228c6d014f0a6fa002892d140f004fa04462148784424f07dfb204640f0fcf93128fad911f0cafce8b91c48bde8f840784424f06fbb632300202b6040f084fd95e745f6f0029b58012b9cd1144815497844794424f05efb95e71348bde8f840784424f057bb1148bde8f840784424f051bb00bff6a00a00a80200008a73050090730500f403000060040000fa7205009ad50600f47205002873050048730500d0720500de7205009c720500dc720500",
+      "after": "f8b53f4d1df0a4ff002810d01af03efd30b111f0c7fb2b68632b6fd01af078fd2b68632b6ad0bde8f84040f023bf14f067fa002862d1334f38463bf0b9fb60b13149052225f0c0fc002806d101232b6038462e493bf0b8fc50e004f061fd20b163232b60002004f039fd40f0c1fd20b163232b60002040f0dbfd2b68632b3dd0002040f03dfa044640f22c16002001f02ff9002830d1012001f02af900282bd1112001f025f9002826d1132001f020f9002821d140f0e6fc0a2040f073fa204640f01efa40f6b833984201d2013eddd101f054f904f036fd00280ad140f0a4fc022806d014f0aafa002807d111f0dafc04e002232b6001e063232b60f8bd00bfcc050b48a8ab0548bcab0548580e074800bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf00bf"
+    },
+    {
+      "file_offset": "0x7da94",
+      "virtual_address": "0x4807d894",
+      "size": 36,
+      "before": "596f7572206465766963652077696c6c20626f6f7420696e2035207365636f6e64730a00",
+      "after": "5331372d4c4b2d72323a20626f6f7420696e2035207365636f6e64730a00000000000000"
+    },
+    {
+      "file_offset": "0xaeda3",
+      "size": 32,
+      "purpose": "LK cert2 payload SHA256"
+    },
+    {
+      "file_offset": "0xaee86",
+      "size": 256,
+      "purpose": "LK cert2 RSA-PSS signature"
+    }
+  ],
+  "key_hw_codes": [
+    0,
+    1,
+    17,
+    19
+  ],
+  "key_evidence": "stock LK unlock affirmative branch and stock dtbo keypad map",
+  "poll_window_ms": 3000,
+  "poll_max_iterations": 300,
+  "watchdog_restart_during_poll": true,
+  "orange_state_marker": "S17-LK-r2",
+  "root_spki_sha256": "edf343d880317d38c6cd9ba2ab77505156045024cd6cfdb0a7addda997bebe68",
+  "image_spki_sha256": "051e3c5a1d927b9c756a339e62ed04124d9e3f54246c66fb3202ecffeae26a87",
+  "signature_scheme": "RSA-PSS/SHA256/MGF1-SHA256, 32-byte salt",
+  "cert1_original_signature_verified": true,
+  "stock_cert2_signature_verified": true,
+  "modified_cert2_signature_verified": true,
+  "header_hash_verified": true,
+  "payload_hash_verified": true,
+  "dtb_and_dtb_certificates_unchanged": true,
+  "hardware_validated": false,
+  "remaining": "Active LK selection and physical cold-boot key tests not performed"
+}

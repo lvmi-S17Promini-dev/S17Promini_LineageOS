@@ -1,0 +1,10 @@
+add device 1: /dev/input/event4
+  name:     "mtk-tpd"
+add device 2: /dev/input/event3
+  name:     "axs_ts"
+add device 3: /dev/input/event0
+  name:     "mtk-kpd"
+add device 4: /dev/input/event1
+  name:     "mtk-pmic-keys"
+add device 5: /dev/input/event2
+  name:     "mt63xx-accdet Headset"

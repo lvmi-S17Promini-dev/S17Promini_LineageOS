@@ -1,0 +1,60 @@
+Warning: releasetools script should be invoked as hermetic Python executable -- build and run `make-install-zip` directly.
+Generating system block transfers
+Generating vendor block transfers
+Exception in thread "main" java.lang.UnsatisfiedLinkError: no conscrypt_openjdk_jni-linux-x86_64 in java.library.path: [/home/dengxh/android3/lineage/out/host/linux-x86/lib64]
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2660)
+	at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:829)
+	at java.base/java.lang.System.loadLibrary(System.java:1867)
+	at org.conscrypt.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.conscrypt.NativeLibraryLoader$1.run(NativeLibraryLoader.java:297)
+	at org.conscrypt.NativeLibraryLoader$1.run(NativeLibraryLoader.java:289)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at org.conscrypt.NativeLibraryLoader.loadLibraryFromHelperClassloader(NativeLibraryLoader.java:289)
+	at org.conscrypt.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:262)
+	at org.conscrypt.NativeLibraryLoader.load(NativeLibraryLoader.java:162)
+	at org.conscrypt.NativeLibraryLoader.loadFirstAvailable(NativeLibraryLoader.java:106)
+	at org.conscrypt.NativeCryptoJni.init(NativeCryptoJni.java:50)
+	at org.conscrypt.NativeCrypto.<clinit>(NativeCrypto.java:64)
+	at org.conscrypt.OpenSSLProvider.<init>(OpenSSLProvider.java:60)
+	at org.conscrypt.OpenSSLProvider.<init>(OpenSSLProvider.java:53)
+	at org.conscrypt.OpenSSLProvider.<init>(OpenSSLProvider.java:49)
+	at com.android.signapk.SignApk.main(SignApk.java:1038)
+	Suppressed: java.lang.UnsatisfiedLinkError: no conscrypt_openjdk_jni-linux-x86_64 in java.library.path: [/home/dengxh/android3/lineage/out/host/linux-x86/lib64]
+		at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2660)
+		at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:829)
+		at java.base/java.lang.System.loadLibrary(System.java:1867)
+		at org.conscrypt.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:54)
+		at org.conscrypt.NativeLibraryLoader.loadLibraryFromCurrentClassloader(NativeLibraryLoader.java:318)
+		at org.conscrypt.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:273)
+		... 8 more
+	Suppressed: java.lang.UnsatisfiedLinkError: no conscrypt_openjdk_jni in java.library.path: [/home/dengxh/android3/lineage/out/host/linux-x86/lib64]
+		... 21 more
+	Suppressed: java.lang.UnsatisfiedLinkError: no conscrypt_openjdk_jni in java.library.path: [/home/dengxh/android3/lineage/out/host/linux-x86/lib64]
+		at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2660)
+		at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:829)
+		at java.base/java.lang.System.loadLibrary(System.java:1867)
+		at org.conscrypt.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:54)
+		at org.conscrypt.NativeLibraryLoader.loadLibraryFromCurrentClassloader(NativeLibraryLoader.java:318)
+		at org.conscrypt.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:273)
+		... 8 more
+	Suppressed: java.lang.UnsatisfiedLinkError: no conscrypt in java.library.path: [/home/dengxh/android3/lineage/out/host/linux-x86/lib64]
+		... 21 more
+	Suppressed: java.lang.UnsatisfiedLinkError: no conscrypt in java.library.path: [/home/dengxh/android3/lineage/out/host/linux-x86/lib64]
+		at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2660)
+		at java.base/java.lang.Runtime.loadLibrary0(Runtime.java:829)
+		at java.base/java.lang.System.loadLibrary(System.java:1867)
+		at org.conscrypt.NativeLibraryUtil.loadLibrary(NativeLibraryUtil.java:54)
+		at org.conscrypt.NativeLibraryLoader.loadLibraryFromCurrentClassloader(NativeLibraryLoader.java:318)
+		at org.conscrypt.NativeLibraryLoader.loadLibrary(NativeLibraryLoader.java:273)
+		... 8 more
+Traceback (most recent call last):
+  File "/home/dengxh/android3/lineage/device/lvmi/S17Promini/tools/make-install-zip.py", line 110, in <module>
+    main()
+  File "/home/dengxh/android3/lineage/device/lvmi/S17Promini/tools/make-install-zip.py", line 91, in main
+    subprocess.run([
+  File "/home/dengxh/android3/lineage/prebuilts/build-tools/linux-x86/bin/py3-cmd/internal/stdlib/subprocess.py", line 524, in run
+subprocess.CalledProcessError: Command '['/home/dengxh/android3/lineage/prebuilts/jdk/jdk11/linux-x86/bin/java', '-Djava.library.path=/home/dengxh/android3/lineage/out/host/linux-x86/lib64', '-jar', '/home/dengxh/android3/lineage/out/host/linux-x86/framework/signapk.jar', '-w', '/home/dengxh/android3/lineage/build/target/product/security/testkey.x509.pem', '/home/dengxh/android3/lineage/build/target/product/security/testkey.pk8', '/home/dengxh/S17Promini_LineageOS/artifacts/rom-install-r1/s17-ota-9ljhazf9/unsigned.zip', '/home/dengxh/S17Promini_LineageOS/artifacts/rom-install-r1/s17-ota-9ljhazf9/signed.zip']' returned non-zero exit status 1.

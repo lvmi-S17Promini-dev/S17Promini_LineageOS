@@ -1,0 +1,16 @@
+{
+  "change": "Write LCD brightness=0 before framebuffer powerdown and restore after unblank",
+  "device_validation": "pending",
+  "system_core_revision": "1dd6bab94356caa929a505fe5059954536b21a0a",
+  "framework_patch_sha256": "d197904aa430f83237be694f3a45b8326e70fecb1184af2abc0bfde307afd020",
+  "files": {
+    "system.img": {
+      "size": 1977680368,
+      "sha256": "4eea3b2e4c41b4449c24d84a91adb7efe2c630b8bff4a9bbbeadf79a30bf85cb"
+    },
+    "vbmeta.img": {
+      "size": 4096,
+      "sha256": "840401b97bfbe2e569510fa873738f0adb8b67e2feff767ed40a4e5cbe454408"
+    }
+  }
+}

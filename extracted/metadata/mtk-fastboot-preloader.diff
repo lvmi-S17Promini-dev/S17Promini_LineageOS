@@ -1,0 +1,72 @@
+--- 
+
++++ 
+
+@@ -1,5 +1,5 @@
+
+ #!/usr/bin/python3
+ # -*- coding: utf-8 -*-
+-# (c) B.Kerler 2018-2026 GPLv3 License
++# (c) B.Kerler 2018-2024 GPLv3 License
+ import os
+ import logging
+@@ -482,4 +482,58 @@
+
+         return
+ 
++    def update32(self, addr, s=0, mask=0xFFFFFFFF):
++        value = self.read32(addr)
++        value = value & mask | s
++        self.write32(addr, value)
++
++    def wdt_sw_reset(self, wdt_base):
++        import struct
++        reg_ctrl_b008 = wdt_base + 0x08
++        reg_base_b000 = wdt_base + 0x00
++        reg_flag_b014 = wdt_base + 0x14
++
++        self.write32(reg_ctrl_b008, 0x1971)
++        self.write32(reg_base_b000, 0x230001ff)
++        if ((self.read32(reg_base_b000) >> 5 & 1) == 0):
++            self.update32(reg_base_b000, 0x22000020)
++            self.update32(reg_base_b000, 0x22000000, 0xddffffdf)
++        else:
++            self.update32(reg_base_b000, 0x22000000, 0xddffffdf)
++            self.update32(reg_base_b000, 0x22000020)
++        self.write32(reg_ctrl_b008, 0x1971)
++        self.update32(reg_base_b000, 0x22000004, 0xffffffa7)
++        
++        # Catch the intentional hardware disconnection crash safely
++        try:
++            self.write32(reg_flag_b014, 0x1209)
++        except (struct.error, Exception):
++            print("\n[+] USB Error = Command Dispatched ✓! Device is rebooting...")
++
++    def direct_fastboot(self, wdt_base):
++        reg_bootmode_b024 = wdt_base + 0x24
++        self.update32(reg_bootmode_b024, 0x3, 0xfffffff0)
++        self.wdt_sw_reset(wdt_base)
++
++    def direct_factory(self, wdt_base):
++        reg_bootmode_b024 = wdt_base + 0x24
++        self.update32(reg_bootmode_b024, 0xC, 0xfffffff0)
++        self.wdt_sw_reset(wdt_base)
++
++    def direct_brom(self, wdt_base):
++        import struct
++        reg_base_b000 = wdt_base + 0x00
++        reg_flag_b014 = wdt_base + 0x14
++        
++        try:
++            self.write32(reg_base_b000, 0x22000021)
++            self.write32(reg_flag_b014, 0x1209)
++        except (struct.error, Exception):
++            print("\n[+] Command Dispatched! Device dropping into BROM mode...")
++
++    def direct_meta(self, wdt_base):
++        reg_bootmode_b024 = wdt_base + 0x24
++        self.update32(reg_bootmode_b024, 0x1, 0xfffffff0)
++        self.wdt_sw_reset(wdt_base)
++
+     def run_ext_cmd(self, cmd: bytes = b"\xB1"):
+         self.usbwrite(self.Cmd.CMD_C8.value)

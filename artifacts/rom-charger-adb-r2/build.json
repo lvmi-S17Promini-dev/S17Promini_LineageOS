@@ -1,0 +1,14 @@
+{
+  "change": "Lineage charger with independent debug USB adbd and adbd_exec label",
+  "device_validation": "pending",
+  "files": {
+    "system.img": {
+      "size": 1977680368,
+      "sha256": "5dfbe8800c0bfa9b845873462af672b3b668a250d238a447fab01fc0bf1b73ac"
+    },
+    "vbmeta.img": {
+      "size": 4096,
+      "sha256": "840401b97bfbe2e569510fa873738f0adb8b67e2feff767ed40a4e5cbe454408"
+    }
+  }
+}

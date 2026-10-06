@@ -1,0 +1,15 @@
+[
+  {
+    "file": "init.recovery.mt6765.rc",
+    "old": [
+      "file",
+      "bddcd2f685f58b75dd38d4ff16c1b1d70c4bac930ddccc9a909a8dd784e9c637",
+      "0o750"
+    ],
+    "new": [
+      "file",
+      "d9a31f5faa18cfe0c974cf3f4174320a19f9a777be8e5eab054cb0c426f63a47",
+      "0o750"
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "source": "/home/dengxh/android3/lineage/vendor/lvmi/S17Promini/proprietary/vendor",
+  "output": "/home/dengxh/android3/lineage/out/target/product/S17Promini/obj/PACKAGING/s17_vendor_intermediates/vendor.img",
+  "files": 1875,
+  "symlinks": 188,
+  "expanded_size": 1427996672,
+  "sparse_size": 538035712,
+  "sha256": "7f2411ff41dbaf2dfa7b6a8fa56ebc79baee5ce115908e48b2fb7c30021b4af4",
+  "verified": "all payloads, owners, modes, labels, symlink targets, ext4 and AVB"
+}

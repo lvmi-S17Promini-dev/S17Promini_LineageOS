@@ -1,0 +1,113 @@
+--------- beginning of main
+10-06 11:16:29.984   360   360 I lowmemorykiller: Using psi monitors for memory pressure detection
+10-06 11:16:29.986   360   360 I lowmemorykiller: Process polling is supported
+10-06 11:16:30.007   361   361 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+--------- beginning of events
+10-06 11:16:30.008   361   361 I snet_event_log: [121035042,-1,]
+01-01 00:00:00.044   359   359 I auditd  : type=2000 audit(0.0:1): state=initialized audit_enabled=0 res=1
+01-01 00:00:00.044   359   359 W auditd  : type=2000 audit(0.0:1): state=initialized audit_enabled=0 res=1
+10-06 11:16:30.013   361   361 I SELinux : SELinux: Loaded service_contexts from:
+10-06 11:16:30.013   361   361 I auditd  : SELinux: Loaded service_contexts from:
+10-06 11:16:30.013   361   361 I SELinux :     /system/etc/selinux/plat_service_contexts
+10-06 11:16:30.013   361   361 I auditd  :     /system/etc/selinux/plat_service_contexts
+10-06 11:16:30.013   361   361 I SELinux :     /system_ext/etc/selinux/system_ext_service_contexts
+10-06 11:16:30.013   361   361 I auditd  :     /system_ext/etc/selinux/system_ext_service_contexts
+10-06 11:16:30.013   361   361 I SELinux :     /vendor/etc/selinux/vendor_service_contexts
+10-06 11:16:30.013   361   361 I auditd  :     /vendor/etc/selinux/vendor_service_contexts
+10-06 11:16:28.616   359   359 I auditd  : type=1403 audit(0.0:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+10-06 11:16:28.616   359   359 W auditd  : type=1403 audit(0.0:2): auid=4294967295 ses=4294967295 lsm=selinux res=1
+10-06 11:16:28.932     1     1 I auditd  : type=1107 audit(0.0:3): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { read } for property=vts.native_server.on pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vts_status_prop:s0 tclass=file permissive=0'
+10-06 11:16:28.932     1     1 W /system/bin/init: type=1107 audit(0.0:3): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { read } for property=vts.native_server.on pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vts_status_prop:s0 tclass=file permissive=0'
+10-06 11:16:28.932     1     1 I auditd  : type=1107 audit(0.0:4): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { read } for property=vts.native_server.on pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vts_status_prop:s0 tclass=file permissive=0'
+10-06 11:16:28.932     1     1 W /system/bin/init: type=1107 audit(0.0:4): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { read } for property=vts.native_server.on pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vts_status_prop:s0 tclass=file permissive=0'
+10-06 11:16:28.936     1     1 I auditd  : type=1107 audit(0.0:5): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { read } for property=vts.native_server.on pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vts_status_prop:s0 tclass=file permissive=0'
+10-06 11:16:28.936     1     1 W /system/bin/init: type=1107 audit(0.0:5): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { read } for property=vts.native_server.on pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vts_status_prop:s0 tclass=file permissive=0'
+10-06 11:16:28.936     1     1 I auditd  : type=1107 audit(0.0:6): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { read } for property=vts.native_server.on pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vts_status_prop:s0 tclass=file permissive=0'
+10-06 11:16:28.936     1     1 W /system/bin/init: type=1107 audit(0.0:6): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { read } for property=vts.native_server.on pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:vts_status_prop:s0 tclass=file permissive=0'
+10-06 11:16:28.960     1     1 I auditd  : type=1107 audit(0.0:7): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { read } for property=sys.sysctl.extra_free_kbytes pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=0'
+10-06 11:16:28.960     1     1 W /system/bin/init: type=1107 audit(0.0:7): uid=0 auid=4294967295 ses=4294967295 subj=u:r:init:s0 msg='avc: denied { read } for property=sys.sysctl.extra_free_kbytes pid=0 uid=0 gid=0 scontext=u:r:vendor_init:s0 tcontext=u:object_r:system_prop:s0 tclass=file permissive=0'
+10-06 11:16:30.020   364   364 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-06 11:16:30.021   364   364 I snet_event_log: [121035042,-1,]
+10-06 11:16:30.022   364   364 I SELinux : SELinux: Loaded service_contexts from:
+10-06 11:16:30.022   364   364 I SELinux :     /vendor/etc/selinux/vndservice_contexts
+10-06 11:16:30.022   362   362 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-06 11:16:30.026   362   362 I hwservicemanager: getFrameworkHalManifest: Reading VINTF information.
+10-06 11:16:30.032   362   362 I hwservicemanager: getDeviceHalManifest: Reading VINTF information.
+10-06 11:16:30.049   362   362 I hwservicemanager: getDeviceHalManifest: Successfully processed VINTF information
+10-06 11:16:30.049   362   362 I hwservicemanager: getFrameworkHalManifest: Successfully processed VINTF information
+10-06 11:16:30.051   362   362 I hwservicemanager: hwservicemanager is ready now.
+10-06 11:16:30.091   362   362 E cutils-trace: Error opening trace file: No such file or directory (2)
+10-06 11:16:30.092   362   362 I hwservicemanager: Since android.hardware.health@2.1::IHealth/default is not registered, trying to start it as a lazy HAL.
+10-06 11:16:30.093   362   362 I hwservicemanager: Since android.hardware.health@2.1::IHealth/default is not registered, trying to start it as a lazy HAL.
+10-06 11:16:30.097   373   373 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-06 11:16:30.097   373   373 E cutils-trace: Error opening trace file: No such file or directory (2)
+10-06 11:16:30.096   373   373 I auditd  : type=1400 audit(0.0:8): avc: denied { read } for comm="android.hardwar" name="type" dev="sysfs" ino=30203 scontext=u:r:hal_health_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+10-06 11:16:30.096   373   373 W android.hardwar: type=1400 audit(0.0:8): avc: denied { read } for name="type" dev="sysfs" ino=30203 scontext=u:r:hal_health_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=0
+10-06 11:16:30.103   373   373 I android.hardware.health@2.1-service: default instance initializing with healthd_config...
+10-06 11:16:30.104   373   373 I HidlServiceManagement: Registered android.hardware.health@2.1::IHealth/default
+10-06 11:16:30.104   373   373 I HidlServiceManagement: Removing namespace from process name android.hardware.health@2.1-service to health@2.1-service.
+10-06 11:16:30.104   373   373 I android.hardware.health@2.1-service: default: Hal init done
+10-06 11:16:30.117   362   362 I hw-BpHwBinder: onLastStrongRef automatically unlinking death recipients
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:9): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:9): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:10): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:10): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:11): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:11): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:12): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:12): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:13): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:13): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:14): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:14): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:15): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:15): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:16): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:16): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:17): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:17): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:18): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:18): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:19): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:19): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:20): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:20): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:21): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:21): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:22): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:22): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:23): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:23): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 I auditd  : type=1400 audit(0.0:24): avc: denied { search } for comm="charger" name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.140   372   372 W charger : type=1400 audit(0.0:24): avc: denied { search } for name="dri" dev="tmpfs" ino=10302 scontext=u:r:charger:s0 tcontext=u:object_r:gpu_device:s0 tclass=dir permissive=0
+10-06 11:16:30.153   362   375 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.health@2.1::IHealth/default": error code: 0x20
+10-06 11:16:30.153   362   375 I hwservicemanager: Tried to start android.hardware.health@2.1::IHealth/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+10-06 11:16:30.201   362   377 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.health@2.1::IHealth/default": error code: 0x20
+10-06 11:16:30.201   362   377 I hwservicemanager: Tried to start android.hardware.health@2.1::IHealth/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+10-06 11:16:30.405   386   386 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-06 11:16:30.407   361   361 I servicemanager: getDeviceHalManifest: Reading VINTF information.
+10-06 11:16:30.424   361   361 I servicemanager: getDeviceHalManifest: Successfully processed VINTF information
+10-06 11:16:30.424   361   361 I servicemanager: getFrameworkHalManifest: Reading VINTF information.
+10-06 11:16:30.426   361   361 I servicemanager: getFrameworkHalManifest: Successfully processed VINTF information
+10-06 11:16:30.426   361   361 I servicemanager: Found android.hardware.light.ILights/default in device VINTF manifest.
+10-06 11:16:30.441   389   389 I perfetto: probes.cc:84            Starting /system/bin/traced_probes service
+10-06 11:16:30.443   389   389 I perfetto: probes_producer.cc:129  Disconnected from tracing service
+10-06 11:16:30.446   389   393 I perfetto: _activity_trigger.cc:71 mm_events ftrace instance not found. Triggering of traces on memory pressure will not be available on this device.
+10-06 11:16:30.450   391   391 W perfetto: service.cc:207          Started traced, listening on /dev/socket/traced_producer /dev/socket/traced_consumer
+10-06 11:16:30.472     1     1 I auditd  : type=1400 audit(0.0:25): avc: denied { write } for comm="init" name="cmode" dev="sysfs" ino=27273 scontext=u:r:init:s0 tcontext=u:object_r:sysfs_usb_nonplat:s0 tclass=file permissive=0
+10-06 11:16:30.472     1     1 W init    : type=1400 audit(0.0:25): avc: denied { write } for name="cmode" dev="sysfs" ino=27273 scontext=u:r:init:s0 tcontext=u:object_r:sysfs_usb_nonplat:s0 tclass=file permissive=0
+10-06 11:16:30.489   387   387 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+10-06 11:16:30.524   395   395 I s17-charger-adbd: persist.adb.watchdog set to ''
+10-06 11:16:30.525   395   395 I s17-charger-adbd: persist.sys.test_harness set to ''
+10-06 11:16:30.525   395   395 I s17-charger-adbd: adb watchdog timeout set to 600 seconds
+10-06 11:16:30.525   395   399 I s17-charger-adbd: Waiting for persist.adb.tls_server.enable=1
+10-06 11:16:30.526   395   395 I s17-charger-adbd: adbd started
+10-06 11:16:30.525   395   401 I s17-charger-adbd: opening control endpoint /dev/usb-ffs/adb/ep0
+10-06 11:16:30.527   395   401 I s17-charger-adbd: UsbFfsConnection constructed
+10-06 11:16:30.527   395   402 I s17-charger-adbd: UsbFfs-monitor thread spawned
+10-06 11:16:30.532   395   402 I s17-charger-adbd: USB event: FUNCTIONFS_BIND
+10-06 11:16:30.646   389   389 I perfetto: probes_producer.cc:112  Connected to the service
+10-06 11:16:31.711   395   402 I s17-charger-adbd: USB event: FUNCTIONFS_ENABLE
+10-06 11:16:31.711   395   403 I s17-charger-adbd: UsbFfs-worker thread spawned
+10-06 11:16:31.817   395   395 I s17-charger-adbd: UsbFfs: already offline
+10-06 11:16:31.817   395   395 I s17-charger-adbd: authentication not required

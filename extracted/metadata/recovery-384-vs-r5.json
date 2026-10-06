@@ -1,0 +1,24 @@
+[
+  {
+    "file": "init.recovery.mt6765.rc",
+    "old": [
+      "file",
+      "bddcd2f685f58b75dd38d4ff16c1b1d70c4bac930ddccc9a909a8dd784e9c637",
+      "0o750"
+    ],
+    "new": [
+      "file",
+      "4f168d013ca9327ff39481bc4bd4557c8e065064a74115dad133bc7ceebb4b34",
+      "0o750"
+    ]
+  },
+  {
+    "file": "system/bin/s17-super-label.sh",
+    "old": null,
+    "new": [
+      "file",
+      "900cdd315f71ca670b48a2ce4aef0059328eae337f813ac2d9528f3010a08073",
+      "0o755"
+    ]
+  }
+]

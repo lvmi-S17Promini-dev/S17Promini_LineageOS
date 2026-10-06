@@ -1,0 +1,25 @@
+Footer version:           1.0
+Image size:               33554432 bytes
+Original image size:      21061632 bytes
+VBMeta offset:            21061632
+VBMeta size:              1472 bytes
+--
+Minimum libavb version:   1.0
+Header Block:             256 bytes
+Authentication Block:     320 bytes
+Auxiliary Block:          896 bytes
+Public key (sha1):        0aa0987116fc792f36bc909b0a4d530413f02a54
+Algorithm:                SHA256_RSA2048
+Rollback Index:           0
+Flags:                    0
+Rollback Index Location:  0
+Release String:           'avbtool 1.2.0'
+Descriptors:
+    Hash descriptor:
+      Image Size:            21061632 bytes
+      Hash Algorithm:        sha256
+      Partition Name:        recovery
+      Salt:                  da2aac6b2232e340da9a876e34a47df7ea2a162d0d845521277d723d25a496ef
+      Digest:                c84c57a115daa457c58326232e99166e38f000fa60d669a465e09145b33094a2
+      Flags:                 0
+    Prop: com.android.build.recovery.fingerprint -> 'IVMI/S17Promini/S17Promini:12/SP1A.210812.016/mp1V15240:user/release-keys'

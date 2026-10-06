@@ -1,0 +1,8 @@
+system expanded bytes: 2105655296
+stock system bytes:    3063197696
+stock group budget:   5499584512
+resize needed:        False
+vbmeta flags:         3
+SHA256 system.img: 2c3e58578a3b1690985feebf557c609e98d2a09fc1657a33835ef9159d0866c9
+SHA256 vbmeta.img: e62c0106461e31e88d531a3ad42379bf314a265d18fe32dcb94c6240a3e09db6
+Image checks passed; device boot and compatibility remain unverified.

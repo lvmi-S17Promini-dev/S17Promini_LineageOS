@@ -1,0 +1,16 @@
+{
+  "ota": "/home/dengxh/S17Promini_LineageOS/artifacts/rom-standard/lineage-19.1-20261006-UNOFFICIAL-S17Promini.zip",
+  "sha256": "4fbb93a89506167eb0d58e832926007b8c68e47f2be2d5898c99ac8ee553f220",
+  "size": 1009914093,
+  "target_files": "/home/dengxh/android3/lineage/out/target/product/S17Promini/obj/PACKAGING/target_files_intermediates/lineage_S17Promini-target_files-eng.dengxh.zip",
+  "framework_commit": "0aea4fc49",
+  "verified": [
+    "m bacon",
+    "VINTF",
+    "whole package signature",
+    "target-files metadata/cache/vendor map",
+    "r5 recovery payload",
+    "normal boot kernel/ramdisk/DTB",
+    "standard OTA raw writes and LP operations"
+  ]
+}

@@ -1,0 +1,224 @@
+[
+  {
+    "name": "boot_para",
+    "start_sector": 64,
+    "end_sector": 2111,
+    "size": 1048576
+  },
+  {
+    "name": "recovery",
+    "start_sector": 2112,
+    "end_sector": 67647,
+    "size": 33554432
+  },
+  {
+    "name": "para",
+    "start_sector": 67648,
+    "end_sector": 68671,
+    "size": 524288
+  },
+  {
+    "name": "expdb",
+    "start_sector": 68672,
+    "end_sector": 109631,
+    "size": 20971520
+  },
+  {
+    "name": "vbmeta_system",
+    "start_sector": 109632,
+    "end_sector": 126015,
+    "size": 8388608
+  },
+  {
+    "name": "vbmeta_vendor",
+    "start_sector": 126016,
+    "end_sector": 142399,
+    "size": 8388608
+  },
+  {
+    "name": "frp",
+    "start_sector": 142400,
+    "end_sector": 144447,
+    "size": 1048576
+  },
+  {
+    "name": "nvcfg",
+    "start_sector": 144448,
+    "end_sector": 209983,
+    "size": 33554432
+  },
+  {
+    "name": "nvdata",
+    "start_sector": 209984,
+    "end_sector": 341055,
+    "size": 67108864
+  },
+  {
+    "name": "md_udc",
+    "start_sector": 341056,
+    "end_sector": 387343,
+    "size": 23699456
+  },
+  {
+    "name": "metadata",
+    "start_sector": 387344,
+    "end_sector": 452879,
+    "size": 33554432
+  },
+  {
+    "name": "protect1",
+    "start_sector": 452880,
+    "end_sector": 469263,
+    "size": 8388608
+  },
+  {
+    "name": "protect2",
+    "start_sector": 469264,
+    "end_sector": 491519,
+    "size": 11395072
+  },
+  {
+    "name": "seccfg",
+    "start_sector": 491520,
+    "end_sector": 507903,
+    "size": 8388608
+  },
+  {
+    "name": "sec1",
+    "start_sector": 507904,
+    "end_sector": 511999,
+    "size": 2097152
+  },
+  {
+    "name": "proinfo",
+    "start_sector": 512000,
+    "end_sector": 518143,
+    "size": 3145728
+  },
+  {
+    "name": "md1img",
+    "start_sector": 518144,
+    "end_sector": 722943,
+    "size": 104857600
+  },
+  {
+    "name": "spmfw",
+    "start_sector": 722944,
+    "end_sector": 724991,
+    "size": 1048576
+  },
+  {
+    "name": "sspm_1",
+    "start_sector": 724992,
+    "end_sector": 727039,
+    "size": 1048576
+  },
+  {
+    "name": "sspm_2",
+    "start_sector": 727040,
+    "end_sector": 729087,
+    "size": 1048576
+  },
+  {
+    "name": "gz1",
+    "start_sector": 729088,
+    "end_sector": 761855,
+    "size": 16777216
+  },
+  {
+    "name": "gz2",
+    "start_sector": 761856,
+    "end_sector": 794623,
+    "size": 16777216
+  },
+  {
+    "name": "nvram",
+    "start_sector": 794624,
+    "end_sector": 925695,
+    "size": 67108864
+  },
+  {
+    "name": "lk",
+    "start_sector": 925696,
+    "end_sector": 927743,
+    "size": 1048576
+  },
+  {
+    "name": "lk2",
+    "start_sector": 927744,
+    "end_sector": 929791,
+    "size": 1048576
+  },
+  {
+    "name": "boot",
+    "start_sector": 929792,
+    "end_sector": 995327,
+    "size": 33554432
+  },
+  {
+    "name": "vendor_boot",
+    "start_sector": 995328,
+    "end_sector": 1126399,
+    "size": 67108864
+  },
+  {
+    "name": "logo",
+    "start_sector": 1126400,
+    "end_sector": 1142783,
+    "size": 8388608
+  },
+  {
+    "name": "dtbo",
+    "start_sector": 1142784,
+    "end_sector": 1159167,
+    "size": 8388608
+  },
+  {
+    "name": "tee1",
+    "start_sector": 1159168,
+    "end_sector": 1169407,
+    "size": 5242880
+  },
+  {
+    "name": "tee2",
+    "start_sector": 1169408,
+    "end_sector": 1179647,
+    "size": 5242880
+  },
+  {
+    "name": "super",
+    "start_sector": 1179648,
+    "end_sector": 15113903,
+    "size": 7134339072
+  },
+  {
+    "name": "vbmeta",
+    "start_sector": 15113904,
+    "end_sector": 15138815,
+    "size": 12754944
+  },
+  {
+    "name": "cache",
+    "start_sector": 15138816,
+    "end_sector": 16023551,
+    "size": 452984832
+  },
+  {
+    "name": "userdata",
+    "start_sector": 16023552,
+    "end_sector": 122021823,
+    "size": 54271115264
+  },
+  {
+    "name": "otp",
+    "start_sector": 122021824,
+    "end_sector": 122109887,
+    "size": 45088768
+  },
+  {
+    "name": "flashinfo",
+    "start_sector": 122109888,
+    "end_sector": 122142655,
+    "size": 16777216
+  }
+]

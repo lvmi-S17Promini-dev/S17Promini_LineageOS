@@ -1,0 +1,268 @@
+[
+  {
+    "file": "boot.bin",
+    "size": 33554432,
+    "sha256": "9b8c64bb8d7f1e3f09d355541668f591215a26b77a1f85f553ddec7d854791da",
+    "all_zero": false,
+    "category": "boot"
+  },
+  {
+    "file": "boot_para.bin",
+    "size": 1048576,
+    "sha256": "30e14955ebf1352266dc2ff8067e68104607e750abb9d3b36582b8af909fcb58",
+    "all_zero": true,
+    "category": "layout-and-state"
+  },
+  {
+    "file": "cache.bin",
+    "size": 452984832,
+    "sha256": "a5914087de6b43eaaadd6c2e55066ed766c14aa2fa8668c3e77916c7362eeb3f",
+    "all_zero": false,
+    "category": "android"
+  },
+  {
+    "file": "dtbo.bin",
+    "size": 8388608,
+    "sha256": "204b310adfcccbc91254725cf32935d3cb08fac0b37238052beca4ad75ed01c8",
+    "all_zero": false,
+    "category": "boot"
+  },
+  {
+    "file": "expdb.bin",
+    "size": 20971520,
+    "sha256": "9916c184c70336c46eb829e5edae53a565d7cbd275a57da59300288aad85096b",
+    "all_zero": false,
+    "category": "layout-and-state"
+  },
+  {
+    "file": "flashinfo.bin",
+    "size": 16777216,
+    "sha256": "8247b5e314280ce3aeac248f3542a1f0215d6dc4320fa14e32da5fe026f9adc8",
+    "all_zero": false,
+    "category": "layout-and-state"
+  },
+  {
+    "file": "frp.bin",
+    "size": 1048576,
+    "sha256": "7c43afeb810aa145efbdede0f847bf95c509e9bbc7c79dc24b57e986d8e68690",
+    "all_zero": false,
+    "category": "device-unique"
+  },
+  {
+    "file": "gpt.bin",
+    "size": 16896,
+    "sha256": "febc6c75e30f4ec3f9249e078865084f2d3a80b9477979cd0bbf102a38dfa4cb",
+    "all_zero": false,
+    "category": "layout-and-state"
+  },
+  {
+    "file": "gpt_backup.bin",
+    "size": 16384,
+    "sha256": "f86944b3a60649a47ec42e844edb589c5bf9e6e5b625136fc0c61dd214b0a8c7",
+    "all_zero": false,
+    "category": "layout-and-state"
+  },
+  {
+    "file": "gz1.bin",
+    "size": 16777216,
+    "sha256": "a0a23092a2d3d4cd56a3449617c4a15911544e3645f051e39bdb8cb023ffc2d9",
+    "all_zero": false,
+    "category": "firmware"
+  },
+  {
+    "file": "gz2.bin",
+    "size": 16777216,
+    "sha256": "a0a23092a2d3d4cd56a3449617c4a15911544e3645f051e39bdb8cb023ffc2d9",
+    "all_zero": false,
+    "category": "firmware"
+  },
+  {
+    "file": "lk.bin",
+    "size": 1048576,
+    "sha256": "a745cfc9f513aba14bf461f90253e0824a778172621868f53b4d4ac01b6d7864",
+    "all_zero": false,
+    "category": "firmware"
+  },
+  {
+    "file": "lk2.bin",
+    "size": 1048576,
+    "sha256": "a745cfc9f513aba14bf461f90253e0824a778172621868f53b4d4ac01b6d7864",
+    "all_zero": false,
+    "category": "firmware"
+  },
+  {
+    "file": "logo.bin",
+    "size": 8388608,
+    "sha256": "53eacef70c0dfc9f2e14d039d8d0050035aa39929563f26efa1997fc1d196f19",
+    "all_zero": false,
+    "category": "firmware"
+  },
+  {
+    "file": "md1img.bin",
+    "size": 104857600,
+    "sha256": "1ec895ee665059de6773e6eee0586796ca07fc21a78a7c511afb31078c2d3ab6",
+    "all_zero": false,
+    "category": "firmware"
+  },
+  {
+    "file": "md_udc.bin",
+    "size": 23699456,
+    "sha256": "0b86482eeaa055e5ee7ef1d490c1bbfc21c68c99257e157bfbe7ac4ab71eeb96",
+    "all_zero": false,
+    "category": "android"
+  },
+  {
+    "file": "metadata.bin",
+    "size": 33554432,
+    "sha256": "83ee47245398adee79bd9c0a8bc57b821e92aba10f5f9ade8a5d1fae4d8c4302",
+    "all_zero": true,
+    "category": "android"
+  },
+  {
+    "file": "nvcfg.bin",
+    "size": 33554432,
+    "sha256": "5c4cafbf8c7f88ec5efa5c383e8a85fe8a893808b0f89c79680fce1dcb54fa26",
+    "all_zero": false,
+    "category": "device-unique"
+  },
+  {
+    "file": "nvdata.bin",
+    "size": 67108864,
+    "sha256": "0e4fe4251619cc89f6af7b6aefb671f72887930d58d49addba4c842b9a697f4c",
+    "all_zero": false,
+    "category": "device-unique"
+  },
+  {
+    "file": "nvram.bin",
+    "size": 67108864,
+    "sha256": "aafb9374b75e8ec4c02cd90f6d25c52335a9c2daa738b135bf18bc19cb4a8da0",
+    "all_zero": false,
+    "category": "device-unique"
+  },
+  {
+    "file": "otp.bin",
+    "size": 45088768,
+    "sha256": "39f7c6d38af574fe2c90ef400dfaba8ef8edccd11bdac998a3f8143a86837331",
+    "all_zero": true,
+    "category": "device-unique"
+  },
+  {
+    "file": "para.bin",
+    "size": 524288,
+    "sha256": "22a44df994895212732bc38df331e1f366aa16959361a24f7a7adb8d4379593b",
+    "all_zero": false,
+    "category": "layout-and-state"
+  },
+  {
+    "file": "proinfo.bin",
+    "size": 3145728,
+    "sha256": "07b57db6e9e3a5cc20b358869a19ad0fdeeef7040017ace834539335d044bea9",
+    "all_zero": false,
+    "category": "device-unique"
+  },
+  {
+    "file": "protect1.bin",
+    "size": 8388608,
+    "sha256": "0518f43c3b5acb017983e425e2abfb2fab5f2605734115687b6af8fdf30079b0",
+    "all_zero": false,
+    "category": "device-unique"
+  },
+  {
+    "file": "protect2.bin",
+    "size": 11395072,
+    "sha256": "593cd93ac6ae47d5b7e41478f6e1fc36c0122ec2ecd97c5e5c54706e6f29aa66",
+    "all_zero": false,
+    "category": "device-unique"
+  },
+  {
+    "file": "recovery.bin",
+    "size": 33554432,
+    "sha256": "7c795ba84d5dc34bc2eefce3ae90a64e7fb58955f1c2e87d8bac1029a04f9225",
+    "all_zero": false,
+    "category": "boot"
+  },
+  {
+    "file": "sec1.bin",
+    "size": 2097152,
+    "sha256": "5647f05ec18958947d32874eeb788fa396a05d0bab7c1b71f112ceb7e9b31eee",
+    "all_zero": true,
+    "category": "device-unique"
+  },
+  {
+    "file": "seccfg.bin",
+    "size": 8388608,
+    "sha256": "6623cace516c1967659d2fb1fce664ef657345a1645373d464f759bca5028f47",
+    "all_zero": false,
+    "category": "device-unique"
+  },
+  {
+    "file": "spmfw.bin",
+    "size": 1048576,
+    "sha256": "f8c3c8673501f531f4e36ac36f5f0f1101d696d9d368e0ca663eaf8dd223a4dd",
+    "all_zero": false,
+    "category": "firmware"
+  },
+  {
+    "file": "sspm_1.bin",
+    "size": 1048576,
+    "sha256": "655663a7858faabde6da66d0d7a2df93ccbf95d9517cac8a5dae7e0052a6a872",
+    "all_zero": false,
+    "category": "firmware"
+  },
+  {
+    "file": "sspm_2.bin",
+    "size": 1048576,
+    "sha256": "655663a7858faabde6da66d0d7a2df93ccbf95d9517cac8a5dae7e0052a6a872",
+    "all_zero": false,
+    "category": "firmware"
+  },
+  {
+    "file": "super.bin",
+    "size": 7134339072,
+    "sha256": "13187ae4a86b2980d9e8026067d288038c64edafe81cdc73d56ad6405116beb1",
+    "all_zero": false,
+    "category": "android"
+  },
+  {
+    "file": "tee1.bin",
+    "size": 5242880,
+    "sha256": "fc46d6a47b11e3162e87ae034db94d771ef985fa688bb04f41511197c9deb6e7",
+    "all_zero": false,
+    "category": "firmware"
+  },
+  {
+    "file": "tee2.bin",
+    "size": 5242880,
+    "sha256": "fc46d6a47b11e3162e87ae034db94d771ef985fa688bb04f41511197c9deb6e7",
+    "all_zero": false,
+    "category": "firmware"
+  },
+  {
+    "file": "vbmeta.bin",
+    "size": 12754944,
+    "sha256": "4339c58f3dfa5a11dc245f6a6345d59982f464abf92b79a44688a1a03f8c96e5",
+    "all_zero": false,
+    "category": "android"
+  },
+  {
+    "file": "vbmeta_system.bin",
+    "size": 8388608,
+    "sha256": "d6ab9beacdf0fbd4c644b349b2817d134e7432f71ba67fb0ca922f5a14ab4d4f",
+    "all_zero": false,
+    "category": "android"
+  },
+  {
+    "file": "vbmeta_vendor.bin",
+    "size": 8388608,
+    "sha256": "b5f23bae154e0b382e1a9cee39c3abe26e372d6e144147bb98f600688b533fa2",
+    "all_zero": false,
+    "category": "android"
+  },
+  {
+    "file": "vendor_boot.bin",
+    "size": 67108864,
+    "sha256": "3b6a07d0d404fab4e23b6d34bc6696a6a312dd92821332385e5af7c01c421351",
+    "all_zero": true,
+    "category": "boot"
+  }
+]

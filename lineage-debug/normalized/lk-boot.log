@@ -1,0 +1,5951 @@
+fastboot : (bootloader) [4951] LK_LOG_STORE:
+所在位置 行:1 字符: 1
++ fastboot oem dump_pllk_log 2>&1 | Tee-Object .\lk-boot.log
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ((bootloader) [4951] LK_LOG_STORE::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+(bootloader) dram pl/lk log buff 
+(bootloader) mapping start addr =
+(bootloader)  0x7f7c0000, size = 
+(bootloader) 0x40000
+
+[4951] LK_L
+(bootloader) OG_STORE:sram buff h
+(bootloader) eader 0x10f200,curre
+(bootloader) nt log header 0x10f2
+(bootloader) 34, sig 0xcdab3412, 
+(bootloader) buff_size 0x40000, p
+(bootloader) l log size 0x465b@0x
+(bootloader) 400, lk log size 0x0
+(bootloader) @0x400!
+
+[4951] LK_L
+(bootloader) OG_STORE: buff ready
+(bootloader) .
+
+[416] [PROFILE] m
+(bootloader) mc read 1 blks in 0 
+(bootloader) ms: 8KB/s
+
+
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) 
+(bootloader) eck once, sig value 
+(bootloader) 0x427, addr 0x102000
+(bootloader) .
+
+PL_LOG_STORE:sram
+(bootloader) ->sig value 0xABCD12
+(bootloader) 34!
+
+#T#Preloader St
+(bootloader) art=1
+
+[HT22] : 1 0x
+(bootloader) 4 0x4 done
+
+0:0x8000
+(bootloader) 0000, 1:0x1100, 2:0x
+(bootloader) 1, 3:0x190002, 4:0x4
+(bootloader) 0000000, STA:0x0, S:
+(bootloader) 0x4, FAB0:0x6765, FA
+(bootloader) B11:0x0
+
+A:0x0, B:0x
+(bootloader) 3F, C:0x40, D:0x1F, 
+(bootloader) E:0x1, F:0x3, G:0x2
+
+(bootloader) 
+DATE_CODE_YY:1, DAT
+(bootloader) E_CODE_WW:1A
+
+[SegCo
+(bootloader) de] Segment Code:0x4
+(bootloader) , PROJECT_CODE:0x0, 
+(bootloader) FAB_CODE:0x2, RW_STA
+(bootloader) :0x0, CTL:0x0, DCM:0
+(bootloader) x7
+
+#T#DEVINFO=24
+
+P
+(bootloader) ll init start...
+
+Pl
+(bootloader) l init Done!
+
+#T#PLL
+(bootloader) =2
+
+#T#GPIO=0
+
+[PWRA
+(bootloader) P] si_en_sel = 0, si
+(bootloader) _ck_sel = 0, si_samp
+(bootloader) le_ctrl = 0, rdata =
+(bootloader)  96A9
+
+[PWRAP] si_en
+(bootloader) _sel = 0, si_ck_sel 
+(bootloader) = 1, si_sample_ctrl 
+(bootloader) = 20, rdata = 5AA5, 
+(bootloader) Pass
+
+[PWRAP] InitSi
+(bootloader) Strobe (6, 6, FBF7) 
+(bootloader) Data Boundary Is Fou
+(bootloader) nd !!
+
+[PWRAP] SI St
+(bootloader) robe Calibration For
+(bootloader)  PMIC 0 Done, (40, 6
+(bootloader) )
+
+[PWRAP] Read Test
+(bootloader)  pass, return_value=
+(bootloader) 0x0
+
+[PWRAP] Write T
+(bootloader) est pass
+
+[PWRAP] RE
+(bootloader) CORD_CMD0:  0xA2C (L
+(bootloader) ast one command addr
+(bootloader) )
+
+[PWRAP] RECORD_WD
+(bootloader) ATA0:0x81E0 (Last on
+(bootloader) e command wdata)
+
+[P
+(bootloader) WRAP] RECORD_CMD1:  
+(bootloader) 0xA2C (Last second c
+(bootloader) ommand addr)
+
+[PWRAP
+(bootloader) ] RECORD_WDATA1:0x81
+(bootloader) E0 (Last second comm
+(bootloader) and wdata)
+
+[PWRAP] 
+(bootloader) RECORD_CMD2:  0x152A
+(bootloader)  (Last third command
+(bootloader)  addr)
+
+[PWRAP] RECO
+(bootloader) RD_WDATA2:0x1D (Last
+(bootloader)  third command wdata
+(bootloader) )
+
+[PWRAP] init pass
+(bootloader) , ret=0.
+
+
+
+#T#PWRAP
+(bootloader) =8
+
+#T#I2C=0
+
+[PMIC]
+(bootloader) Preloader Start
+
+[PM
+(bootloader) IC]MT6357 CHIP Code 
+(bootloader) = 0x5721
+
+[PMIC]POWE
+(bootloader) R_HOLD :0x1
+
+[PMIC]T
+(bootloader) OP_RST_STATUS[0x152]
+(bootloader) =0x4F
+
+[PMIC]PONSTS[
+(bootloader) 0xC]=0x0
+
+[PMIC]POFF
+(bootloader) STS[0xE]=0x400
+
+[PMI
+(bootloader) C]PGSTATUS0[0x14]=0x
+(bootloader) FFFE
+
+[PMIC]PSOCSTAT
+(bootloader) US[0x16]=0x0
+
+[PMIC]
+(bootloader) BUCK_OC_SDN_STATUS[0
+(bootloader) x1434]=0x0
+
+[PMIC]BU
+(bootloader) CK_OC_SDN_EN[0x1444]
+(bootloader) =0x1F
+
+[PMIC]THERMAL
+(bootloader) STATUS[0x18]=0x0
+
+[P
+(bootloader) MIC]STRUP_CON4[0xA1C
+(bootloader) ]=0x0
+
+[PMIC]TOP_RST
+(bootloader) _MISC[0x14C]=0x204
+
+
+(bootloader) [PMIC]TOP_CLK_TRIM[0
+(bootloader) x38E]=0x6AC0
+
+latch 
+(bootloader) VPROC 681250 uV
+
+lat
+(bootloader) ch VSRAM_PROC 850000
+(bootloader)  uV
+
+latch VSRAM_OTH
+(bootloader) ERS 900000 uV
+
+latch
+(bootloader)  VCORE 650000 uV
+
+la
+(bootloader) tch VMODEM 650000 uV
+(bootloader) 
+
+[pmic_check_rst] A
+(bootloader) P Watchdog
+
+[PMIC]ju
+(bootloader) st_rst = 0
+
+No EFUSE
+(bootloader)  SW Load
+
+ignore bat
+(bootloader)  check
+
+[PMIC]disabl
+(bootloader) e usbdl wo battery
+
+
+(bootloader) [PMIC]pmic_wdt_set R
+(bootloader) eg[0x14C]=0x225
+
+[rt
+(bootloader) 5738_driver_probe]
+
+
+(bootloader) [I2C] id=3,addr: 57,
+(bootloader)  transfer error
+
+[I2
+(bootloader) C] I2C_ACKERR
+
+[I2C]
+(bootloader)  write_read 0x10001 
+(bootloader) bytes fails,ret=-121
+(bootloader) .
+
+[I2C] id=3,addr: 
+(bootloader) 57, transfer error
+
+
+(bootloader) [I2C] I2C_ACKERR
+
+[I
+(bootloader) 2C] write_read 0x100
+(bootloader) 01 bytes fails,ret=-
+(bootloader) 121.
+
+[I2C] id=3,add
+(bootloader) r: 57, transfer erro
+(bootloader) r
+
+[I2C] I2C_ACKERR
+
+(bootloader) 
+[I2C] write_read 0x
+(bootloader) 10001 bytes fails,re
+(bootloader) t=-121.
+
+[rt5738_hw_
+(bootloader) component_detect] ex
+(bootloader) ist = 0, Chip ID = 3
+(bootloader) 04
+
+[rt5738_driver_p
+(bootloader) robe] PL rt5738_vdd2
+(bootloader)  is not exist
+
+[I2C]
+(bootloader)  id=3,addr: 50, tran
+(bootloader) sfer error
+
+[I2C] I2
+(bootloader) C_ACKERR
+
+[I2C] writ
+(bootloader) e_read 0x10001 bytes
+(bootloader)  fails,ret=-121.
+
+[I
+(bootloader) 2C] id=3,addr: 50, t
+(bootloader) ransfer error
+
+[I2C]
+(bootloader)  I2C_ACKERR
+
+[I2C] w
+(bootloader) rite_read 0x10001 by
+(bootloader) tes fails,ret=-121.
+
+(bootloader) 
+[I2C] id=3,addr: 50
+(bootloader) , transfer error
+
+[I
+(bootloader) 2C] I2C_ACKERR
+
+[I2C
+(bootloader) ] write_read 0x10001
+(bootloader)  bytes fails,ret=-12
+(bootloader) 1.
+
+[rt5738_hw_compo
+(bootloader) nent_detect] exist =
+(bootloader)  0, Chip ID = 304
+
+[
+(bootloader) rt5738_driver_probe]
+(bootloader)  PL rt5738_vddq is n
+(bootloader) ot exist
+
+[hl7593_dr
+(bootloader) iver_probe]
+
+[I2C] i
+(bootloader) d=3,addr: 57, transf
+(bootloader) er error
+
+[I2C] I2C_
+(bootloader) ACKERR
+
+[I2C] write_
+(bootloader) read 0x10001 bytes f
+(bootloader) ails,ret=-121.
+
+[hl7
+(bootloader) 593_read_interface] 
+(bootloader) Reg[3]=0x3
+
+[hl7593_
+(bootloader) read_interface] val=
+(bootloader) 0x3
+
+[I2C] id=3,addr
+(bootloader) : 57, transfer error
+(bootloader) 
+
+[I2C] I2C_ACKERR
+
+
+(bootloader) [I2C] write_read 0x1
+(bootloader) 0001 bytes fails,ret
+(bootloader) =-121.
+
+[hl7593_read
+(bootloader) _interface] Reg[4]=0
+(bootloader) x4
+
+[hl7593_read_int
+(bootloader) erface] val=0x4
+
+[I2
+(bootloader) C] id=3,addr: 57, tr
+(bootloader) ansfer error
+
+[I2C] 
+(bootloader) I2C_ACKERR
+
+[I2C] wr
+(bootloader) ite_read 0x10001 byt
+(bootloader) es fails,ret=-121.
+
+
+(bootloader) [hl7593_read_interfa
+(bootloader) ce] Reg[5]=0x5
+
+[hl7
+(bootloader) 593_read_interface] 
+(bootloader) val=0x0
+
+PGOOD = 0, 
+(bootloader) chip_id = 772
+
+[hl75
+(bootloader) 93_hw_component_dete
+(bootloader) ct] exist = 0, Chip 
+(bootloader) ID = 304
+
+[hl7593_dr
+(bootloader) iver_probe] PL hl759
+(bootloader) 3_vdd2 is not exist
+
+(bootloader) 
+[I2C] id=3,addr: 50
+(bootloader) , transfer error
+
+[I
+(bootloader) 2C] I2C_ACKERR
+
+[I2C
+(bootloader) ] write_read 0x10001
+(bootloader)  bytes fails,ret=-12
+(bootloader) 1.
+
+[hl7593_read_int
+(bootloader) erface] Reg[3]=0x3
+
+
+(bootloader) [hl7593_read_interfa
+(bootloader) ce] val=0x3
+
+[I2C] i
+(bootloader) d=3,addr: 50, transf
+(bootloader) er error
+
+[I2C] I2C_
+(bootloader) ACKERR
+
+[I2C] write_
+(bootloader) read 0x10001 bytes f
+(bootloader) ails,ret=-121.
+
+[hl7
+(bootloader) 593_read_interface] 
+(bootloader) Reg[4]=0x4
+
+[hl7593_
+(bootloader) read_interface] val=
+(bootloader) 0x4
+
+[I2C] id=3,addr
+(bootloader) : 50, transfer error
+(bootloader) 
+
+[I2C] I2C_ACKERR
+
+
+(bootloader) [I2C] write_read 0x1
+(bootloader) 0001 bytes fails,ret
+(bootloader) =-121.
+
+[hl7593_read
+(bootloader) _interface] Reg[5]=0
+(bootloader) x5
+
+[hl7593_read_int
+(bootloader) erface] val=0x0
+
+PGO
+(bootloader) OD = 0, chip_id = 77
+(bootloader) 2
+
+[hl7593_hw_compon
+(bootloader) ent_detect] exist = 
+(bootloader) 0, Chip ID = 304
+
+[h
+(bootloader) l7593_driver_probe] 
+(bootloader) PL hl7593_vddq is no
+(bootloader) t exist
+
+[fan53526_d
+(bootloader) river_probe]
+
+[I2C] 
+(bootloader) id=3,addr: 60, trans
+(bootloader) fer error
+
+[I2C] I2C
+(bootloader) _ACKERR
+
+[I2C] write
+(bootloader) _read 0x10001 bytes 
+(bootloader) fails,ret=-121.
+
+[I2
+(bootloader) C] id=3,addr: 60, tr
+(bootloader) ansfer error
+
+[I2C] 
+(bootloader) I2C_ACKERR
+
+[I2C] wr
+(bootloader) ite_read 0x10001 byt
+(bootloader) es fails,ret=-121.
+
+
+(bootloader) [I2C] id=3,addr: 60,
+(bootloader)  transfer error
+
+[I2
+(bootloader) C] I2C_ACKERR
+
+[I2C]
+(bootloader)  write_read 0x10001 
+(bootloader) bytes fails,ret=-121
+(bootloader) .
+
+[fan53526_hw_comp
+(bootloader) onent_detect] exist 
+(bootloader) = 0, Chip ID = 304
+
+
+(bootloader) [fan53526_driver_pro
+(bootloader) be] PL fan53526_vdd2
+(bootloader)  is not exist
+
+[I2C]
+(bootloader)  id=3,addr: 50, tran
+(bootloader) sfer error
+
+[I2C] I2
+(bootloader) C_ACKERR
+
+[I2C] writ
+(bootloader) e_read 0x10001 bytes
+(bootloader)  fails,ret=-121.
+
+[I
+(bootloader) 2C] id=3,addr: 50, t
+(bootloader) ransfer error
+
+[I2C]
+(bootloader)  I2C_ACKERR
+
+[I2C] w
+(bootloader) rite_read 0x10001 by
+(bootloader) tes fails,ret=-121.
+
+(bootloader) 
+[I2C] id=3,addr: 50
+(bootloader) , transfer error
+
+[I
+(bootloader) 2C] I2C_ACKERR
+
+[I2C
+(bootloader) ] write_read 0x10001
+(bootloader)  bytes fails,ret=-12
+(bootloader) 1.
+
+[fan53526_hw_com
+(bootloader) ponent_detect] exist
+(bootloader)  = 0, Chip ID = 304
+
+(bootloader) 
+[fan53526_driver_pr
+(bootloader) obe] PL fan53526_vdd
+(bootloader) q is not exist
+
+regi
+(bootloader) ster vs1 OK
+
+registe
+(bootloader) r vmodem OK
+
+registe
+(bootloader) r vcore OK
+
+register
+(bootloader)  vproc OK
+
+register 
+(bootloader) vpa OK
+
+register vsr
+(bootloader) am_others OK
+
+regist
+(bootloader) er vsram_proc OK
+
+re
+(bootloader) gister vdram OK
+
+[PM
+(bootloader) IC]Init done
+
+#T#PMI
+(bootloader) C=45
+
+#T#PLL POST In
+(bootloader) it=0
+
+#T#Connsys=0
+
+
+(bootloader) [SD0] SET_CLK(260kHz
+(bootloader) ): SCLK(259kHz) MODE
+(bootloader) (0) DDR(0) DIV(385) 
+(bootloader) DS(0) RS(0)
+
+[SD0] S
+(bootloader) ET_CLK(260kHz): SCLK
+(bootloader) (259kHz) MODE(2) DDR
+(bootloader) (1) DIV(192) DS(0) R
+(bootloader) S(0)
+
+[SD0] Size: 59
+(bootloader) 640 MB, Max.Speed: 5
+(bootloader) 2000 kHz, blklen(512
+(bootloader) ), nblks(122142720)
+
+(bootloader) 
+[SD0] Initialized, 
+(bootloader) eMMC45
+
+[SD0] SET_CL
+(bootloader) K(52000kHz): SCLK(50
+(bootloader) 000kHz) MODE(2) DDR(
+(bootloader) 1) DIV(1) DS(0) RS(0
+(bootloader) )
+
+#T#Boot dev init=
+(bootloader) 111
+
+[PLFM] Init Boo
+(bootloader) t Device: OK(0)
+
+#T#
+(bootloader) Long Pressed Reboot=
+(bootloader) 0
+
+[PLFM] Init PWRAP
+(bootloader) : OK(0)
+
+[PLFM] Init
+(bootloader)  PMIC: OK(0)
+
+[PLFM]
+(bootloader)  chip_hw_ver[CA00], 
+(bootloader) chip_sw_ver[0]
+
+aee 
+(bootloader) enable 1
+
+RAM_CONSOL
+(bootloader) E wdt_status 0x2, fi
+(bootloader) q_step 0x0, exp_type
+(bootloader)  0x0
+
+clk_buf_dump_d
+(bootloader) ts_log: PMIC_CLK_BUF
+(bootloader) ?_STATUS=2 1 1 2 0 0
+(bootloader)  0
+
+clk_buf_dump_dts
+(bootloader) _log: PMIC_CLK_BUF?_
+(bootloader) DRV_CURR=1 1 1 1 1 1
+(bootloader)  1
+
+clk_buf_dump_clk
+(bootloader) buf_log DCXO_CW00/02
+(bootloader) /11/13/14/15/16/20/t
+(bootloader) op_spi_con1=0x4E1D 3
+(bootloader) AEE 8000 98E9 82B5 A
+(bootloader) 2AA 9455 11 1
+
+clk_b
+(bootloader) uf_dump_clkbuf_log D
+(bootloader) CXO_CW00/02/11/13/14
+(bootloader) /15/16/20/top_spi_co
+(bootloader) n1=0x4E1D 3AEE 8000 
+(bootloader) 98E9 82B5 A2AA 9455 
+(bootloader) 11 0
+
+clk_buf_init_p
+(bootloader) mic_wrap: DCXO_CONN_
+(bootloader) ADR0/WDATA0/ADR1/WDA
+(bootloader) TA1=0x44A/0/44A/1
+
+c
+(bootloader) lk_buf_init_pmic_wra
+(bootloader) p: DCXO_NFC_ADR0/WDA
+(bootloader) TA0/ADR1/WDATA1/EN=0
+(bootloader) x78C/100/78A/100/3
+
+
+(bootloader) [RTC]switch to dcxo
+
+(bootloader) 
+[RTC]rtc 2sec reboo
+(bootloader) t is not enabled
+
+[P
+(bootloader) MIC] pmic_init_setti
+(bootloader) ng end. v180104
+
+[MT
+(bootloader) 6357] 1 1,48
+
+[MT635
+(bootloader) 7] get volt 6, 61, 9
+(bootloader) 00000
+
+vsram_proc = 
+(bootloader) 900000 uV
+
+[MT6357] 
+(bootloader) get volt 3, 45, 8000
+(bootloader) 00
+
+vproc = 800000 u
+(bootloader) V
+
+[MT6357] get volt
+(bootloader)  5, 61, 900000
+
+vsra
+(bootloader) m_others = 900000 uV
+(bootloader) 
+
+[MT6357] get volt 
+(bootloader) 2, 45, 800000
+
+vcore
+(bootloader)  = 800000 uV
+
+[MT635
+(bootloader) 7] get volt 1, 48, 8
+(bootloader) 00000
+
+vmodem = 8000
+(bootloader) 00 uV
+
+[MT6357] 2 5,
+(bootloader) 1
+
+[MT6357] 2 6,1
+
+[
+(bootloader) MT6357] 2 3,1
+
+[MT63
+(bootloader) 57] 2 2,1
+
+[MT6357] 
+(bootloader) 2 1,1
+
+[DDR Reserve]
+(bootloader)  ddr reserve mode no
+(bootloader) t be enabled yet
+
+#T
+(bootloader) #chk DDR Reserve sta
+(bootloader) tus=94
+
+Enter mtk_kp
+(bootloader) d_gpio_set! 
+
+after 
+(bootloader) set KP enable: KP_SE
+(bootloader) L = 0x1C70 !
+
+#T#che
+(bootloader) ck Boot status-RTC=7
+(bootloader) 1
+
+#T#check Boot sta
+(bootloader) tus-PMIC=0
+
+[PLFM] W
+(bootloader) DT reboot bypass pow
+(bootloader) er key!
+
+#T#check Bo
+(bootloader) ot status=1
+
+[PMIC]P
+(bootloader) OWER_HOLD :0x1
+
+[RTC
+(bootloader) ]rtc_lpsd_solution
+
+
+(bootloader) #T#rtc_bbpu_power_on
+(bootloader) =1
+
+pl chr:1 monitor
+(bootloader) :1 plchr:0 gain:1039
+(bootloader) 
+
+ignore bat check
+
+
+(bootloader) [pl_check_bat_protec
+(bootloader) t_status]: check VBA
+(bootloader) T=4384mV with 0mV, V
+(bootloader) CHR=4674mV ,VCHR_HV=
+(bootloader) 6500mv, start chargi
+(bootloader) ng
+
+[pl_check_bat_pr
+(bootloader) otect_status]: check
+(bootloader)  VBAT=4384mV with 0m
+(bootloader) V, stop charging
+
+#T
+(bootloader) #Enable PMIC Kpd clk
+(bootloader) =9
+
+mtk_kpd_gpio_set
+(bootloader)  Already!
+
+Log Turne
+(bootloader) d Off.
+
+#T#UART DYNA
+(bootloader) MIC SWITCH=0
+
+[dramc
+(bootloader) ] init partition add
+(bootloader) ress is 0x0000000000
+(bootloader) 008000
+
+[dramc] LAST
+(bootloader) _DRAM_FATAL_ERR_FLAG
+(bootloader)  = 0x0
+
+[MT6357] 4 2
+(bootloader) ,1
+
+[MT6357] vp
+
+[MT
+(bootloader) 6357] n_size 2
+
+[MT6
+(bootloader) 357] 1 7,2
+
+[MT6357]
+(bootloader)  get volt 2, 45, 800
+(bootloader) 000
+
+Vcore = 800000
+
+(bootloader) 
+[MT6357] n_size 2
+
+
+(bootloader) [MT6357] get volt 7,
+(bootloader)  2, 1200000
+
+Vdram =
+(bootloader)  1220000
+
+dvfsrc_opp
+(bootloader) _level_mapping: PTPO
+(bootloader) D0: 0x100090 (ct_ena
+(bootloader) ble:1, skip:1, ddr=0
+(bootloader) , info2=0x0)
+
+get_vb
+(bootloader) _volt: PTPOD10: 0xFD
+(bootloader) 855
+
+dvfsrc_opp_leve
+(bootloader) l_mapping: default v
+(bootloader) core_opp_uv: 800000,
+(bootloader)  700000, 700000, 650
+(bootloader) 000
+
+dvfsrc_opp_leve
+(bootloader) l_mapping: final vco
+(bootloader) re_opp_uv: 800000, 7
+(bootloader) 00000, 700000, 65000
+(bootloader) 0
+
+[EMI] mcp_dram_nu
+(bootloader) m:7,discrete_dram_nu
+(bootloader) m:0,enable_combo_dis
+(bootloader) :0
+
+[MT6357] 1 2,25
+
+(bootloader) 
+Read voltage for 60
+(bootloader) 0
+
+Vio18 = 1800000
+
+
+(bootloader) [MT6357] get volt 2,
+(bootloader)  25, 675000
+
+Vcore =
+(bootloader)  675000
+
+[MT6357] n_
+(bootloader) size 2
+
+[MT6357] get
+(bootloader)  volt 7, 2, 1200000
+
+(bootloader) 
+Vdram = 1220000
+
+eM
+(bootloader) MC cid: 15010052,433
+(bootloader) 1344D,420797DD,D0E45
+(bootloader) 34D
+
+[MDL] index(0) 
+(bootloader) emmc id match failed
+(bootloader) 
+
+[MDL] index(1) emm
+(bootloader) c id match failed
+
+[
+(bootloader) MDL] index(2) emmc i
+(bootloader) d match failed
+
+[MDL
+(bootloader) ] index(3) emmc id m
+(bootloader) atch failed
+
+[MDL] i
+(bootloader) ndex(4) emmc id matc
+(bootloader) h failed
+
+found:1,i:
+(bootloader) 5
+
+[EMI] MDL number 
+(bootloader) = 5
+
+[MT6357] 1 2,25
+(bootloader) 
+
+Read voltage for 6
+(bootloader) 00
+
+Vio18 = 1800000
+
+(bootloader) 
+[MT6357] get volt 2
+(bootloader) , 25, 675000
+
+Vcore 
+(bootloader) = 675000
+
+[MT6357] n
+(bootloader) _size 2
+
+[MT6357] ge
+(bootloader) t volt 7, 2, 1200000
+(bootloader) 
+
+Vdram = 1220000
+
+[
+(bootloader) MT6357] 1 2,37
+
+Read
+(bootloader)  voltage for 800
+
+Vi
+(bootloader) o18 = 1800000
+
+[MT63
+(bootloader) 57] get volt 2, 37, 
+(bootloader) 750000
+
+Vcore = 7500
+(bootloader) 00
+
+[MT6357] n_size 
+(bootloader) 2
+
+[MT6357] get volt
+(bootloader)  7, 2, 1200000
+
+Vdra
+(bootloader) m = 1220000
+
+[MT6357
+(bootloader) ] 1 2,45
+
+Read volta
+(bootloader) ge for 933
+
+Vio18 = 
+(bootloader) 1800000
+
+[MT6357] ge
+(bootloader) t volt 2, 45, 800000
+(bootloader) 
+
+Vcore = 800000
+
+[M
+(bootloader) T6357] n_size 2
+
+[MT
+(bootloader) 6357] get volt 7, 2,
+(bootloader)  1200000
+
+Vdram = 12
+(bootloader) 20000
+
+[MT6357] 4 2,
+(bootloader) 0
+
+[MT6357] 1 2,45
+
+
+(bootloader) [MT6357] get volt 2,
+(bootloader)  45, 800000
+
+Vcore =
+(bootloader)  800000
+
+[MEM] 1st c
+(bootloader) omplex R/W mem test 
+(bootloader) pass (start addr:0x4
+(bootloader) 8000000)
+
+[MEM] 2nd 
+(bootloader) complex R/W mem test
+(bootloader)  pass (start addr:0x
+(bootloader) 80000000, 0x0 @Rank1
+(bootloader) )
+
+[LastDRAMC] 0x10E
+(bootloader) F4C: 0x19870611
+
+[La
+(bootloader) stDRAMC] 0x10EF50: 0
+(bootloader) x33330000
+
+[LastDRAM
+(bootloader) C] 0x10EF54: 0x333F0
+(bootloader) 000
+
+[LastDRAMC] 0x1
+(bootloader) 0EF58: 0x198B0613
+
+[
+(bootloader) LastDRAMC] 0x10EF5C:
+(bootloader)  0x2
+
+[LastDRAMC] 0x
+(bootloader) 10EF60: 0x0
+
+[LastDR
+(bootloader) AMC] 0x10EF64: 0x800
+(bootloader) 00000
+
+[LastDRAMC] 0
+(bootloader) x10EF68: 0x0
+
+[LastD
+(bootloader) RAMC] 0x10EF6C: 0x0
+
+(bootloader) 
+[LastDRAMC] 0x10EF7
+(bootloader) 0: 0x0
+
+[LastDRAMC] 
+(bootloader) 0x10EF74: 0x0
+
+[Last
+(bootloader) DRAMC] 0x10EF78: 0x0
+(bootloader) 
+
+[LastDRAMC] 0x10EF
+(bootloader) 7C: 0x0
+
+[LastDRAMC]
+(bootloader)  0x10EF80: 0x0
+
+[Las
+(bootloader) tDRAMC] 0x10EF84: 0x
+(bootloader) 0
+
+[LastDRAMC] 0x10E
+(bootloader) F88: 0x0
+
+[LastDRAMC
+(bootloader) ] 0x10EF8C: 0xC3500
+
+(bootloader) 
+[LastDRAMC] 0x10EF9
+(bootloader) 0: 0xB71B0
+
+[LastDRA
+(bootloader) MC] 0x10EF94: 0xA4CB
+(bootloader) 8
+
+[LastDRAMC] 0x10E
+(bootloader) F98: 0x10500
+
+[dramc
+(bootloader) ] DRAM_FATAL_ERR_FLA
+(bootloader) G = 0x80000000
+
+#T#m
+(bootloader) em_init=562
+
+#T#Init
+(bootloader)  Dram buf=1
+
+#T#Ram 
+(bootloader) console=0
+
+mtk_kpd_g
+(bootloader) pio_set Already!
+
+CU
+(bootloader) STOM_CONFIG_MAX_DRAM
+(bootloader) _SIZE: 0x00000008000
+(bootloader) 00000
+
+CUSTOM_CONFIG
+(bootloader) _MAX_DRAM_SIZE: 0x00
+(bootloader) 00000800000000
+
+tota
+(bootloader) l_dram_size: 0x00000
+(bootloader) 00100000000, max_dra
+(bootloader) m_size: 0x0000000800
+(bootloader) 000000
+
+dump mblock 
+(bootloader) info 
+
+mblock[0] sta
+(bootloader) rt=0000000040000000 
+(bootloader) size=000000008000000
+(bootloader) 0
+
+mblock[1] start=0
+(bootloader) 0000000C0000000 size
+(bootloader) =0000000080000000
+
+C
+(bootloader) USTOM_CONFIG_MAX_DRA
+(bootloader) M_SIZE: 0x0000000800
+(bootloader) 000000
+
+mblock_alloc
+(bootloader) _range: start: 0x000
+(bootloader) 00000BFFFF000, sz: 0
+(bootloader) x0000000000001000 lo
+(bootloader) wer_bound: 0x0000000
+(bootloader) 000000000 limit: 0x0
+(bootloader) 0000000C0000000 map:
+(bootloader) 0 name:dramc-rk0 ali
+(bootloader) gn: 0x00000000000010
+(bootloader) 00
+
+CUSTOM_CONFIG_MA
+(bootloader) X_DRAM_SIZE: 0x00000
+(bootloader) 00800000000
+
+mblock_
+(bootloader) alloc_range: start: 
+(bootloader) 0x000000013FFFF000, 
+(bootloader) sz: 0x00000000000010
+(bootloader) 00 lower_bound: 0x00
+(bootloader) 00000000000000 limit
+(bootloader) : 0x0000000140000000
+(bootloader)  map:0 name:dramc-rk
+(bootloader) 1 align: 0x000000000
+(bootloader) 0001000
+
+mblock_allo
+(bootloader) c_range: start: 0x00
+(bootloader) 000000D0200000, sz: 
+(bootloader) 0x0000000000200000 l
+(bootloader) ower_bound: 0x000000
+(bootloader) 0000000000 limit: 0x
+(bootloader) FFFFFFFFFFFFFFFF map
+(bootloader) :1 name:RKP_NS align
+(bootloader) : 0x0000000000100000
+(bootloader) 
+
+mblock_alloc_range
+(bootloader) : start: 0x00000000D
+(bootloader) 0000000, sz: 0x00000
+(bootloader) 00000200000 lower_bo
+(bootloader) und: 0x0000000000000
+(bootloader) 000 limit: 0xFFFFFFF
+(bootloader) FFFFFFFFF map:0 name
+(bootloader) :RKP align: 0x000000
+(bootloader) 0000100000
+
+[I2C] id
+(bootloader) =5,addr: 34, transfe
+(bootloader) r error
+
+[I2C] I2C_A
+(bootloader) CKERR
+
+[I2C] write_r
+(bootloader) ead 0x10001 bytes fa
+(bootloader) ils,ret=-121.
+
+mt637
+(bootloader) 0_i2c_read_byte: I2C
+(bootloader) R[0x00000001] fail(-
+(bootloader) 1)
+
+mtk_subpmic_init
+(bootloader) : en mrstb fail(-1)
+
+(bootloader) 
+[I2C] id=5,addr: 34
+(bootloader) , transfer error
+
+[I
+(bootloader) 2C] I2C_ACKERR
+
+[I2C
+(bootloader) ] write_read 0x10001
+(bootloader)  bytes fails,ret=-12
+(bootloader) 1.
+
+mt6370_i2c_read_
+(bootloader) byte: I2CR[0x000000B
+(bootloader) 1] fail(-1)
+
+mtk_sub
+(bootloader) pmic_init: en db_vpo
+(bootloader) s_gnd fail(-1)
+
+[I2C
+(bootloader) ] id=5,addr: 34, tra
+(bootloader) nsfer error
+
+[I2C] I
+(bootloader) 2C_ACKERR
+
+[I2C] wri
+(bootloader) te_read 0x10001 byte
+(bootloader) s fails,ret=-121.
+
+m
+(bootloader) t6370_i2c_read_byte:
+(bootloader)  I2CR[0x00000001] fa
+(bootloader) il(-1)
+
+[I2C] id=5,a
+(bootloader) ddr: 34, transfer er
+(bootloader) ror
+
+[I2C] I2C_ACKER
+(bootloader) R
+
+[I2C] write_read 
+(bootloader) 0x10001 bytes fails,
+(bootloader) ret=-121.
+
+mt6370_i2
+(bootloader) c_read_byte: I2CR[0x
+(bootloader) 000000B1] fail(-1)
+
+
+(bootloader) #T#mtk subpmic init=
+(bootloader) 7
+
+[GPT_PL]Success t
+(bootloader) o find valid GPT.
+
+#
+(bootloader) T#part_init=8
+
+mbloc
+(bootloader) k_alloc_range: start
+(bootloader) : 0x000000007F800000
+(bootloader) , sz: 0x000000000080
+(bootloader) 0000 lower_bound: 0x
+(bootloader) 0000000000000000 lim
+(bootloader) it: 0x00000000800000
+(bootloader) 00 map:0 name:gz ali
+(bootloader) gn: 0x00000000002000
+(bootloader) 00
+
+mblock_alloc_ran
+(bootloader) ge: start: 0x0000000
+(bootloader) 07F600000, sz: 0x000
+(bootloader) 0000000041000 lower_
+(bootloader) bound: 0x00000000000
+(bootloader) 00000 limit: 0x00000
+(bootloader) 0007F800000 map:1 na
+(bootloader) me:gz-log align: 0x0
+(bootloader) 000000000200000
+
+#T#
+(bootloader) gz_pre_init=2
+
+PL_LO
+(bootloader) G_STORE:expdb partit
+(bootloader) ion start addr 0x000
+(bootloader) 0000002188000, end a
+(bootloader) ddr 0x00000000035880
+(bootloader) 00, partition size 0
+(bootloader) x0000000001400000, n
+(bootloader) r_sects 0xA000, blks
+(bootloader) z 0x200!
+
+PL_LOG_STO
+(bootloader) RE:get uart flag= 0x
+(bootloader) 0
+
+PL_LOG_STORE:log_
+(bootloader) to_emmc function fla
+(bootloader) g 0x427!
+
+PL_LOG_STO
+(bootloader) RE:last pl log size 
+(bootloader) 0x4650, lk log size 
+(bootloader) 0xF514!
+
+PL_LOG_STOR
+(bootloader) E: /* write preloade
+(bootloader) r/lk log addr 0x7F7C
+(bootloader) 0000 size 0x13F64, o
+(bootloader) ffset 0x11BA00*/
+
+PL
+(bootloader) _LOG_STORE: /* write
+(bootloader)  ATF log addr 0xBFF3
+(bootloader) 0000 size 0, offset 
+(bootloader) 0x12FA00*/
+
+PL_LOG_S
+(bootloader) TORE: /* write GZ lo
+(bootloader) g addr 0x7F600000 si
+(bootloader) ze 30720, offset 0x1
+(bootloader) 2FA00*/
+
+PL_LOG_STOR
+(bootloader) E: /* write kernel l
+(bootloader) og addr 0x41917660 s
+(bootloader) ize 524288, offset 0
+(bootloader) x137200*/
+
+mblock_al
+(bootloader) loc_range: start: 0x
+(bootloader) 000000007F7C0000, sz
+(bootloader) : 0x0000000000040000
+(bootloader)  lower_bound: 0x0000
+(bootloader) 000000000000 limit: 
+(bootloader) 0x0000000080000000 m
+(bootloader) ap:1 name:log_store 
+(bootloader) align: 0x00000000000
+(bootloader) 01000
+
+PL_LOG_STORE:
+(bootloader) sram_header 0x10F200
+(bootloader) ,sig 0xABCD1234, sra
+(bootloader) m_dram_buff 0x10F20C
+(bootloader) , buf_addr 0x7F7C000
+(bootloader) 0
+
+#T#store_switch_t
+(bootloader) o_dram=89
+
+#T#part_d
+(bootloader) ump=0
+
+
+
+[SEC] Loadi
+(bootloader) ng SEC config
+
+[SEC]
+(bootloader)  Name = 
+
+[SEC] Conf
+(bootloader) ig = 0x0, 0x0
+
+0x31,
+(bootloader) 0x41,0x35,0x32
+
+[SEC
+(bootloader) ] seclib_img_auth_lo
+(bootloader) ad_sig [SEC] CFG rea
+(bootloader) d size '0x2000' '0x3
+(bootloader) C'
+
+0x4D4D4D4D
+
+[SEC
+(bootloader) ] SEC CFG 'v4' exist
+(bootloader) s
+
+[LIB] HW DEC
+
+[SE
+(bootloader) C] SEC CFG is valid.
+(bootloader)  Lock state is 3 
+
+#
+(bootloader) T#Sec lib init=39
+
+#
+(bootloader) T#rpmb=0
+
+#T#before 
+(bootloader) bldr_handshake=1
+
+#T
+(bootloader) #seclib_brom_meta_mo
+(bootloader) de=37
+
+[PMIC]IsUsbCa
+(bootloader) bleIn 1
+
+chr type: 1
+(bootloader) 
+
+[USBD] USB Full Sp
+(bootloader) eed
+
+[USBD] USB High
+(bootloader)  Speed
+
+[TOOL] : usb
+(bootloader)  listen timeout
+
+[TO
+(bootloader) OL] <USB> cannot det
+(bootloader) ect tools!
+
+#T#USB h
+(bootloader) andshake=3219
+
+#T#bl
+(bootloader) dr_handshake=0
+
+
+
+De
+(bootloader) vice APC domain init
+(bootloader)  setup:
+
+
+
+APC_CON: 
+(bootloader) INFRA(0x0), MD(0x0),
+(bootloader)  MM(0x0)
+
+#T#sec_boo
+(bootloader) t_check=0
+
+mblock_al
+(bootloader) loc_range: start: 0x
+(bootloader) 0000000047D80000, sz
+(bootloader) : 0x0000000000050000
+(bootloader)  lower_bound: 0x0000
+(bootloader) 000000000000 limit: 
+(bootloader) 0x0000000047DD0000 m
+(bootloader) ap:0 name:atf-reserv
+(bootloader) ed align: 0x00000000
+(bootloader) 00010000
+
+mblock_all
+(bootloader) oc_range: start: 0x0
+(bootloader) 0000000BFF70000, sz:
+(bootloader)  0x0000000000080000 
+(bootloader) lower_bound: 0x00000
+(bootloader) 00000000000 limit: 0
+(bootloader) x00000000C0000000 ma
+(bootloader) p:0 name:atf-ramdump
+(bootloader) -reserved align: 0x0
+(bootloader) 000000000010000
+
+mbl
+(bootloader) ock_alloc_range: sta
+(bootloader) rt: 0x00000000BFF300
+(bootloader) 00, sz: 0x0000000000
+(bootloader) 040000 lower_bound: 
+(bootloader) 0x0000000000000000 l
+(bootloader) imit: 0x00000000C000
+(bootloader) 0000 map:0 name:atf-
+(bootloader) log-reserved align: 
+(bootloader) 0x0000000000001000
+
+
+(bootloader) mblock_alloc_range: 
+(bootloader) start: 0x000000007F4
+(bootloader) 00000, sz: 0x0000000
+(bootloader) 000200000 lower_boun
+(bootloader) d: 0x000000000000000
+(bootloader) 0 limit: 0x000000008
+(bootloader) 0000000 map:0 name:t
+(bootloader) ee-secmem align: 0x0
+(bootloader) 000000000200000
+
+#T#
+(bootloader) trustzone pre init=5
+(bootloader) 
+
+mblock_alloc_range
+(bootloader) : start: 0x000000007
+(bootloader) F700000, sz: 0x00000
+(bootloader) 000000C0000 lower_bo
+(bootloader) und: 0x0000000000000
+(bootloader) 000 limit: 0x0000000
+(bootloader) 080000000 map:0 name
+(bootloader) :SSPM-reserved align
+(bootloader) : 0x0000000000010000
+(bootloader) 
+
+aee enable 1
+
+RAM_
+(bootloader) CONSOLE wdt_status 0
+(bootloader) x2, fiq_step 0x0, ex
+(bootloader) p_type 0x0
+
+aee enab
+(bootloader) le 1
+
+RAM_CONSOLE wd
+(bootloader) t_status 0x2, fiq_st
+(bootloader) ep 0x0, exp_type 0x0
+(bootloader) 
+
+[GZINIT] load nebu
+(bootloader) la failed, DISABLE m
+(bootloader) tee nebula
+
+[GZINIT]
+(bootloader)  get part rkp failed
+(bootloader) !
+
+[GZINIT] ERROR, l
+(bootloader) oad RKP failed, *DIS
+(bootloader) ABLE* RKP feature
+
+m
+(bootloader) block_free_with_size
+(bootloader)  mblock start 000000
+(bootloader) 00D0200000 size: 000
+(bootloader) 0000000200000, name:
+(bootloader)  RKP_NS
+
+mblock_free
+(bootloader) _with_size mblock st
+(bootloader) art 00000000D0000000
+(bootloader)  size: 0000000000200
+(bootloader) 000, name: RKP
+
+#T#l
+(bootloader) oad images=375
+
+#T#l
+(bootloader) astpc init=0
+
+aee en
+(bootloader) able 1
+
+RAM_CONSOLE 
+(bootloader) wdt_status 0x2, fiq_
+(bootloader) step 0x0, exp_type 0
+(bootloader) x0
+
+[MT6357] get vol
+(bootloader) t 3, 45, 800000
+
+[MT
+(bootloader) 6357] get volt 6, 61
+(bootloader) , 900000
+
+[MT6357] g
+(bootloader) et volt 3, 45, 80000
+(bootloader) 0
+
+[MT6357] 1 6,89
+
+
+(bootloader) [MT6357] 1 3,73
+
+[MT
+(bootloader) 6357] 1 6,97
+
+[MT635
+(bootloader) 7] 1 3,81
+
+[MT6357] 
+(bootloader) get volt 6, 97, 1125
+(bootloader) 000
+
+[MT6357] get vo
+(bootloader) lt 3, 81, 1025000
+
+[
+(bootloader) MT6357] get volt 6, 
+(bootloader) 97, 1125000
+
+[MT6357
+(bootloader) ] get volt 3, 81, 10
+(bootloader) 25000
+
+[MT6357] 1 3,
+(bootloader) 79
+
+[MT6357] 1 6,95
+
+(bootloader) 
+[MT6357] get volt 6
+(bootloader) , 95, 1112500
+
+[MT63
+(bootloader) 57] get volt 3, 79, 
+(bootloader) 1012500
+
+[MT6357] 1 
+(bootloader) 3,77
+
+[MT6357] 1 6,9
+(bootloader) 3
+
+[MT6357] get volt
+(bootloader)  6, 93, 1100000
+
+[MT
+(bootloader) 6357] get volt 3, 77
+(bootloader) , 1000000
+
+[MT6357] 
+(bootloader) 1 3,49
+
+[MT6357] 1 6
+(bootloader) ,65
+
+[MT6357] 1 3,45
+(bootloader) 
+
+[MT6357] 1 6,61
+
+#
+(bootloader) T#picachu=22
+
+ignore
+(bootloader)  bat check
+
+#T#Batte
+(bootloader) ry detect=0
+
+mblock_
+(bootloader) alloc_range: start: 
+(bootloader) 0x0000000047DD0000, 
+(bootloader) sz: 0x00000000002000
+(bootloader) 00 lower_bound: 0x00
+(bootloader) 00000000000000 limit
+(bootloader) : 0x0000000047FD0000
+(bootloader)  map:1 name:pl-boota
+(bootloader) rg align: 0x00000000
+(bootloader) 00001000
+
+mblock_all
+(bootloader) oc_range: start: 0x0
+(bootloader) 000000047C80000, sz:
+(bootloader)  0x0000000000010000 
+(bootloader) lower_bound: 0x00000
+(bootloader) 00000000000 limit: 0
+(bootloader) x0000000047C90000 ma
+(bootloader) p:0 name:aee_debug_k
+(bootloader) info align: 0x000000
+(bootloader) 0000010000
+
+mblock_a
+(bootloader) lloc_range: start: 0
+(bootloader) x0000000047C90000, s
+(bootloader) z: 0x00000000000E000
+(bootloader) 0 lower_bound: 0x000
+(bootloader) 0000000000000 limit:
+(bootloader)  0x0000000047D70000 
+(bootloader) map:0 name:pstore al
+(bootloader) ign: 0x0000000000010
+(bootloader) 000
+
+mblock_alloc_ra
+(bootloader) nge: start: 0x000000
+(bootloader) 0047D70000, sz: 0x00
+(bootloader) 00000000010000 lower
+(bootloader) _bound: 0x0000000000
+(bootloader) 000000 limit: 0x0000
+(bootloader) 000047D80000 map:0 n
+(bootloader) ame:minirdump align:
+(bootloader)  0x0000000000010000
+
+(bootloader) 
+#T#Set Argu - befor
+(bootloader) e CHR_INFO=5
+
+[mt_ch
+(bootloader) arger_type_detection
+(bootloader) ] Got data !!, 0, 1
+
+(bootloader) 
+#T#Set Argu - after
+(bootloader)  CHR_INFO=0
+
+aee ena
+(bootloader) ble 1
+
+RAM_CONSOLE w
+(bootloader) dt_status 0x2, fiq_s
+(bootloader) tep 0x0, exp_type 0x
+(bootloader) 0
+
+RAM_CONSOLE offse
+(bootloader) t:0x7C0
+
+RAM_CONSOLE
+(bootloader)  sram_plat_dbg_info_
+(bootloader) addr:0x10EF40, sram_
+(bootloader) plat_dbg_info_size:0
+(bootloader) x200, sram_log_store
+(bootloader) _addr:0x10F200, sram
+(bootloader) _log_store_size:0x10
+(bootloader) 0
+
+RAM_CONSOLE mrdum
+(bootloader) p_addr:0x10F300, mrd
+(bootloader) ump_size:0xE00, dram
+(bootloader) _addr:0x47C80000, dr
+(bootloader) am_size:0x10000
+
+RAM
+(bootloader) _CONSOLE pstore_addr
+(bootloader) :0x47C90000, pstore_
+(bootloader) size:0xE0000, pstore
+(bootloader) _console_size:0x4000
+(bootloader) 0, pstore_pmsg_size:
+(bootloader) 0x10000
+
+RAM_CONSOLE
+(bootloader)  mrdump_mini_header_
+(bootloader) addr:0x47D70000, mrd
+(bootloader) ump_mini_header_size
+(bootloader) :0x10000, magic1:0x6
+(bootloader) 1646472, magic2:0x73
+(bootloader) 697A65
+
+[GZINIT] gz 
+(bootloader) hwuid fail, ret=-1
+
+
+(bootloader) mmc rpmb result key 
+(bootloader) not yet programmed 
+
+(bootloader) 
+mmc rpmb comp hmac 
+(bootloader) error
+
+
+
+ RPMB try p
+(bootloader) er_dev key fail, ret
+(bootloader) ry common key. ret =
+(bootloader)  -1
+
+mmc rpmb result
+(bootloader)  key not yet program
+(bootloader) med 
+
+mmc rpmb comp 
+(bootloader) hmac error
+
+#T#Set A
+(bootloader) rgu=44
+
+BOOT_REASON:
+(bootloader)  4
+
+BOOT_MODE: 0
+
+ME
+(bootloader) M_SIZE: 0x400
+
+MEM_S
+(bootloader) IZE: 0x400
+
+BOOT_TIM
+(bootloader) E: 4756
+
+#T#Dump Arg
+(bootloader) u=0
+
+#T#Boot Argu=0
+
+(bootloader) 
+#T#gz_post_init=0
+
+
+(bootloader) #T#trustzone post in
+(bootloader) it=0
+
+
+
+[BLDR] jump 
+(bootloader) to 0x48000000
+
+[BLDR
+(bootloader) ] <0x48000000>=0xEA0
+(bootloader) 00007
+
+[BLDR] <0x480
+(bootloader) 00004>=0xEA005B66
+
+[
+(bootloader) BLDR] next is GZ at 
+(bootloader) 0x000000027F800000
+
+
+(bootloader) [TZ_SEC_CFG] [B]SRAM
+(bootloader) ROM SEC_ADDR:0x0, SE
+(bootloader) C_ADDR1:0x0, SEC_ADD
+(bootloader) R2:0x0
+
+[TZ_SEC_CFG]
+(bootloader)  [B]SRAMROM SEC_CTRL
+(bootloader) :0x80000000, SEC_CTR
+(bootloader) L2:0x0, SEC_CTRL5:0x
+(bootloader) 0, SEC_CTRL6:0x0
+
+[T
+(bootloader) Z_SEC_CFG] [A]SRAMRO
+(bootloader) M SEC_ADDR:0x9000DC0
+(bootloader) 0, SEC_ADDR1:0xDC00,
+(bootloader)  SEC_ADDR2:0xDC00
+
+[
+(bootloader) TZ_SEC_CFG] [A]SRAMR
+(bootloader) OM SEC_CTRL:0x80000B
+(bootloader) 69, SEC_CTRL2:0x0, S
+(bootloader) EC_CTRL5:0x1680000, 
+(bootloader) SEC_CTRL6:0x0
+
+
+
+Cur
+(bootloader) rent RTC time:[2025/
+(bootloader) 9/16 5:27:54]
+
+[4951
+(bootloader) ] [HT22] : 1 0x4 0x4
+(bootloader)  done
+
+[5026] [PROFI
+(bootloader) LE] ::: lvl(2) Devin
+(bootloader) fo Init takes 75 ms
+
+(bootloader) 
+[5026] bootarg_addr
+(bootloader) : 0x47e6da80, bootar
+(bootloader) g_size: 0x1737
+
+[502
+(bootloader) 7] [WDT]  mtk_wdt_mo
+(bootloader) de LK config  mode v
+(bootloader) alue=7d
+
+[5027] [WDT
+(bootloader) ]  mtk_wdt_mode_conf
+(bootloader) ig LK  mode value=30
+(bootloader) , tmp:22000030
+
+[502
+(bootloader) 7] [WDT] wdt init
+
+[
+(bootloader) 5027] [WDT]  mtk_wdt
+(bootloader) _mode LK config  mod
+(bootloader) e value=30
+
+[5027] [
+(bootloader) WDT]  mtk_wdt_mode_c
+(bootloader) onfig LK  mode value
+(bootloader) =7d, tmp:2200007d
+
+[
+(bootloader) 5027] [PROFILE] ::: 
+(bootloader) lvl(2) WDT Init take
+(bootloader) s 0 ms
+
+[5027] [PWRA
+(bootloader) P] pwrap_init_lk
+
+[5
+(bootloader) 027] [PWRAP] is_pwra
+(bootloader) p_init_done 1
+
+[5027
+(bootloader) ] [PWRAP] [PMIC_WRAP
+(bootloader) ] pwrap_init already
+(bootloader)  init, do nothing
+
+[
+(bootloader) 5027] [pmic_init] LK
+(bootloader)  Start..............
+(bootloader) ....
+
+[5027] [pmic_i
+(bootloader) nit] MT6357 CHIP Cod
+(bootloader) e = 0x5721
+
+[5027] [
+(bootloader) pmic_init] Done
+
+[50
+(bootloader) 27] [PROFILE] ::: lv
+(bootloader) l(2) pmic_init takes
+(bootloader)  0 ms
+
+[5027] [PROFI
+(bootloader) LE] ::: lvl(1) platf
+(bootloader) orm_early_init takes
+(bootloader)  76 ms
+
+[0] welcome 
+(bootloader) to lk
+
+
+
+[0] LK_VER_
+(bootloader) TAG = r65v3_pmz_w1a-
+(bootloader) 221ef069a60-20250916
+(bootloader) 103042-2025091610384
+(bootloader) 8
+
+[0] calling const
+(bootloader) ructors
+
+[0] initial
+(bootloader) izing heap
+
+[0] heap
+(bootloader)  base 0x48160594 siz
+(bootloader) e 2751084 bytes
+
+[0]
+(bootloader)  initializing thread
+(bootloader) s
+
+[0] initializing 
+(bootloader) dpc
+
+[0] initializin
+(bootloader) g timers
+
+[0] creati
+(bootloader) ng bootstrap complet
+(bootloader) ion thread
+
+[0] ioth
+(bootloader) read starts.
+
+[0] Wa
+(bootloader) it for bootstrap2...
+(bootloader) 
+
+[0] top of bootstr
+(bootloader) ap2()
+
+[0] thread: b
+(bootloader) ootstrap2, bottom(st
+(bootloader) ack) = 0x4816468c, l
+(bootloader) imit(stack) = 0x4816
+(bootloader) 268c
+
+[1] mblock_res
+(bootloader) erve-R start: 0x4800
+(bootloader) 0000, sz: 0x400000 m
+(bootloader) ap:0 name:lk_addr_mb
+(bootloader) 
+
+[1] mblock_reserve
+(bootloader) -R start: 0x48b00000
+(bootloader) , sz: 0x8000000 map:
+(bootloader) 0 name:scratch_addr_
+(bootloader) mb
+
+[1] initializing
+(bootloader)  platform
+
+[1] platf
+(bootloader) orm_init()
+
+[1] [SD0
+(bootloader) ] Host controller in
+(bootloader) tialization start
+
+[
+(bootloader) 1] [SD0] SET_CLK(260
+(bootloader) kHz): SCLK(259kHz) M
+(bootloader) ODE(0) DDR(0) DIV(38
+(bootloader) 5) DS(0) RS(0)
+
+[1] 
+(bootloader) [SD0] Host controlle
+(bootloader) r intialization done
+(bootloader) 
+
+[1] [mmc_init]: ms
+(bootloader) dc0 start mmc_init_c
+(bootloader) ard()
+
+[1] [mmc_init
+(bootloader) _card]: start
+
+[41] 
+(bootloader) [SD0] ocr = 0x400180
+(bootloader) 00, card->ocr=0xC0FF
+(bootloader) 8080, s18a = 0 
+
+[60
+(bootloader) ] [SD0] EXT_CSD_ERAS
+(bootloader) E_GRP_DEF is Off, wp
+(bootloader) _size = 8192KB
+
+[SD0
+(bootloader) ] csd.write_prot_grp
+(bootloader) sz = 15, csd.erase_s
+(bootloader) ctsz = 1024
+
+[62] [S
+(bootloader) D0] Switch to High-S
+(bootloader) peed mode!
+
+[63] [SD
+(bootloader) 0] Switch to DDR bus
+(bootloader) width
+
+[63] [SD0] SE
+(bootloader) T_CLK(260kHz): SCLK(
+(bootloader) 259kHz) MODE(2) DDR(
+(bootloader) 1) DIV(192) DS(0) RS
+(bootloader) (0)
+
+[63] [SD0] Size
+(bootloader) : 59640 MB, Max.Spee
+(bootloader) d: 52000 kHz, blklen
+(bootloader) (512), nblks(1221427
+(bootloader) 20)
+
+[63] [SD0] Init
+(bootloader) ialized, eMMC45
+
+[63
+(bootloader) ] [SD0] SET_CLK(5200
+(bootloader) 0kHz): SCLK(50000kHz
+(bootloader) ) MODE(2) DDR(1) DIV
+(bootloader) (1) DS(0) RS(0)
+
+[63
+(bootloader) ] [mmc_init_card]: f
+(bootloader) inish successfully
+
+
+(bootloader) [63] [mt_part_regist
+(bootloader) er_device]
+
+[63] [PA
+(bootloader) RT_COMMON_LK][partit
+(bootloader) ion init]
+
+[63] [GPT
+(bootloader) _LK]Parsing Primary 
+(bootloader) GPT now...
+
+[63] [PR
+(bootloader) OFILE] mmc read 1 bl
+(bootloader) ks in 0 ms: 8KB/s
+
+[
+(bootloader) 64] [PROFILE] mmc re
+(bootloader) ad 32 blks in 1 ms: 
+(bootloader) 16000KB/s
+
+[64] [GPT
+(bootloader) _LK] user part id = 
+(bootloader) 0
+
+[64] [GPT_LK][0]n
+(bootloader) ame=boot_para, start
+(bootloader) _sect=0x40, nr_sects
+(bootloader) =0x800, uuid=f57ad33
+(bootloader) 0-39c2-4488-9bb0-00c
+(bootloader) b43c9ccd4
+
+[64] [GPT
+(bootloader) _LK][1]name=recovery
+(bootloader) , start_sect=0x840, 
+(bootloader) nr_sects=0x10000, uu
+(bootloader) id=fe686d97-3544-4a4
+(bootloader) 1-be21-167e25b61b6f
+
+(bootloader) 
+[64] [GPT_LK][2]nam
+(bootloader) e=para, start_sect=0
+(bootloader) x10840, nr_sects=0x4
+(bootloader) 00, uuid=1cb143a8-b1
+(bootloader) a8-4b57-b251-945c511
+(bootloader) 9e8fe
+
+[64] [GPT_LK]
+(bootloader) [3]name=expdb, start
+(bootloader) _sect=0x10c40, nr_se
+(bootloader) cts=0xa000, uuid=3b9
+(bootloader) e343b-cdc8-4d7f-9fa6
+(bootloader) -b6812e50ab62
+
+[64] 
+(bootloader) [GPT_LK][4]name=vbme
+(bootloader) ta_system, start_sec
+(bootloader) t=0x1ac40, nr_sects=
+(bootloader) 0x4000, uuid=5f6a2c7
+(bootloader) 9-6617-4b85-ac02-c29
+(bootloader) 75a14d2d7
+
+[64] [GPT
+(bootloader) _LK][5]name=vbmeta_v
+(bootloader) endor, start_sect=0x
+(bootloader) 1ec40, nr_sects=0x40
+(bootloader) 00, uuid=4ae2050b-5d
+(bootloader) b5-4ff7-aad3-5730534
+(bootloader) be63d
+
+[64] [GPT_LK]
+(bootloader) [6]name=frp, start_s
+(bootloader) ect=0x22c40, nr_sect
+(bootloader) s=0x800, uuid=1f9b09
+(bootloader) 39-e16b-4bc9-a5bc-dc
+(bootloader) 2ee969d801
+
+[64] [GP
+(bootloader) T_LK][7]name=nvcfg, 
+(bootloader) start_sect=0x23440, 
+(bootloader) nr_sects=0x10000, uu
+(bootloader) id=d722c721-0dee-4cb
+(bootloader) 8-8a83-2c63cd1393c7
+
+(bootloader) 
+[64] [GPT_LK][8]nam
+(bootloader) e=nvdata, start_sect
+(bootloader) =0x33440, nr_sects=0
+(bootloader) x20000, uuid=e02179a
+(bootloader) 8-ceb5-48a9-8831-4f1
+(bootloader) c9c5a8695
+
+[64] [GPT
+(bootloader) _LK][9]name=md_udc, 
+(bootloader) start_sect=0x53440, 
+(bootloader) nr_sects=0xb4d0, uui
+(bootloader) d=84b09a81-fad2-41ac
+(bootloader) -890e-407c24975e74
+
+
+(bootloader) [65] [GPT_LK][10]nam
+(bootloader) e=metadata, start_se
+(bootloader) ct=0x5e910, nr_sects
+(bootloader) =0x10000, uuid=e8f0a
+(bootloader) 5ef-8d1b-42ea-9c2a-8
+(bootloader) 35cd77de363
+
+[65] [G
+(bootloader) PT_LK][11]name=prote
+(bootloader) ct1, start_sect=0x6e
+(bootloader) 910, nr_sects=0x4000
+(bootloader) , uuid=d5f0e175-a6e1
+(bootloader) -4db7-94c0-f82ad0329
+(bootloader) 50b
+
+[65] [GPT_LK][1
+(bootloader) 2]name=protect2, sta
+(bootloader) rt_sect=0x72910, nr_
+(bootloader) sects=0x56f0, uuid=1
+(bootloader) d9056e1-e139-4fca-8c
+(bootloader) 0b-b75fd74d81c6
+
+[65
+(bootloader) ] [GPT_LK][13]name=s
+(bootloader) eccfg, start_sect=0x
+(bootloader) 78000, nr_sects=0x40
+(bootloader) 00, uuid=7792210b-b6
+(bootloader) a8-45d5-ad91-3361ed1
+(bootloader) 4c608
+
+[65] [GPT_LK]
+(bootloader) [14]name=sec1, start
+(bootloader) _sect=0x7c000, nr_se
+(bootloader) cts=0x1000, uuid=138
+(bootloader) a6db9-1032-451d-91e9
+(bootloader) -0fa38ff94fbb
+
+[65] 
+(bootloader) [GPT_LK][15]name=pro
+(bootloader) info, start_sect=0x7
+(bootloader) d000, nr_sects=0x180
+(bootloader) 0, uuid=756d934c-50e
+(bootloader) 3-4c91-af46-02d82416
+(bootloader) 9ca7
+
+[65] [GPT_LK][
+(bootloader) 16]name=md1img, star
+(bootloader) t_sect=0x7e800, nr_s
+(bootloader) ects=0x32000, uuid=a
+(bootloader) 3f3c267-5521-42dd-a7
+(bootloader) 24-3bdec20c7c6f
+
+[65
+(bootloader) ] [GPT_LK][17]name=s
+(bootloader) pmfw, start_sect=0xb
+(bootloader) 0800, nr_sects=0x800
+(bootloader) , uuid=8c68cd2a-ccc9
+(bootloader) -4c5d-8b57-34ae9b2dd
+(bootloader) 481
+
+[65] [GPT_LK][1
+(bootloader) 8]name=sspm_1, start
+(bootloader) _sect=0xb1000, nr_se
+(bootloader) cts=0x800, uuid=6a5c
+(bootloader) ebf8-54a7-4b89-8d1d-
+(bootloader) c5eb140b095b
+
+[65] [
+(bootloader) GPT_LK][19]name=sspm
+(bootloader) _2, start_sect=0xb18
+(bootloader) 00, nr_sects=0x800, 
+(bootloader) uuid=a0d65bf8-e8de-4
+(bootloader) 107-9434-1d318c843d3
+(bootloader) 7
+
+[65] [GPT_LK][20]
+(bootloader) name=gz1, start_sect
+(bootloader) =0xb2000, nr_sects=0
+(bootloader) x8000, uuid=46f0c0bb
+(bootloader) -f227-4eb6-b82f-6640
+(bootloader) 8e13e36d
+
+[66] [GPT_
+(bootloader) LK][21]name=gz2, sta
+(bootloader) rt_sect=0xba000, nr_
+(bootloader) sects=0x8000, uuid=f
+(bootloader) bc2c131-6392-4217-b5
+(bootloader) 1e-548a6edb03d0
+
+[66
+(bootloader) ] [GPT_LK][22]name=n
+(bootloader) vram, start_sect=0xc
+(bootloader) 2000, nr_sects=0x200
+(bootloader) 00, uuid=e195a981-e2
+(bootloader) 85-4734-8025-ec323e9
+(bootloader) 589d9
+
+[66] [GPT_LK]
+(bootloader) [23]name=lk, start_s
+(bootloader) ect=0xe2000, nr_sect
+(bootloader) s=0x800, uuid=e29052
+(bootloader) f8-5d3a-4e97-adb5-5f
+(bootloader) 312ce6610a
+
+[66] [GP
+(bootloader) T_LK][24]name=lk2, s
+(bootloader) tart_sect=0xe2800, n
+(bootloader) r_sects=0x800, uuid=
+(bootloader) 9c3cabd7-a35d-4b45-8
+(bootloader) c57-b80775426b35
+
+[6
+(bootloader) 6] [GPT_LK][25]name=
+(bootloader) boot, start_sect=0xe
+(bootloader) 3000, nr_sects=0x100
+(bootloader) 00, uuid=e7099731-95
+(bootloader) a6-45a6-a1e5-1b6aba0
+(bootloader) 32cf1
+
+[66] [GPT_LK]
+(bootloader) [26]name=vendor_boot
+(bootloader) , start_sect=0xf3000
+(bootloader) , nr_sects=0x20000, 
+(bootloader) uuid=8273e1ab-846f-4
+(bootloader) 468-b999-ee2ea8e50a1
+(bootloader) 6
+
+[66] [GPT_LK][27]
+(bootloader) name=logo, start_sec
+(bootloader) t=0x113000, nr_sects
+(bootloader) =0x4000, uuid=d26472
+(bootloader) f1-9ebc-421d-ba14-31
+(bootloader) 1296457c90
+
+[66] [GP
+(bootloader) T_LK][28]name=dtbo, 
+(bootloader) start_sect=0x117000,
+(bootloader)  nr_sects=0x4000, uu
+(bootloader) id=b72ccbe9-2055-46f
+(bootloader) 4-a167-4a069c201738
+
+(bootloader) 
+[66] [GPT_LK][29]na
+(bootloader) me=tee1, start_sect=
+(bootloader) 0x11b000, nr_sects=0
+(bootloader) x2800, uuid=9c1520f3
+(bootloader) -c2c5-4b89-8242-fe4c
+(bootloader) 61208a9e
+
+[66] [GPT_
+(bootloader) LK][30]name=tee2, st
+(bootloader) art_sect=0x11d800, n
+(bootloader) r_sects=0x2800, uuid
+(bootloader) =902d5f3f-434a-4de7-
+(bootloader) 8988-321e88c9b8aa
+
+[
+(bootloader) 66] [GPT_LK][31]name
+(bootloader) =super, start_sect=0
+(bootloader) x120000, nr_sects=0x
+(bootloader) d49eb0, uuid=bece74c
+(bootloader) 8-d8e2-4863-9bfe-5b0
+(bootloader) b66bb920f
+
+[66] [GPT
+(bootloader) _LK][32]name=vbmeta,
+(bootloader)  start_sect=0xe69eb0
+(bootloader) , nr_sects=0x6150, u
+(bootloader) uid=ff1342cf-b7be-44
+(bootloader) d5-a25e-a435addd2702
+(bootloader) 
+
+[67] [GPT_LK][33]n
+(bootloader) ame=cache, start_sec
+(bootloader) t=0xe70000, nr_sects
+(bootloader) =0xd8000, uuid=a4da8
+(bootloader) f1b-fe07-433b-95cb-8
+(bootloader) 4a5f23e477b
+
+[67] [G
+(bootloader) PT_LK][34]name=userd
+(bootloader) ata, start_sect=0xf4
+(bootloader) 8000, nr_sects=0x651
+(bootloader) 67c0, uuid=c2635e15-
+(bootloader) 61aa-454e-9c40-ebe1b
+(bootloader) df19b9b
+
+[67] [GPT_L
+(bootloader) K][35]name=otp, star
+(bootloader) t_sect=0x745e7c0, nr
+(bootloader) _sects=0x15800, uuid
+(bootloader) =4d2d1290-36a3-4f5d-
+(bootloader) afb4-319f8ab6dcd8
+
+[
+(bootloader) 67] [GPT_LK][36]name
+(bootloader) =flashinfo, start_se
+(bootloader) ct=0x7473fc0, nr_sec
+(bootloader) ts=0x8000, uuid=fdce
+(bootloader) 12f0-a7eb-40f7-8350-
+(bootloader) 960972e6cb57
+
+[67] [
+(bootloader) GPT_LK]Success to fi
+(bootloader) nd valid GPT.
+
+[67] 
+(bootloader) [SD0] EXT_CSD_ERASE_
+(bootloader) GRP_DEF is Off, wp_s
+(bootloader) ize = 8192KB
+
+[SD0] 
+(bootloader) csd.write_prot_grpsz
+(bootloader)  = 15, csd.erase_sct
+(bootloader) sz = 1024
+
+[67] [PAR
+(bootloader) T_COMMON_LK]boot_dev
+(bootloader) ice str is loop.max_
+(bootloader) part=7 androidboot.b
+(bootloader) oot_devices=bootdevi
+(bootloader) ce,soc/11230000.mmc,
+(bootloader) 11230000.mmc,soc/112
+(bootloader) 30000.msdc,11230000.
+(bootloader) msdc.
+
+[67] [SD0] bo
+(bootloader) ot device found
+
+[67
+(bootloader) ] [SD0] EXT_CSD_ERAS
+(bootloader) E_GRP_DEF is Off, wp
+(bootloader) _size = 8192KB
+
+[SD0
+(bootloader) ] csd.write_prot_grp
+(bootloader) sz = 15, csd.erase_s
+(bootloader) ctsz = 1024
+
+[68] mm
+(bootloader) c_rpmb_read_data, mm
+(bootloader) c_set_part_config do
+(bootloader) ne!!
+
+[68] mmc_rpmb_
+(bootloader) read_data, rpmb_req.
+(bootloader) result=7
+
+[68] mmc_r
+(bootloader) pmb_read_data, compa
+(bootloader) re hmac error!!
+
+[68
+(bootloader) ] [SD0] EXT_CSD_ERAS
+(bootloader) E_GRP_DEF is Off, wp
+(bootloader) _size = 8192KB
+
+[SD0
+(bootloader) ] csd.write_prot_grp
+(bootloader) sz = 15, csd.erase_s
+(bootloader) ctsz = 1024
+
+[68] mm
+(bootloader) c_rpmb_get_wc, mmc_s
+(bootloader) et_part_config done!
+(bootloader) !
+
+[68] mmc_rpmb_pos
+(bootloader) t_frame, rpmb_cfg->w
+(bootloader) c = 0
+
+[68] mmc_rpmb
+(bootloader) _get_wc, rpmb_req.re
+(bootloader) sult=7
+
+[68] mmc_rpm
+(bootloader) b_get_wc, compare hm
+(bootloader) ac error!!
+
+[69] mmc
+(bootloader) _rpmb_post_frame, rp
+(bootloader) mb_cfg->wc = 0
+
+[69]
+(bootloader)  mmc_rpmb_write_data
+(bootloader) , rpmb_req.result=7
+
+(bootloader) 
+[69] mmc_rpmb_check
+(bootloader) _result Authenticati
+(bootloader) on key not yet progr
+(bootloader) ammed 
+
+[69] mmc_rpm
+(bootloader) b_write_data, check 
+(bootloader) result error!!
+
+[69]
+(bootloader)  [mmc_dummy_rpmb_wri
+(bootloader) te] mmc_dummy_rpmb_w
+(bootloader) rite failed
+
+[69] [P
+(bootloader) ROFILE] ::: lvl(2) N
+(bootloader) AND/EMMC init takes 
+(bootloader) 68 ms
+
+[69] [SD0] EX
+(bootloader) T_CSD_ERASE_GRP_DEF 
+(bootloader) is Off, wp_size = 81
+(bootloader) 92KB
+
+[SD0] csd.writ
+(bootloader) e_prot_grpsz = 15, c
+(bootloader) sd.erase_sctsz = 102
+(bootloader) 4
+
+[69] [PROFILE] mm
+(bootloader) c read 24 blks in 0 
+(bootloader) ms: 8KB/s
+
+rom_info_
+(bootloader) ver = 2
+
+m_rom_info_
+(bootloader) ver = 20002
+
+[70] [S
+(bootloader) D0] EXT_CSD_ERASE_GR
+(bootloader) P_DEF is Off, wp_siz
+(bootloader) e = 8192KB
+
+[SD0] cs
+(bootloader) d.write_prot_grpsz =
+(bootloader)  15, csd.erase_sctsz
+(bootloader)  = 1024
+
+[70] [PROFI
+(bootloader) LE] mmc read 24 blks
+(bootloader)  in 0 ms: 8KB/s
+
+[70
+(bootloader) ] [PROFILE] ::: lvl(
+(bootloader) 2) lk_vb_init takes 
+(bootloader) 1 ms
+
+[70] [PROFILE]
+(bootloader)  mmc read 24 blks in
+(bootloader)  0 ms: 8KB/s
+
+[70] [
+(bootloader) SEC_POLICY] sboot_st
+(bootloader) ate = 0x0
+
+[71] [SEC
+(bootloader) _POLICY] lock_state 
+(bootloader) = 0x3
+
+[71] [PROFILE
+(bootloader) ] mmc read 1 blks in
+(bootloader)  0 ms: 8KB/s
+
+[71] 
+
+(bootloader) 
+===================
+(bootloader) ====================
+(bootloader) ==
+
+[71] [LK_BOOT] l
+(bootloader) k magic number : 0x5
+(bootloader) 8881688
+
+[71] [LK_BO
+(bootloader) OT] lk name         
+(bootloader) : lk
+
+[71] [LK_BOOT]
+(bootloader)  lk size         : 7
+(bootloader) 12444
+
+[71] ========
+(bootloader) ====================
+(bootloader) =============
+
+[71] 
+(bootloader) [PROFILE] mmc read 1
+(bootloader)  blks in 0 ms: 8KB/s
+(bootloader) 
+
+[71] [PROFILE] mmc
+(bootloader)  read 1 blks in 0 ms
+(bootloader) : 8KB/s
+
+[71] 
+
+====
+(bootloader) ====================
+(bootloader) =================
+
+[
+(bootloader) 71] [LK_BOOT] lk mag
+(bootloader) ic number : 0x588816
+(bootloader) 88
+
+[71] [LK_BOOT] l
+(bootloader) k name         : cer
+(bootloader) t1
+
+[71] [LK_BOOT] l
+(bootloader) k size         : 170
+(bootloader) 9
+
+[71] ============
+(bootloader) ====================
+(bootloader) =========
+
+[71] [PRO
+(bootloader) FILE] mmc read 1 blk
+(bootloader) s in 0 ms: 8KB/s
+
+[7
+(bootloader) 2] [PROFILE] mmc rea
+(bootloader) d 1 blks in 1 ms: 50
+(bootloader) 0KB/s
+
+[72] 
+
+======
+(bootloader) ====================
+(bootloader) ===============
+
+[72
+(bootloader) ] [LK_BOOT] lk magic
+(bootloader)  number : 0x58881688
+(bootloader) 
+
+[72] [LK_BOOT] lk 
+(bootloader) name         : cert2
+(bootloader) 
+
+[72] [LK_BOOT] lk 
+(bootloader) size         : 982
+
+
+(bootloader) [72] ===============
+(bootloader) ====================
+(bootloader) ======
+
+[72] [PROFIL
+(bootloader) E] mmc read 1 blks i
+(bootloader) n 0 ms: 8KB/s
+
+[72] 
+(bootloader) [PROFILE] mmc read 1
+(bootloader)  blks in 0 ms: 8KB/s
+(bootloader) 
+
+[72] 
+
+===========
+(bootloader) ====================
+(bootloader) ==========
+
+[72] [LK
+(bootloader) _BOOT] lk magic numb
+(bootloader) er : 0x58881688
+
+[72
+(bootloader) ] [LK_BOOT] lk name 
+(bootloader)         : lk_main_dt
+(bootloader) b
+
+[72] [LK_BOOT] lk
+(bootloader)  size         : 1091
+(bootloader) 56
+
+[72] ===========
+(bootloader) ====================
+(bootloader) ==========
+
+[72] [PR
+(bootloader) OFILE] mmc read 1 bl
+(bootloader) ks in 0 ms: 8KB/s
+
+[
+(bootloader) 74] [PROFILE] mmc re
+(bootloader) ad 212 blks in 2 ms:
+(bootloader)  53000KB/s
+
+[74] [PR
+(bootloader) OFILE] mmc read 1 bl
+(bootloader) ks in 0 ms: 8KB/s
+
+[
+(bootloader) 74] load_lk_dtb(): l
+(bootloader) oad lk_main_dtb dtb_
+(bootloader) img_size=109156
+
+[74
+(bootloader) ] [PROFILE] ::: lvl(
+(bootloader) 3) load_lk_dtb takes
+(bootloader)  4 ms
+
+[74] [PROFILE
+(bootloader) ] mmc read 24 blks i
+(bootloader) n 0 ms: 8KB/s
+
+[74] 
+(bootloader) [SEC_POLICY] sboot_s
+(bootloader) tate = 0x0
+
+[74] [SE
+(bootloader) C_POLICY] lock_state
+(bootloader)  = 0x3
+
+[75] [PROFIL
+(bootloader) E] mmc read 1 blks i
+(bootloader) n 1 ms: 500KB/s
+
+[75
+(bootloader) ] dtbo_total_len: 0x
+(bootloader) b0bc
+
+[75] [PROFILE]
+(bootloader)  mmc read 88 blks in
+(bootloader)  0 ms: 8KB/s
+
+[75] [
+(bootloader) PROFILE] mmc read 1 
+(bootloader) blks in 0 ms: 8KB/s
+
+(bootloader) 
+[75] pin163 = 0, pi
+(bootloader) n164 = 0
+
+[75] PCB_I
+(bootloader) D: SEVB (MTK0963), d
+(bootloader) tb idx = 0
+
+[76] dtb
+(bootloader) o_offset: 0x40
+
+[76]
+(bootloader)  [PROFILE] ::: lvl(3
+(bootloader) ) load_dtbo_buffer t
+(bootloader) akes 2 ms
+
+[76] dtbo
+(bootloader) _size : 45180
+
+[85] 
+(bootloader) [PROFILE] ::: lvl(3)
+(bootloader)  dtb_overlay takes 9
+(bootloader)  ms
+
+[85] [PROFILE] 
+(bootloader) ::: lvl(2) lk_dtb_in
+(bootloader) it takes 15 ms
+
+[85]
+(bootloader)  [GPIO] Found /gpio@
+(bootloader) 10005000at offset 11
+(bootloader) 408
+
+[85] [GPIO] Fou
+(bootloader) nd perperty at 0x480
+(bootloader) c9968, len 5040
+
+[87
+(bootloader) ] mt6370_bled_probe:
+(bootloader)  (1.0.3_MTK)
+
+[91] m
+(bootloader) t6370_bled_parse_dt:
+(bootloader)  subpmic_pmu id = 5
+
+(bootloader) 
+[92] [LEDS] mt,ext_
+(bootloader) en_pin val = 0
+
+[92]
+(bootloader)  [LEDS] mt,chan_en v
+(bootloader) al = 15
+
+[92] [LEDS]
+(bootloader)  mt,map_linear = 1
+
+
+(bootloader) [92] [LEDS] mt,bl_ov
+(bootloader) p_level = 3
+
+[92] [L
+(bootloader) EDS] mt,bl_ocp_level
+(bootloader)  = 2
+
+[92] [LEDS] mt
+(bootloader) ,use_pwm = 1
+
+[92] [
+(bootloader) LEDS] mt,pwm_fsample
+(bootloader)  = 2
+
+[93] [LEDS] mt
+(bootloader) ,pwm_deglitch = 1
+
+[
+(bootloader) 93] [LEDS] mt,pwm_hy
+(bootloader) s_en = 1
+
+[93] [LEDS
+(bootloader) ] mt,pwm_hys = 0
+
+[9
+(bootloader) 3] [LEDS] mt,bled_ra
+(bootloader) mptime = 3
+
+[93] [LE
+(bootloader) DS] mt,bled_flash_ra
+(bootloader) mp = 1
+
+[93] [LEDS] 
+(bootloader) mt,max_bled_brightne
+(bootloader) ss = 512
+
+[93] [LEDS
+(bootloader) ] mt,bled_curr_scale
+(bootloader)  = 0
+
+[93] [LEDS] mt
+(bootloader) ,pwm_lpf_coef = 0
+
+[
+(bootloader) 93] [LEDS] mt,pwm_lp
+(bootloader) f_en = 0
+
+[93] [LEDS
+(bootloader) ] mt,bled_curr_mode 
+(bootloader) = 0
+
+[93] [I2C-LK] 3
+(bootloader) 67: id=5,addr: 34, t
+(bootloader) ransfer error
+
+[93] 
+(bootloader) [I2C-LK] 373: I2C_AC
+(bootloader) KERR
+
+[93] [I2C-LK] 
+(bootloader) 244: I2C structure:
+
+(bootloader) 
+[I2C-LK] Clk=24960,
+(bootloader) Id=5,Mode=1,St_rs=0,
+(bootloader) Dma_en=0,Op=3,Poll_e
+(bootloader) n=1,Irq_stat=2
+
+[I2C
+(bootloader) -LK] Trans_len=1,Tra
+(bootloader) ns_num=2,Trans_auxle
+(bootloader) n=1,Data_size=ffff,s
+(bootloader) peed=400
+
+[93] [I2C-
+(bootloader) LK] 247: base addres
+(bootloader) s 0x11016000
+
+[93] [
+(bootloader) I2C-LK] 268: I2C reg
+(bootloader) ister:
+
+[I2C-LK] SLA
+(bootloader) VE_ADDR=68,INTR_MASK
+(bootloader) =1f8,INTR_STAT=3,CON
+(bootloader) TROL=38,TRANSFER_LEN
+(bootloader) =1
+
+[I2C-LK] TRANSAC
+(bootloader) _LEN=2,DELAY_LEN=a,T
+(bootloader) IMING=405,LTIMING=23
+(bootloader) ,START=0,FIFO_STAT=1
+(bootloader) 101
+
+[I2C-LK] IO_CON
+(bootloader) FIG=1a3,HS=8000,DEBU
+(bootloader) GSTAT=300,EXT_CONF=1
+(bootloader) 800,TRANSFER_LEN_AUX
+(bootloader) =1,CLOCK_DIV=4
+
+[93]
+(bootloader)  [I2C-LK] 922: write
+(bootloader) _read 0x10001 bytes 
+(bootloader) fails,ret=-121.
+
+[93
+(bootloader) ] mt6370_i2c_read_by
+(bootloader) te: I2CR[0x00] fail(
+(bootloader) -1)
+
+[94] [I2C-LK] 3
+(bootloader) 67: id=5,addr: 34, t
+(bootloader) ransfer error
+
+[94] 
+(bootloader) [I2C-LK] 373: I2C_AC
+(bootloader) KERR
+
+[94] [I2C-LK] 
+(bootloader) 244: I2C structure:
+
+(bootloader) 
+[I2C-LK] Clk=24960,
+(bootloader) Id=5,Mode=1,St_rs=0,
+(bootloader) Dma_en=0,Op=1,Poll_e
+(bootloader) n=1,Irq_stat=2
+
+[I2C
+(bootloader) -LK] Trans_len=2,Tra
+(bootloader) ns_num=1,Trans_auxle
+(bootloader) n=0,Data_size=ffff,s
+(bootloader) peed=400
+
+[94] [I2C-
+(bootloader) LK] 247: base addres
+(bootloader) s 0x11016000
+
+[94] [
+(bootloader) I2C-LK] 268: I2C reg
+(bootloader) ister:
+
+[I2C-LK] SLA
+(bootloader) VE_ADDR=68,INTR_MASK
+(bootloader) =1f8,INTR_STAT=3,CON
+(bootloader) TROL=28,TRANSFER_LEN
+(bootloader) =2
+
+[I2C-LK] TRANSAC
+(bootloader) _LEN=1,DELAY_LEN=a,T
+(bootloader) IMING=405,LTIMING=23
+(bootloader) ,START=0,FIFO_STAT=1
+(bootloader) 210
+
+[I2C-LK] IO_CON
+(bootloader) FIG=1a3,HS=8000,DEBU
+(bootloader) GSTAT=300,EXT_CONF=1
+(bootloader) 800,TRANSFER_LEN_AUX
+(bootloader) =0,CLOCK_DIV=4
+
+[94]
+(bootloader)  [I2C-LK] 883: Write
+(bootloader)  2 bytes fails,ret=-
+(bootloader) 121.
+
+[94] mt6370_i2
+(bootloader) c_write_byte: I2CW[0
+(bootloader) xA1] = 0xED fail(-1)
+(bootloader) 
+
+[94] [LEDS]LK: led
+(bootloader) s_init: mt65xx_backl
+(bootloader) ight_off 
+
+
+[94] [LE
+(bootloader) DS]LK: mt65xx_backli
+(bootloader) ght_off 
+
+
+[96] [LED
+(bootloader) S]LK:led[0] offset i
+(bootloader) s 98556,mode is 0,da
+(bootloader) ta is 1 .
+
+[97] [LED
+(bootloader) S]LK:led[1] offset i
+(bootloader) s 98680,mode is 0,da
+(bootloader) ta is 1 .
+
+[99] [LED
+(bootloader) S]LK:led[2] offset i
+(bootloader) s 98804,mode is 0,da
+(bootloader) ta is 1 .
+
+[100] [LE
+(bootloader) DS]LK:led[3] offset 
+(bootloader) is 98928,mode is 0,d
+(bootloader) ata is 1 .
+
+[102] [L
+(bootloader) EDS]LK:led[4] offset
+(bootloader)  is 99064,mode is 0,
+(bootloader) data is 1 .
+
+[103] [
+(bootloader) LEDS]LK:led[5] offse
+(bootloader) t is 99200,mode is 0
+(bootloader) ,data is 1 .
+
+[105] 
+(bootloader) [LEDS]LK:The backlig
+(bootloader) ht hw mode is BLS.
+
+
+(bootloader) [105] [LEDS]LK:led[6
+(bootloader) ] offset is 99336,mo
+(bootloader) de is 5,data is 1208
+(bootloader) 033865 .
+
+[105] [LED
+(bootloader) S]LK: lcd-backlight 
+(bootloader) level is 0 
+
+
+[105] 
+(bootloader) [LK_DDP/INFO]error:e
+(bootloader) nable module clock u
+(bootloader) nknow module 20 
+
+[1
+(bootloader) 05] [DISP][PWM] disp
+(bootloader) _pwm_init : PWM conf
+(bootloader) ig data (0,0)
+
+[105]
+(bootloader)  [DISP][PWM] disp_pw
+(bootloader) m_set_backlight(id =
+(bootloader)  0x1, level_1024 = 0
+(bootloader) )
+
+[105] [PROFILE] :
+(bootloader) :: lvl(2) led init t
+(bootloader) akes 18 ms
+
+[105] [P
+(bootloader) ROFILE] mmc read 32 
+(bootloader) blks in 0 ms: 8KB/s
+
+(bootloader) 
+[105] [LK_ENV]ENV o
+(bootloader) f area 0 initialize 
+(bootloader) sucess
+
+[106] [PROFI
+(bootloader) LE] mmc read 32 blks
+(bootloader)  in 1 ms: 16000KB/s
+
+(bootloader) 
+[106] [LK_ENV]ENV S
+(bootloader) IG of area 1 is wron
+(bootloader) g
+
+[106] [LK_ENV]env
+(bootloader)  area: 0
+
+[106] [LK_
+(bootloader) ENV]env:
+
+[106] [LK_
+(bootloader) ENV]logo-offset=0
+
+[
+(bootloader) 106] [LK_ENV]md1_ccb
+(bootloader) _cap_gear=1
+
+[106] [
+(bootloader) LK_ENV]off-mode-char
+(bootloader) ge=1
+
+[106] [LK_ENV]
+(bootloader) md1_ccb_gear_list=1(
+(bootloader) 2,20);2(2,10);3(0,0)
+(bootloader) ;11(2,2);12(2,62)
+
+[
+(bootloader) 106] [LK_ENV]env are
+(bootloader) a: 1
+
+[106] [LK_ENV]
+(bootloader) no valid env
+
+[106] 
+(bootloader) [PROFILE] ::: lvl(2)
+(bootloader)  ENV init takes 1 ms
+(bootloader) 
+
+[106] [DISP]******
+(bootloader) ** dump lcm driver i
+(bootloader) nformation ********
+
+(bootloader) 
+[106] [DISP][LCM], 
+(bootloader) name: axs15260_dsi_6
+(bootloader) 580_hd
+
+[106] [DISP]
+(bootloader) [LCM] resolution: 38
+(bootloader) 4 x 854
+
+[106] [DISP
+(bootloader) ][LCM] physical size
+(bootloader) : 0 x 0
+
+[106] [DISP
+(bootloader) ][LCM] physical size
+(bootloader) : 0 x 0
+
+[106] [DISP
+(bootloader) ][LCM] lcm_if:0, cmd
+(bootloader) _if:0
+
+[106] [DISP][
+(bootloader) LCM] interface: unkn
+(bootloader) own
+
+[106] [DISP][LC
+(bootloader) M] Type: DSI
+
+[106] 
+(bootloader) [DISP][LCM] DSI Mode
+(bootloader) : SYNC_EVENT_VDO_MOD
+(bootloader) E
+
+[106] [DISP][LCM]
+(bootloader)  LANE_NUM: 3,data_fo
+(bootloader) rmat:(0,3,0,0)
+
+[106
+(bootloader) ] [DISP][LCM] vact: 
+(bootloader) 2, vbp: 20, vfp: 170
+(bootloader) , vact_line: 854, ha
+(bootloader) ct: 20, hbp: 180, hf
+(bootloader) p: 180, hblank: 0, h
+(bootloader) active: 384
+
+[107] [
+(bootloader) DISP][LCM] pll_selec
+(bootloader) t: 0, pll_div1: 0, p
+(bootloader) ll_div2: 0, fbk_div:
+(bootloader)  0,fbk_sel: 0, rg_bi
+(bootloader) r: 0
+
+[107] [DISP][L
+(bootloader) CM] rg_bic: 0, rg_bp
+(bootloader) : 0, PLL_CLOCK: 210,
+(bootloader)  dsi_clock: 0, ssc_r
+(bootloader) ange: 0,	ssc_disable
+(bootloader) : 0, compatibility_f
+(bootloader) or_nvk: 0, cont_cloc
+(bootloader) k: 0
+
+[107] [DISP][L
+(bootloader) CM] lcm_ext_te_enabl
+(bootloader) e: 0, noncont_clock:
+(bootloader)  0, noncont_clock_pe
+(bootloader) riod: 0
+
+[107] [DISP
+(bootloader) ]ERROR:corner_params
+(bootloader)  is null!
+
+[107] mbl
+(bootloader) ock_reserve-R start:
+(bootloader)  0x7ef90000, sz: 0x4
+(bootloader) 70000 map:0 name:fra
+(bootloader) mebuffer
+
+[107] FB b
+(bootloader) ase = 0x7ef90000, FB
+(bootloader)  size = 0x470000 (46
+(bootloader) 53056)
+
+[107] fb_va:
+(bootloader)  0x7ef90000, fb_pa: 
+(bootloader) 0x7ef90000, fb_pa_k:
+(bootloader)  0x7ef90000
+
+[107] m
+(bootloader) block_reserve-R star
+(bootloader) t: 0x7df90000, sz: 0
+(bootloader) x1000000 map:0 name:
+(bootloader) logo_db_addr_pa
+
+[10
+(bootloader) 7] mblock_reserve-R 
+(bootloader) start: 0x7de40000, s
+(bootloader) z: 0x144000 map:0 na
+(bootloader) me:display-others_lo
+(bootloader) go_fb-addr
+
+[107] [D
+(bootloader) ISP]config color dir
+(bootloader) ty = 1
+
+[107] [DISP]
+(bootloader) bypass color
+
+[107] 
+(bootloader) [DISP]config ccorr d
+(bootloader) irty = 1
+
+[108] [DIS
+(bootloader) P]bypass ccorr
+
+[108
+(bootloader) ] [DISP]config aal d
+(bootloader) irty = 1
+
+[108] [DIS
+(bootloader) P]bypass aal
+
+[108] 
+(bootloader) [DISP]config gamma d
+(bootloader) irty = 1
+
+[108] [DIS
+(bootloader) P]bypass gamma
+
+[108
+(bootloader) ] config dither dirt
+(bootloader) y = 1
+
+[108] disp_di
+(bootloader) ther_bypass(bypass =
+(bootloader)  1)[108] [DISP][DDPD
+(bootloader) SI] DSI Mode: SYNC_E
+(bootloader) VENT_VDO_MODE
+
+[108]
+(bootloader)  [DISP][DDPDSI] LANE
+(bootloader) _NUM: 3,data_format:
+(bootloader) (0,3,0,0)
+
+[108] [DI
+(bootloader) SP][DDPDSI] vact: 2,
+(bootloader)  vbp: 20, vfp: 170, 
+(bootloader) vact_line: 854, hact
+(bootloader) : 20, hbp: 180, hfp:
+(bootloader)  180, hblank: 0
+
+[10
+(bootloader) 8] [DISP][DDPDSI] pl
+(bootloader) l_select: 0, pll_div
+(bootloader) 1: 0, pll_div2: 0, f
+(bootloader) bk_div: 0,fbk_sel: 0
+(bootloader) , rg_bir: 0
+
+[108] [
+(bootloader) DISP][DDPDSI] rg_bic
+(bootloader) : 0, rg_bp: 0, PLL_C
+(bootloader) LOCK: 210, dsi_clock
+(bootloader) : 0, ssc_range: 0,	s
+(bootloader) sc_disable: 0, compa
+(bootloader) tibility_for_nvk: 0,
+(bootloader)  cont_clock: 0
+
+[108
+(bootloader) ] [DISP][DDPDSI] lcm
+(bootloader) _ext_te_enable: 0, n
+(bootloader) oncont_clock: 0, non
+(bootloader) cont_clock_period: 0
+(bootloader) 
+
+[112] [DISP]lcm in
+(bootloader) it 
+
+[LK/LCM] lcm_re
+(bootloader) sume_power() enter
+
+
+(bootloader) [133] [I2C-LK] 367: 
+(bootloader) id=5,addr: 3e, trans
+(bootloader) fer error
+
+[133] [I2
+(bootloader) C-LK] 373: I2C_ACKER
+(bootloader) R
+
+[133] [I2C-LK] 24
+(bootloader) 4: I2C structure:
+
+[
+(bootloader) I2C-LK] Clk=24960,Id
+(bootloader) =5,Mode=1,St_rs=0,Dm
+(bootloader) a_en=0,Op=1,Poll_en=
+(bootloader) 1,Irq_stat=2
+
+[I2C-L
+(bootloader) K] Trans_len=2,Trans
+(bootloader) _num=1,Trans_auxlen=
+(bootloader) 0,Data_size=ffff,spe
+(bootloader) ed=100
+
+[133] [I2C-L
+(bootloader) K] 247: base address
+(bootloader)  0x11016000
+
+[134] [
+(bootloader) I2C-LK] 268: I2C reg
+(bootloader) ister:
+
+[I2C-LK] SLA
+(bootloader) VE_ADDR=7c,INTR_MASK
+(bootloader) =1f8,INTR_STAT=3,CON
+(bootloader) TROL=28,TRANSFER_LEN
+(bootloader) =2
+
+[I2C-LK] TRANSAC
+(bootloader) _LEN=1,DELAY_LEN=a,T
+(bootloader) IMING=418,LTIMING=11
+(bootloader) 8,START=0,FIFO_STAT=
+(bootloader) 2201
+
+[I2C-LK] IO_CO
+(bootloader) NFIG=1a3,HS=8000,DEB
+(bootloader) UGSTAT=300,EXT_CONF=
+(bootloader) 8001,TRANSFER_LEN_AU
+(bootloader) X=0,CLOCK_DIV=4
+
+[13
+(bootloader) 4] [I2C-LK] 883: Wri
+(bootloader) te 2 bytes fails,ret
+(bootloader) =-121.
+
+[415] [DISP]
+(bootloader) read from lcm 0x0A: 
+(bootloader) 156
+
+[415] [DISP]lcm
+(bootloader)  is connected
+
+[416]
+(bootloader)  [DISP]config color 
+(bootloader) dirty = 0
+
+[416] [DI
+(bootloader) SP]config ccorr dirt
+(bootloader) y = 0
+
+[416] [DISP]c
+(bootloader) onfig aal dirty = 0
+
+(bootloader) 
+[416] [DISP]config 
+(bootloader) gamma dirty = 0
+
+[41
+(bootloader) 6] config dither dir
+(bootloader) ty = 0
+
+[416] disp_d
+(bootloader) ither_bypass(bypass 
+(bootloader) = 1)[416] [DISP]conf
+(bootloader) ig color dirty = 0
+
+
+(bootloader) [416] [DISP]config c
+(bootloader) corr dirty = 0
+
+[416
+(bootloader) ] [DISP]config aal d
+(bootloader) irty = 0
+
+[416] [DIS
+(bootloader) P]config gamma dirty
+(bootloader)  = 0
+
+[416] config d
+(bootloader) ither dirty = 0
+
+[41
+(bootloader) 6] disp_dither_bypas
+(bootloader) s(bypass = 1)[416] [
+(bootloader) DISP]mt_disp_init() 
+(bootloader) done
+
+[416] s_mt65xx
+(bootloader) _gd.gdfIndex=3[416] 
+(bootloader) [PROFILE] ::: lvl(2)
+(bootloader)  disp init takes 310
+(bootloader)  ms
+
+SMART RESET: FA
+(bootloader) LSE
+
+rst from: lk
+
+k
+(bootloader) edump mini start
+
+ke
+(bootloader) dump: current time: 
+(bootloader) [2025/9/16 5:27:55]
+
+(bootloader) 
+kedump: ddr reserve
+(bootloader)  mode disabled
+
+kedu
+(bootloader) mp: ddr reserve mode
+(bootloader)  failed
+
+[417] atf r
+(bootloader) am dump address hi:0
+(bootloader) x0, adress lo:0x0, s
+(bootloader) ize: 0
+
+[417] atf ra
+(bootloader) m dump address:0x0, 
+(bootloader) size: 0
+
+[417] atf_f
+(bootloader) ootprint_hi_addr=0xf
+(bootloader) fffffff(ATF_SMC_UNK)
+(bootloader) 
+
+[417] ATF: LAST BU
+(bootloader) FF
+
+[417] atf_log_bu
+(bootloader) f_addr:0xbff44000, a
+(bootloader) tf_log_buf_size:1310
+(bootloader) 72, atf_crash_flag a
+(bootloader) ddr:0xbff3002c, atf_
+(bootloader) log_type:0x41544641
+
+(bootloader) 
+[417] plat_atf_log_
+(bootloader) get:0x48036635, plat
+(bootloader) _atf_crash_get:0x0
+
+
+(bootloader) kedump: lkdump debug
+(bootloader)  init ok
+
+kedump: bo
+(bootloader) ot_reason(4)
+
+RAM_CO
+(bootloader) NSOLE. boot_arg(PL2L
+(bootloader) K): sram_addr:0x10ea
+(bootloader) 00, sram_size:0x540,
+(bootloader)  def_type:0x1, memor
+(bootloader) y_info_offset:0x7c0
+
+(bootloader) 
+RAM_CONSOLE. start:
+(bootloader)  0x10ea00, size: 0x5
+(bootloader) 40
+
+RAM_CONSOLE. lk 
+(bootloader) last status: 0x0 0x0
+(bootloader)  0x0 0x0 0x0 0x0 0x0
+(bootloader)  0x0 0x0 0x0 0x0 0x0
+(bootloader)  0x0 0x0 0x0 0x0 
+
+R
+(bootloader) AM_CONSOLE. wdt_stat
+(bootloader) us 0x2, fiq_step 0x0
+(bootloader) , exp_type 0x0
+
+RAM_
+(bootloader) CONSOLE. set reboot 
+(bootloader) reason info done
+
+ke
+(bootloader) dump: last is not fu
+(bootloader) ll pmic reset!
+
+kedu
+(bootloader) mp: partiton 5[21880
+(bootloader) 00 - 1100000]
+
+[418]
+(bootloader)  [PROFILE] mmc read 
+(bootloader) 8 blks in 1 ms: 4000
+(bootloader) KB/s
+
+[418] [PROFILE
+(bootloader) ] mmc read 1 blks in
+(bootloader)  0 ms: 8KB/s
+
+kedump
+(bootloader) : found content in e
+(bootloader) xpdb
+
+kedump: read K
+(bootloader) EDUMP_CRC from offse
+(bootloader) t 0xe1740 size 0x8
+
+
+(bootloader) [418] [PROFILE] mmc 
+(bootloader) read 1 blks in 0 ms:
+(bootloader)  8KB/s
+
+kedump: read
+(bootloader)  SYS_PSTORE_RAW from
+(bootloader)  offset 0x1740 size 
+(bootloader) 0xe0000
+
+[418] [PROF
+(bootloader) ILE] mmc read 1 blks
+(bootloader)  in 0 ms: 8KB/s
+
+[43
+(bootloader) 0] [PROFILE] mmc rea
+(bootloader) d 1791 blks in 12 ms
+(bootloader) : 74625KB/s
+
+[430] [
+(bootloader) PROFILE] mmc read 1 
+(bootloader) blks in 0 ms: 8KB/s
+
+(bootloader) 
+kedump: crc = 0x1c8
+(bootloader) 6049f
+
+kedump: read 
+(bootloader) SYS_RAMCONSOLE_RAW f
+(bootloader) rom offset 0x1200 si
+(bootloader) ze 0x540
+
+[432] [PRO
+(bootloader) FILE] mmc read 2 blk
+(bootloader) s in 0 ms: 8KB/s
+
+[4
+(bootloader) 32] [PROFILE] mmc re
+(bootloader) ad 1 blks in 0 ms: 8
+(bootloader) KB/s
+
+kedump: crc = 
+(bootloader) 0x972ced03
+
+RAM_CONS
+(bootloader) OLE. wdt_status 0x2,
+(bootloader)  fiq_step 0x0, exp_t
+(bootloader) ype 0x0
+
+RAM_CONSOLE
+(bootloader) . set reboot reason 
+(bootloader) info done
+
+kedump: r
+(bootloader) am_console_should_re
+(bootloader) store
+
+RAM_CONSOLE. 
+(bootloader) wdt_status 0x2, fiq_
+(bootloader) step 0x0, exp_type 0
+(bootloader) x6
+
+RAM_CONSOLE. set
+(bootloader)  reboot reason info 
+(bootloader) done
+
+RAM_CONSOLE de
+(bootloader) tect abnormal boot e
+(bootloader) xp_type:0x6
+
+[433] [
+(bootloader) META] Check meta inf
+(bootloader) o from pre-loader: 0
+(bootloader) , 504c504c, 0
+
+[433]
+(bootloader)  [LK_ENV]get_env reb
+(bootloader) oot_meta_flag from a
+(bootloader) rea 0
+
+[433] [PROFIL
+(bootloader) E] ::: lvl(3) wdt_ch
+(bootloader) eck_exception takes 
+(bootloader) 0 ms
+
+[433] [PROFILE
+(bootloader) ] ::: lvl(2) boot mo
+(bootloader) de select takes 17 m
+(bootloader) s
+
+[433] mt_get_logo
+(bootloader) _db_addr_pa: 0x7df90
+(bootloader) 000
+
+[434] [PROFILE]
+(bootloader)  mmc read 1 blks in 
+(bootloader) 1 ms: 500KB/s
+
+[434]
+(bootloader)  
+
+=================
+(bootloader) ====================
+(bootloader) ====
+
+[434] [LK_BOOT
+(bootloader) ] logo magic number 
+(bootloader) : 0x58881688
+
+[434] 
+(bootloader) [LK_BOOT] logo name 
+(bootloader)         : logo
+
+[434
+(bootloader) ] [LK_BOOT] logo siz
+(bootloader) e         : 1245399
+
+(bootloader) 
+[434] =============
+(bootloader) ====================
+(bootloader) ========
+
+[449] [PRO
+(bootloader) FILE] mmc read 2432 
+(bootloader) blks in 15 ms: 81066
+(bootloader) KB/s
+
+[449] [PROFILE
+(bootloader) ] mmc read 1 blks in
+(bootloader)  0 ms: 8KB/s
+
+[449] 
+(bootloader) [PROFILE] ::: lvl(2)
+(bootloader)  load_logo takes 16 
+(bootloader) ms
+
+[449] mt_get_log
+(bootloader) o_db_addr_pa: 0x7df9
+(bootloader) 0000
+
+[449] [PROFILE
+(bootloader) ] mmc read 24 blks i
+(bootloader) n 0 ms: 8KB/s
+
+[449]
+(bootloader)  [SEC_POLICY] sboot_
+(bootloader) state = 0x0
+
+[449] [
+(bootloader) SEC_POLICY] lock_sta
+(bootloader) te = 0x3
+
+[450] [PRO
+(bootloader) FILE] ::: lvl(2) log
+(bootloader) o verify takes 1 ms
+
+(bootloader) 
+[450] [dcm_set_defa
+(bootloader) ult]type:0x4A87, ini
+(bootloader) t_dcm_type=0x4A87
+
+[
+(bootloader) 450] [ARMCORE_DCM 0x
+(bootloader) 1] current state:1 (
+(bootloader) 0)
+
+[450] [MCUSYS_DC
+(bootloader) M 0x2] current state
+(bootloader) :1 (0)
+
+[450] [INFRA
+(bootloader) _DCM 0x4] current st
+(bootloader) ate:1 (0)
+
+[450] [ST
+(bootloader) ALL_DCM 0x80] curren
+(bootloader) t state:1 (0)
+
+[450]
+(bootloader)  [GIC_SYNC_DCM 0x200
+(bootloader) ] current state:1 (0
+(bootloader) )
+
+[450] [RGU_CORE_D
+(bootloader) CM 0x800] current st
+(bootloader) ate:1 (0)
+
+[450] [MC
+(bootloader) SI_DCM 0x4000] curre
+(bootloader) nt state:1 (0)
+
+[450
+(bootloader) ] 
+
+******** dcm dum
+(bootloader) p register *********
+(bootloader) 
+
+[450] L2C_SRAM_CTR
+(bootloader) L                 (0
+(bootloader) x10200648): 0x000c00
+(bootloader) 81
+
+[450] CCI_CLK_CT
+(bootloader) RL                  
+(bootloader) (0x10200660): 0x0000
+(bootloader) 0114
+
+[450] BUS_FABR
+(bootloader) IC_DCM_CTRL         
+(bootloader)   (0x10200668): 0x3f
+(bootloader) ff1fff
+
+[450] MCU_MI
+(bootloader) SC_DCM_CTRL         
+(bootloader)     (0x1020066c): 0x
+(bootloader) 00000003
+
+[450] CCI_
+(bootloader) ADB400_DCM_CONFIG   
+(bootloader)       (0x10200740): 
+(bootloader) 0x0000087f
+
+[450] SY
+(bootloader) NC_DCM_CONFIG       
+(bootloader)         (0x10200744)
+(bootloader) : 0x00100401
+
+[450] 
+(bootloader) SYNC_DCM_CLUSTER_CON
+(bootloader) FIG       (0x1020074
+(bootloader) c): 0x063f8f8f
+
+[450
+(bootloader) ] MP_GIC_RGU_SYNC_DC
+(bootloader) M           (0x10200
+(bootloader) 758): 0x00000001
+
+[4
+(bootloader) 50] MP0_PLL_DIVIDER_
+(bootloader) CFG           (0x102
+(bootloader) 007a0): 0x00010a00
+
+
+(bootloader) [450] MP1_PLL_DIVIDE
+(bootloader) R_CFG           (0x1
+(bootloader) 02007a4): 0x00000aff
+(bootloader) 
+
+[450] BUS_PLL_DIVI
+(bootloader) DER_CFG           (0
+(bootloader) x102007c0): 0x00010a
+(bootloader) 00
+
+[451] MCSIA_DCM_
+(bootloader) EN                  
+(bootloader) (0x10200b60): 0xffff
+(bootloader) 0000
+
+[451] INFRA_BU
+(bootloader) S_DCM_CTRL          
+(bootloader)   (0x10001070): 0x40
+(bootloader) ff0603
+
+[451] PERI_B
+(bootloader) US_DCM_CTRL         
+(bootloader)     (0x10001074): 0x
+(bootloader) b47f83e3
+
+[451] MEM_
+(bootloader) DCM_CTRL            
+(bootloader)       (0x10001078): 
+(bootloader) 0x19a007c0
+
+[451] P2
+(bootloader) P_RX_CLK_ON         
+(bootloader)         (0x100010a0)
+(bootloader) : 0x00000000
+
+[451] 
+(bootloader) CHN0_EMI_CHN_EMI_CON
+(bootloader) B         (0x1022d00
+(bootloader) 8): 0x00ff2048
+
+[451
+(bootloader) ] CHN1_EMI_CHN_EMI_C
+(bootloader) ONB         (0x10235
+(bootloader) 008): 0x00ff2048
+
+[4
+(bootloader) 51] MP0_CPUCFG_MP0_R
+(bootloader) GU_DCM_CONFIG (0x102
+(bootloader) 00088): 0x00000001
+
+
+(bootloader) [451] MP1_CPUCFG_MP1
+(bootloader) _RGU_DCM_CONFIG (0x1
+(bootloader) 0200288): 0x00000001
+(bootloader) 
+
+[454] [init_cust_d
+(bootloader) ata_from_dt]:chroff:
+(bootloader) 0,pe:1,powpath:1,vch
+(bootloader) rmax:6500,vchrmin:40
+(bootloader) 00,vfast:3000,usb:50
+(bootloader) 0,ac:2000 1500,nac:5
+(bootloader) 00,cdp:1500,ta:3000,
+(bootloader) pd:500,t:50 45 0
+
+[4
+(bootloader) 54] mt6370_chg_probe
+(bootloader) : (1.1.6_MTK)
+
+[458]
+(bootloader)  mt6370_parse_dt: su
+(bootloader) bpmic_pmu id = 5
+
+[4
+(bootloader) 58] [I2C-LK] 367: id
+(bootloader) =5,addr: 34, transfe
+(bootloader) r error
+
+[458] [I2C-
+(bootloader) LK] 373: I2C_ACKERR
+
+(bootloader) 
+[458] [I2C-LK] 244:
+(bootloader)  I2C structure:
+
+[I2
+(bootloader) C-LK] Clk=24960,Id=5
+(bootloader) ,Mode=1,St_rs=0,Dma_
+(bootloader) en=0,Op=3,Poll_en=1,
+(bootloader) Irq_stat=2
+
+[I2C-LK]
+(bootloader)  Trans_len=1,Trans_n
+(bootloader) um=2,Trans_auxlen=1,
+(bootloader) Data_size=ffff,speed
+(bootloader) =400
+
+[458] [I2C-LK]
+(bootloader)  247: base address 0
+(bootloader) x11016000
+
+[458] [I2
+(bootloader) C-LK] 268: I2C regis
+(bootloader) ter:
+
+[I2C-LK] SLAVE
+(bootloader) _ADDR=68,INTR_MASK=1
+(bootloader) f8,INTR_STAT=3,CONTR
+(bootloader) OL=38,TRANSFER_LEN=1
+(bootloader) 
+
+[I2C-LK] TRANSAC_L
+(bootloader) EN=2,DELAY_LEN=a,TIM
+(bootloader) ING=405,LTIMING=23,S
+(bootloader) TART=0,FIFO_STAT=110
+(bootloader) 1
+
+[I2C-LK] IO_CONFI
+(bootloader) G=1a3,HS=8000,DEBUGS
+(bootloader) TAT=300,EXT_CONF=800
+(bootloader) 1,TRANSFER_LEN_AUX=1
+(bootloader) ,CLOCK_DIV=4
+
+[459] 
+(bootloader) [I2C-LK] 922: write_
+(bootloader) read 0x10001 bytes f
+(bootloader) ails,ret=-121.
+
+[459
+(bootloader) ] mt6370_i2c_read_by
+(bootloader) te: I2CR[0x00] fail(
+(bootloader) -1)
+
+[459] mtk_charg
+(bootloader) er_init: fail to ini
+(bootloader) t charger(0), ret = 
+(bootloader) -19
+
+[459] reset_pe_
+(bootloader) adapter: get primary
+(bootloader)  charger failed
+
+[45
+(bootloader) 9] reset_pd_adapter:
+(bootloader)  get primary charger
+(bootloader)  failed
+
+[459] check
+(bootloader) _charger_volt: get p
+(bootloader) rimary charger faile
+(bootloader) d
+
+[462] [init_bat_c
+(bootloader) ust_data_dt]: batter
+(bootloader) y:no device tree !us
+(bootloader) e default values
+
+[4
+(bootloader) 62] charger_enable_c
+(bootloader) harging: get primary
+(bootloader)  charger failed
+
+[46
+(bootloader) 5] [pmic_get_auxadc_
+(bootloader) value] reg_val = 0x6
+(bootloader) 7eb, adc_result = 43
+(bootloader) 84
+
+[465] [upmu_is_c
+(bootloader) hr_det] 1
+
+[522] [fg
+(bootloader) auge_read_IM_current
+(bootloader) ](charging)FG_CURREN
+(bootloader) T:0x34e,curr:[2659,5
+(bootloader) 318,5318] mA, Rfg:50
+(bootloader)  ratio:1000
+
+[522] [
+(bootloader) do_ptim] bat 43838 c
+(bootloader) ur 5318 in 1ms
+
+[529
+(bootloader) ] [fgauge_read_IM_cu
+(bootloader) rrent](charging)FG_C
+(bootloader) URRENT:0x33e,curr:[2
+(bootloader) 608,5216,5216] mA, R
+(bootloader) fg:50 ratio:1000
+
+[5
+(bootloader) 29] [do_ptim] bat 43
+(bootloader) 848 cur 5216 in 1ms
+
+(bootloader) 
+[536] [fgauge_read_
+(bootloader) IM_current](charging
+(bootloader) )FG_CURRENT:0x343,cu
+(bootloader) rr:[2624,5248,5248] 
+(bootloader) mA, Rfg:50 ratio:100
+(bootloader) 0
+
+[536] [do_ptim] b
+(bootloader) at 43845 cur 5248 in
+(bootloader)  1ms
+
+[544] [fgauge_
+(bootloader) read_IM_current](cha
+(bootloader) rging)FG_CURRENT:0x3
+(bootloader) 42,curr:[2621,5242,5
+(bootloader) 242] mA, Rfg:50 rati
+(bootloader) o:1000
+
+[544] [do_pt
+(bootloader) im] bat 43842 cur 52
+(bootloader) 42 in 1ms
+
+[551] [fg
+(bootloader) auge_read_IM_current
+(bootloader) ](charging)FG_CURREN
+(bootloader) T:0x33c,curr:[2602,5
+(bootloader) 204,5204] mA, Rfg:50
+(bootloader)  ratio:1000
+
+[551] [
+(bootloader) do_ptim] bat 43837 c
+(bootloader) ur 5204 in 1ms
+
+[551
+(bootloader) ] do_ptim_gauge, 438
+(bootloader) 42(43837, 43838, 438
+(bootloader) 42, 43845, 43848), 5
+(bootloader) 242(5204, 5216, 5242
+(bootloader) , 5248, 5318)
+
+[552]
+(bootloader)  [pmic_get_auxadc_va
+(bootloader) lue] reg_val = 0x4e0
+(bootloader) , adc_result = 548
+
+
+(bootloader) [552] [fgauge_read_c
+(bootloader) urrent]g_isbat_init:
+(bootloader) 1,cartune:1000,50,31
+(bootloader) 4331
+
+[553] [fgauge_
+(bootloader) read_current]is_char
+(bootloader) ge:1 Ori_curr:0x33e,
+(bootloader) curr:[2608,5216,Fina
+(bootloader) l:5216] Rfg:50 ratio
+(bootloader) :1000
+
+[553] [BattTh
+(bootloader) ermistorConverTemp] 
+(bootloader) 8315 6948 7281 30 35
+(bootloader)  33
+
+[553] [BattVolt
+(bootloader) ToTemp] 542 16900 18
+(bootloader) 00 -6
+
+[553] [force_
+(bootloader) get_tbat] 548,542,1,
+(bootloader) 521,50,temp:33 r:75 
+(bootloader) 50
+
+[553] [check_sw_
+(bootloader) ocv]1 ptim[43842 524
+(bootloader) 2] fg_swocv[43842 52
+(bootloader) 42] boot_vbat:0 shut
+(bootloader) downtime:0 vbat:4384
+(bootloader)  tmp:33
+
+[553] charg
+(bootloader) er_enable_charging: 
+(bootloader) get primary charger 
+(bootloader) failed
+
+[553] mtk_ch
+(bootloader) arger_start: get pri
+(bootloader) mary charger failed
+
+(bootloader) 
+[553] charger_enabl
+(bootloader) e_charging: get prim
+(bootloader) ary charger failed
+
+
+(bootloader) [553] charger_enable
+(bootloader) _power_path: get pri
+(bootloader) mary charger failed
+
+(bootloader) 
+[610] [fgauge_read_
+(bootloader) IM_current](charging
+(bootloader) )FG_CURRENT:0x335,cu
+(bootloader) rr:[2580,5160,5160] 
+(bootloader) mA, Rfg:50 ratio:100
+(bootloader) 0
+
+[610] [do_ptim] b
+(bootloader) at 43843 cur 5160 in
+(bootloader)  1ms
+
+[619] [fgauge_
+(bootloader) read_IM_current](cha
+(bootloader) rging)FG_CURRENT:0x2
+(bootloader) 96,curr:[2080,4160,4
+(bootloader) 160] mA, Rfg:50 rati
+(bootloader) o:1000
+
+[619] [do_pt
+(bootloader) im] bat 43776 cur 41
+(bootloader) 60 in 0ms
+
+[621] [Ca
+(bootloader) lculate Rac] bypass 
+(bootloader) due to (curr_x-curr_
+(bootloader) y) < 40mA
+
+[621] v1=
+(bootloader) 43843,v2=43776,c1=51
+(bootloader) 60,c2=4160,rac_cal=0
+(bootloader) ,ret=-1,retry=0,v_di
+(bootloader) ff=67,c_diff=-1000
+
+
+(bootloader) [628] [fgauge_read_I
+(bootloader) M_current](charging)
+(bootloader) FG_CURRENT:0x33c,cur
+(bootloader) r:[2602,5204,5204] m
+(bootloader) A, Rfg:50 ratio:1000
+(bootloader) 
+
+[628] [do_ptim] ba
+(bootloader) t 43838 cur 5204 in 
+(bootloader) 1ms
+
+[637] [fgauge_r
+(bootloader) ead_IM_current](char
+(bootloader) ging)FG_CURRENT:0x27
+(bootloader) 4,curr:[1973,3946,39
+(bootloader) 46] mA, Rfg:50 ratio
+(bootloader) :1000
+
+[637] [do_pti
+(bootloader) m] bat 43776 cur 394
+(bootloader) 6 in 1ms
+
+[639] [Cal
+(bootloader) culate Rac] bypass d
+(bootloader) ue to (curr_x-curr_y
+(bootloader) ) < 40mA
+
+[639] v1=4
+(bootloader) 3838,v2=43776,c1=520
+(bootloader) 4,c2=3946,rac_cal=0,
+(bootloader) ret=-1,retry=1,v_dif
+(bootloader) f=62,c_diff=-1258
+
+[
+(bootloader) 647] [fgauge_read_IM
+(bootloader) _current](charging)F
+(bootloader) G_CURRENT:0x330,curr
+(bootloader) :[2564,5128,5128] mA
+(bootloader) , Rfg:50 ratio:1000
+
+(bootloader) 
+[647] [do_ptim] bat
+(bootloader)  43840 cur 5128 in 1
+(bootloader) ms
+
+[656] [fgauge_re
+(bootloader) ad_IM_current](charg
+(bootloader) ing)FG_CURRENT:0x274
+(bootloader) ,curr:[1973,3946,394
+(bootloader) 6] mA, Rfg:50 ratio:
+(bootloader) 1000
+
+[656] [do_ptim
+(bootloader) ] bat 43776 cur 3946
+(bootloader)  in 1ms
+
+[658] [Calc
+(bootloader) ulate Rac] bypass du
+(bootloader) e to (curr_x-curr_y)
+(bootloader)  < 40mA
+
+[658] v1=43
+(bootloader) 840,v2=43776,c1=5128
+(bootloader) ,c2=3946,rac_cal=0,r
+(bootloader) et=-1,retry=2,v_diff
+(bootloader) =64,c_diff=-1182
+
+[6
+(bootloader) 65] [fgauge_read_IM_
+(bootloader) current](charging)FG
+(bootloader) _CURRENT:0x33a,curr:
+(bootloader) [2596,5192,5192] mA,
+(bootloader)  Rfg:50 ratio:1000
+
+
+(bootloader) [665] [do_ptim] bat 
+(bootloader) 43835 cur 5192 in 1m
+(bootloader) s
+
+[675] [fgauge_rea
+(bootloader) d_IM_current](chargi
+(bootloader) ng)FG_CURRENT:0x271,
+(bootloader) curr:[1964,3928,3928
+(bootloader) ] mA, Rfg:50 ratio:1
+(bootloader) 000
+
+[675] [do_ptim]
+(bootloader)  bat 43774 cur 3928 
+(bootloader) in 1ms
+
+[677] [Calcu
+(bootloader) late Rac] bypass due
+(bootloader)  to (curr_x-curr_y) 
+(bootloader) < 40mA
+
+[677] v1=438
+(bootloader) 35,v2=43774,c1=5192,
+(bootloader) c2=3928,rac_cal=0,re
+(bootloader) t=-1,retry=0,v_diff=
+(bootloader) 61,c_diff=-1264
+
+[68
+(bootloader) 4] [fgauge_read_IM_c
+(bootloader) urrent](charging)FG_
+(bootloader) CURRENT:0x33a,curr:[
+(bootloader) 2596,5192,5192] mA, 
+(bootloader) Rfg:50 ratio:1000
+
+[
+(bootloader) 684] [do_ptim] bat 4
+(bootloader) 3830 cur 5192 in 1ms
+(bootloader) 
+
+[693] [fgauge_read
+(bootloader) _IM_current](chargin
+(bootloader) g)FG_CURRENT:0x27c,c
+(bootloader) urr:[1999,3998,3998]
+(bootloader)  mA, Rfg:50 ratio:10
+(bootloader) 00
+
+[693] [do_ptim] 
+(bootloader) bat 43766 cur 3998 i
+(bootloader) n 1ms
+
+[695] [Calcul
+(bootloader) ate Rac] bypass due 
+(bootloader) to (curr_x-curr_y) <
+(bootloader)  40mA
+
+[695] v1=4383
+(bootloader) 0,v2=43766,c1=5192,c
+(bootloader) 2=3998,rac_cal=0,ret
+(bootloader) =-1,retry=1,v_diff=6
+(bootloader) 4,c_diff=-1194
+
+[703
+(bootloader) ] [fgauge_read_IM_cu
+(bootloader) rrent](charging)FG_C
+(bootloader) URRENT:0x33c,curr:[2
+(bootloader) 602,5204,5204] mA, R
+(bootloader) fg:50 ratio:1000
+
+[7
+(bootloader) 03] [do_ptim] bat 43
+(bootloader) 832 cur 5204 in 1ms
+
+(bootloader) 
+[712] [fgauge_read_
+(bootloader) IM_current](charging
+(bootloader) )FG_CURRENT:0x273,cu
+(bootloader) rr:[1970,3940,3940] 
+(bootloader) mA, Rfg:50 ratio:100
+(bootloader) 0
+
+[712] [do_ptim] b
+(bootloader) at 43772 cur 3940 in
+(bootloader)  1ms
+
+[714] [Calcula
+(bootloader) te Rac] bypass due t
+(bootloader) o (curr_x-curr_y) < 
+(bootloader) 40mA
+
+[714] v1=43832
+(bootloader) ,v2=43772,c1=5204,c2
+(bootloader) =3940,rac_cal=0,ret=
+(bootloader) -1,retry=2,v_diff=60
+(bootloader) ,c_diff=-1264
+
+[721]
+(bootloader)  [fgauge_read_IM_cur
+(bootloader) rent](charging)FG_CU
+(bootloader) RRENT:0x33b,curr:[25
+(bootloader) 99,5198,5198] mA, Rf
+(bootloader) g:50 ratio:1000
+
+[72
+(bootloader) 1] [do_ptim] bat 438
+(bootloader) 38 cur 5198 in 1ms
+
+
+(bootloader) [730] [fgauge_read_I
+(bootloader) M_current](charging)
+(bootloader) FG_CURRENT:0x28c,cur
+(bootloader) r:[2049,4098,4098] m
+(bootloader) A, Rfg:50 ratio:1000
+(bootloader) 
+
+[731] [do_ptim] ba
+(bootloader) t 43777 cur 4098 in 
+(bootloader) 1ms
+
+[733] [Calculat
+(bootloader) e Rac] bypass due to
+(bootloader)  (curr_x-curr_y) < 4
+(bootloader) 0mA
+
+[733] v1=43838,
+(bootloader) v2=43777,c1=5198,c2=
+(bootloader) 4098,rac_cal=0,ret=-
+(bootloader) 1,retry=0,v_diff=61,
+(bootloader) c_diff=-1100
+
+[740] 
+(bootloader) [fgauge_read_IM_curr
+(bootloader) ent](charging)FG_CUR
+(bootloader) RENT:0x338,curr:[259
+(bootloader) 0,5180,5180] mA, Rfg
+(bootloader) :50 ratio:1000
+
+[740
+(bootloader) ] [do_ptim] bat 4383
+(bootloader) 5 cur 5180 in 1ms
+
+[
+(bootloader) 749] [fgauge_read_IM
+(bootloader) _current](charging)F
+(bootloader) G_CURRENT:0x275,curr
+(bootloader) :[1977,3954,3954] mA
+(bootloader) , Rfg:50 ratio:1000
+
+(bootloader) 
+[749] [do_ptim] bat
+(bootloader)  43776 cur 3954 in 1
+(bootloader) ms
+
+[751] [Calculate
+(bootloader)  Rac] bypass due to 
+(bootloader) (curr_x-curr_y) < 40
+(bootloader) mA
+
+[751] v1=43835,v
+(bootloader) 2=43776,c1=5180,c2=3
+(bootloader) 954,rac_cal=0,ret=-1
+(bootloader) ,retry=1,v_diff=59,c
+(bootloader) _diff=-1226
+
+[758] [
+(bootloader) fgauge_read_IM_curre
+(bootloader) nt](charging)FG_CURR
+(bootloader) ENT:0x33e,curr:[2608
+(bootloader) ,5216,5216] mA, Rfg:
+(bootloader) 50 ratio:1000
+
+[759]
+(bootloader)  [do_ptim] bat 43835
+(bootloader)  cur 5216 in 1ms
+
+[7
+(bootloader) 68] [fgauge_read_IM_
+(bootloader) current](charging)FG
+(bootloader) _CURRENT:0x289,curr:
+(bootloader) [2040,4080,4080] mA,
+(bootloader)  Rfg:50 ratio:1000
+
+
+(bootloader) [768] [do_ptim] bat 
+(bootloader) 43776 cur 4080 in 1m
+(bootloader) s
+
+[770] [Calculate 
+(bootloader) Rac] bypass due to (
+(bootloader) curr_x-curr_y) < 40m
+(bootloader) A
+
+[770] v1=43835,v2
+(bootloader) =43776,c1=5216,c2=40
+(bootloader) 80,rac_cal=0,ret=-1,
+(bootloader) retry=2,v_diff=59,c_
+(bootloader) diff=-1136
+
+[777] [f
+(bootloader) gauge_read_IM_curren
+(bootloader) t](charging)FG_CURRE
+(bootloader) NT:0x33e,curr:[2608,
+(bootloader) 5216,5216] mA, Rfg:5
+(bootloader) 0 ratio:1000
+
+[777] 
+(bootloader) [do_ptim] bat 43835 
+(bootloader) cur 5216 in 1ms
+
+[78
+(bootloader) 6] [fgauge_read_IM_c
+(bootloader) urrent](charging)FG_
+(bootloader) CURRENT:0x279,curr:[
+(bootloader) 1989,3978,3978] mA, 
+(bootloader) Rfg:50 ratio:1000
+
+[
+(bootloader) 786] [do_ptim] bat 4
+(bootloader) 3774 cur 3978 in 1ms
+(bootloader) 
+
+[789] [Calculate R
+(bootloader) ac] bypass due to (c
+(bootloader) urr_x-curr_y) < 40mA
+(bootloader) 
+
+[789] v1=43835,v2=
+(bootloader) 43774,c1=5216,c2=397
+(bootloader) 8,rac_cal=0,ret=-1,r
+(bootloader) etry=0,v_diff=61,c_d
+(bootloader) iff=-1238
+
+[796] [fg
+(bootloader) auge_read_IM_current
+(bootloader) ](charging)FG_CURREN
+(bootloader) T:0x33d,curr:[2605,5
+(bootloader) 210,5210] mA, Rfg:50
+(bootloader)  ratio:1000
+
+[796] [
+(bootloader) do_ptim] bat 43832 c
+(bootloader) ur 5210 in 1ms
+
+[805
+(bootloader) ] [fgauge_read_IM_cu
+(bootloader) rrent](charging)FG_C
+(bootloader) URRENT:0x279,curr:[1
+(bootloader) 989,3978,3978] mA, R
+(bootloader) fg:50 ratio:1000
+
+[8
+(bootloader) 05] [do_ptim] bat 43
+(bootloader) 777 cur 3978 in 1ms
+
+(bootloader) 
+[807] [Calculate Ra
+(bootloader) c] bypass due to (cu
+(bootloader) rr_x-curr_y) < 40mA
+
+(bootloader) 
+[807] v1=43832,v2=4
+(bootloader) 3777,c1=5210,c2=3978
+(bootloader) ,rac_cal=0,ret=-1,re
+(bootloader) try=1,v_diff=55,c_di
+(bootloader) ff=-1232
+
+[814] [fga
+(bootloader) uge_read_IM_current]
+(bootloader) (charging)FG_CURRENT
+(bootloader) :0x339,curr:[2593,51
+(bootloader) 86,5186] mA, Rfg:50 
+(bootloader) ratio:1000
+
+[814] [d
+(bootloader) o_ptim] bat 43825 cu
+(bootloader) r 5186 in 1ms
+
+[824]
+(bootloader)  [fgauge_read_IM_cur
+(bootloader) rent](charging)FG_CU
+(bootloader) RRENT:0x27f,curr:[20
+(bootloader) 08,4016,4016] mA, Rf
+(bootloader) g:50 ratio:1000
+
+[82
+(bootloader) 4] [do_ptim] bat 437
+(bootloader) 76 cur 4016 in 1ms
+
+
+(bootloader) [826] [Calculate Rac
+(bootloader) ] bypass due to (cur
+(bootloader) r_x-curr_y) < 40mA
+
+
+(bootloader) [826] v1=43825,v2=43
+(bootloader) 776,c1=5186,c2=4016,
+(bootloader) rac_cal=0,ret=-1,ret
+(bootloader) ry=2,v_diff=49,c_dif
+(bootloader) f=-1170
+
+[833] [fgau
+(bootloader) ge_read_IM_current](
+(bootloader) charging)FG_CURRENT:
+(bootloader) 0x33b,curr:[2599,519
+(bootloader) 8,5198] mA, Rfg:50 r
+(bootloader) atio:1000
+
+[833] [do
+(bootloader) _ptim] bat 43832 cur
+(bootloader)  5198 in 1ms
+
+[842] 
+(bootloader) [fgauge_read_IM_curr
+(bootloader) ent](charging)FG_CUR
+(bootloader) RENT:0x27e,curr:[200
+(bootloader) 5,4010,4010] mA, Rfg
+(bootloader) :50 ratio:1000
+
+[842
+(bootloader) ] [do_ptim] bat 4376
+(bootloader) 4 cur 4010 in 1ms
+
+[
+(bootloader) 844] [Calculate Rac]
+(bootloader)  bypass due to (curr
+(bootloader) _x-curr_y) < 40mA
+
+[
+(bootloader) 845] v1=43832,v2=437
+(bootloader) 64,c1=5198,c2=4010,r
+(bootloader) ac_cal=0,ret=-1,retr
+(bootloader) y=0,v_diff=68,c_diff
+(bootloader) =-1188
+
+[852] [fgaug
+(bootloader) e_read_IM_current](c
+(bootloader) harging)FG_CURRENT:0
+(bootloader) x334,curr:[2577,5154
+(bootloader) ,5154] mA, Rfg:50 ra
+(bootloader) tio:1000
+
+[852] [do_
+(bootloader) ptim] bat 43825 cur 
+(bootloader) 5154 in 1ms
+
+[861] [
+(bootloader) fgauge_read_IM_curre
+(bootloader) nt](charging)FG_CURR
+(bootloader) ENT:0x27e,curr:[2005
+(bootloader) ,4010,4010] mA, Rfg:
+(bootloader) 50 ratio:1000
+
+[861]
+(bootloader)  [do_ptim] bat 43774
+(bootloader)  cur 4010 in 1ms
+
+[8
+(bootloader) 63] [Calculate Rac] 
+(bootloader) bypass due to (curr_
+(bootloader) x-curr_y) < 40mA
+
+[8
+(bootloader) 63] v1=43825,v2=4377
+(bootloader) 4,c1=5154,c2=4010,ra
+(bootloader) c_cal=0,ret=-1,retry
+(bootloader) =1,v_diff=51,c_diff=
+(bootloader) -1144
+
+[870] [fgauge
+(bootloader) _read_IM_current](ch
+(bootloader) arging)FG_CURRENT:0x
+(bootloader) 33d,curr:[2605,5210,
+(bootloader) 5210] mA, Rfg:50 rat
+(bootloader) io:1000
+
+[870] [do_p
+(bootloader) tim] bat 43838 cur 5
+(bootloader) 210 in 1ms
+
+[880] [f
+(bootloader) gauge_read_IM_curren
+(bootloader) t](charging)FG_CURRE
+(bootloader) NT:0x279,curr:[1989,
+(bootloader) 3978,3978] mA, Rfg:5
+(bootloader) 0 ratio:1000
+
+[880] 
+(bootloader) [do_ptim] bat 43776 
+(bootloader) cur 3978 in 1ms
+
+[88
+(bootloader) 2] [Calculate Rac] b
+(bootloader) ypass due to (curr_x
+(bootloader) -curr_y) < 40mA
+
+[88
+(bootloader) 2] v1=43838,v2=43776
+(bootloader) ,c1=5210,c2=3978,rac
+(bootloader) _cal=0,ret=-1,retry=
+(bootloader) 2,v_diff=62,c_diff=-
+(bootloader) 1232
+
+[882] [dlpt_R]
+(bootloader)  rac_val:-1,-1,-1,-1
+(bootloader) ,-1 [1000:0:0], imix
+(bootloader) _r:170
+
+[882] charge
+(bootloader) r_enable_power_path:
+(bootloader)  get primary charger
+(bootloader)  failed
+
+[882] check
+(bootloader) _bat_protect_status:
+(bootloader)  disable charging fa
+(bootloader) iled, ret = -22
+
+[88
+(bootloader) 5] [pmic_get_auxadc_
+(bootloader) value] reg_val = 0x6
+(bootloader) 7e8, adc_result = 43
+(bootloader) 83
+
+[885] [check_bat
+(bootloader) _protect_status]: ch
+(bootloader) eck VBAT=4383 mV wit
+(bootloader) h 3300 mV
+
+[885] [PR
+(bootloader) OFILE] ------- Charg
+(bootloader) ing takes 0 ms -----
+(bootloader) --- 
+
+[885] charger_
+(bootloader) type: 1
+
+[885] charg
+(bootloader) er_enable_charging: 
+(bootloader) get primary charger 
+(bootloader) failed
+
+[885] [PROFI
+(bootloader) LE] ::: lvl(2) batte
+(bootloader) ry init takes 435 ms
+(bootloader) 
+
+[885] [PROFILE] ::
+(bootloader) : lvl(2) RTC boot ch
+(bootloader) eck Init takes 0 ms
+
+(bootloader) 
+[885] [LEDS]LK: mt6
+(bootloader) 5xx_backlight_on:lev
+(bootloader) el =  255
+
+
+[885] [L
+(bootloader) EDS]LK: lcd-backligh
+(bootloader) t level is 255 
+
+
+[8
+(bootloader) 85] [DISP][PWM] disp
+(bootloader) _pwm_set_backlight(i
+(bootloader) d = 0x1, level_1024 
+(bootloader) = 1023)
+
+[885] [DISP
+(bootloader) ][PWM] disp_pwm_set_
+(bootloader) enabled: PWN_EN = 0x
+(bootloader) 1
+
+[885] [PROFILE] :
+(bootloader) :: lvl(2) backlight 
+(bootloader) takes 0 ms
+
+[885] mt
+(bootloader) _disp_update: 0x7f21
+(bootloader) 8000, 0x00000000
+
+[8
+(bootloader) 85] fb dump: 0x00000
+(bootloader) 000, 0x00000000, 0x0
+(bootloader) 0000000, 0x00000000
+
+(bootloader) 
+[886] ovl start don
+(bootloader) e idx = 0, addr = 0x
+(bootloader) 1400b00c
+
+[886] ovl 
+(bootloader) start done addr0 = 0
+(bootloader) x1000
+
+[886] ovl sta
+(bootloader) rt done addr1 = 0x0
+
+(bootloader) 
+[886] ovl start don
+(bootloader) e addr2 = 0x1400b00c
+(bootloader) 
+
+[886] ovl start do
+(bootloader) ne addr3 = 0x1400b00
+(bootloader) c
+
+[886] ovl start d
+(bootloader) one addr4 = 0x1400b0
+(bootloader) 0c
+
+[886] ovl start 
+(bootloader) done idx = 1, addr =
+(bootloader)  0x1400c00c
+
+[886] o
+(bootloader) vl start done addr0 
+(bootloader) = 0x1000
+
+[886] ovl 
+(bootloader) start done addr1 = 0
+(bootloader) x1000
+
+[886] ovl sta
+(bootloader) rt done addr2 = 0x14
+(bootloader) 00b00c
+
+[886] ovl st
+(bootloader) art done addr3 = 0x1
+(bootloader) 400c00c
+
+[886] ovl s
+(bootloader) tart done addr4 = 0x
+(bootloader) 1400c00c
+
+[886] [PRO
+(bootloader) FILE] ::: lvl(2) dis
+(bootloader) play update takes 1 
+(bootloader) ms
+
+[888] mt_disp_up
+(bootloader) date: 0x7f218000, 0x
+(bootloader) 00000000
+
+[888] fb d
+(bootloader) ump: 0x00000000, 0x0
+(bootloader) 0000000, 0x00000000,
+(bootloader)  0x00000000
+
+[888] [
+(bootloader) PROFILE] ::: lvl(2) 
+(bootloader) sw_env takes 2 ms
+
+[
+(bootloader) 888] [PROFILE] ::: l
+(bootloader) vl(1) platform_init 
+(bootloader) takes 887 ms
+
+[889] 
+(bootloader) initializing target
+
+(bootloader) 
+[889] calling apps_
+(bootloader) init()
+
+[889] [LK_EN
+(bootloader) V]get_env MTK_DEVICE
+(bootloader) _ID from area 0
+
+[88
+(bootloader) 9] [PROFILE] mmc rea
+(bootloader) d 1 blks in 0 ms: 8K
+(bootloader) B/s
+
+[889] [LK_BOOT]
+(bootloader)  Load 'proinfo' part
+(bootloader) ition to 0x480b1908 
+(bootloader) (19 bytes in 0 ms)
+
+
+(bootloader) [889] [USB] udc_init
+(bootloader) :
+
+[889] [USB] ep0_u
+(bootloader) rb: 0x4815c180
+
+[921
+(bootloader) ] [USB] ept0 out @0x
+(bootloader) 48149a88/0x48149a88 
+(bootloader) max=64 bit=1
+
+[921] 
+(bootloader) [USB] ept0 in @0x481
+(bootloader) 49a88/0x48149a88 max
+(bootloader) =64 bit=10000
+
+[921]
+(bootloader)  fastboot_init()
+
+[9
+(bootloader) 21] load modem image
+(bootloader)  in fastboot mode to
+(bootloader)  get radio version
+
+
+(bootloader) [921] get_plat_get_f
+(bootloader) ree_method: weak fun
+(bootloader) ction:free_in_kernel
+(bootloader) =0
+
+[921] ccci_ld_md
+(bootloader) _wrapper_api_init:fr
+(bootloader) ee_in_kernel=1
+
+[921
+(bootloader) ] Enter load_modem_i
+(bootloader) mage v2.0
+
+[921] get
+(bootloader)  limit and align wea
+(bootloader) k func
+
+
+[921] mbloc
+(bootloader) k_reserve-R start: 0
+(bootloader) x9fff0000, sz: 0x100
+(bootloader) 00 map:0 name:ccci_t
+(bootloader) ag_mem
+
+[921] name[c
+(bootloader) cci_tag_mem] limit: 
+(bootloader) 0xA0000000, request 
+(bootloader) size: 0x00010000, ge
+(bootloader) t start address: 0x9
+(bootloader) fff0000
+
+[923] radio
+(bootloader)  cap:radio_md_g_en u
+(bootloader) sing default
+
+[923] 
+(bootloader) -- MD1 --
+
+[923] get
+(bootloader)  limit and align wea
+(bootloader) k func
+
+
+[923] mbloc
+(bootloader) k_reserve-R start: 0
+(bootloader) x8e000000, sz: 0x100
+(bootloader) 00000 map:1 name:md_
+(bootloader) mem_usage
+
+[923] nam
+(bootloader) e[md_mem_usage] limi
+(bootloader) t: 0xA0000000, reque
+(bootloader) st size: 0x10000000,
+(bootloader)  get start address: 
+(bootloader) 0x8e000000
+
+[923] [P
+(bootloader) ROFILE] mmc read 1 b
+(bootloader) lks in 0 ms: 8KB/s
+
+
+(bootloader) [923] ccci_load_raw_
+(bootloader) data: addr[0x4818bb8
+(bootloader) 0],size[0x00000200] 
+(bootloader) @md1img
+
+[923] ptr h
+(bootloader) dr verify:partition[
+(bootloader) md1img], image_name[
+(bootloader) md1rom]
+
+[923] polic
+(bootloader) y_entry_idx = 12 
+
+[
+(bootloader) 924] [PROFILE] mmc r
+(bootloader) ead 24 blks in 1 ms:
+(bootloader)  12000KB/s
+
+[924] [S
+(bootloader) EC_POLICY] sboot_sta
+(bootloader) te = 0x0
+
+[924] [SEC
+(bootloader) _POLICY] lock_state 
+(bootloader) = 0x3
+
+[924] img_aut
+(bootloader) h_required = 0 
+
+[11
+(bootloader) 98] [PROFILE] mmc re
+(bootloader) ad 44789 blks in 274
+(bootloader)  ms: 81731KB/s
+
+[119
+(bootloader) 8] [PROFILE] mmc rea
+(bootloader) d 1 blks in 0 ms: 8K
+(bootloader) B/s
+
+[1200] ccci_loa
+(bootloader) d_raw_data: addr[0x8
+(bootloader) e000000],size[0x015d
+(bootloader) ebe4] @md1img
+
+[1200
+(bootloader) ] image verify:parti
+(bootloader) tion[md1img], image_
+(bootloader) name[md1rom], addr[0
+(bootloader) x8e000000], size[0x1
+(bootloader) 5debf0]
+
+[1202] sync
+(bootloader) _cache in img_vfy ad
+(bootloader) dr:0x8e000000 size:1
+(bootloader) 5debf0
+
+[1202] ccci_
+(bootloader) plat_realloc_map_mem
+(bootloader) : weak function,addr
+(bootloader) =0x8f5de900,size=307
+(bootloader) 2[1202] ass_func_for
+(bootloader) _v6_normal_img:reall
+(bootloader) oc weak func
+
+[1202]
+(bootloader)  padding_with_additi
+(bootloader) onal_num:4 with mpu_
+(bootloader) num:3
+
+[1202] MPU re
+(bootloader) gion not enough, can
+(bootloader) cel to retrieve padd
+(bootloader) ing(offset):0x04a500
+(bootloader) 00 ~ 0x04a60000
+
+[12
+(bootloader) 03] retrieve_blk_num
+(bootloader) : 5
+
+[1203] == Get r
+(bootloader) etrieve 0x15e0000~0x
+(bootloader) 1bfffff =======
+
+[12
+(bootloader) 03] [0x8e000000~0x8f
+(bootloader) bfffff] ==>
+
+[1203] 
+(bootloader) [0x8e000000-Reserved
+(bootloader) -0x8f5dffff|0x8f5e00
+(bootloader) 00-Retrieve-0x8fbfff
+(bootloader) ff]
+
+[1203]   0x6200
+(bootloader) 00B retrieved by AP
+
+(bootloader) 
+[1203] [ccci_retrie
+(bootloader) ve_mem] free_in_kern
+(bootloader) el: 1
+
+[1203] == Get
+(bootloader)  retrieve 0x2020000~
+(bootloader) 0x27fffff =======
+
+[
+(bootloader) 1203] [0x8fc00000~0x
+(bootloader) 907fffff] ==>
+
+[1203
+(bootloader) ] [0x8fc00000-Reserv
+(bootloader) ed-0x9001ffff|0x9002
+(bootloader) 0000-Retrieve-0x907f
+(bootloader) ffff]
+
+[1203]   0x7e
+(bootloader) 0000B retrieved by A
+(bootloader) P
+
+[1203] [ccci_retr
+(bootloader) ieve_mem] free_in_ke
+(bootloader) rnel: 1
+
+[1203] == G
+(bootloader) et retrieve 0x4c1000
+(bootloader) 0~0x6ffffff =======
+
+(bootloader) 
+[1203] [0x91fc0000~
+(bootloader) 0x95dfffff] ==>
+
+[12
+(bootloader) 03] [0x91fc0000-Rese
+(bootloader) rved-0x92c0ffff|0x92
+(bootloader) c10000-Retrieve-00x9
+(bootloader) 4ffffff|0x95000000-R
+(bootloader) eserved-0x95dfffff]
+
+(bootloader) 
+[1203]   0x23f0000B
+(bootloader)  retrieved by AP
+
+[1
+(bootloader) 203] [ccci_retrieve_
+(bootloader) mem] free_in_kernel:
+(bootloader)  1
+
+[1203] == Get re
+(bootloader) trieve 0x4ab0000~0x4
+(bootloader) bfffff =======
+
+[120
+(bootloader) 3] [0x91fc0000~0x92c
+(bootloader) 0ffff] ==>
+
+[1203] [
+(bootloader) 0x91fc0000-Reserved-
+(bootloader) 0x92aaffff|0x92ab000
+(bootloader) 0-Retrieve-00x92bfff
+(bootloader) ff|0x92c00000-Reserv
+(bootloader) ed-0x92c0ffff]
+
+[120
+(bootloader) 3]   0x150000B retri
+(bootloader) eved by AP
+
+[1203] [
+(bootloader) ccci_retrieve_mem] f
+(bootloader) ree_in_kernel: 1
+
+[1
+(bootloader) 203] == Get retrieve
+(bootloader)  0x4a70000~0x4a7ffff
+(bootloader)  =======
+
+[1204] [0x
+(bootloader) 91fc0000~0x92aaffff]
+(bootloader)  ==>
+
+[1204] [0x91fc
+(bootloader) 0000-Reserved-0x92a6
+(bootloader) ffff|0x92a70000-Retr
+(bootloader) ieve-00x92a7ffff|0x9
+(bootloader) 2a80000-Reserved-0x9
+(bootloader) 2aaffff]
+
+[1204]   0
+(bootloader) x10000B retrieved by
+(bootloader)  AP
+
+[1204] [ccci_re
+(bootloader) trieve_mem] free_in_
+(bootloader) kernel: 1
+
+[1204] mt
+(bootloader) _secure_call: set_ad
+(bootloader) dr = 0x8e000000, get
+(bootloader) _addr = 0x8e000000
+
+
+(bootloader) [1204] ---> Map 0x00
+(bootloader) 000000 to 0x8e000000
+(bootloader)  for MD1
+
+[1204] BAN
+(bootloader) K0_MAP0 value:0x9100
+(bootloader) 8F
+
+[1204] BANK0_MAP
+(bootloader) 1 value:0x950093
+
+[1
+(bootloader) 204] BANK0_MAP2 valu
+(bootloader) e:0x990097
+
+[1204] B
+(bootloader) ANK0_MAP3 value:0x9D
+(bootloader) 009B
+
+[1204] [PROFIL
+(bootloader) E] mmc read 1 blks i
+(bootloader) n 0 ms: 8KB/s
+
+[1204
+(bootloader) ] ccci_load_raw_data
+(bootloader) : addr[0x4818bb80],s
+(bootloader) ize[0x00000200] @md1
+(bootloader) img
+
+[1205] [PROFILE
+(bootloader) ] mmc read 1 blks in
+(bootloader)  0 ms: 8KB/s
+
+[1205]
+(bootloader)  [PROFILE] mmc read 
+(bootloader) 1 blks in 0 ms: 8KB/
+(bootloader) s
+
+[1205] ccci_load_
+(bootloader) raw_data: addr[0x481
+(bootloader) 8bb80],size[0x000002
+(bootloader) 00] @md1img
+
+[1205] 
+(bootloader) [PROFILE] mmc read 1
+(bootloader)  blks in 0 ms: 8KB/s
+(bootloader) 
+
+[1205] [PROFILE] m
+(bootloader) mc read 1 blks in 0 
+(bootloader) ms: 8KB/s
+
+[1205] cc
+(bootloader) ci_load_raw_data: ad
+(bootloader) dr[0x4818bb80],size[
+(bootloader) 0x00000200] @md1img
+
+(bootloader) 
+[1205] [PROFILE] mm
+(bootloader) c read 1 blks in 0 m
+(bootloader) s: 8KB/s
+
+[1206] [PR
+(bootloader) OFILE] mmc read 1 bl
+(bootloader) ks in 1 ms: 500KB/s
+
+(bootloader) 
+[1206] ccci_load_ra
+(bootloader) w_data: addr[0x4818b
+(bootloader) b80],size[0x00000200
+(bootloader) ] @md1img
+
+[1206] [P
+(bootloader) ROFILE] mmc read 1 b
+(bootloader) lks in 0 ms: 8KB/s
+
+
+(bootloader) [1206] [PROFILE] mmc
+(bootloader)  read 1 blks in 0 ms
+(bootloader) : 8KB/s
+
+[1206] ccci
+(bootloader) _load_raw_data: addr
+(bootloader) [0x4818bb80],size[0x
+(bootloader) 00000200] @md1img
+
+[
+(bootloader) 1206] [PROFILE] mmc 
+(bootloader) read 1 blks in 0 ms:
+(bootloader)  8KB/s
+
+[1206] [PROF
+(bootloader) ILE] mmc read 1 blks
+(bootloader)  in 0 ms: 8KB/s
+
+[12
+(bootloader) 06] ccci_load_raw_da
+(bootloader) ta: addr[0x4818bb80]
+(bootloader) ,size[0x00000200] @m
+(bootloader) d1img
+
+[1206] [PROFI
+(bootloader) LE] mmc read 1 blks 
+(bootloader) in 0 ms: 8KB/s
+
+[120
+(bootloader) 7] [PROFILE] mmc rea
+(bootloader) d 1 blks in 0 ms: 8K
+(bootloader) B/s
+
+[1207] ccci_loa
+(bootloader) d_raw_data: addr[0x4
+(bootloader) 818bb80],size[0x0000
+(bootloader) 0200] @md1img
+
+[1207
+(bootloader) ] ptr hdr verify:par
+(bootloader) tition[md1img], imag
+(bootloader) e_name[md1dsp]
+
+[120
+(bootloader) 7] policy_entry_idx 
+(bootloader) = 12 
+
+[1207] [PROFI
+(bootloader) LE] mmc read 24 blks
+(bootloader)  in 0 ms: 8KB/s
+
+[12
+(bootloader) 07] [SEC_POLICY] sbo
+(bootloader) ot_state = 0x0
+
+[120
+(bootloader) 7] [SEC_POLICY] lock
+(bootloader) _state = 0x3
+
+[1207]
+(bootloader)  img_auth_required =
+(bootloader)  0 
+
+[1207] [PROFILE
+(bootloader) ] mmc read 1 blks in
+(bootloader)  0 ms: 8KB/s
+
+[1290]
+(bootloader)  [PROFILE] mmc read 
+(bootloader) 13504 blks in 83 ms:
+(bootloader)  81349KB/s
+
+[1290] [
+(bootloader) PROFILE] mmc read 1 
+(bootloader) blks in 0 ms: 8KB/s
+
+(bootloader) 
+[1291] ccci_load_ra
+(bootloader) w_data: addr[0x95000
+(bootloader) 000],size[0x0069811c
+(bootloader) ] @md1img
+
+[1291] im
+(bootloader) age verify:partition
+(bootloader) [md1img], image_name
+(bootloader) [md1dsp], addr[0x950
+(bootloader) 00000], size[0x69812
+(bootloader) 0]
+
+[1292] sync_cach
+(bootloader) e in img_vfy addr:0x
+(bootloader) 95000000 size:698120
+(bootloader) 
+
+[1292] [PROFILE] m
+(bootloader) mc read 1 blks in 0 
+(bootloader) ms: 8KB/s
+
+[1292] cc
+(bootloader) ci_load_raw_data: ad
+(bootloader) dr[0x4818bb80],size[
+(bootloader) 0x00000200] @md1img
+
+(bootloader) 
+[1292] [PROFILE] mm
+(bootloader) c read 1 blks in 0 m
+(bootloader) s: 8KB/s
+
+[1292] [PR
+(bootloader) OFILE] mmc read 1 bl
+(bootloader) ks in 0 ms: 8KB/s
+
+[
+(bootloader) 1292] ccci_load_raw_
+(bootloader) data: addr[0x4818bb8
+(bootloader) 0],size[0x00000200] 
+(bootloader) @md1img
+
+[1293] [PRO
+(bootloader) FILE] mmc read 1 blk
+(bootloader) s in 0 ms: 8KB/s
+
+[1
+(bootloader) 293] [PROFILE] mmc r
+(bootloader) ead 1 blks in 0 ms: 
+(bootloader) 8KB/s
+
+[1293] ccci_l
+(bootloader) oad_raw_data: addr[0
+(bootloader) x4818bb80],size[0x00
+(bootloader) 000200] @md1img
+
+[12
+(bootloader) 93] [PROFILE] mmc re
+(bootloader) ad 1 blks in 0 ms: 8
+(bootloader) KB/s
+
+[1293] [PROFIL
+(bootloader) E] mmc read 1 blks i
+(bootloader) n 0 ms: 8KB/s
+
+[1293
+(bootloader) ] ccci_load_raw_data
+(bootloader) : addr[0x4818bb80],s
+(bootloader) ize[0x00000200] @md1
+(bootloader) img
+
+[1293] ptr hdr 
+(bootloader) verify:partition[md1
+(bootloader) img], image_name[md1
+(bootloader) drdi]
+
+[1293] policy
+(bootloader) _entry_idx = 12 
+
+[1
+(bootloader) 294] [PROFILE] mmc r
+(bootloader) ead 24 blks in 1 ms:
+(bootloader)  12000KB/s
+
+[1294] [
+(bootloader) SEC_POLICY] sboot_st
+(bootloader) ate = 0x0
+
+[1294] [S
+(bootloader) EC_POLICY] lock_stat
+(bootloader) e = 0x3
+
+[1294] img_
+(bootloader) auth_required = 0 
+
+
+(bootloader) [1294] [PROFILE] mmc
+(bootloader)  read 1 blks in 0 ms
+(bootloader) : 8KB/s
+
+[1294] [PRO
+(bootloader) FILE] mmc read 5 blk
+(bootloader) s in 0 ms: 8KB/s
+
+[1
+(bootloader) 294] [PROFILE] mmc r
+(bootloader) ead 1 blks in 0 ms: 
+(bootloader) 8KB/s
+
+[1294] ccci_l
+(bootloader) oad_raw_data: addr[0
+(bootloader) x8f5de900],size[0x00
+(bootloader) 000c00] @md1img
+
+[12
+(bootloader) 94] image verify:par
+(bootloader) tition[md1img], imag
+(bootloader) e_name[md1drdi], add
+(bootloader) r[0x8f5de900], size[
+(bootloader) 0xc00]
+
+[1294] sync_
+(bootloader) cache in img_vfy add
+(bootloader) r:0x8f5de900 size:c0
+(bootloader) 0
+
+[1318] arch_sync_
+(bootloader) cache_range: addr[0x
+(bootloader) 8e000000], size[0x10
+(bootloader) 000000]
+
+[1318] md m
+(bootloader) emory require:0x7e00
+(bootloader) 000, reserved:0x1000
+(bootloader) 0000
+
+[1318]   0x820
+(bootloader) 0000B retrieved by A
+(bootloader) P
+
+[1318] [ccci_retr
+(bootloader) ieve_mem] free_in_ke
+(bootloader) rnel: 1
+
+[1319] get 
+(bootloader) limit and align weak
+(bootloader)  func
+
+
+[1319] mbloc
+(bootloader) k_reserve-R start: 0
+(bootloader) x78000000, sz: 0x400
+(bootloader) 0000 map:1 name:ap_m
+(bootloader) d_nc_smem
+
+[1319] na
+(bootloader) me[ap_md_nc_smem] li
+(bootloader) mit: 0x80000000, req
+(bootloader) uest size: 0x0400000
+(bootloader) 0, get start address
+(bootloader) : 0x78000000
+
+[1319]
+(bootloader)  [LK_ENV]get_env apm
+(bootloader) d1_smem from area 0
+
+(bootloader) 
+[1319] [LK_ENV]get_
+(bootloader) env md1md3_smem from
+(bootloader)  area 0
+
+[1319] [LK_
+(bootloader) ENV]get_env apmd3_sm
+(bootloader) em from area 0
+
+[131
+(bootloader) 9] [LK_ENV]get_env m
+(bootloader) d1_phy_cap_gear from
+(bootloader)  area 0
+
+[1319] env[
+(bootloader) apmd1_smem]0.
+
+[1319
+(bootloader) ] env[md1md3_smem]0.
+(bootloader) 
+
+[1319] env[apmd3_s
+(bootloader) mem]0.
+
+[1319] env[m
+(bootloader) d1_phy_cap_gear]0.
+
+
+(bootloader) [1358] [PROFILE] mmc
+(bootloader)  read 1 blks in 1 ms
+(bootloader) : 500KB/s
+
+[1358] ge
+(bootloader) t atoi(b_buf) = 0
+
+[
+(bootloader) 1358] get flag = 107
+(bootloader) 85445
+
+[1358] [LK_EN
+(bootloader) V]get_env md1_ccb_ca
+(bootloader) p_gear from area 0
+
+
+(bootloader) [1358] get env[md1_c
+(bootloader) cb_cap_gear]1
+
+[1358
+(bootloader) ] allocate ccb data 
+(bootloader) buffer0x1600000
+
+[13
+(bootloader) 58] [LK_ENV]set_env 
+(bootloader) md1_ccb_gear_list 1(
+(bootloader) 2,20);2(2,10);3(0,0)
+(bootloader) ;11(2,2);12(2,62)
+
+[
+(bootloader) 1358] checksum 8072
+
+(bootloader) 
+[1360] [PROFILE] mm
+(bootloader) c write 32 blks in 2
+(bootloader)  ms: 8000KB/s
+
+[1360
+(bootloader) ] get limit and alig
+(bootloader) n weak func
+
+
+[1360]
+(bootloader)  mblock_reserve-R st
+(bootloader) art: 0x7c000000, sz:
+(bootloader)  0x1600000 map:1 nam
+(bootloader) e:ap_md_c_smem
+
+[136
+(bootloader) 0] name[ap_md_c_smem
+(bootloader) ] limit: 0x80000000,
+(bootloader)  request size: 0x016
+(bootloader) 00000, get start add
+(bootloader) ress: 0x7c000000
+
+[1
+(bootloader) 360] ccb_info.ccb_da
+(bootloader) ta_buffer_addr: 7c00
+(bootloader) 0000
+
+[1360] ccb_inf
+(bootloader) o.ccb_data_buffer_si
+(bootloader) ze: 1600000
+
+[1360] 
+(bootloader) md1 phy capture size
+(bootloader) : 0
+
+[1360] smem_inf
+(bootloader) o.base_addr: 7800000
+(bootloader) 0
+
+[1360] smem_info.
+(bootloader) ap_md1_smem_offset: 
+(bootloader) 0
+
+[1360] smem_info.
+(bootloader) ap_md1_smem_size: 17
+(bootloader) 0000
+
+[1360] smem_in
+(bootloader) fo.ap_md3_smem_offse
+(bootloader) t: 0
+
+[1360] smem_in
+(bootloader) fo.ap_md3_smem_size:
+(bootloader)  0
+
+[1360] smem_info
+(bootloader) .md1_md3_smem_offset
+(bootloader) : 0
+
+[1360] smem_inf
+(bootloader) o.md1_md3_smem_size:
+(bootloader)  0
+
+[1360] smem_info
+(bootloader) .total_smem_size: 17
+(bootloader) 0000
+
+[1360] ap md1 
+(bootloader) share mem MPU need c
+(bootloader) onfigure
+
+[1360] LK 
+(bootloader) emi_mpu_set_protecti
+(bootloader) on start:8e000000 en
+(bootloader) d=8f5dffff region=9 
+(bootloader) [1360] apc1=b6db6d [
+(bootloader) 1361] apc0=8096db64 
+(bootloader) [1361] 
+
+[1361] Set 
+(bootloader) MPU:S:0x8e000000 E:0
+(bootloader) x8f5dffff A:<9>[0~15
+(bootloader) ]4-4-5-5-5-5-5-4-5-5
+(bootloader) -5-5-5-5-5-5(U)
+
+[13
+(bootloader) 61] LK emi_mpu_set_p
+(bootloader) rotection start:8fc0
+(bootloader) 0000 end=9001ffff re
+(bootloader) gion=15 [1361] apc1=
+(bootloader) b6db6d [1361] apc0=8
+(bootloader) 016db64 [1361] 
+
+[13
+(bootloader) 61] Set MPU:S:0x8fc0
+(bootloader) 0000 E:0x9001ffff A:
+(bootloader) <15>[0~15]4-4-5-5-5-
+(bootloader) 5-5-0-5-5-5-5-5-5-5-
+(bootloader) 5(U)
+
+[1361] LK emi_
+(bootloader) mpu_set_protection s
+(bootloader) tart:90800000 end=91
+(bootloader) fbffff region=14 [13
+(bootloader) 61] apc1=b6db6d [136
+(bootloader) 1] apc0=8096db44 [13
+(bootloader) 61] 
+
+[1361] Set MPU
+(bootloader) :S:0x90800000 E:0x91
+(bootloader) fbffff A:<14>[0~15]4
+(bootloader) -0-5-5-5-5-5-4-5-5-5
+(bootloader) -5-5-5-5-5(U)
+
+[1361
+(bootloader) ] LK emi_mpu_set_pro
+(bootloader) tection start:91fc00
+(bootloader) 00 end=92a6ffff regi
+(bootloader) on=13 [1361] apc1=b6
+(bootloader) db6d [1361] apc0=801
+(bootloader) 6db44 [1361] 
+
+[1361
+(bootloader) ] Set MPU:S:0x91fc00
+(bootloader) 00 E:0x92a6ffff A:<1
+(bootloader) 3>[0~15]4-0-5-5-5-5-
+(bootloader) 5-0-5-5-5-5-5-5-5-5(
+(bootloader) U)
+
+[1361] LK emi_mp
+(bootloader) u_set_protection sta
+(bootloader) rt:95000000 end=95df
+(bootloader) ffff region=16 [1361
+(bootloader) ] apc1=b6db6d [1361]
+(bootloader)  apc0=8016db44 [1361
+(bootloader) ] 
+
+[1361] Set MPU:S
+(bootloader) :0x95000000 E:0x95df
+(bootloader) ffff A:<16>[0~15]4-0
+(bootloader) -5-5-5-5-5-0-5-5-5-5
+(bootloader) -5-5-5-5(U)
+
+[1361] 
+(bootloader) LK emi_mpu_set_prote
+(bootloader) ction start:92c00000
+(bootloader)  end=92c0ffff region
+(bootloader) =17 [1361] apc1=b6db
+(bootloader) 6d [1361] apc0=8016d
+(bootloader) b44 [1361] 
+
+[1361] 
+(bootloader) Set MPU:S:0x92c00000
+(bootloader)  E:0x92c0ffff A:<17>
+(bootloader) [0~15]4-0-5-5-5-5-5-
+(bootloader) 0-5-5-5-5-5-5-5-5(U)
+(bootloader) 
+
+[1362] LK emi_mpu_
+(bootloader) set_protection start
+(bootloader) :92a80000 end=92aaff
+(bootloader) ff region=18 [1362] 
+(bootloader) apc1=b6db6d [1362] a
+(bootloader) pc0=8016db44 [1362] 
+(bootloader) 
+
+[1362] Set MPU:S:0
+(bootloader) x92a80000 E:0x92aaff
+(bootloader) ff A:<18>[0~15]4-0-5
+(bootloader) -5-5-5-5-0-5-5-5-5-5
+(bootloader) -5-5-5(U)
+
+[1362] LK
+(bootloader)  emi_mpu_set_protect
+(bootloader) ion start:92c00000 e
+(bootloader) nd=92c0ffff region=1
+(bootloader) 2 [1362] apc1=b6db6d
+(bootloader)  [1362] apc0=8096db6
+(bootloader) 4 [1362] 
+
+[1362] Se
+(bootloader) t MPU:S:0x92c00000 E
+(bootloader) :0x92c0ffff A:<12>[0
+(bootloader) ~15]4-4-5-5-5-5-5-4-
+(bootloader) 5-5-5-5-5-5-5-5(U)
+
+
+(bootloader) [1362] LK emi_mpu_se
+(bootloader) t_protection start:8
+(bootloader) e000000 end=9dffffff
+(bootloader)  region=30 [1362] ap
+(bootloader) c1=b6db6d [1362] apc
+(bootloader) 0=80ba8b60 [1362] 
+
+
+(bootloader) [1362] Set MPU:S:0x8
+(bootloader) e000000 E:0x9dffffff
+(bootloader)  A:<30>[0~15]0-4-5-5
+(bootloader) -0-5-6-5-5-5-5-5-5-5
+(bootloader) -5-5(U)
+
+[1362] LK e
+(bootloader) mi_mpu_set_protectio
+(bootloader) n start:95000000 end
+(bootloader) =956fffff region=10 
+(bootloader) [1362] apc1=b6db6d [
+(bootloader) 1362] apc0=8096db64 
+(bootloader) [1362] 
+
+[1362] Set 
+(bootloader) MPU:S:0x95000000 E:0
+(bootloader) x956fffff A:<10>[0~1
+(bootloader) 5]4-4-5-5-5-5-5-4-5-
+(bootloader) 5-5-5-5-5-5-5(U)
+
+[1
+(bootloader) 362] LK emi_mpu_set_
+(bootloader) protection start:957
+(bootloader) 00000 end=95dfffff r
+(bootloader) egion=11 [1362] apc1
+(bootloader) =b6db6d [1362] apc0=
+(bootloader) 8016db44 [1362] 
+
+[1
+(bootloader) 362] Set MPU:S:0x957
+(bootloader) 00000 E:0x95dfffff A
+(bootloader) :<11>[0~15]4-0-5-5-5
+(bootloader) -5-5-0-5-5-5-5-5-5-5
+(bootloader) -5(U)
+
+[1362] LK emi
+(bootloader) _mpu_set_protection 
+(bootloader) start:78000000 end=7
+(bootloader) 816ffff region=23 [1
+(bootloader) 363] apc1=b6db6d [13
+(bootloader) 63] apc0=16d140 [136
+(bootloader) 3] 
+
+[1363] Set MPU:
+(bootloader) S:0x78000000 E:0x781
+(bootloader) 6ffff A:<23>[0~15]0-
+(bootloader) 0-5-0-5-5-5-0-5-5-5-
+(bootloader) 5-5-5-5-5(U)
+
+[1363]
+(bootloader)  LK emi_mpu_set_prot
+(bootloader) ection start:7c00000
+(bootloader) 0 end=7d5fffff regio
+(bootloader) n=22 [1363] apc1=b6d
+(bootloader) b6d [1363] apc0=16db
+(bootloader) 40 [1363] 
+
+[1363] S
+(bootloader) et MPU:S:0x7c000000 
+(bootloader) E:0x7d5fffff A:<22>[
+(bootloader) 0~15]0-0-5-5-5-5-5-0
+(bootloader) -5-5-5-5-5-5-5-5(U)
+
+(bootloader) 
+[1363] ---> Map 0x4
+(bootloader) 0000000 to 0x7800000
+(bootloader) 0 for MD1
+
+[1363] BA
+(bootloader) NK4_MAP0 value:0x79
+
+(bootloader) 
+[1363] BANK4_MAP0 v
+(bootloader) alue:0x7B0079
+
+[1363
+(bootloader) ] BANK4_MAP1 value:0
+(bootloader) x7D
+
+[1363] BANK4_MA
+(bootloader) P1 value:0x7F007D
+
+[
+(bootloader) 1363] BANK4_MAP2 val
+(bootloader) ue:0x81
+
+[1363] BANK
+(bootloader) 4_MAP2 value:0x83008
+(bootloader) 1
+
+[1363] BANK4_MAP3
+(bootloader)  value:0x85
+
+[1363] 
+(bootloader) BANK4_MAP3 value:0x8
+(bootloader) 70085
+
+[1363] BANK4_
+(bootloader) MAP1 value:0x7D007D
+
+(bootloader) 
+[1363] BANK4_MAP2 v
+(bootloader) alue:0x83007F
+
+[1363
+(bootloader) ] BANK4_MAP2 value:0
+(bootloader) x81007F
+
+[1363] befo
+(bootloader) re hw remap lock: MD
+(bootloader) 1[0]
+
+[1363] before 
+(bootloader) hw remap lock: MD1[1
+(bootloader) ]
+
+[1363] re-size sh
+(bootloader) are memory form 4000
+(bootloader) 000 to 170000
+
+[1363
+(bootloader) ] mblock_resize  sta
+(bootloader) rt: 78000000, size: 
+(bootloader) 4000000 addr = 78000
+(bootloader) 000 oldsize = 400000
+(bootloader) 0
+
+[1363] mblock_res
+(bootloader) ize putback mblock 7
+(bootloader) 8170000 size: 3e9000
+(bootloader) 0
+
+[1363] mblock_res
+(bootloader) ize-debug[0].start: 
+(bootloader) 0x40000000, sz: 0x7c
+(bootloader) 80000
+
+[1364] mblock
+(bootloader) _resize-debug[1].sta
+(bootloader) rt: 0x47d80000, sz: 
+(bootloader) 0x0
+
+[1364] mblock_r
+(bootloader) esize-debug[2].start
+(bootloader) : 0x47fd0000, sz: 0x
+(bootloader) 30000
+
+[1364] mblock
+(bootloader) _resize-debug[3].sta
+(bootloader) rt: 0x48400000, sz: 
+(bootloader) 0x700000
+
+[1364] mbl
+(bootloader) ock_resize-debug[4].
+(bootloader) start: 0x50b00000, s
+(bootloader) z: 0x27500000
+
+[1364
+(bootloader) ] mblock_resize-debu
+(bootloader) g[5].start: 0x781700
+(bootloader) 00, sz: 0x3e90000
+
+[
+(bootloader) 1364] mblock_resize-
+(bootloader) debug[6].start: 0x7d
+(bootloader) 600000, sz: 0x840000
+(bootloader) 
+
+[1364] mblock_resi
+(bootloader) ze-debug[7].start: 0
+(bootloader) x7df84000, sz: 0xc00
+(bootloader) 0
+
+[1364] mblock_res
+(bootloader) ize-debug[8].start: 
+(bootloader) 0x7f641000, sz: 0xbf
+(bootloader) 000
+
+[1364] mblock_r
+(bootloader) esize-debug[9].start
+(bootloader) : 0x80000000, sz: 0x
+(bootloader) e000000
+
+[1364] mblo
+(bootloader) ck_resize-debug[10].
+(bootloader) start: 0x9e000000, s
+(bootloader) z: 0x1ff0000
+
+[1364]
+(bootloader)  mblock_resize-debug
+(bootloader) [11].start: 0xa00000
+(bootloader) 00, sz: 0x1ff30000
+
+
+(bootloader) [1364] mblock_resize
+(bootloader) -debug[12].start: 0x
+(bootloader) bfff0000, sz: 0xf000
+(bootloader) 
+
+[1364] mblock_resi
+(bootloader) ze-debug[13].start: 
+(bootloader) 0xc0000000, sz: 0x10
+(bootloader) 000000
+
+[1364] mbloc
+(bootloader) k_resize-debug[14].s
+(bootloader) tart: 0xd0000000, sz
+(bootloader) : 0x6ffff000
+
+[1364]
+(bootloader)  mblock_resize-debug
+(bootloader) -R[0].start: 0xbffff
+(bootloader) 000, sz: 0x1000 map:
+(bootloader)  0 name: dramc-rk0
+
+
+(bootloader) [1364] mblock_resize
+(bootloader) -debug-R[1].start: 0
+(bootloader) x13ffff000, sz: 0x10
+(bootloader) 00 map: 0 name: dram
+(bootloader) c-rk1
+
+[1364] mblock
+(bootloader) _resize-debug-R[2].s
+(bootloader) tart: 0x7f800000, sz
+(bootloader) : 0x800000 map: 0 na
+(bootloader) me: gz
+
+[1365] mbloc
+(bootloader) k_resize-debug-R[3].
+(bootloader) start: 0x7f600000, s
+(bootloader) z: 0x41000 map: 1 na
+(bootloader) me: gz-log
+
+[1365] m
+(bootloader) block_resize-debug-R
+(bootloader) [4].start: 0x7f7c000
+(bootloader) 0, sz: 0x40000 map: 
+(bootloader) 1 name: log_store
+
+[
+(bootloader) 1365] mblock_resize-
+(bootloader) debug-R[5].start: 0x
+(bootloader) 47d80000, sz: 0x5000
+(bootloader) 0 map: 0 name: atf-r
+(bootloader) eserved
+
+[1365] mblo
+(bootloader) ck_resize-debug-R[6]
+(bootloader) .start: 0xbff70000, 
+(bootloader) sz: 0x80000 map: 0 n
+(bootloader) ame: atf-ramdump-res
+(bootloader) erved
+
+[1365] mblock
+(bootloader) _resize-debug-R[7].s
+(bootloader) tart: 0xbff30000, sz
+(bootloader) : 0x40000 map: 0 nam
+(bootloader) e: atf-log-reserved
+
+(bootloader) 
+[1365] mblock_resiz
+(bootloader) e-debug-R[8].start: 
+(bootloader) 0x7f400000, sz: 0x20
+(bootloader) 0000 map: 0 name: te
+(bootloader) e-secmem
+
+[1365] mbl
+(bootloader) ock_resize-debug-R[9
+(bootloader) ].start: 0x7f700000,
+(bootloader)  sz: 0xc0000 map: 0 
+(bootloader) name: SSPM-reserved
+
+(bootloader) 
+[1365] mblock_resiz
+(bootloader) e-debug-R[10].start:
+(bootloader)  0x47dd0000, sz: 0x2
+(bootloader) 00000 map: 1 name: p
+(bootloader) l-bootarg
+
+[1365] mb
+(bootloader) lock_resize-debug-R[
+(bootloader) 11].start: 0x47c8000
+(bootloader) 0, sz: 0x10000 map: 
+(bootloader) 0 name: aee_debug_ki
+(bootloader) nfo
+
+[1365] mblock_r
+(bootloader) esize-debug-R[12].st
+(bootloader) art: 0x47c90000, sz:
+(bootloader)  0xe0000 map: 0 name
+(bootloader) : pstore
+
+[1365] mbl
+(bootloader) ock_resize-debug-R[1
+(bootloader) 3].start: 0x47d70000
+(bootloader) , sz: 0x10000 map: 0
+(bootloader)  name: minirdump
+
+[1
+(bootloader) 365] mblock_resize-d
+(bootloader) ebug-R[14].start: 0x
+(bootloader) 48000000, sz: 0x4000
+(bootloader) 00 map: 0 name: lk_a
+(bootloader) ddr_mb
+
+[1365] mbloc
+(bootloader) k_resize-debug-R[15]
+(bootloader) .start: 0x48b00000, 
+(bootloader) sz: 0x8000000 map: 0
+(bootloader)  name: scratch_addr_
+(bootloader) mb
+
+[1366] mblock_re
+(bootloader) size-debug-R[16].sta
+(bootloader) rt: 0x7ef90000, sz: 
+(bootloader) 0x470000 map: 0 name
+(bootloader) : framebuffer
+
+[1366
+(bootloader) ] mblock_resize-debu
+(bootloader) g-R[17].start: 0x7df
+(bootloader) 90000, sz: 0x1000000
+(bootloader)  map: 0 name: logo_d
+(bootloader) b_addr_pa
+
+[1366] mb
+(bootloader) lock_resize-debug-R[
+(bootloader) 18].start: 0x7de4000
+(bootloader) 0, sz: 0x144000 map:
+(bootloader)  0 name: display-oth
+(bootloader) ers_logo_fb-addr
+
+[1
+(bootloader) 366] mblock_resize-d
+(bootloader) ebug-R[19].start: 0x
+(bootloader) 9fff0000, sz: 0x1000
+(bootloader) 0 map: 0 name: ccci_
+(bootloader) tag_mem
+
+[1366] mblo
+(bootloader) ck_resize-debug-R[20
+(bootloader) ].start: 0x8e000000,
+(bootloader)  sz: 0x10000000 map:
+(bootloader)  1 name: md_mem_usag
+(bootloader) e
+
+[1366] mblock_res
+(bootloader) ize-debug-R[21].star
+(bootloader) t: 0x78000000, sz: 0
+(bootloader) x170000 map: 1 name:
+(bootloader)  ap_md_nc_smem
+
+[136
+(bootloader) 6] mblock_resize-deb
+(bootloader) ug-R[22].start: 0x7c
+(bootloader) 000000, sz: 0x160000
+(bootloader) 0 map: 1 name: ap_md
+(bootloader) _c_smem
+
+[1366] [set
+(bootloader) _hw_locked_in_atf]
+
+
+(bootloader) [1366] [set_hw_locke
+(bootloader) d_in_atf] error: MD_
+(bootloader) HW_REMAP_LOCKED fail
+(bootloader) : 0xFFFFFFFF
+
+[1366]
+(bootloader)  lk info.lk_info_bas
+(bootloader) e_addr: 0x9fff0000
+
+
+(bootloader) [1366] lk info.lk_in
+(bootloader) fo_size:      0x988
+
+(bootloader) 
+[1366] lk info.lk_i
+(bootloader) nfo_tag_num:   0x12
+
+(bootloader) 
+[1366] [PROFILE] --
+(bootloader) ----- load_modem_ima
+(bootloader) ge init cost 445 ms 
+OKAY [  1.402s]
+Finished. Total time: 1.402s

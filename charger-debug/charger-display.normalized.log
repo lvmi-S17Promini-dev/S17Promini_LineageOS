@@ -1,0 +1,23 @@
+running
+Enforcing
+=== /sys/class/leds/lcd-backlight ===
+/sys/devices/platform/leds-mt65xx/leds/lcd-backlight
+drwxr-xr-x 3 root root u:object_r:sysfs:s0  0 2026-10-06 11:16 /sys/class/leds/lcd-backlight/
+brightness
+0
+max_brightness
+255
+=== /sys/class/leds/red ===
+/sys/devices/platform/1000d000.pwrap/1000d000.pwrap:main_pmic/leds-mt6357/leds/red
+drwxr-xr-x 3 root root u:object_r:sysfs:s0  0 2026-10-06 11:16 /sys/class/leds/red/
+brightness
+0
+max_brightness
+255
+=== /sys/class/leds/vibrator ===
+/sys/devices/platform/regulator_vibrator/leds/vibrator
+drwxr-xr-x 3 root root u:object_r:sysfs:s0  0 2026-10-06 11:16 /sys/class/leds/vibrator/
+brightness
+0
+max_brightness
+255

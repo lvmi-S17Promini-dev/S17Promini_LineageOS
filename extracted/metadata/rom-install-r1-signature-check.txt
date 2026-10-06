@@ -1,0 +1,1 @@
+Whole-file CMS signature verified; signer is the testkey present in r5 otacerts.zip.

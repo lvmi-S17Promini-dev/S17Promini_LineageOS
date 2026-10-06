@@ -1,0 +1,6 @@
+{
+  "recovery_sha256": "5d068406de3f86a98a70ac6d906fd57708f1d2b6d5a16ba538a86c80e85e159d",
+  "ota_sha256": "d303be0055da747c535d0b60b53d76e5a37989cf725d6dc868813eba0331f45d",
+  "framework_commit": "e5d5038e3",
+  "runtime_validation": "pending"
+}

@@ -1,0 +1,12 @@
+{
+  "sha256": "03e9f3fba4169b3dc456dac061b4fdaa1fda11f71aa73cf265972f33b4d30033",
+  "size": 262132,
+  "time_range_sec": [
+    339.018661,
+    477.50595
+  ],
+  "reported_reboot_target": "bootloader",
+  "contains_stock_android_services": true,
+  "r3_early_boot_failure_captured": false,
+  "note": "Stock system_server/fuelgauged/vendor init; no identified early r3 panic. Some driver call traces are present; not evidence of r3 crash."
+}

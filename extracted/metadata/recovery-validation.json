@@ -1,0 +1,7 @@
+{
+  "image": "/home/dengxh/android3/lineage/out/target/product/S17Promini/recovery.img",
+  "size": 20840448,
+  "sha256": "5a2801235d740ff6d02aae0bd17c5e775e3984bf2b5900a985afa312aa827e43",
+  "checks": "PASS: stock components/addresses, ramdisk, ADB config, super contexts, private narrow-screen text, executables and direct ELF dependencies",
+  "device_boot": "NOT TESTED: no connected device"
+}

@@ -1,0 +1,76 @@
+{
+  "version": "10.0",
+  "geometry": {
+    "metadata_max_size": 65536,
+    "metadata_slot_count": 2,
+    "logical_block_size": 4096
+  },
+  "partitions": [
+    {
+      "name": "product",
+      "attributes": 1,
+      "first_extent": 0,
+      "num_extents": 1,
+      "group_index": 1,
+      "size": 204660736
+    },
+    {
+      "name": "system",
+      "attributes": 1,
+      "first_extent": 1,
+      "num_extents": 1,
+      "group_index": 1,
+      "size": 3063197696
+    },
+    {
+      "name": "vendor",
+      "attributes": 1,
+      "first_extent": 2,
+      "num_extents": 1,
+      "group_index": 1,
+      "size": 1427996672
+    }
+  ],
+  "extents": [
+    {
+      "num_sectors": 399728,
+      "target_type": 0,
+      "target_data": 2048,
+      "target_source": 0
+    },
+    {
+      "num_sectors": 5982808,
+      "target_type": 0,
+      "target_data": 403456,
+      "target_source": 0
+    },
+    {
+      "num_sectors": 2789056,
+      "target_type": 0,
+      "target_data": 6387712,
+      "target_source": 0
+    }
+  ],
+  "groups": [
+    {
+      "name": "default",
+      "flags": 0,
+      "maximum_size": 0
+    },
+    {
+      "name": "main",
+      "flags": 0,
+      "maximum_size": 7132241920
+    }
+  ],
+  "block_devices": [
+    {
+      "first_logical_sector": 2048,
+      "alignment": 1048576,
+      "alignment_offset": 0,
+      "size": 7134339072,
+      "name": "super",
+      "flags": 0
+    }
+  ]
+}

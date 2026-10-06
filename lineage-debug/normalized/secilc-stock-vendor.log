@@ -1,0 +1,6 @@
+Found conflicting genfscon rules
+  at extracted/filesystems/vendor/etc/selinux/vendor_sepolicy.cil:9
+  at /home/dengxh/android3/lineage/out/target/product/S17Promini/system/system_ext/etc/selinux/system_ext_sepolicy.cil:1
+Problems processing genfscon rules
+Failed post db handling
+Failed to compile cildb: -1

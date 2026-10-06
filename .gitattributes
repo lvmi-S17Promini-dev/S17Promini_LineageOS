@@ -1,0 +1,7 @@
+*.img binary
+*.bin binary
+*.dtb binary
+*.dtbo binary
+charger-debug/** -text
+recovery-debug/** -text
+lineage-debug/** -text

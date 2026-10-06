@@ -1,0 +1,11 @@
+{
+  "image": "artifacts/boot-kmsg-debug.img",
+  "size": 33554432,
+  "sha256": "d749476602be41e49d7370d029df6d2fb7dae6c36ff62ccf94ccaf4447e270c6",
+  "kernel_and_dtb": "identical to stock",
+  "original_init": "identical; renamed init.stock",
+  "wrapper": "ARM32 static PIE, kernel COMPAT=y",
+  "device_test": "pending",
+  "log": "/cache/s17-early-kmsg.log",
+  "limit": "early logs may stop once SELinux policy becomes active"
+}

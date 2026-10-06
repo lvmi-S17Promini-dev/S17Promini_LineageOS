@@ -1,0 +1,101 @@
+https://github.com/bkerler/mtkclient/discussions/145
+
+This guide is about redirecting the boot using preloader/brom to access another mode (fastboot-recovery-meta-brom) and this can be used as a solution for different cases like softbrick bootloop etc..​
+
+About our case :
+
+It could be used to fix or exit an unstoppable bootloop (buttons can't redirect it to fastboot or recovery)​
+
+That kind of bootloop is caused by a (reboot to command) to a faulty partition and it created a high priority flag in misc so it won't let buttons overwrite or redirect the boot to any other partition until the 'reboot to' command is done successfully to the specific partition..
+
+NOTE : This guide is [MTK] only and doesn't require (sla auth, da ,etc) files for mtkclient to work.
+
+
+GUIDE STEPS​
+
+
+N1 : must install mtkclient in Linux or windows or even in a rooted Android "which i prefer to do" if not rooted u can root your phone via "magisk 30.7" i grant you it'll work or via apatch and install Linux Ubuntu module and run it through termux as a terminal interface. if u already installed mtkclinet in pc or anyway and it's working successfully skip to N2 5-.
+
+N2 : REQUIREMENTS
+0- {If u use android} free space 11GB, download Termux from github website down the page in "releases" and install it.
+1- {If u use android} MT Manager apk from uptodown website and install it.
+2- mtkclient from github website it's a zip u will find downloads down the page in "releases".
+3- {if u use android} Ubuntu module from this link
+https://github.com/ravindu644/Ubunt...load/v4.4/Ubuntu-Chroot-v4.4-20260323-GUI.zip install the module in magisk and after it's finished restart the phone.
+4- {if u use android} download Ksuwebui apk to manage your magisk modules correctly. and open the app and start the Ubuntu..after Ubuntu is ready open termux and type this every time to run the Ubuntu :
+
+su -i -c "ubuntu-chroot start -s root"
+
+after u type it..u will enter Ubuntu and inside the path of Ubuntu
+
+/data/local/ubuntu-chroot/rootfs/root/
+
+u must paste the mtkclient zipped files
+
+5- Now open MT Manager Incase u r using Android otherwise open file manager copy the mtk_preloader.py and replace it with the one in this path..
+mtkclient/mtkclient/Library/↓
+
+and copy redirect_to.py to this path..
+mtkclient/↓
+
+N3 :
+
+1-
+open Terminal or Termux-Ubuntu and write :
+
+cd mtkclient
+
+inside Terminal or Termux-Ubuntu run those commands :
+
+2-
+pkg update && pkg upgrade
+pkg install python
+
+wait till they finish
+
+3-
+python -m venv ~/.venv
+
+
+always activate the venv before running any mtkclient command by typing :
+
+
+. ~/.venv/bin/activate
+
+4-
+install mtkclient requirements.txt while venv is running (it'll show ".venv")
+
+write :
+
+pip install -r requirements.txt
+pip install .
+
+N4 :# U can skip if your charge is not consumed otherwise try it.
+
+NOTE : because u were stuck at a bootloop to an incompatible vendor_boot.img the phone charge is most likely 0 and below and if u were in same situation ur phone will display empty battery icon everytime u turn it on and when u plug charger it will display empty icon every second so u won't see the animation of the percentage..well that was at my phone case at least... but keep in mind the fastboot mode need at least above 5% of battery charge how do u know the phone started charging the phone will display battery icon with lightning icon inside that's with Xiaomi but if it displayed this and stopped the empty icon spam every second that's good the phone is charging leave it for 10 minutes 5 minutes otherwise u can charge the phone while it's on preloader mode.. to do so
+
+- run this mtkclient command but you will need your preloader_xxx.img from the stock fastboot rom of your phone just copy it to the mtkclient main folder so u don't need to specify the path to the file.
+
+python mtk.py printgpt --preloader preloader_xxx.img
+
+and your phone will be stuck in preloader mode so go and charge it for 10 minutes.
+
+- after the 10 minutes connect the phone to mtkclient and force restart it to preloader or brom again by holding the power button
+
+N5 : now connect the phone and run this command :
+
+python redirect_to.py fastboot
+
+#the last part is optional...
+u can choose the direction from all those options two : [fastboot,meta,brom,bybutton] "bybutton" can be used for recovery or fastboot.
+
+that's it i hope it fixed ur problem.
+
+___
+
+it can fix or exit a bootloop caused by this command 'fastboot reboot fastboot' #FASTBOOTD
+
+after flashing incompatible img in the fastbootd partition #Recovery_partition
+..in my case it's vendor_boot , so it caused an unstoppable bootloop trying to enter something doesn't exist and i tried flashing in preloader or brom mode but my v5 patched carbonara and even my sla auth file wasn't working to pass sla in mtkclient so and that was my case and solution to enter fastboot.
+
+This guide is based on that discussion from github :

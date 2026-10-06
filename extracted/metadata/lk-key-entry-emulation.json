@@ -1,0 +1,2517 @@
+{
+  "passed": true,
+  "scenario_count": 16,
+  "peripherals_mocked": true,
+  "hardware_tested": false,
+  "disassembly": [
+    "4800386a 00f042b8     b.w #0x480038f2",
+    "480038f0 0ae0         b #0x48003908",
+    "480038f2 1120         movs r0, #0x11",
+    "480038f4 01f0faf8     bl #0x48004aec",
+    "480038f8 10b1         cbz r0, #0x48003900",
+    "480038fa 6323         movs r3, #0x63",
+    "480038fc 2b60         str r3, [r5]",
+    "480038fe f8bd         pop {r3, r4, r5, r6, r7, pc}",
+    "48003900 01f03af9     bl #0x48004b78",
+    "48003904 fff7b3bf     b.w #0x4800386e"
+  ],
+  "external_direct_entries_into_slot": [],
+  "scenarios": [
+    {
+      "name": "normal_no_key",
+      "stock": {
+        "mode": 0,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ],
+          [
+            "rgu_mode",
+            0
+          ],
+          [
+            "misc_recovery",
+            0
+          ],
+          [
+            "timer",
+            0
+          ],
+          [
+            "log",
+            1208331300
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "charging",
+            50
+          ],
+          [
+            "log",
+            1208331360
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 51,
+        "timer_reads": 51,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 0,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "detect_key",
+            17
+          ],
+          [
+            "key_config_init",
+            17
+          ],
+          [
+            "pmic_home_key",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ],
+          [
+            "rgu_mode",
+            0
+          ],
+          [
+            "misc_recovery",
+            0
+          ],
+          [
+            "charging",
+            0
+          ],
+          [
+            "log",
+            1208331360
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "volume_up",
+      "stock": {
+        "mode": 0,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ],
+          [
+            "rgu_mode",
+            0
+          ],
+          [
+            "misc_recovery",
+            0
+          ],
+          [
+            "timer",
+            0
+          ],
+          [
+            "log",
+            1208331300
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "charging",
+            50
+          ],
+          [
+            "log",
+            1208331360
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 51,
+        "timer_reads": 51,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 99,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "detect_key",
+            17
+          ],
+          [
+            "key_config_init",
+            17
+          ],
+          [
+            "pmic_home_key",
+            0
+          ],
+          [
+            "log",
+            1208336308
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "misc_recovery_no_key",
+      "stock": {
+        "mode": 2,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ],
+          [
+            "rgu_mode",
+            0
+          ],
+          [
+            "misc_recovery",
+            0
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 2,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "detect_key",
+            17
+          ],
+          [
+            "key_config_init",
+            17
+          ],
+          [
+            "pmic_home_key",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ],
+          [
+            "rgu_mode",
+            0
+          ],
+          [
+            "misc_recovery",
+            0
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "misc_recovery_volume_up",
+      "stock": {
+        "mode": 2,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ],
+          [
+            "rgu_mode",
+            0
+          ],
+          [
+            "misc_recovery",
+            0
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 99,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "detect_key",
+            17
+          ],
+          [
+            "key_config_init",
+            17
+          ],
+          [
+            "pmic_home_key",
+            0
+          ],
+          [
+            "log",
+            1208336308
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "rtc_recovery_no_key",
+      "stock": {
+        "mode": 2,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 2,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "detect_key",
+            17
+          ],
+          [
+            "key_config_init",
+            17
+          ],
+          [
+            "pmic_home_key",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "rtc_recovery_volume_up",
+      "stock": {
+        "mode": 2,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 99,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "detect_key",
+            17
+          ],
+          [
+            "key_config_init",
+            17
+          ],
+          [
+            "pmic_home_key",
+            0
+          ],
+          [
+            "log",
+            1208336308
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "rgu_recovery_no_key",
+      "stock": {
+        "mode": 2,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ],
+          [
+            "rgu_mode",
+            0
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 2,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "detect_key",
+            17
+          ],
+          [
+            "key_config_init",
+            17
+          ],
+          [
+            "pmic_home_key",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ],
+          [
+            "rgu_mode",
+            0
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "rgu_recovery_volume_up",
+      "stock": {
+        "mode": 2,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ],
+          [
+            "rgu_mode",
+            0
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 99,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "detect_key",
+            17
+          ],
+          [
+            "key_config_init",
+            17
+          ],
+          [
+            "pmic_home_key",
+            0
+          ],
+          [
+            "log",
+            1208336308
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "charging_no_key",
+      "stock": {
+        "mode": 8,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ],
+          [
+            "rgu_mode",
+            0
+          ],
+          [
+            "misc_recovery",
+            0
+          ],
+          [
+            "timer",
+            0
+          ],
+          [
+            "log",
+            1208331300
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "charging",
+            50
+          ],
+          [
+            "log",
+            1208331312
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 51,
+        "timer_reads": 51,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 8,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "detect_key",
+            17
+          ],
+          [
+            "key_config_init",
+            17
+          ],
+          [
+            "pmic_home_key",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ],
+          [
+            "rgu_mode",
+            0
+          ],
+          [
+            "misc_recovery",
+            0
+          ],
+          [
+            "charging",
+            0
+          ],
+          [
+            "log",
+            1208331312
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "charging_volume_up",
+      "stock": {
+        "mode": 8,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ],
+          [
+            "rgu_mode",
+            0
+          ],
+          [
+            "misc_recovery",
+            0
+          ],
+          [
+            "timer",
+            0
+          ],
+          [
+            "log",
+            1208331300
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "charging",
+            50
+          ],
+          [
+            "log",
+            1208331312
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 51,
+        "timer_reads": 51,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 99,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "detect_key",
+            17
+          ],
+          [
+            "key_config_init",
+            17
+          ],
+          [
+            "pmic_home_key",
+            0
+          ],
+          [
+            "log",
+            1208336308
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "factory_forbidden_key",
+      "stock": {
+        "mode": 0,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "log",
+            1208331272
+          ],
+          [
+            "just_reset",
+            0
+          ],
+          [
+            "rtc_recovery",
+            0
+          ],
+          [
+            "rgu_mode",
+            0
+          ],
+          [
+            "misc_recovery",
+            0
+          ],
+          [
+            "timer",
+            0
+          ],
+          [
+            "log",
+            1208331300
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "timer",
+            1001
+          ],
+          [
+            "charging",
+            50
+          ],
+          [
+            "log",
+            1208331360
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 51,
+        "timer_reads": 51,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 99,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "log",
+            1208331272
+          ],
+          [
+            "detect_key",
+            17
+          ],
+          [
+            "key_config_init",
+            17
+          ],
+          [
+            "pmic_home_key",
+            0
+          ],
+          [
+            "log",
+            1208336308
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "rtc_fastboot",
+      "stock": {
+        "mode": 99,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "clear_rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "log",
+            1208331236
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 99,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "clear_rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "log",
+            1208331236
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "rgu_fastboot",
+      "stock": {
+        "mode": 99,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "clear_rgu_fastboot",
+            0
+          ],
+          [
+            "log",
+            1208331236
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 99,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "clear_rgu_fastboot",
+            0
+          ],
+          [
+            "log",
+            1208331236
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "initial_fastboot",
+      "stock": {
+        "mode": 99,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "log",
+            1208331236
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 99,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ],
+          [
+            "getenv",
+            1208331176
+          ],
+          [
+            "rtc_fastboot",
+            0
+          ],
+          [
+            "rgu_fastboot",
+            0
+          ],
+          [
+            "log",
+            1208331236
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "meta_no_key",
+      "stock": {
+        "mode": 1,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 1,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    },
+    {
+      "name": "meta_with_key",
+      "stock": {
+        "mode": 1,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "patched": {
+        "mode": 1,
+        "calls": [
+          [
+            "kedump",
+            0
+          ],
+          [
+            "meta",
+            0
+          ]
+        ],
+        "env_writes": [],
+        "elapsed_ms": 0,
+        "timer_reads": 0,
+        "watchdog_restart_register": 0,
+        "stack_and_saved_registers_ok": true
+      },
+      "passed": true
+    }
+  ]
+}

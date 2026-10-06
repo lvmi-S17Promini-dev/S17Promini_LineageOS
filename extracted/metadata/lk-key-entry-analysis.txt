@@ -1,0 +1,233 @@
+Read-only analysis of stock_imgs/lk.bin
+SHA256 a745cfc9f513aba14bf461f90253e0824a778172621868f53b4d4ac01b6d7864
+MTK image header: 0x200 bytes; payload base: 0x48000000; code: ARM/Thumb interworking.
+Addresses below are virtual addresses; file offset = address - 0x48000000 + 0x200.
+
+Boot mode selection
+480037fc  f8b5          push     {r3, r4, r5, r6, r7, lr}
+480037fe  564c          ldr      r4, [pc, #0x158]
+48003800  564b          ldr      r3, [pc, #0x158]
+48003802  7c44          add      r4, pc
+48003804  e358          ldr      r3, [r4, r3]
+48003806  1bb1          cbz      r3, #0x48003810
+48003808  1df0a0ff      bl       #0x4802174c
+4800380c  0028          cmp      r0, #0
+4800380e  35d1          bne      #0x4800387c
+48003810  14f074fa      bl       #0x48017cfc
+48003814  00b1          cbz      r0, #0x48003818
+48003816  f8bd          pop      {r3, r4, r5, r6, r7, pc}
+48003818  514f          ldr      r7, [pc, #0x144]
+4800381a  7f44          add      r7, pc
+4800381c  3846          mov      r0, r7
+4800381e  3bf0c5fb      bl       #0x4803efac
+48003822  0546          mov      r5, r0
+48003824  58b1          cbz      r0, #0x4800383e
+48003826  4f4e          ldr      r6, [pc, #0x13c]
+48003828  7e44          add      r6, pc
+4800382a  3046          mov      r0, r6
+4800382c  25f092fc      bl       #0x48029154
+48003830  3146          mov      r1, r6
+48003832  421c          adds     r2, r0, #1
+48003834  2846          mov      r0, r5
+48003836  25f0c5fc      bl       #0x480291c4
+4800383a  0028          cmp      r0, #0
+4800383c  38d0          beq      #0x480038b0
+4800383e  04f06dfd      bl       #0x4800831c
+48003842  494b          ldr      r3, [pc, #0x124]
+48003844  0028          cmp      r0, #0
+48003846  44d1          bne      #0x480038d2
+48003848  e558          ldr      r5, [r4, r3]
+4800384a  40f0cffd      bl       #0x480443ec
+4800384e  0028          cmp      r0, #0
+48003850  63d1          bne      #0x4800391a
+48003852  2b68          ldr      r3, [r5]
+48003854  632b          cmp      r3, #0x63
+48003856  72d0          beq      #0x4800393e
+48003858  444b          ldr      r3, [pc, #0x110]
+4800385a  45f6ec02      movw     r2, #0x58ec
+4800385e  e358          ldr      r3, [r4, r3]
+48003860  1b68          ldr      r3, [r3]
+48003862  9a58          ldr      r2, [r3, r2]
+48003864  b2f14c3f      cmp.w    r2, #0x4c4c4c4c
+48003868  5dd0          beq      #0x48003926
+4800386a  01f085f9      bl       #0x48004b78
+4800386e  04f067fd      bl       #0x48008340
+48003872  0028          cmp      r0, #0
+48003874  34d0          beq      #0x480038e0
+48003876  0223          movs     r3, #2
+48003878  2b60          str      r3, [r5]
+4800387a  f8bd          pop      {r3, r4, r5, r6, r7, pc}
+4800387c  1af004fd      bl       #0x4801e288
+48003880  60b9          cbnz     r0, #0x4800389c
+48003882  394b          ldr      r3, [pc, #0xe4]
+48003884  e558          ldr      r5, [r4, r3]
+48003886  2b68          ldr      r3, [r5]
+48003888  632b          cmp      r3, #0x63
+4800388a  c4d0          beq      #0x48003816
+4800388c  3848          ldr      r0, [pc, #0xe0]
+4800388e  7844          add      r0, pc
+48003890  24f0b2fb      bl       #0x48027ff8
+48003894  bde8f840      pop.w    {r3, r4, r5, r6, r7, lr}
+48003898  40f0eabe      b.w      #0x48044670
+4800389c  11f080fb      bl       #0x48014fa0
+480038a0  314b          ldr      r3, [pc, #0xc4]
+480038a2  e558          ldr      r5, [r4, r3]
+480038a4  2b68          ldr      r3, [r5]
+480038a6  632b          cmp      r3, #0x63
+480038a8  b5d0          beq      #0x48003816
+480038aa  1af02ffd      bl       #0x4801e30c
+480038ae  eae7          b        #0x48003886
+480038b0  2d4b          ldr      r3, [pc, #0xb4]
+480038b2  0122          movs     r2, #1
+480038b4  2f49          ldr      r1, [pc, #0xbc]
+480038b6  3846          mov      r0, r7
+480038b8  e358          ldr      r3, [r4, r3]
+480038ba  7944          add      r1, pc
+480038bc  1a60          str      r2, [r3]
+480038be  3bf081fc      bl       #0x4803f1c4
+480038c2  0028          cmp      r0, #0
+480038c4  a7d0          beq      #0x48003816
+480038c6  2c48          ldr      r0, [pc, #0xb0]
+480038c8  bde8f840      pop.w    {r3, r4, r5, r6, r7, lr}
+480038cc  7844          add      r0, pc
+480038ce  24f093bb      b.w      #0x48027ff8
+480038d2  e558          ldr      r5, [r4, r3]
+480038d4  6322          movs     r2, #0x63
+480038d6  0020          movs     r0, #0
+480038d8  2a60          str      r2, [r5]
+480038da  04f0fdfc      bl       #0x480082d8
+480038de  b4e7          b        #0x4800384a
+480038e0  40f0a0fc      bl       #0x48044224
+480038e4  0228          cmp      r0, #2
+480038e6  c6d0          beq      #0x48003876
+480038e8  14f0a6fa      bl       #0x48017e38
+480038ec  0028          cmp      r0, #0
+480038ee  92d1          bne      #0x48003816
+480038f0  40f004fa      bl       #0x48043cfc
+480038f4  0446          mov      r4, r0
+480038f6  2148          ldr      r0, [pc, #0x84]
+480038f8  7844          add      r0, pc
+480038fa  24f07dfb      bl       #0x48027ff8
+480038fe  2046          mov      r0, r4
+48003900  40f0fcf9      bl       #0x48043cfc
+48003904  3128          cmp      r0, #0x31
+48003906  fad9          bls      #0x480038fe
+48003908  11f0cafc      bl       #0x480152a0
+4800390c  e8b9          cbnz     r0, #0x4800394a
+4800390e  1c48          ldr      r0, [pc, #0x70]
+48003910  bde8f840      pop.w    {r3, r4, r5, r6, r7, lr}
+48003914  7844          add      r0, pc
+48003916  24f06fbb      b.w      #0x48027ff8
+4800391a  6323          movs     r3, #0x63
+4800391c  0020          movs     r0, #0
+4800391e  2b60          str      r3, [r5]
+48003920  40f084fd      bl       #0x4804442c
+48003924  95e7          b        #0x48003852
+48003926  45f6f002      movw     r2, #0x58f0
+4800392a  9b58          ldr      r3, [r3, r2]
+4800392c  012b          cmp      r3, #1
+4800392e  9cd1          bne      #0x4800386a
+48003930  1448          ldr      r0, [pc, #0x50]
+48003932  1549          ldr      r1, [pc, #0x54]
+48003934  7844          add      r0, pc
+48003936  7944          add      r1, pc
+48003938  24f05efb      bl       #0x48027ff8
+4800393c  95e7          b        #0x4800386a
+4800393e  1348          ldr      r0, [pc, #0x4c]
+48003940  bde8f840      pop.w    {r3, r4, r5, r6, r7, lr}
+48003944  7844          add      r0, pc
+48003946  24f057bb      b.w      #0x48027ff8
+4800394a  1148          ldr      r0, [pc, #0x44]
+4800394c  bde8f840      pop.w    {r3, r4, r5, r6, r7, lr}
+48003950  7844          add      r0, pc
+48003952  24f051bb      b.w      #0x48027ff8
+
+Key detection
+48004aec  38b5          push     {r3, r4, r5, lr}
+48004aee  0446          mov      r4, r0
+48004af0  fff724ff      bl       #0x4800493c
+48004af4  472c          cmp      r4, #0x47
+48004af6  17d8          bhi      #0x48004b28
+48004af8  1b4b          ldr      r3, [pc, #0x6c]
+48004afa  7b44          add      r3, pc
+48004afc  1b68          ldr      r3, [r3]
+48004afe  5a68          ldr      r2, [r3, #4]
+48004b00  9442          cmp      r4, r2
+48004b02  25d0          beq      #0x48004b50
+48004b04  db68          ldr      r3, [r3, #0xc]
+48004b06  9c42          cmp      r4, r3
+48004b08  17d0          beq      #0x48004b3a
+48004b0a  0423          movs     r3, #4
+48004b0c  0125          movs     r5, #1
+48004b0e  24fa03f2      lsr.w    r2, r4, r3
+48004b12  c1f20103      movt     r3, #0x1001
+48004b16  33f82230      ldrh.w   r3, [r3, r2, lsl #2]
+48004b1a  04f00f02      and      r2, r4, #0xf
+48004b1e  05fa02f2      lsl.w    r2, r5, r2
+48004b22  9bb2          uxth     r3, r3
+48004b24  1342          tst      r3, r2
+48004b26  01d0          beq      #0x48004b2c
+48004b28  0020          movs     r0, #0
+48004b2a  38bd          pop      {r3, r4, r5, pc}
+48004b2c  0f48          ldr      r0, [pc, #0x3c]
+48004b2e  2146          mov      r1, r4
+48004b30  7844          add      r0, pc
+48004b32  23f061fa      bl       #0x48027ff8
+48004b36  2846          mov      r0, r5
+48004b38  38bd          pop      {r3, r4, r5, pc}
+48004b3a  02f0a7fe      bl       #0x4800788c
+48004b3e  0128          cmp      r0, #1
+48004b40  0546          mov      r5, r0
+48004b42  f1d1          bne      #0x48004b28
+48004b44  0a48          ldr      r0, [pc, #0x28]
+48004b46  7844          add      r0, pc
+48004b48  23f056fa      bl       #0x48027ff8
+48004b4c  2846          mov      r0, r5
+48004b4e  38bd          pop      {r3, r4, r5, pc}
+48004b50  02f07afe      bl       #0x48007848
+48004b54  0128          cmp      r0, #1
+48004b56  0546          mov      r5, r0
+48004b58  e6d1          bne      #0x48004b28
+48004b5a  0648          ldr      r0, [pc, #0x18]
+48004b5c  7844          add      r0, pc
+48004b5e  23f04bfa      bl       #0x48027ff8
+48004b62  2846          mov      r0, r5
+48004b64  38bd          pop      {r3, r4, r5, pc}
+
+Boot mode selection caller
+48002e96  01f027fe      bl       #0x48004ae8
+48002e9a  3846          mov      r0, r7
+48002e9c  40f02eff      bl       #0x48043cfc
+48002ea0  d9f80030      ldr.w    r3, [sb]
+48002ea4  8046          mov      r8, r0
+48002ea6  0133          adds     r3, #1
+48002ea8  c9f80030      str.w    r3, [sb]
+48002eac  00f0a6fc      bl       #0x480037fc
+
+Fastboot RGU check
+480443ec  08b5          push     {r3, lr}
+480443ee  fff719ff      bl       #0x48044224
+480443f2  a0f10300      sub.w    r0, r0, #3
+480443f6  b0fa80f0      clz      r0, r0
+480443fa  4009          lsrs     r0, r0, #5
+480443fc  08bd          pop      {r3, pc}
+
+RGU mode reader
+48044224  084b          ldr      r3, [pc, #0x20]
+48044226  7b44          add      r3, pc
+48044228  1878          ldrb     r0, [r3]
+4804422a  0f28          cmp      r0, #0xf
+4804422c  0bd1          bne      #0x48044246
+4804422e  47f22402      movw     r2, #0x7024
+48044232  c1f20002      movt     r2, #0x1000
+48044236  1068          ldr      r0, [r2]
+48044238  1168          ldr      r1, [r2]
+4804423a  00f00f00      and      r0, r0, #0xf
+4804423e  21f00f01      bic      r1, r1, #0xf
+48044242  1160          str      r1, [r2]
+48044244  1870          strb     r0, [r3]
+48044246  7047          bx       lr
+48044248  8293          str      r3, [sp, #0x208]
+4804424a  0600          movs     r6, r0
+4804424c  4ff4e042      mov.w    r2, #0x7000
+
