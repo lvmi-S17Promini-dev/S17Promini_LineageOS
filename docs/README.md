@@ -95,4 +95,4 @@
 - [背光文件权限 r4](46-charger-backlight-dac.md)：补 charger 路径的 0664 权限；临时 chmod 灭灯已实测，用户反馈当前基本可用并要求提交。
 
 - [补齐拨号应用](47-dialer.md)
-- [相机键唤醒](48-camera-key-wake.md)：增加相机键 WAKE 映射和 Lineage 按钮能力声明；刷入后需开启相机键唤醒，实机验证待完成。
+- [相机键唤醒](48-camera-key-wake.md)：将实体键 523 映射为 CAMERA WAKE，补上 Lineage 按钮能力声明；用户已确认功能符合预期，实机验证通过。

@@ -2,6 +2,9 @@
 
 用户希望电源键下面的相机键也能唤醒正常 Android 系统。
 
+实机结果：用户确认修正 523 映射后的功能符合预期，标记为验证通过。
+未单独记录拔掉 USB 后的深度休眠测试结果。
+
 getevent 枚举显示 mtk-kpd 包含 KEY_CAMERA（Linux 212），但这只能证明
 设备声明该键码。实机按电源键下面的相机键实际上报 KEY_NUMERIC_POUND，
 其 Linux 编号为 0x20b（523）。原厂 keypad DTBO 的
@@ -45,4 +48,4 @@ adb shell content insert --uri content://lineagesettings/system --bind name:s:ca
 
 若开启后仍不唤醒，采集熄屏相机键事件和内核日志；若深度休眠无事件，
 需要继续检查 MTK keypad 的 suspend 和 IRQ 唤醒，系统 keylayout 不能补上
-内核未启用的硬件唤醒中断。目前未完成实机验证。
+内核未启用的硬件唤醒中断。当前用户已确认功能符合预期，无需继续此排查。
