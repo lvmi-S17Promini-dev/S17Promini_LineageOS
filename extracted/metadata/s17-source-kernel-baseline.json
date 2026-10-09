@@ -1,0 +1,198 @@
+{
+  "nodes": 806,
+  "properties": 3652,
+  "changed_properties": [
+    [
+      "/",
+      "model"
+    ],
+    [
+      "/",
+      "compatible"
+    ],
+    [
+      "/chosen",
+      "atag,videolfb-lcmname"
+    ]
+  ],
+  "config_changes": {
+    "CONFIG_ARCH_NR_GPIO": {
+      "stock": "256",
+      "bringup": "absent"
+    },
+    "CONFIG_ARM64_ERRATUM_1542419": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_CC_HAS_AUTO_VAR_INIT_PATTERN": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_CC_HAS_AUTO_VAR_INIT_ZERO": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_CHARGER_PSC5425E": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_CLANG_VERSION": {
+      "stock": "110001",
+      "bringup": "120005"
+    },
+    "CONFIG_CRYPTO_LIB_CHACHA_GENERIC": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_CRYPTO_LIB_POLY1305_GENERIC": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_CRYPTO_LIB_POLY1305_RSIZE": {
+      "stock": "9",
+      "bringup": "absent"
+    },
+    "CONFIG_DEBUG_KINFO": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_DM_USER": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_DROI_PRO": {
+      "stock": "\"MT_R62\"",
+      "bringup": "absent"
+    },
+    "CONFIG_DROI_PRO_CUSTOM": {
+      "stock": "\"R62_PMZ_W1A LCM_BIAS TYPE_C_INTERFACE_WITH_WUSB3801X\"",
+      "bringup": "absent"
+    },
+    "CONFIG_DROI_PRO_CUSTOM_CHILD": {
+      "stock": "\"\"",
+      "bringup": "absent"
+    },
+    "CONFIG_GENERIC_GETTIMEOFDAY": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_GSENSOR_PROXIMITY": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_HAVE_GENERIC_VDSO": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_HAVE_KERNEL_GZIP": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_HAVE_KERNEL_LZ4": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_HW_MODULE_INFO": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_KERNEL_GZIP": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_KUSER_HELPERS": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_LD_IS_LLD": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_MITIGATE_SPECTRE_BRANCH_HISTORY": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_MTK_ARCHCOUNTER_TIMESYNC": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_MTK_HDR_COLOR_GAIN_RGB": {
+      "stock": "0",
+      "bringup": "absent"
+    },
+    "CONFIG_MTK_LPM_GS_DUMP_VERSION": {
+      "stock": "\"v1\"",
+      "bringup": "absent"
+    },
+    "CONFIG_MTK_MIR3DA": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_MTK_MUSB_DUAL_ROLE": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_MTK_SOCINFO": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_MTK_SYSIRQ": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_MTK_TIMER_TIMESYNC": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_MTK_TINYSYS_SCP_CM4_SUPPORT": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_MTK_TINYSYS_SSPM_VERSION": {
+      "stock": "\"\"",
+      "bringup": "absent"
+    },
+    "CONFIG_MTK_VOW_DSP_VERSION": {
+      "stock": "\"\"",
+      "bringup": "absent"
+    },
+    "CONFIG_MTK_VOW_MAX_PDK_NUMBER": {
+      "stock": "0",
+      "bringup": "absent"
+    },
+    "CONFIG_MTK_VOW_PCMCALLBACK_SUPPORT": {
+      "stock": "\"none\"",
+      "bringup": "absent"
+    },
+    "CONFIG_R62_SYE_R62_BAT_1900": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_RELR": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_TCPC_WUSB3801": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_TOOLS_SUPPORT_RELR": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_TOUCHSCREEN_MTK": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_TOUCHSCREEN_MTK_AXS": {
+      "stock": "y",
+      "bringup": "absent"
+    },
+    "CONFIG_TOUCHSCREEN_PHYSICAL_ROTATION_WITH_LCM": {
+      "stock": "y",
+      "bringup": "absent"
+    }
+  },
+  "stock_config_sha256": "e30186337aaac8120ac74f578f24e05a8be1da9eb6b514c71dba716e0432b21d",
+  "defconfig_sha256": "de1363b78ccd63b6b26017bae1402ff28373bca7f0a16b80558de117e40f817c"
+}
