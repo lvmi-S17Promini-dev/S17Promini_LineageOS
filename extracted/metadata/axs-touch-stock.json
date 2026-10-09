@@ -1,0 +1,25 @@
+{
+  "stock_kernel_sha256": "5851e16038244576d0a863d9f36b4ad602af68ea45477f5c6f44a9dfb0127286",
+  "i2c_address_override": {
+    "image_instruction": "0x9f88c4",
+    "target_address": "0x3b",
+    "stock_dt_address": "0x38"
+  },
+  "report_length": 32,
+  "max_points": 5,
+  "point_stride": 6,
+  "raw_read_function_image": "0x9f9c9c",
+  "report_parse_image": "0x9f92a4",
+  "firmware_version_read_image": "0x9f84a8",
+  "firmware_version_command": "0x0c",
+  "firmware_blob": {
+    "image_offset": "0x10d0e89",
+    "length": 50192,
+    "sha256": "92332cbd1e3da9e39647951a3bd198ee65a43ef199b9db01aad83cd7d2536e1d",
+    "version_offset": "0x7634",
+    "version_be": "0007"
+  },
+  "automatic_upgrade_work_image": "0x9fc40c",
+  "automatic_upgrade_gate_image": "0x9fb644",
+  "new_driver_scope": "existing firmware only; no upgrade/flash commands"
+}

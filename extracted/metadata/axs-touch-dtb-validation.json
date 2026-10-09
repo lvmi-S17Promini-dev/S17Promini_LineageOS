@@ -1,0 +1,29 @@
+{
+  "new_touch_node": "/i2c0@11007000/axs15260@3b",
+  "properties": {
+    "reg": [
+      59
+    ],
+    "interrupts": [
+      0,
+      2
+    ],
+    "interrupt-parent": [
+      31
+    ],
+    "vtouch-supply": [
+      140
+    ],
+    "pinctrl-0": [
+      261
+    ],
+    "touchscreen-size-x": [
+      385
+    ],
+    "touchscreen-size-y": [
+      855
+    ]
+  },
+  "old_0x38_node_removed": true,
+  "reset_owner": "AXS15260 LCM bias driver retains GPIO 174"
+}
