@@ -1,0 +1,128 @@
+{
+  "stock_kernel_sha256": "5851e16038244576d0a863d9f36b4ad602af68ea45477f5c6f44a9dfb0127286",
+  "image_base": "0xffffff8008080000",
+  "driver_offset": "0x176e8b0",
+  "name": "axs15260_dsi_6580_hd",
+  "callbacks": {
+    "set_util_funcs": "0x6e77d4",
+    "get_params": "0x6e7808",
+    "init": "0x6e78c4",
+    "suspend": "0x6e794c",
+    "resume": "0x6e79a8",
+    "compare_id": "0x6e79c0",
+    "bias_probe": "0x6e7aec",
+    "bias_remove": "0x6e7b40",
+    "bias_enable": "0x6e7b80",
+    "push_table": "0x6e7bc8",
+    "bias_write": "0x6e7c4c",
+    "axs_reset_proc": "0x9f8598"
+  },
+  "init_table": [
+    {
+      "offset": "0x176e9f8",
+      "cmd": "0xbb",
+      "count": 8,
+      "data": "0000000000005aa5"
+    },
+    {
+      "offset": "0x176ea40",
+      "cmd": "0xb2",
+      "count": 11,
+      "data": "01000006000a04219c001e"
+    },
+    {
+      "offset": "0x176ea88",
+      "cmd": "0xb2",
+      "count": 1,
+      "data": "41"
+    },
+    {
+      "offset": "0x176ead0",
+      "cmd": "0x11",
+      "count": 1,
+      "data": "00"
+    },
+    {
+      "offset": "0x176eb18",
+      "cmd": "0xffe",
+      "count": 120,
+      "delay_ms": 120
+    },
+    {
+      "offset": "0x176eb60",
+      "cmd": "0x29",
+      "count": 1,
+      "data": "00"
+    },
+    {
+      "offset": "0x176eba8",
+      "cmd": "0xffe",
+      "count": 10,
+      "delay_ms": 10
+    },
+    {
+      "offset": "0x176ebf0",
+      "cmd": "0xfff",
+      "count": 0,
+      "end": true
+    }
+  ],
+  "suspend_table": [
+    {
+      "offset": "0x176ec38",
+      "cmd": "0x28",
+      "count": 1,
+      "data": "00"
+    },
+    {
+      "offset": "0x176ec80",
+      "cmd": "0xffe",
+      "count": 120,
+      "delay_ms": 120
+    },
+    {
+      "offset": "0x176ecc8",
+      "cmd": "0x10",
+      "count": 1,
+      "data": "00"
+    },
+    {
+      "offset": "0x176ed10",
+      "cmd": "0xffe",
+      "count": 30,
+      "delay_ms": 30
+    },
+    {
+      "offset": "0x176ed58",
+      "cmd": "0xfff",
+      "count": 0,
+      "end": true
+    }
+  ],
+  "stock_params_size": 1304,
+  "params_nonzero_words": {
+    "0x0": 2,
+    "0x18": 384,
+    "0x1c": 854,
+    "0x1d8": 2,
+    "0x1ec": 3,
+    "0x1fc": 3,
+    "0x200": 2,
+    "0x204": 2,
+    "0x20c": 256,
+    "0x214": 2,
+    "0x218": 20,
+    "0x21c": 170,
+    "0x224": 854,
+    "0x228": 20,
+    "0x22c": 180,
+    "0x230": 180,
+    "0x238": 384,
+    "0x29c": 210
+  },
+  "notes": [
+    "Stock init/resume power callbacks are null; power is inside init/suspend.",
+    "axs_reset_proc is a touch GPIO reset, not a 20ms delay function.",
+    "get_params current header size is shorter; compare its full prefix."
+  ]
+}

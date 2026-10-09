@@ -1,0 +1,7 @@
+{
+  "params_prefix_bytes_match": 1248,
+  "stock_params_bytes": 1304,
+  "init_table_bytes_match": 576,
+  "suspend_table_bytes_match": 360,
+  "note": "Header-sized params output and both reconstructed raw tables match stock byte-for-byte."
+}

@@ -1,0 +1,27 @@
+{
+  "nodes": 806,
+  "properties": 3653,
+  "changes_from_stock_merged": [
+    [
+      "/",
+      "compatible"
+    ],
+    [
+      "/",
+      "model"
+    ],
+    [
+      "/chosen",
+      "atag,videolfb-lcmname"
+    ],
+    [
+      "/i2c5@11016000/lcm_i2c@3e",
+      "touch-reset-gpios"
+    ]
+  ],
+  "touch_reset_cells": [
+    31,
+    174,
+    0
+  ]
+}

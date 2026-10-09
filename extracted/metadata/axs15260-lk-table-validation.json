@@ -1,0 +1,79 @@
+{
+  "init": {
+    "lk_table_offset": "0x90780",
+    "matches_kernel": true,
+    "entries": [
+      {
+        "cmd": "0xbb",
+        "count": 8,
+        "data": "0000000000005aa5"
+      },
+      {
+        "cmd": "0xb2",
+        "count": 11,
+        "data": "01000006000a04219c001e"
+      },
+      {
+        "cmd": "0xb2",
+        "count": 1,
+        "data": "41"
+      },
+      {
+        "cmd": "0x11",
+        "count": 1,
+        "data": "00"
+      },
+      {
+        "cmd": "0xffe",
+        "count": 120,
+        "data": ""
+      },
+      {
+        "cmd": "0x29",
+        "count": 1,
+        "data": "00"
+      },
+      {
+        "cmd": "0xffe",
+        "count": 10,
+        "data": ""
+      },
+      {
+        "cmd": "0xfff",
+        "count": 0,
+        "data": ""
+      }
+    ]
+  },
+  "suspend": {
+    "lk_table_offset": "0x9059c",
+    "matches_kernel": false,
+    "entries": [
+      {
+        "cmd": "0x28",
+        "count": 1,
+        "data": "00"
+      },
+      {
+        "cmd": "0xffe",
+        "count": 20,
+        "data": ""
+      },
+      {
+        "cmd": "0x10",
+        "count": 1,
+        "data": "00"
+      },
+      {
+        "cmd": "0xffe",
+        "count": 120,
+        "data": ""
+      },
+      {
+        "cmd": "0xfff",
+        "count": 0,
+        "data": ""
+      }
+    ]
+  }
+}
