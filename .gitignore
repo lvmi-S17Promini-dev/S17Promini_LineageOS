@@ -173,6 +173,10 @@ __pycache__/
 /extracted/metadata/source-boot-r9-early-kmsg-review.json
 /extracted/metadata/source-boot-r9-lineage-build.log
 /extracted/metadata/source-boot-r9-lunch.log
+/extracted/metadata/source-boot-r10-build.log
+/extracted/metadata/source-boot-r10-lunch.log
+/extracted/metadata/source-boot-r10-validation.json
+/extracted/metadata/stock-dvfs-sram-address.txt
 /lineage-debug/cache-log-1/s17-bootlog/kmsg.log
 /lineage-debug/cache-log-1/s17-bootlog/logcat.log
 /lineage-debug/cache-log-1/s17-early-kmsg.log

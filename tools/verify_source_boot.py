@@ -49,6 +49,8 @@ def main():
     parser.add_argument("--expected-gpu-version", default="rgx doma m1.13ED5776728")
     parser.add_argument("--collector-tag", default="r8")
     parser.add_argument("--collector-wrapper", type=Path, help="Validate the explicit debug init wrapper")
+    parser.add_argument("--cpufreq-init", choices=("enabled", "disabled"),
+                        help="Expected MediaTek cpufreq init state")
     parser.add_argument("--report", type=Path,
                         default=ROOT / "extracted/metadata/source-boot-r1-validation.json")
     args = parser.parse_args()
@@ -85,8 +87,6 @@ def main():
         expected["init.stock"] = original_init
         expected["init"] = (original_init[0], args.collector_wrapper.read_bytes())
         require(newc_files(ramdisk) == expected, "Debug ramdisk differs beyond init wrapper")
-        require(b"initcall_blacklist=_mt_cpufreq_pdrv_init" in image[64:1632],
-                "Collector image lost cpufreq blacklist")
     else:
         require(ramdisk == stock_ramdisk, "Stock first-stage ramdisk changed")
     require(dtb_table == (product / "dtb.img").read_bytes(), "Boot DT table differs from built table")
@@ -105,6 +105,13 @@ def main():
     identity = linux_version.group().decode(errors="replace")
     require(args.expected_release in identity, "Wrong test kernel release")
     cmdline = image[64:576].split(b"\0")[0] + image[608:1632].split(b"\0")[0]
+    blacklists = [arg.split(b"=", 1)[1].split(b",") for arg in cmdline.split()
+                  if arg.startswith(b"initcall_blacklist=")]
+    bypassed = any(b"_mt_cpufreq_pdrv_init" in names for names in blacklists)
+    expected_cpufreq = args.cpufreq_init or ("disabled" if args.collector_wrapper else None)
+    if expected_cpufreq:
+        require(bypassed == (expected_cpufreq == "disabled"),
+                "Unexpected cpufreq initialization state in boot cmdline")
     require(b"bootopt=64S3,32N2,64N2" in cmdline, "Missing stock bootopt")
     if args.collector_wrapper:
         require(f"s17.bootlog={args.collector_tag}".encode() in cmdline, "Missing cachelog build marker")
@@ -130,6 +137,10 @@ def main():
         subprocess.run(["fdtoverlay", "-i", str(raw), "-o", str(merged),
                         str(ROOT / "extracted/metadata/stock-overlay-0.dtbo")], check=True)
         for tree in [raw, merged]:
+            sram = subprocess.check_output([
+                "fdtget", "-tx", str(tree), "/dvfsp@00110c00", "reg"], text=True).split()
+            require(sram == ["0", "110c00", "0", "1400"] * 2,
+                    "DVFS SRAM resource changed during overlay application")
             node = "/i2c0@11007000/axs15260@3b"
             reg = subprocess.check_output(["fdtget", "-tx", str(tree), node, "reg"], text=True).strip()
             require(reg == "3b", "Touch node lost during bootloader overlay application")
@@ -149,6 +160,8 @@ def main():
         "kernel_sha256": sha(kernel), "ramdisk_sha256": sha(ramdisk),
         "dtb_table_sha256": sha(dtb_table), "kernel_identity": identity,
         "cmdline": cmdline.decode(), "config_sha256": sha(config.encode()),
+        "cpufreq_init": "disabled" if bypassed else "enabled",
+        "dvfs_sram": "DT base 0x110c00, size 0x1400; PV table offset 0x10",
         "checks": "PASS: source kernel/DTB, verified ramdisk/addresses, gzip, AXS/GPU config, AVB and stock-overlay survival",
         "ramdisk_mode": "collector wrapper with original init preserved" if args.collector_wrapper else "stock",
         "device_boot": "NOT TESTED",
