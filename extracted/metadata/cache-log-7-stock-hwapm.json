@@ -1,0 +1,55 @@
+{
+  "stock_range": "0x53a56c..0x53a6a8",
+  "source": "/home/dengxh/android3/lineage/kernel/lvmi/mt6765/drivers/gpu/mediatek/gpu_rgx/m1.13ED5776728/services/system/rogue/rgx_mtk/mt6765/mtk_mfgsys.c",
+  "all_12_writes_match": true,
+  "writes": [
+    {
+      "offset": "0x504",
+      "value": "0x1a80000"
+    },
+    {
+      "offset": "0x508",
+      "value": "0x80010"
+    },
+    {
+      "offset": "0x50c",
+      "value": "0x100008"
+    },
+    {
+      "offset": "0x510",
+      "value": "0xb800c8"
+    },
+    {
+      "offset": "0x514",
+      "value": "0xb000c0"
+    },
+    {
+      "offset": "0x518",
+      "value": "0xc000c8"
+    },
+    {
+      "offset": "0x51c",
+      "value": "0xb000b8"
+    },
+    {
+      "offset": "0x520",
+      "value": "0xd000d0"
+    },
+    {
+      "offset": "0x524",
+      "value": "0xd000d0"
+    },
+    {
+      "offset": "0x528",
+      "value": "0xd00000"
+    },
+    {
+      "offset": "0x24",
+      "value": "0x9004001b"
+    },
+    {
+      "offset": "0x24",
+      "value": "0x8004001b"
+    }
+  ]
+}

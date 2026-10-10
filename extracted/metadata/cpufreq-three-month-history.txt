@@ -1,0 +1,28 @@
+Window: 2026-07-10 through 2026-10-10, filtered by committer time
+
+Related history (HEAD ancestry):
+807038126655cb3324c6a65e5b422eab3b1b6fb4 2019-09-19T12:09:40-04:00 2026-10-02T20:53:19+01:00 BACKPORT: locking/lockdep: Remove unused @nested argument from lock_release()
+ef46031e3a69c41993f42d6ba14de38ded78cc4d 2020-04-24T08:43:38+02:00 2026-10-02T17:44:26+01:00 BACKPORT: sysctl: pass kernel pointers to ->proc_handler
+5341b868ca7e8e9c06b34a332d16cbf5ff08f892 2019-05-14T15:41:18-07:00 2026-10-02T14:02:12+01:00 BACKPORT: kernel/sched/psi.c: expose pressure metrics on root cgroup
+f9a89f572494163cee50422fe11a4b7291ae7156 2019-01-28T17:21:52-08:00 2026-10-02T12:34:50+01:00 UPSTREAM: bpf: check that BPF programs run with preemption disabled
+c4025400b8ea98cb1fd4c527697b4915ca8ef1ea 2026-09-30T22:53:50+01:00 2026-09-30T22:53:50+01:00 perf(p50): bake VM watermark scaling, SchedTune top-app boost, and GPU DVFS margins
+22845c7f98bd335ef3197bdce6ed2e854b1b828b 2026-09-18T00:49:30+01:00 2026-09-18T00:49:30+01:00 perf(gaming): expedite PELT 16ms, accelerate GPU DVFS, tune FBT rescue
+e4fb2179a8a9dd22cdcad6612e773dec7390c0ed 2026-09-16T23:18:42+01:00 2026-09-16T23:18:42+01:00 kernel(p50): optimize CPU/GPU scheduling, GED DVFS margins, and HPS responsiveness
+6b0aa07e91d9de46f9a160d772a7e12f99ee09c6 2026-08-23T17:42:12+01:00 2026-08-23T17:42:12+01:00 feat(p50): strip OPPO vendor code, restore MTK subsystems, add OV5670
+94d218982dc35d8c4ab3bac076cad25f8b3a8238 2026-08-14T05:35:22+01:00 2026-08-14T05:35:22+01:00 refactor(mmc,sched): remove hardcoded project IDs from mt6765 msdc driver and silence repeated pod not ready logs
+194fdcb28ef5191ee7d2d9d02da699843661ab12 2026-08-13T21:03:23+01:00 2026-08-13T21:03:23+01:00 build(llvm): resolve Clang compilation and vendor driver compatibility
+
+Core path history:
+(no commits)
+
+Uncommitted changes:
+ .../src/mach/mt6765/mtk_cpufreq_platform.c         |  3 +
+ .../base/power/cpufreq_v1/src/mtk_cpufreq_hybrid.c |  7 ++
+ .../base/power/cpufreq_v1/src/mtk_cpufreq_main.c   | 42 ++++++++--
+ drivers/misc/mediatek/sspm/sspm_ipi_mbox.c         | 92 ++++++++++++++++++++++
+ drivers/misc/mediatek/sspm/sspm_mbox.c             | 23 ++++++
+ drivers/misc/mediatek/sspm/sspm_mbox.h             |  4 +
+ 6 files changed, 165 insertions(+), 6 deletions(-)
+
+Remote head after git fetch origin:
+9fd0d5ca5f055942965c2747e15393a301948ce0 2026-10-06T08:56:19+01:00 kernel(marlon): migrate p50 device naming to marlon

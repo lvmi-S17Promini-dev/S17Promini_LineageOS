@@ -1,0 +1,12 @@
+{
+  "source_sha256": "92332cbd1e3da9e39647951a3bd198ee65a43ef199b9db01aad83cd7d2536e1d",
+  "length": 50192,
+  "hypothesis": "stock prefix, 0xff suffix; not an actual readout",
+  "cut_offset": "0x6ac9",
+  "expected_crc32": "0x1655298b",
+  "model_crc32": "0xb1bd5c8f",
+  "reported_crc32": "0xb1bd5c8f",
+  "model_mismatch_bytes": 22488,
+  "reported_mismatch_bytes": 22488,
+  "prefix_32_matches": true
+}

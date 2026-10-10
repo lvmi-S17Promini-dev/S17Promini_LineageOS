@@ -1,0 +1,47 @@
+[
+  {
+    "table": "fyTbl",
+    "rows": 48,
+    "stock_exact_offset": "0x17462c0"
+  },
+  {
+    "table": "sbTbl",
+    "rows": 48,
+    "stock_exact_offset": "0x17465c0"
+  },
+  {
+    "table": "c65tTbl",
+    "rows": 48,
+    "stock_exact_offset": "0x17468c0"
+  },
+  {
+    "table": "c65Tbl",
+    "rows": 48,
+    "stock_exact_offset": "0x1746bc0"
+  },
+  {
+    "table": "c62Tbl",
+    "rows": 48,
+    "stock_exact_offset": "0x1746ec0"
+  },
+  {
+    "table": "c62lyTbl",
+    "rows": 48,
+    "stock_exact_offset": "0x17471c0"
+  },
+  {
+    "table": "c65rTbl",
+    "rows": 48,
+    "stock_exact_offset": "0x17474c0"
+  },
+  {
+    "table": "c62dTbl",
+    "rows": 48,
+    "stock_exact_offset": "0x17477c0"
+  },
+  {
+    "table": "c62dlyTbl",
+    "rows": 48,
+    "stock_exact_offset": "0x1747ac0"
+  }
+]
