@@ -1,0 +1,3336 @@
+{
+  "symvers": "/home/dengxh/android3/lineage/out/target/product/S17Promini/obj/KERNEL_OBJ/Module.symvers",
+  "note": "Offline CRC audit only. Matching CRCs do not prove binary compatibility. Candidate vendor providers may fail to load.",
+  "modules": {
+    "bt_drv_connac1x.ko": {
+      "vermagic": "4.19.191 SMP preempt mod_unload modversions aarch64",
+      "imports": 102,
+      "matching_kernel_symbols": [
+        "alloc_chrdev_region",
+        "trace_seq_printf",
+        "trace_handle_return",
+        "strncat",
+        "strlen",
+        "preempt_schedule_notrace",
+        "perf_trace_buf_alloc",
+        "cpu_number",
+        "__cpu_online_mask",
+        "wait_for_completion_timeout",
+        "strsep",
+        "mutex_unlock",
+        "mutex_lock_killable",
+        "kstrtoll",
+        "complete",
+        "__mutex_init",
+        "up",
+        "unregister_pm_notifier",
+        "unregister_chrdev_region",
+        "strncpy",
+        "snprintf",
+        "schedule",
+        "register_pm_notifier",
+        "register_chrdev_region",
+        "queue_delayed_work_on",
+        "printk",
+        "prepare_to_wait_event",
+        "msleep",
+        "memset",
+        "memcpy",
+        "init_wait_entry",
+        "init_timer_key",
+        "flush_workqueue",
+        "finish_wait",
+        "down",
+        "destroy_workqueue",
+        "delayed_work_timer_fn",
+        "cpu_hwcaps",
+        "cpu_hwcap_keys",
+        "cancel_delayed_work",
+        "arm64_const_caps_ready",
+        "_mcount",
+        "__wake_up",
+        "__stack_chk_guard",
+        "__stack_chk_fail",
+        "__iounmap",
+        "__ioremap",
+        "__init_waitqueue_head",
+        "__check_object_size",
+        "__arch_copy_to_user",
+        "__arch_copy_from_user",
+        "__alloc_workqueue_key",
+        "___ratelimit"
+      ],
+      "mismatched_kernel_symbols": [
+        {
+          "symbol": "module_layout",
+          "module_crc": "0x3c6e983b",
+          "kernel_crc": "0xd1cddb94",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_raw_output_prep",
+          "module_crc": "0x56355d01",
+          "kernel_crc": "0x27b2a630",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_event_reg",
+          "module_crc": "0xe449f221",
+          "kernel_crc": "0xf99bcd33",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_event_raw_init",
+          "module_crc": "0x53bb7115",
+          "kernel_crc": "0x53095ec0",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_event_ignore_this_pid",
+          "module_crc": "0x87bcee08",
+          "kernel_crc": "0x4716b3d7",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_event_buffer_reserve",
+          "module_crc": "0x6945b831",
+          "kernel_crc": "0x11a0cc32",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_event_buffer_commit",
+          "module_crc": "0xa28a9dd5",
+          "kernel_crc": "0xae53c826",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_define_field",
+          "module_crc": "0x0ac1fb3a",
+          "kernel_crc": "0x16ca09e6",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "perf_trace_run_bpf_submit",
+          "module_crc": "0x062e8520",
+          "kernel_crc": "0x1886e266",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "event_triggers_call",
+          "module_crc": "0x8124f268",
+          "kernel_crc": "0x06023d80",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "bpf_trace_run4",
+          "module_crc": "0xde2f73a2",
+          "kernel_crc": "0x1aad05fc",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "proc_remove",
+          "module_crc": "0xd76bf527",
+          "kernel_crc": "0xf8e49b97",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "proc_create",
+          "module_crc": "0x83c348ac",
+          "kernel_crc": "0x339e0f38",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wakeup_source_unregister",
+          "module_crc": "0x68c52650",
+          "kernel_crc": "0x4f0354d1",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wakeup_source_register",
+          "module_crc": "0x0bfd3f0d",
+          "kernel_crc": "0x872c45fd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "pm_wakeup_ws_event",
+          "module_crc": "0xb98e6e69",
+          "kernel_crc": "0xa119f117",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "pm_qos_update_request",
+          "module_crc": "0x52a3217e",
+          "kernel_crc": "0x91ee19cb",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "pm_qos_remove_request",
+          "module_crc": "0x817c63b0",
+          "kernel_crc": "0x24c43293",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "pm_qos_add_request",
+          "module_crc": "0xebfb4294",
+          "kernel_crc": "0xdf5db484",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "param_ops_uint",
+          "module_crc": "0x9718a890",
+          "kernel_crc": "0xbf94b579",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_property_read_variable_u32_array",
+          "module_crc": "0x9bef19b6",
+          "kernel_crc": "0x63eea193",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_find_compatible_node",
+          "module_crc": "0x2c413fcc",
+          "kernel_crc": "0x920d4380",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "device_destroy",
+          "module_crc": "0x5b78a018",
+          "kernel_crc": "0x842cd337",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "device_create",
+          "module_crc": "0x9a82f02d",
+          "kernel_crc": "0x620d2863",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "class_destroy",
+          "module_crc": "0x7ec5ee98",
+          "kernel_crc": "0xf3ed99c7",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_init",
+          "module_crc": "0x082f4121",
+          "kernel_crc": "0xb6399bab",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_del",
+          "module_crc": "0x676dfb5f",
+          "kernel_crc": "0x57da3190",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_add",
+          "module_crc": "0x9c23bc2a",
+          "kernel_crc": "0xd502508b",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "_copy_from_iter",
+          "module_crc": "0x869e096f",
+          "kernel_crc": "0x8127ad85",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__class_create",
+          "module_crc": "0xbc03a0cf",
+          "kernel_crc": "0xc20e9b59",
+          "provider": "vmlinux"
+        }
+      ],
+      "not_exported_by_kernel_or_vendor_modules": [],
+      "candidate_vendor_providers": {
+        "connsys_log_register_event_cb": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xc1ec710b",
+            "matches": true
+          }
+        ],
+        "connsys_log_read_to_user": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x83f4ca61",
+            "matches": true
+          }
+        ],
+        "connsys_log_init": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x88db89e4",
+            "matches": true
+          }
+        ],
+        "connsys_log_get_buf_size": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x93eb7ab0",
+            "matches": true
+          }
+        ],
+        "connsys_log_deinit": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x5b5cc9fe",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_adie_workable": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xb0390b96",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_psm_ctrl": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x14734572",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_msgcb_unreg": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x8c78a087",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_msgcb_reg": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xac8387ca",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_ic_info_get": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xd9b4c129",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_func_on": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x7d6e061e",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_func_off": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xd977b15b",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_assert": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xc6e7b645",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_stp_set_bluez": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xcd5cff60",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_stp_send_data": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xe471e19a",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_stp_register_event_cb": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xb095001c",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_stp_receive_data": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x7ef22447",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_stp_is_rxqueue_empty": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xd5b8287f",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_stp_is_ready": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xbd9c94a3",
+            "matches": true
+          }
+        ]
+      }
+    },
+    "connfem.ko": {
+      "vermagic": "4.19.191 SMP preempt mod_unload modversions aarch64",
+      "imports": 51,
+      "matching_kernel_symbols": [
+        "strncpy",
+        "strlen",
+        "strcmp",
+        "strncmp",
+        "snprintf",
+        "kfree",
+        "__kmalloc",
+        "memcpy",
+        "unregister_chrdev_region",
+        "printk",
+        "memset",
+        "alloc_chrdev_region",
+        "_mcount",
+        "__stack_chk_guard",
+        "__stack_chk_fail",
+        "__check_object_size",
+        "__arch_copy_to_user",
+        "__arch_copy_from_user"
+      ],
+      "mismatched_kernel_symbols": [
+        {
+          "symbol": "module_layout",
+          "module_crc": "0x3c6e983b",
+          "kernel_crc": "0xd1cddb94",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_property_read_variable_u32_array",
+          "module_crc": "0x9bef19b6",
+          "kernel_crc": "0x63eea193",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "pinctrl_select_state",
+          "module_crc": "0xc728b8a1",
+          "kernel_crc": "0xea77b5bc",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "pinctrl_lookup_state",
+          "module_crc": "0x265dbf9f",
+          "kernel_crc": "0xf87f11fa",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_property_read_u32_index",
+          "module_crc": "0x1d369b88",
+          "kernel_crc": "0x3a21bfb4",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_property_read_string_helper",
+          "module_crc": "0x5414310d",
+          "kernel_crc": "0xbacb13a2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_property_match_string",
+          "module_crc": "0x45d6dc65",
+          "kernel_crc": "0xe2d794f4",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_property_count_elems_of_size",
+          "module_crc": "0x7d330a46",
+          "kernel_crc": "0x81042b93",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_prop_next_string",
+          "module_crc": "0x5e23fd20",
+          "kernel_crc": "0x26b2dd17",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_parse_phandle",
+          "module_crc": "0xcbe333b5",
+          "kernel_crc": "0x72341a5b",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_get_property",
+          "module_crc": "0xec8c6219",
+          "kernel_crc": "0x10b15656",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_get_next_child",
+          "module_crc": "0xceb697f6",
+          "kernel_crc": "0x313bb279",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_get_named_gpio_flags",
+          "module_crc": "0x789e776e",
+          "kernel_crc": "0xbfa5c50d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_get_child_by_name",
+          "module_crc": "0x88485e76",
+          "kernel_crc": "0x7e460c4d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_find_property",
+          "module_crc": "0x87642d6e",
+          "kernel_crc": "0x38e4a932",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_count_phandle_with_args",
+          "module_crc": "0xb5926586",
+          "kernel_crc": "0x41b44bd0",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "iio_read_channel_processed",
+          "module_crc": "0x33422396",
+          "kernel_crc": "0x30d603af",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "gpiod_get_raw_value",
+          "module_crc": "0xf6da50ab",
+          "kernel_crc": "0x5a9d5f11",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "gpio_to_desc",
+          "module_crc": "0x178f96ae",
+          "kernel_crc": "0xd84e800c",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "devm_pinctrl_put",
+          "module_crc": "0xfa3901f3",
+          "kernel_crc": "0xf2b878be",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "devm_pinctrl_get",
+          "module_crc": "0x1a8b5514",
+          "kernel_crc": "0x38ccb70a",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "devm_iio_channel_get",
+          "module_crc": "0x97b1c80e",
+          "kernel_crc": "0xb74458f7",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "platform_driver_unregister",
+          "module_crc": "0x552b5e9d",
+          "kernel_crc": "0x00e9f7fb",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "param_ops_uint",
+          "module_crc": "0x9718a890",
+          "kernel_crc": "0xbf94b579",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_device_get_match_data",
+          "module_crc": "0x279cd51c",
+          "kernel_crc": "0x4e31b5a0",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "device_destroy",
+          "module_crc": "0x5b78a018",
+          "kernel_crc": "0x842cd337",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "device_create",
+          "module_crc": "0x9a82f02d",
+          "kernel_crc": "0x620d2863",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "class_destroy",
+          "module_crc": "0x7ec5ee98",
+          "kernel_crc": "0xf3ed99c7",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_init",
+          "module_crc": "0x082f4121",
+          "kernel_crc": "0xb6399bab",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_del",
+          "module_crc": "0x676dfb5f",
+          "kernel_crc": "0x57da3190",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_add",
+          "module_crc": "0x9c23bc2a",
+          "kernel_crc": "0xd502508b",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__platform_driver_register",
+          "module_crc": "0x98b8641f",
+          "kernel_crc": "0x90fb52e5",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__class_create",
+          "module_crc": "0xbc03a0cf",
+          "kernel_crc": "0xc20e9b59",
+          "provider": "vmlinux"
+        }
+      ],
+      "not_exported_by_kernel_or_vendor_modules": [],
+      "candidate_vendor_providers": {}
+    },
+    "fmradio_drv_mt6631.ko": {
+      "vermagic": "4.19.191 SMP preempt mod_unload modversions aarch64",
+      "imports": 97,
+      "matching_kernel_symbols": [
+        "kmalloc_order_trace",
+        "___ratelimit",
+        "up",
+        "schedule_timeout",
+        "schedule",
+        "queue_work_on",
+        "prepare_to_wait_event",
+        "msleep_interruptible",
+        "msleep",
+        "mod_timer",
+        "init_wait_entry",
+        "init_timer_key",
+        "finish_wait",
+        "down_trylock",
+        "down_interruptible",
+        "destroy_workqueue",
+        "del_timer",
+        "add_timer",
+        "_raw_spin_unlock_bh",
+        "_raw_spin_lock_bh",
+        "__wake_up",
+        "__udelay",
+        "__alloc_workqueue_key",
+        "wait_for_completion",
+        "complete",
+        "__init_waitqueue_head",
+        "bcmp",
+        "strncmp",
+        "strcmp",
+        "memcpy",
+        "jiffies_to_msecs",
+        "jiffies",
+        "unregister_chrdev_region",
+        "kstrtouint",
+        "gpio_request",
+        "gpio_free",
+        "alloc_chrdev_region",
+        "__ll_sc_atomic_sub_return",
+        "__ll_sc_atomic_add",
+        "__ll_sc_atomic64_or",
+        "__ll_sc_atomic64_andnot",
+        "__kmalloc",
+        "__check_object_size",
+        "__arch_copy_to_user",
+        "__arch_copy_from_user",
+        "vmalloc",
+        "vfree",
+        "strlen",
+        "sprintf",
+        "kfree",
+        "printk",
+        "memset",
+        "_mcount",
+        "__stack_chk_guard",
+        "__stack_chk_fail"
+      ],
+      "mismatched_kernel_symbols": [
+        {
+          "symbol": "module_layout",
+          "module_crc": "0x3c6e983b",
+          "kernel_crc": "0xd1cddb94",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wakeup_source_unregister",
+          "module_crc": "0x68c52650",
+          "kernel_crc": "0x4f0354d1",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wakeup_source_register",
+          "module_crc": "0x0bfd3f0d",
+          "kernel_crc": "0x872c45fd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__pm_stay_awake",
+          "module_crc": "0xffc61867",
+          "kernel_crc": "0x1dd10bdc",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__pm_relax",
+          "module_crc": "0x4fb295e0",
+          "kernel_crc": "0x5da8d7c4",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wake_up_process",
+          "module_crc": "0xdb19e602",
+          "kernel_crc": "0x9b8307fc",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "request_firmware",
+          "module_crc": "0x0a35ae59",
+          "kernel_crc": "0xbd25e5be",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "release_firmware",
+          "module_crc": "0xcea7eb71",
+          "kernel_crc": "0x9ff89779",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kthread_create_on_node",
+          "module_crc": "0x5e3d7607",
+          "kernel_crc": "0xf6feddb8",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "remove_proc_entry",
+          "module_crc": "0x2992cbea",
+          "kernel_crc": "0x583762b4",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "proc_create",
+          "module_crc": "0x83c348ac",
+          "kernel_crc": "0x339e0f38",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "platform_driver_unregister",
+          "module_crc": "0x552b5e9d",
+          "kernel_crc": "0x00e9f7fb",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "platform_device_unregister",
+          "module_crc": "0xbd54b217",
+          "kernel_crc": "0xa1c81285",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "platform_device_put",
+          "module_crc": "0xd5f6b6a1",
+          "kernel_crc": "0x10e4e1fd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "platform_device_alloc",
+          "module_crc": "0x03bb2d56",
+          "kernel_crc": "0xad3f025d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "platform_device_add",
+          "module_crc": "0x4cd60971",
+          "kernel_crc": "0xeff39efd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_property_read_variable_u32_array",
+          "module_crc": "0x9bef19b6",
+          "kernel_crc": "0x63eea193",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_get_property",
+          "module_crc": "0xec8c6219",
+          "kernel_crc": "0x10b15656",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_get_named_gpio_flags",
+          "module_crc": "0x789e776e",
+          "kernel_crc": "0xbfa5c50d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_find_compatible_node",
+          "module_crc": "0x2c413fcc",
+          "kernel_crc": "0x920d4380",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "irq_of_parse_and_map",
+          "module_crc": "0x759376d3",
+          "kernel_crc": "0xb398ab1d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "gpiod_set_raw_value",
+          "module_crc": "0xbfcb463c",
+          "kernel_crc": "0x6d9c46b9",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "gpiod_direction_output_raw",
+          "module_crc": "0x93562524",
+          "kernel_crc": "0xcddcedc1",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "gpio_to_desc",
+          "module_crc": "0x178f96ae",
+          "kernel_crc": "0xd84e800c",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "device_destroy",
+          "module_crc": "0x5b78a018",
+          "kernel_crc": "0x842cd337",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "device_create",
+          "module_crc": "0x9a82f02d",
+          "kernel_crc": "0x620d2863",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "class_destroy",
+          "module_crc": "0x7ec5ee98",
+          "kernel_crc": "0xf3ed99c7",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_init",
+          "module_crc": "0x082f4121",
+          "kernel_crc": "0xb6399bab",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_del",
+          "module_crc": "0x676dfb5f",
+          "kernel_crc": "0x57da3190",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_add",
+          "module_crc": "0x9c23bc2a",
+          "kernel_crc": "0xd502508b",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__platform_driver_register",
+          "module_crc": "0x98b8641f",
+          "kernel_crc": "0x90fb52e5",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__class_create",
+          "module_crc": "0xbc03a0cf",
+          "kernel_crc": "0xc20e9b59",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kmem_cache_alloc_trace",
+          "module_crc": "0xdb048a82",
+          "kernel_crc": "0xa32941c2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kmalloc_caches",
+          "module_crc": "0x19cb47bd",
+          "kernel_crc": "0x1df515dd",
+          "provider": "vmlinux"
+        }
+      ],
+      "not_exported_by_kernel_or_vendor_modules": [],
+      "candidate_vendor_providers": {
+        "mtk_wcn_wmt_msgcb_reg": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xac8387ca",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_chipid_query": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x6ef57895",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_stp_send_data": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xe471e19a",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_stp_register_event_cb": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xb095001c",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_stp_receive_data": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x7ef22447",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_ic_info_get": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xd9b4c129",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_func_on": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x7d6e061e",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_func_off": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xd977b15b",
+            "matches": true
+          }
+        ]
+      }
+    },
+    "fpsgo.ko": {
+      "vermagic": "4.19.191 SMP preempt mod_unload modversions aarch64",
+      "imports": 59,
+      "matching_kernel_symbols": [
+        "xgf_spid_sub_assign",
+        "xgf_extra_sub_assign",
+        "xgf_num_possible_cpus",
+        "kfree",
+        "__stack_chk_fail",
+        "rb_erase",
+        "rb_next",
+        "rb_first",
+        "xgf_free",
+        "xgf_alloc",
+        "xgf_atomic_read",
+        "xgf_trace",
+        "xgf_lockprove",
+        "__stack_chk_guard",
+        "notify_xgf_ko_ready",
+        "_mcount",
+        "__dynamic_pr_debug"
+      ],
+      "mismatched_kernel_symbols": [
+        {
+          "symbol": "module_layout",
+          "module_crc": "0x3c6e983b",
+          "kernel_crc": "0xd1cddb94",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kmem_cache_alloc_trace",
+          "module_crc": "0xdb048a82",
+          "kernel_crc": "0xa32941c2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kmalloc_caches",
+          "module_crc": "0x19cb47bd",
+          "kernel_crc": "0x1df515dd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "xgf_dep_frames_mod",
+          "module_crc": "0x896272f2",
+          "kernel_crc": "0x0126c2e0",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "xgf_hw_events_update",
+          "module_crc": "0x57454ca5",
+          "kernel_crc": "0xd928b841",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "xgf_get_dep",
+          "module_crc": "0xadc17a49",
+          "kernel_crc": "0xf8a3afdc",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "xgf_clean_deps_list",
+          "module_crc": "0x8aefe2a7",
+          "kernel_crc": "0xc7a566ab",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "xgf_est_runtime_fp",
+          "module_crc": "0x202796ea",
+          "kernel_crc": "0x9d5aca38",
+          "provider": "vmlinux"
+        }
+      ],
+      "not_exported_by_kernel_or_vendor_modules": [
+        "fstb_event_buffer_size",
+        "xgf_max_events",
+        "xgf_ko_enabled",
+        "fstb_fps_choice",
+        "fstb_fps_num",
+        "fstb_is_eara_active",
+        "xgf_check_main_sf_pid",
+        "xgf_set_timer_info",
+        "xgf_set_logical_render_info",
+        "xgf_set_logical_render_runtime",
+        "fstb_separate_runtime_enable",
+        "xgf_check_specific_pid",
+        "fstb_event_data",
+        "fstb_event_data_idx",
+        "xgf_get_process_id",
+        "fstb_target_fps_margin_high_fps",
+        "fstb_target_fps_margin_low_fps",
+        "fstb_can_update_thr",
+        "fstb_no_stable_multiple_eara",
+        "fstb_no_stable_multiple",
+        "fstb_no_stable_thr",
+        "fstb_frame_num",
+        "xgf_get_display_rate",
+        "xgff_dep_frames_mod",
+        "xgff_get_dep",
+        "xgff_clean_deps_list",
+        "xgf_event_data",
+        "xgf_event_index",
+        "xgff_update_start_prev_index_fp",
+        "xgff_est_runtime_fp",
+        "xgf_ema2_predict_fp",
+        "xgf_ema2_init_fp",
+        "fpsgo_xgf2ko_do_recycle_fp",
+        "fpsgo_xgf2ko_calculate_target_fps_fp"
+      ],
+      "candidate_vendor_providers": {}
+    },
+    "gps_drv.ko": {
+      "vermagic": "4.19.191 SMP preempt mod_unload modversions aarch64",
+      "imports": 70,
+      "matching_kernel_symbols": [
+        "__init_waitqueue_head",
+        "kfree",
+        "emi_mpu_set_protection",
+        "alloc_chrdev_region",
+        "up",
+        "unregister_chrdev_region",
+        "schedule",
+        "sched_clock",
+        "register_chrdev_region",
+        "printk",
+        "prepare_to_wait_event",
+        "memset",
+        "memcpy",
+        "ktime_get_real_ts64",
+        "init_wait_entry",
+        "finish_wait",
+        "dvfsrc_enable_dvfs_freq_hopping",
+        "down",
+        "cpu_hwcaps",
+        "cpu_hwcap_keys",
+        "arm64_const_caps_ready",
+        "_mcount",
+        "__wake_up",
+        "__stack_chk_guard",
+        "__stack_chk_fail",
+        "__iounmap",
+        "__ioremap",
+        "__dynamic_pr_debug",
+        "__check_object_size",
+        "__arch_copy_to_user",
+        "__arch_copy_from_user"
+      ],
+      "mismatched_kernel_symbols": [
+        {
+          "symbol": "module_layout",
+          "module_crc": "0x3c6e983b",
+          "kernel_crc": "0xd1cddb94",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "request_firmware",
+          "module_crc": "0x0a35ae59",
+          "kernel_crc": "0xbd25e5be",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "release_firmware",
+          "module_crc": "0xcea7eb71",
+          "kernel_crc": "0x9ff89779",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "nonseekable_open",
+          "module_crc": "0x3ac38f00",
+          "kernel_crc": "0x70b3b93b",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kmem_cache_alloc_trace",
+          "module_crc": "0xdb048a82",
+          "kernel_crc": "0xa32941c2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kmalloc_caches",
+          "module_crc": "0x19cb47bd",
+          "kernel_crc": "0x1df515dd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wakeup_source_unregister",
+          "module_crc": "0x68c52650",
+          "kernel_crc": "0x4f0354d1",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wakeup_source_register",
+          "module_crc": "0x0bfd3f0d",
+          "kernel_crc": "0x872c45fd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "param_ops_uint",
+          "module_crc": "0x9718a890",
+          "kernel_crc": "0xbf94b579",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_property_read_variable_u32_array",
+          "module_crc": "0x9bef19b6",
+          "kernel_crc": "0x63eea193",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "device_destroy",
+          "module_crc": "0x5b78a018",
+          "kernel_crc": "0x842cd337",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "device_create",
+          "module_crc": "0x9a82f02d",
+          "kernel_crc": "0x620d2863",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "class_destroy",
+          "module_crc": "0x7ec5ee98",
+          "kernel_crc": "0xf3ed99c7",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_init",
+          "module_crc": "0x082f4121",
+          "kernel_crc": "0xb6399bab",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_del",
+          "module_crc": "0x676dfb5f",
+          "kernel_crc": "0x57da3190",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_add",
+          "module_crc": "0x9c23bc2a",
+          "kernel_crc": "0xd502508b",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__pm_stay_awake",
+          "module_crc": "0xffc61867",
+          "kernel_crc": "0x1dd10bdc",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__pm_relax",
+          "module_crc": "0x4fb295e0",
+          "kernel_crc": "0x5da8d7c4",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__class_create",
+          "module_crc": "0xbc03a0cf",
+          "kernel_crc": "0xc20e9b59",
+          "provider": "vmlinux"
+        }
+      ],
+      "not_exported_by_kernel_or_vendor_modules": [],
+      "candidate_vendor_providers": {
+        "connsys_log_register_event_cb": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xc1ec710b",
+            "matches": true
+          }
+        ],
+        "connsys_log_read_to_user": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x83f4ca61",
+            "matches": true
+          }
+        ],
+        "connsys_log_init": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x88db89e4",
+            "matches": true
+          }
+        ],
+        "connsys_log_get_buf_size": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x93eb7ab0",
+            "matches": true
+          }
+        ],
+        "connsys_log_deinit": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x5b5cc9fe",
+            "matches": true
+          }
+        ],
+        "gConEmiPhyBase": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x18f0a9e3",
+            "matches": true
+          }
+        ],
+        "mtk_wmt_gps_suspend_ctrl": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x8b8cc510",
+            "matches": true
+          }
+        ],
+        "mtk_wmt_gps_mcu_ctrl": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xe652920d",
+            "matches": true
+          }
+        ],
+        "mtk_wmt_get_gps_lna_pin_num": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x210c94ae",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_msgcb_unreg": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x8c78a087",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_msgcb_reg": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xac8387ca",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_ic_info_get": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xd9b4c129",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_func_on": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x7d6e061e",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_func_off": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xd977b15b",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_co_clock_flag_get": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x20744741",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_assert": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xc6e7b645",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_stp_send_data": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xe471e19a",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_stp_register_event_cb": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xb095001c",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_stp_receive_data": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x7ef22447",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_stp_is_ready": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xbd9c94a3",
+            "matches": true
+          }
+        ]
+      }
+    },
+    "met.ko": {
+      "vermagic": "4.19.191 SMP preempt mod_unload modversions aarch64",
+      "imports": 3,
+      "matching_kernel_symbols": [
+        "printk",
+        "_mcount"
+      ],
+      "mismatched_kernel_symbols": [
+        {
+          "symbol": "module_layout",
+          "module_crc": "0x3c6e983b",
+          "kernel_crc": "0xd1cddb94",
+          "provider": "vmlinux"
+        }
+      ],
+      "not_exported_by_kernel_or_vendor_modules": [],
+      "candidate_vendor_providers": {}
+    },
+    "wlan_drv_gen4m.ko": {
+      "vermagic": "4.19.191 SMP preempt mod_unload modversions aarch64",
+      "imports": 303,
+      "matching_kernel_symbols": [
+        "enable_irq",
+        "disable_irq_nosync",
+        "ieee80211_operating_class_to_band",
+        "synchronize_irq",
+        "request_threaded_irq",
+        "irq_set_irq_wake",
+        "free_irq",
+        "__release_region",
+        "__memset_io",
+        "__memcpy_toio",
+        "list_sort",
+        "__list_add_valid",
+        "usleep_range",
+        "__udelay",
+        "__list_del_entry_valid",
+        "__const_udelay",
+        "rtnl_is_locked",
+        "unregister_netdevice_notifier",
+        "unregister_inetaddr_notifier",
+        "register_netdevice_notifier",
+        "register_inetaddr_notifier",
+        "__memcpy_fromio",
+        "cfg80211_find_ie_match",
+        "_ctype",
+        "complete_all",
+        "__arch_copy_to_user",
+        "wait_for_completion_timeout",
+        "vsprintf",
+        "vfree",
+        "trace_seq_printf",
+        "trace_handle_return",
+        "sys_tz",
+        "strlcpy",
+        "strcpy",
+        "static_key_initialized",
+        "schedule",
+        "rps_needed",
+        "queue_work_on",
+        "prepare_to_wait_event",
+        "preempt_schedule_notrace",
+        "preempt_schedule",
+        "perf_trace_buf_alloc",
+        "ns_to_timespec",
+        "nr_cpu_ids",
+        "mutex_unlock",
+        "mutex_lock",
+        "ktime_get_with_offset",
+        "kfree_call_rcu",
+        "init_wait_entry",
+        "ieee80211_channel_to_frequency",
+        "get_random_bytes",
+        "finish_wait",
+        "fb_unregister_client",
+        "fb_register_client",
+        "dump_stack",
+        "down_trylock",
+        "down_timeout",
+        "down_interruptible",
+        "del_timer_sync",
+        "cpumask_next_and",
+        "cpu_number",
+        "cfg80211_chandef_create",
+        "add_timer",
+        "__warn_printk",
+        "__sw_hweight64",
+        "__msecs_to_jiffies",
+        "__cpu_online_mask",
+        "wait_for_completion_interruptible_timeout",
+        "wait_for_completion_interruptible",
+        "up",
+        "tasklet_kill",
+        "tasklet_init",
+        "system_wq",
+        "rtnl_unlock",
+        "rtnl_lock",
+        "queue_delayed_work_on",
+        "init_timer_key",
+        "flush_work",
+        "flush_delayed_work",
+        "down",
+        "delayed_work_timer_fn",
+        "completion_done",
+        "complete",
+        "cancel_delayed_work_sync",
+        "_raw_spin_unlock_irqrestore",
+        "_raw_spin_lock_irqsave",
+        "__wake_up",
+        "__mutex_init",
+        "__ll_sc_atomic64_or",
+        "__ll_sc_atomic64_fetch_andnot",
+        "__ll_sc_atomic64_andnot",
+        "__check_object_size",
+        "__arch_copy_from_user",
+        "sprintf",
+        "rtc_time64_to_tm",
+        "ktime_get_real_ts64",
+        "kstrtoull",
+        "iomem_resource",
+        "cpu_hwcaps",
+        "cpu_hwcap_keys",
+        "arm64_const_caps_ready",
+        "__request_region",
+        "__ioremap",
+        "mod_timer",
+        "_raw_spin_unlock_bh",
+        "_raw_spin_lock_bh",
+        "__iounmap",
+        "vsnprintf",
+        "ktime_get_ts64",
+        "hex_dump_to_buffer",
+        "bcmp",
+        "vmalloc",
+        "strsep",
+        "strncpy",
+        "strncmp",
+        "scnprintf",
+        "sched_clock",
+        "msleep",
+        "kvfree",
+        "kstrtoint",
+        "jiffies_to_msecs",
+        "jiffies",
+        "__ll_sc_atomic_sub",
+        "__ll_sc_atomic_add",
+        "___ratelimit",
+        "snprintf",
+        "memmove",
+        "memcmp",
+        "kfree",
+        "__kmalloc",
+        "__init_waitqueue_head",
+        "strstr",
+        "strspn",
+        "strpbrk",
+        "strnlen",
+        "strncasecmp",
+        "strlen",
+        "strcmp",
+        "strchr",
+        "sscanf",
+        "printk",
+        "memset",
+        "memcpy",
+        "kstrtouint",
+        "kstrtou8",
+        "kstrtou16",
+        "kstrtoll",
+        "update_userlimit_cpu_freq",
+        "topo_ctrl_get_nr_clusters",
+        "emi_mpu_set_protection",
+        "_mcount",
+        "__stack_chk_guard",
+        "__stack_chk_fail"
+      ],
+      "mismatched_kernel_symbols": [
+        {
+          "symbol": "module_layout",
+          "module_crc": "0x3c6e983b",
+          "kernel_crc": "0xd1cddb94",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_tdls_oper_request",
+          "module_crc": "0xf325d767",
+          "kernel_crc": "0x84107464",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "regulatory_hint",
+          "module_crc": "0x9378d724",
+          "kernel_crc": "0x257c26de",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "platform_driver_unregister",
+          "module_crc": "0x552b5e9d",
+          "kernel_crc": "0x00e9f7fb",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_reserved_mem_device_init_by_idx",
+          "module_crc": "0x04afbcb1",
+          "kernel_crc": "0xaf0bb17c",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_property_read_variable_u64_array",
+          "module_crc": "0xa50376b8",
+          "kernel_crc": "0x991a7f8a",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_property_read_variable_u32_array",
+          "module_crc": "0x9bef19b6",
+          "kernel_crc": "0x63eea193",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_property_read_string",
+          "module_crc": "0xe9a750b9",
+          "kernel_crc": "0x61008627",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_parse_phandle",
+          "module_crc": "0xcbe333b5",
+          "kernel_crc": "0x72341a5b",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_iomap",
+          "module_crc": "0xaede5d2b",
+          "kernel_crc": "0xed1dd282",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_find_compatible_node",
+          "module_crc": "0x2c413fcc",
+          "kernel_crc": "0x920d4380",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_address_to_resource",
+          "module_crc": "0x5aa1e2c3",
+          "kernel_crc": "0x8dbe9bda",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "irq_of_parse_and_map",
+          "module_crc": "0x759376d3",
+          "kernel_crc": "0xb398ab1d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "dummy_dma_ops",
+          "module_crc": "0xa6bf03ba",
+          "kernel_crc": "0x5e7d0e63",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "dma_release_from_dev_coherent",
+          "module_crc": "0x76924c7c",
+          "kernel_crc": "0xa5f06964",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "dma_alloc_from_dev_coherent",
+          "module_crc": "0xc7031e66",
+          "kernel_crc": "0x72a6cf2b",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__platform_driver_register",
+          "module_crc": "0x98b8641f",
+          "kernel_crc": "0x90fb52e5",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_new_sta",
+          "module_crc": "0x719f2a28",
+          "kernel_crc": "0xa1ec1ed7",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_del_sta_sinfo",
+          "module_crc": "0x6d0cac4e",
+          "kernel_crc": "0xea3505bb",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "unregister_netdevice_queue",
+          "module_crc": "0x595fd16e",
+          "kernel_crc": "0x4c5fc645",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "register_netdevice",
+          "module_crc": "0x2e92ec4d",
+          "kernel_crc": "0x7f4d7244",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "nla_parse",
+          "module_crc": "0x43dae11a",
+          "kernel_crc": "0x6e6da5a2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "seq_release",
+          "module_crc": "0xeb809e71",
+          "kernel_crc": "0xf5977120",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "seq_read",
+          "module_crc": "0xd0934675",
+          "kernel_crc": "0xf088cee0",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "seq_puts",
+          "module_crc": "0x3e06c06e",
+          "kernel_crc": "0xe38cd0ca",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "seq_printf",
+          "module_crc": "0x0fe6e3b1",
+          "kernel_crc": "0x2ffe8d57",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "seq_open",
+          "module_crc": "0x1c41a957",
+          "kernel_crc": "0xe0e9e851",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "seq_lseek",
+          "module_crc": "0x3c1e8191",
+          "kernel_crc": "0xb738d023",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "remove_proc_subtree",
+          "module_crc": "0x95786a07",
+          "kernel_crc": "0x375af0ae",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "proc_set_user",
+          "module_crc": "0x2bf460b6",
+          "kernel_crc": "0xd0d311f7",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wiphy_apply_custom_regulatory",
+          "module_crc": "0x8c5cdbca",
+          "kernel_crc": "0x126b9a13",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "nla_put_nohdr",
+          "module_crc": "0x3300238f",
+          "kernel_crc": "0x67112667",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_vendor_cmd_reply",
+          "module_crc": "0x0c18c0c3",
+          "kernel_crc": "0xe2812e2f",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__cfg80211_alloc_reply_skb",
+          "module_crc": "0x074aa094",
+          "kernel_crc": "0xaca46ca4",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wireless_send_event",
+          "module_crc": "0xaf36d1cf",
+          "kernel_crc": "0xc3382652",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_raw_output_prep",
+          "module_crc": "0x56355d01",
+          "kernel_crc": "0x27b2a630",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_event_reg",
+          "module_crc": "0xe449f221",
+          "kernel_crc": "0xf99bcd33",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_event_raw_init",
+          "module_crc": "0x53bb7115",
+          "kernel_crc": "0x53095ec0",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_event_ignore_this_pid",
+          "module_crc": "0x87bcee08",
+          "kernel_crc": "0x4716b3d7",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_event_buffer_reserve",
+          "module_crc": "0x6945b831",
+          "kernel_crc": "0x11a0cc32",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_event_buffer_commit",
+          "module_crc": "0xa28a9dd5",
+          "kernel_crc": "0xae53c826",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "trace_define_field",
+          "module_crc": "0x0ac1fb3a",
+          "kernel_crc": "0x16ca09e6",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "skb_trim",
+          "module_crc": "0x2b788350",
+          "kernel_crc": "0x12225621",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "skb_realloc_headroom",
+          "module_crc": "0xe4f43c62",
+          "kernel_crc": "0x710404e2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "skb_put",
+          "module_crc": "0xc7707316",
+          "kernel_crc": "0x3112c0fa",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "skb_pull_rcsum",
+          "module_crc": "0x0f50df08",
+          "kernel_crc": "0x291cf075",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "skb_copy_expand",
+          "module_crc": "0xf02ece40",
+          "kernel_crc": "0x02714563",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "set_user_nice",
+          "module_crc": "0x64d3acbe",
+          "kernel_crc": "0x22554959",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "request_firmware",
+          "module_crc": "0x0a35ae59",
+          "kernel_crc": "0xbd25e5be",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "remove_proc_entry",
+          "module_crc": "0x2992cbea",
+          "kernel_crc": "0x583762b4",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "release_firmware",
+          "module_crc": "0xcea7eb71",
+          "kernel_crc": "0x9ff89779",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "proc_mkdir",
+          "module_crc": "0x03c00318",
+          "kernel_crc": "0x3a2e5b19",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "proc_create",
+          "module_crc": "0x83c348ac",
+          "kernel_crc": "0x339e0f38",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "pm_wakeup_ws_event",
+          "module_crc": "0xb98e6e69",
+          "kernel_crc": "0xa119f117",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "perf_trace_run_bpf_submit",
+          "module_crc": "0x062e8520",
+          "kernel_crc": "0x1886e266",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "nla_put",
+          "module_crc": "0x97cdc797",
+          "kernel_crc": "0x7ad11b72",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "netif_tx_wake_queue",
+          "module_crc": "0xc930bd21",
+          "kernel_crc": "0xdb42919a",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "netif_rx_ni",
+          "module_crc": "0xc7920560",
+          "kernel_crc": "0x218a3012",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "netif_rx",
+          "module_crc": "0xa5fdf2c9",
+          "kernel_crc": "0xfc6c0716",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "netif_carrier_on",
+          "module_crc": "0xd1579b49",
+          "kernel_crc": "0x92ea81cd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "napi_gro_receive",
+          "module_crc": "0xd0387df2",
+          "kernel_crc": "0x49e00b78",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "napi_gro_flush",
+          "module_crc": "0x5d446f99",
+          "kernel_crc": "0x3abddad9",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "misc_register",
+          "module_crc": "0xf0635362",
+          "kernel_crc": "0x6a29f44a",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "misc_deregister",
+          "module_crc": "0x917ffdb0",
+          "kernel_crc": "0x0c665561",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "lbat_user_register",
+          "module_crc": "0x625b7470",
+          "kernel_crc": "0x2dd86642",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kobject_uevent_env",
+          "module_crc": "0x63a961f0",
+          "kernel_crc": "0xca4e9905",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kobject_uevent",
+          "module_crc": "0xbf2b716d",
+          "kernel_crc": "0x4cdfd511",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kfree_skb",
+          "module_crc": "0xae98229e",
+          "kernel_crc": "0x4521fe32",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "init_net",
+          "module_crc": "0xc553d2f0",
+          "kernel_crc": "0xc12c01b2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "event_triggers_call",
+          "module_crc": "0x8124f268",
+          "kernel_crc": "0x06023d80",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "eth_type_trans",
+          "module_crc": "0x53180444",
+          "kernel_crc": "0x63dcdbd4",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "device_init_wakeup",
+          "module_crc": "0x107ecf40",
+          "kernel_crc": "0x44cbac86",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_unlink_bss",
+          "module_crc": "0x92eebc19",
+          "kernel_crc": "0x1c588ca3",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_sched_scan_results",
+          "module_crc": "0xc2f00a8f",
+          "kernel_crc": "0xb40a6887",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_rx_mgmt",
+          "module_crc": "0x4e482a75",
+          "kernel_crc": "0xe4603577",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_roamed",
+          "module_crc": "0xaefdcb00",
+          "kernel_crc": "0x87dc4b7f",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_remain_on_channel_expired",
+          "module_crc": "0xe5e7b2da",
+          "kernel_crc": "0x06b2ab48",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_ready_on_channel",
+          "module_crc": "0xc7b4f39a",
+          "kernel_crc": "0xaa30d107",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_put_bss",
+          "module_crc": "0x1abe2327",
+          "kernel_crc": "0xd01ee173",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_port_authorized",
+          "module_crc": "0x01d48c78",
+          "kernel_crc": "0x61cc62ec",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_pmksa_candidate_notify",
+          "module_crc": "0x3c6bdfcc",
+          "kernel_crc": "0x3792e04c",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_michael_mic_failure",
+          "module_crc": "0x9798cf32",
+          "kernel_crc": "0x2c482bd0",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_mgmt_tx_status",
+          "module_crc": "0x503d46b6",
+          "kernel_crc": "0x24035cc0",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_inform_bss_frame_data",
+          "module_crc": "0x501752ab",
+          "kernel_crc": "0x83a1c84d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_inform_bss_data",
+          "module_crc": "0x24dcaa4f",
+          "kernel_crc": "0x4fa396f2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_get_bss",
+          "module_crc": "0x094e45f6",
+          "kernel_crc": "0xa291d46e",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_ft_event",
+          "module_crc": "0x0973b8f7",
+          "kernel_crc": "0xbc8e7464",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_external_auth_request",
+          "module_crc": "0x823b0f6f",
+          "kernel_crc": "0xea06e328",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_connect_done",
+          "module_crc": "0xe0a80f8b",
+          "kernel_crc": "0x8d98590d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_ch_switch_notify",
+          "module_crc": "0x6281ba77",
+          "kernel_crc": "0x893f7d9c",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "bpf_trace_run1",
+          "module_crc": "0x3828aa24",
+          "kernel_crc": "0xac912766",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__pm_stay_awake",
+          "module_crc": "0xffc61867",
+          "kernel_crc": "0x1dd10bdc",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__netdev_alloc_skb",
+          "module_crc": "0x52507067",
+          "kernel_crc": "0x4bf885c9",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__dev_kfree_skb_any",
+          "module_crc": "0xa57aad69",
+          "kernel_crc": "0x4cbc78c2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__cfg80211_send_event_skb",
+          "module_crc": "0x9e8dcade",
+          "kernel_crc": "0x00fcaea9",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__cfg80211_alloc_event_skb",
+          "module_crc": "0x21e28f78",
+          "kernel_crc": "0x5aa9cfbc",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wiphy_unregister",
+          "module_crc": "0xa50fbfe1",
+          "kernel_crc": "0x309b4552",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wiphy_register",
+          "module_crc": "0xc7a14eba",
+          "kernel_crc": "0x79cfd086",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wiphy_new_nm",
+          "module_crc": "0xa188b9f1",
+          "kernel_crc": "0x55568873",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wiphy_free",
+          "module_crc": "0x5246612d",
+          "kernel_crc": "0x62c4d971",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wakeup_source_unregister",
+          "module_crc": "0x68c52650",
+          "kernel_crc": "0x4f0354d1",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wakeup_source_register",
+          "module_crc": "0x0bfd3f0d",
+          "kernel_crc": "0x872c45fd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wake_up_process",
+          "module_crc": "0xdb19e602",
+          "kernel_crc": "0x9b8307fc",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "unregister_netdev",
+          "module_crc": "0x11ef905e",
+          "kernel_crc": "0xa87bb5f9",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "register_netdev",
+          "module_crc": "0x4f3bbc27",
+          "kernel_crc": "0xe74fc3a9",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "netif_tx_stop_all_queues",
+          "module_crc": "0x70cdc50a",
+          "kernel_crc": "0xbf989a94",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "netif_napi_add",
+          "module_crc": "0x062a8f6b",
+          "kernel_crc": "0x2810ab53",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "netif_device_detach",
+          "module_crc": "0x1b7dae78",
+          "kernel_crc": "0x299c666c",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "netif_device_attach",
+          "module_crc": "0x2e868a25",
+          "kernel_crc": "0xcdadef74",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "netif_carrier_off",
+          "module_crc": "0x7f004467",
+          "kernel_crc": "0x8dbe5e34",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kthread_create_on_node",
+          "module_crc": "0x5e3d7607",
+          "kernel_crc": "0xf6feddb8",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "ieee80211_get_channel",
+          "module_crc": "0x75d92862",
+          "kernel_crc": "0xd4b2748b",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "free_netdev",
+          "module_crc": "0x448e9736",
+          "kernel_crc": "0xd03bd3a2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "ether_setup",
+          "module_crc": "0xbd71cbc7",
+          "kernel_crc": "0xe51fa81a",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "consume_skb",
+          "module_crc": "0xa237b93e",
+          "kernel_crc": "0xa98ecb19",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "connectivity_export_show_stack",
+          "module_crc": "0x37f99733",
+          "kernel_crc": "0x92c7f5b3",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_sched_scan_stopped",
+          "module_crc": "0xb6728ee5",
+          "kernel_crc": "0x37e453ef",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_scan_done",
+          "module_crc": "0xf365404e",
+          "kernel_crc": "0x8d6cbb2f",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_disconnected",
+          "module_crc": "0x95222bb0",
+          "kernel_crc": "0xa52f766f",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cfg80211_classify8021d",
+          "module_crc": "0xb908f5eb",
+          "kernel_crc": "0x716b0b59",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "alloc_netdev_mqs",
+          "module_crc": "0x23bbe7b0",
+          "kernel_crc": "0x46942c6d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "skb_queue_tail",
+          "module_crc": "0x99958d67",
+          "kernel_crc": "0xfa203eef",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "skb_queue_head",
+          "module_crc": "0x913f6cc2",
+          "kernel_crc": "0xe79ecee5",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "skb_push",
+          "module_crc": "0x6d5c8cbd",
+          "kernel_crc": "0x2bcb6848",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "skb_dequeue",
+          "module_crc": "0x06df8b59",
+          "kernel_crc": "0xfab36764",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kmem_cache_alloc_trace",
+          "module_crc": "0xdb048a82",
+          "kernel_crc": "0xa32941c2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kmalloc_caches",
+          "module_crc": "0x19cb47bd",
+          "kernel_crc": "0x1df515dd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__pm_relax",
+          "module_crc": "0x4fb295e0",
+          "kernel_crc": "0x5da8d7c4",
+          "provider": "vmlinux"
+        }
+      ],
+      "not_exported_by_kernel_or_vendor_modules": [],
+      "candidate_vendor_providers": {
+        "mtk_wcn_wmt_wlan_unreg": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x6c73b212",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_wlan_reg": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xf6f3f906",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_consys_hw_wifi_paldo_ctrl": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xbb7925e6",
+            "matches": true
+          }
+        ],
+        "wifi_reset_start": [
+          {
+            "module": "wmt_chrdev_wifi.ko",
+            "crc": "0xcf8cb5e3",
+            "matches": true
+          }
+        ],
+        "wifi_reset_end": [
+          {
+            "module": "wmt_chrdev_wifi.ko",
+            "crc": "0x6f3bf319",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_msgcb_unreg": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x8c78a087",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_msgcb_reg": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xac8387ca",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_assert_keyword": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x6290dec0",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_set_connsys_power_off_flag": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x1aee7536",
+            "matches": true
+          }
+        ],
+        "get_wifi_standalone_log_mode": [
+          {
+            "module": "wmt_chrdev_wifi.ko",
+            "crc": "0xb94fd8af",
+            "matches": true
+          }
+        ],
+        "wifi_ics_event_func_register": [
+          {
+            "module": "wmt_chrdev_wifi.ko",
+            "crc": "0xf4e7df1f",
+            "matches": true
+          }
+        ],
+        "wifi_fwlog_get_fw_ver_register": [
+          {
+            "module": "wmt_chrdev_wifi.ko",
+            "crc": "0x7c643ee5",
+            "matches": true
+          }
+        ],
+        "wifi_fwlog_event_func_register": [
+          {
+            "module": "wmt_chrdev_wifi.ko",
+            "crc": "0xaf5eef2e",
+            "matches": true
+          }
+        ],
+        "update_driver_loaded_status": [
+          {
+            "module": "wmt_chrdev_wifi.ko",
+            "crc": "0xca971b10",
+            "matches": true
+          }
+        ],
+        "register_set_p2p_mode_handler": [
+          {
+            "module": "wmt_chrdev_wifi.ko",
+            "crc": "0x38a0fd1b",
+            "matches": true
+          }
+        ],
+        "register_file_buf_handler": [
+          {
+            "module": "wmt_chrdev_wifi.ko",
+            "crc": "0x1ffe8f67",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_mpu_lock_release": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x75637533",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_mpu_lock_aquire": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x473c2ee3",
+            "matches": true
+          }
+        ],
+        "gConEmiSize": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xf6499c27",
+            "matches": true
+          }
+        ],
+        "gConEmiPhyBase": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x18f0a9e3",
+            "matches": true
+          }
+        ],
+        "wifi_ics_fwlog_write": [
+          {
+            "module": "wmt_chrdev_wifi.ko",
+            "crc": "0x7dcf5c21",
+            "matches": true
+          }
+        ],
+        "get_low_latency_mode": [
+          {
+            "module": "wmt_chrdev_wifi.ko",
+            "crc": "0xc60dde3d",
+            "matches": true
+          }
+        ]
+      }
+    },
+    "wmt_chrdev_wifi.ko": {
+      "vermagic": "4.19.191 SMP preempt mod_unload modversions aarch64",
+      "imports": 48,
+      "matching_kernel_symbols": [
+        "vmalloc",
+        "memcpy",
+        "kvfree",
+        "kmalloc_order_trace",
+        "system_wq",
+        "queue_work_on",
+        "kfree",
+        "flush_work",
+        "__wake_up",
+        "__init_waitqueue_head",
+        "__arch_copy_to_user",
+        "___ratelimit",
+        "up",
+        "unregister_chrdev_region",
+        "strlen",
+        "register_chrdev_region",
+        "printk",
+        "preempt_schedule",
+        "msleep",
+        "memset",
+        "down_trylock",
+        "down",
+        "alloc_chrdev_region",
+        "_mcount",
+        "__stack_chk_guard",
+        "__stack_chk_fail",
+        "__check_object_size",
+        "__arch_copy_from_user"
+      ],
+      "mismatched_kernel_symbols": [
+        {
+          "symbol": "module_layout",
+          "module_crc": "0x3c6e983b",
+          "kernel_crc": "0xd1cddb94",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kmem_cache_alloc_trace",
+          "module_crc": "0xdb048a82",
+          "kernel_crc": "0xa32941c2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kmalloc_caches",
+          "module_crc": "0x19cb47bd",
+          "kernel_crc": "0x1df515dd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "param_ops_uint",
+          "module_crc": "0x9718a890",
+          "kernel_crc": "0xbf94b579",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "init_net",
+          "module_crc": "0xc553d2f0",
+          "kernel_crc": "0xc12c01b2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "device_destroy",
+          "module_crc": "0x5b78a018",
+          "kernel_crc": "0x842cd337",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "device_create",
+          "module_crc": "0x9a82f02d",
+          "kernel_crc": "0x620d2863",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "dev_get_by_name",
+          "module_crc": "0x05b9ce26",
+          "kernel_crc": "0x2375eb4d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "class_destroy",
+          "module_crc": "0x7ec5ee98",
+          "kernel_crc": "0xf3ed99c7",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_init",
+          "module_crc": "0x082f4121",
+          "kernel_crc": "0xb6399bab",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_del",
+          "module_crc": "0x676dfb5f",
+          "kernel_crc": "0x57da3190",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_add",
+          "module_crc": "0x9c23bc2a",
+          "kernel_crc": "0xd502508b",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__class_create",
+          "module_crc": "0xbc03a0cf",
+          "kernel_crc": "0xc20e9b59",
+          "provider": "vmlinux"
+        }
+      ],
+      "not_exported_by_kernel_or_vendor_modules": [],
+      "candidate_vendor_providers": {
+        "connsys_log_register_event_cb": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xc1ec710b",
+            "matches": true
+          }
+        ],
+        "connsys_log_read_to_user": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x83f4ca61",
+            "matches": true
+          }
+        ],
+        "connsys_log_init": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x88db89e4",
+            "matches": true
+          }
+        ],
+        "connsys_log_get_buf_size": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x93eb7ab0",
+            "matches": true
+          }
+        ],
+        "connsys_log_deinit": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x5b5cc9fe",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_func_on": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0x7d6e061e",
+            "matches": true
+          }
+        ],
+        "mtk_wcn_wmt_func_off": [
+          {
+            "module": "wmt_drv.ko",
+            "crc": "0xd977b15b",
+            "matches": true
+          }
+        ]
+      }
+    },
+    "wmt_drv.ko": {
+      "vermagic": "4.19.191 SMP preempt mod_unload modversions aarch64",
+      "imports": 244,
+      "matching_kernel_symbols": [
+        "mtk_wcn_btif_write",
+        "mtk_wcn_btif_wakeup_consys",
+        "mtk_wcn_btif_rx_cb_register",
+        "mtk_wcn_btif_parser_wmt_evt",
+        "mtk_wcn_btif_open",
+        "mtk_wcn_btif_loopback_ctrl",
+        "mtk_wcn_btif_dpidle_ctrl",
+        "mtk_wcn_btif_close",
+        "mtk_btif_exp_tx_has_pending_data",
+        "mtk_btif_exp_rx_has_pending_data",
+        "alloc_chrdev_region",
+        "alarm_start_relative",
+        "alarm_init",
+        "alarm_cancel",
+        "zlib_deflate_workspacesize",
+        "zlib_deflateReset",
+        "zlib_deflateInit2",
+        "zlib_deflateEnd",
+        "zlib_deflate",
+        "crc32_le",
+        "aed_combo_exception_api",
+        "tty_unregister_ldisc",
+        "tasklet_kill",
+        "tasklet_init",
+        "__tasklet_schedule",
+        "mtk_conn_md_bridge_unreg",
+        "mtk_conn_md_bridge_send_msg",
+        "mtk_conn_md_bridge_reg",
+        "refcount_inc_checked",
+        "kmalloc_order_trace",
+        "flush_workqueue",
+        "strncasecmp",
+        "kstrtouint",
+        "fb_unregister_client",
+        "fb_register_client",
+        "__check_object_size",
+        "__arch_copy_to_user",
+        "__arch_copy_from_user",
+        "wait_for_completion_timeout",
+        "wait_for_completion_interruptible",
+        "vsnprintf",
+        "strstr",
+        "strsep",
+        "strnstr",
+        "strncpy",
+        "strncmp",
+        "strcmp",
+        "strchr",
+        "schedule_timeout",
+        "schedule",
+        "sched_clock",
+        "prepare_to_wait_event",
+        "mutex_trylock",
+        "mutex_lock_killable",
+        "mod_timer",
+        "memcmp",
+        "kvfree",
+        "ktime_get_real_ts64",
+        "kthread_should_stop",
+        "kstrtoll",
+        "init_wait_entry",
+        "init_timer_key",
+        "finish_wait",
+        "del_timer_sync",
+        "del_timer",
+        "connectivity_export_dump_thread_state",
+        "complete",
+        "aee_kernel_warning_api_func",
+        "aee_is_printk_too_much",
+        "add_timer",
+        "_raw_spin_trylock",
+        "__wake_up",
+        "__udelay",
+        "__trace_bprintk",
+        "__msecs_to_jiffies",
+        "__memcpy_toio",
+        "__memcpy_fromio",
+        "__ll_sc_atomic64_or",
+        "__ll_sc_atomic64_fetch_or",
+        "__ll_sc_atomic64_fetch_andnot",
+        "__ll_sc_atomic64_andnot",
+        "__kmalloc",
+        "__kfifo_out",
+        "__kfifo_init",
+        "__kfifo_in",
+        "__kfifo_free",
+        "__kfifo_alloc",
+        "__init_waitqueue_head",
+        "__dynamic_pr_debug",
+        "wmt_export_mtk_wcn_sdio_irq_flag_set",
+        "vmalloc",
+        "vfree",
+        "mutex_unlock",
+        "mutex_lock",
+        "_raw_spin_unlock_bh",
+        "_raw_spin_lock_bh",
+        "__mutex_init",
+        "sys_tz",
+        "rtc_time64_to_tm",
+        "kfree",
+        "__ll_sc_atomic_add_return",
+        "__ll_sc_atomic_add",
+        "__ll_sc_atomic_sub_return",
+        "__ll_sc_atomic_sub",
+        "jiffies_to_msecs",
+        "jiffies",
+        "___ratelimit",
+        "strncat",
+        "strlen",
+        "unregister_pm_notifier",
+        "system_wq",
+        "register_pm_notifier",
+        "queue_work_on",
+        "request_threaded_irq",
+        "memcpy",
+        "free_irq",
+        "enable_irq",
+        "disable_irq_nosync",
+        "_raw_spin_unlock_irqrestore",
+        "_raw_spin_lock_irqsave",
+        "usleep_range",
+        "snprintf",
+        "emi_mpu_set_protection",
+        "cpu_hwcaps",
+        "cpu_hwcap_keys",
+        "connectivity_export_clk_buf_ctrl",
+        "clk_unprepare",
+        "clk_prepare",
+        "clk_enable",
+        "clk_disable",
+        "arm64_const_caps_ready",
+        "__memset_io",
+        "__iounmap",
+        "__ioremap",
+        "__const_udelay",
+        "memset",
+        "wmt_export_platform_bridge_unregister",
+        "wmt_export_mtk_wcn_cmb_sdio_disable_eirq",
+        "wifi_irq",
+        "mtk_wcn_cmb_sdio_pm_data",
+        "mtk_wcn_cmb_sdio_pm_cb",
+        "irq_set_irq_wake",
+        "__stack_chk_guard",
+        "__stack_chk_fail",
+        "unregister_chrdev_region",
+        "register_chrdev_region",
+        "printk",
+        "msleep",
+        "_mcount"
+      ],
+      "mismatched_kernel_symbols": [
+        {
+          "symbol": "module_layout",
+          "module_crc": "0x3c6e983b",
+          "kernel_crc": "0xd1cddb94",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "mtk_wcn_btif_dbg_ctrl",
+          "module_crc": "0xf8c1afa1",
+          "kernel_crc": "0xb36ba737",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "mtk_btif_exp_rx_thread_get",
+          "module_crc": "0xc7a9c9ab",
+          "kernel_crc": "0x026699e3",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "remove_proc_entry",
+          "module_crc": "0x2992cbea",
+          "kernel_crc": "0x583762b4",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "nla_put",
+          "module_crc": "0x97cdc797",
+          "kernel_crc": "0x7ad11b72",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "genlmsg_put",
+          "module_crc": "0x4bbc6c38",
+          "kernel_crc": "0x6c2e8eb0",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "genl_unregister_family",
+          "module_crc": "0x7d9957d3",
+          "kernel_crc": "0x012e3b8d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "genl_register_family",
+          "module_crc": "0x8b0d5676",
+          "kernel_crc": "0xf65848b0",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "regmap_read",
+          "module_crc": "0x8744fe72",
+          "kernel_crc": "0xe1cad341",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "tty_register_ldisc",
+          "module_crc": "0x0f7411e3",
+          "kernel_crc": "0xde7dd043",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "tty_driver_flush_buffer",
+          "module_crc": "0xc017dbc5",
+          "kernel_crc": "0xab489b80",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "n_tty_ioctl_helper",
+          "module_crc": "0x01c0a5dc",
+          "kernel_crc": "0x3c472835",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "netlink_unicast",
+          "module_crc": "0x3b1cc526",
+          "kernel_crc": "0xc8bb49ee",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "netlink_kernel_release",
+          "module_crc": "0x26866728",
+          "kernel_crc": "0x494c6107",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kfree_skb",
+          "module_crc": "0xae98229e",
+          "kernel_crc": "0x4521fe32",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "init_net",
+          "module_crc": "0xc553d2f0",
+          "kernel_crc": "0xc12c01b2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__nlmsg_put",
+          "module_crc": "0x4098328b",
+          "kernel_crc": "0x7633978f",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__netlink_kernel_create",
+          "module_crc": "0x0349f95d",
+          "kernel_crc": "0x06ac479f",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__alloc_skb",
+          "module_crc": "0x2ef94ede",
+          "kernel_crc": "0xf24ad68f",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "proc_remove",
+          "module_crc": "0xd76bf527",
+          "kernel_crc": "0xf8e49b97",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "proc_create",
+          "module_crc": "0x83c348ac",
+          "kernel_crc": "0x339e0f38",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "request_firmware",
+          "module_crc": "0x0a35ae59",
+          "kernel_crc": "0xbd25e5be",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "remap_pfn_range",
+          "module_crc": "0xda86a7ac",
+          "kernel_crc": "0xf9d44541",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "release_firmware",
+          "module_crc": "0xcea7eb71",
+          "kernel_crc": "0x9ff89779",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wakeup_source_unregister",
+          "module_crc": "0x68c52650",
+          "kernel_crc": "0x4f0354d1",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wakeup_source_register",
+          "module_crc": "0x0bfd3f0d",
+          "kernel_crc": "0x872c45fd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wake_up_process",
+          "module_crc": "0xdb19e602",
+          "kernel_crc": "0x9b8307fc",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kthread_stop",
+          "module_crc": "0xf3911418",
+          "kernel_crc": "0x93dcfadf",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kthread_create_on_node",
+          "module_crc": "0x5e3d7607",
+          "kernel_crc": "0xf6feddb8",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "connectivity_export_show_stack",
+          "module_crc": "0x37f99733",
+          "kernel_crc": "0x92c7f5b3",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__pm_stay_awake",
+          "module_crc": "0xffc61867",
+          "kernel_crc": "0x1dd10bdc",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__pm_relax",
+          "module_crc": "0x4fb295e0",
+          "kernel_crc": "0x5da8d7c4",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_writesb",
+          "module_crc": "0x06e012e7",
+          "kernel_crc": "0xf2d12806",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_writel",
+          "module_crc": "0x90b4eb2f",
+          "kernel_crc": "0x56bc2512",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_writeb",
+          "module_crc": "0x28bb8ac7",
+          "kernel_crc": "0x1ae00fb8",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_set_host_pm_flags",
+          "module_crc": "0x10870adc",
+          "kernel_crc": "0x92005943",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_set_block_size",
+          "module_crc": "0xb2356317",
+          "kernel_crc": "0x81c90f07",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_release_irq",
+          "module_crc": "0xacc9c8ed",
+          "kernel_crc": "0x75478920",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_readsb",
+          "module_crc": "0x32ec67c9",
+          "kernel_crc": "0xd7863f1d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_readl",
+          "module_crc": "0x046bb75b",
+          "kernel_crc": "0xf14d0874",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_readb",
+          "module_crc": "0x56f7be1d",
+          "kernel_crc": "0x85f760eb",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_get_host_pm_caps",
+          "module_crc": "0x9abdf11f",
+          "kernel_crc": "0xf04be42d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_f0_writeb",
+          "module_crc": "0x9d1f7f3e",
+          "kernel_crc": "0x25bb2c5e",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_f0_readb",
+          "module_crc": "0xc975183f",
+          "kernel_crc": "0xb222fc31",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_claim_irq",
+          "module_crc": "0xb86dd33b",
+          "kernel_crc": "0x50da287a",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "connectivity_export_mmc_io_rw_direct",
+          "module_crc": "0x1cecc784",
+          "kernel_crc": "0x2ac6e43e",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "set_user_nice",
+          "module_crc": "0x64d3acbe",
+          "kernel_crc": "0x22554959",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kmem_cache_alloc_trace",
+          "module_crc": "0xdb048a82",
+          "kernel_crc": "0xa32941c2",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "kmalloc_caches",
+          "module_crc": "0x19cb47bd",
+          "kernel_crc": "0x1df515dd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "pm_runtime_enable",
+          "module_crc": "0xcb610878",
+          "kernel_crc": "0x3566bfcb",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "platform_driver_unregister",
+          "module_crc": "0x552b5e9d",
+          "kernel_crc": "0x00e9f7fb",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_reserved_mem_lookup",
+          "module_crc": "0x9daaeb5a",
+          "kernel_crc": "0xc41677bd",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_property_read_variable_u32_array",
+          "module_crc": "0x9bef19b6",
+          "kernel_crc": "0x63eea193",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_parse_phandle",
+          "module_crc": "0xcbe333b5",
+          "kernel_crc": "0x72341a5b",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_match_node",
+          "module_crc": "0xfa9245af",
+          "kernel_crc": "0x68fdb618",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_get_child_by_name",
+          "module_crc": "0x88485e76",
+          "kernel_crc": "0x7e460c4d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_find_device_by_node",
+          "module_crc": "0x595cf83b",
+          "kernel_crc": "0x123537c7",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "devm_thermal_zone_of_sensor_register",
+          "module_crc": "0x42eb6878",
+          "kernel_crc": "0x9ae5830d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__pm_runtime_disable",
+          "module_crc": "0x522bc974",
+          "kernel_crc": "0xd66b4aa8",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__platform_driver_register",
+          "module_crc": "0x98b8641f",
+          "kernel_crc": "0x90fb52e5",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "regulator_set_voltage",
+          "module_crc": "0x2a0b2f46",
+          "kernel_crc": "0x21185420",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "regulator_get",
+          "module_crc": "0x7e795ade",
+          "kernel_crc": "0xc0a7719a",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "regulator_enable",
+          "module_crc": "0x4f20eb3a",
+          "kernel_crc": "0xd8ee8ffc",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "regulator_disable",
+          "module_crc": "0xfef22999",
+          "kernel_crc": "0xa791408a",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "regmap_write",
+          "module_crc": "0x253cc40d",
+          "kernel_crc": "0x3d1f79d4",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_iomap",
+          "module_crc": "0xaede5d2b",
+          "kernel_crc": "0xed1dd282",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "irq_of_parse_and_map",
+          "module_crc": "0x759376d3",
+          "kernel_crc": "0xb398ab1d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "irq_get_irq_data",
+          "module_crc": "0x99ad9e9c",
+          "kernel_crc": "0xa64efb5a",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "devm_clk_get",
+          "module_crc": "0xf5cfefc4",
+          "kernel_crc": "0x93239582",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "pinctrl_lookup_state",
+          "module_crc": "0x265dbf9f",
+          "kernel_crc": "0xf87f11fa",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_get_named_gpio_flags",
+          "module_crc": "0x789e776e",
+          "kernel_crc": "0xbfa5c50d",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "of_find_compatible_node",
+          "module_crc": "0x2c413fcc",
+          "kernel_crc": "0x920d4380",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "devm_pinctrl_put",
+          "module_crc": "0xfa3901f3",
+          "kernel_crc": "0xf2b878be",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "devm_pinctrl_get",
+          "module_crc": "0x1a8b5514",
+          "kernel_crc": "0x38ccb70a",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "wmt_export_platform_bridge_register",
+          "module_crc": "0xc47cda9d",
+          "kernel_crc": "0x228ceb6f",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_unregister_driver",
+          "module_crc": "0x5f94031d",
+          "kernel_crc": "0x0cd63404",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_release_host",
+          "module_crc": "0xd17aef5f",
+          "kernel_crc": "0x3aacc4e8",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_register_driver",
+          "module_crc": "0x6b6797ab",
+          "kernel_crc": "0x9105c8ee",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_enable_func",
+          "module_crc": "0x0afc068d",
+          "kernel_crc": "0x1c33495f",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_disable_func",
+          "module_crc": "0x2c6a86bb",
+          "kernel_crc": "0x3788cf40",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "sdio_claim_host",
+          "module_crc": "0x540cc547",
+          "kernel_crc": "0xde0da396",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "param_ops_uint",
+          "module_crc": "0x9718a890",
+          "kernel_crc": "0xbf94b579",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "device_destroy",
+          "module_crc": "0x5b78a018",
+          "kernel_crc": "0x842cd337",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "device_create",
+          "module_crc": "0x9a82f02d",
+          "kernel_crc": "0x620d2863",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "class_destroy",
+          "module_crc": "0x7ec5ee98",
+          "kernel_crc": "0xf3ed99c7",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_init",
+          "module_crc": "0x082f4121",
+          "kernel_crc": "0xb6399bab",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_del",
+          "module_crc": "0x676dfb5f",
+          "kernel_crc": "0x57da3190",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "cdev_add",
+          "module_crc": "0x9c23bc2a",
+          "kernel_crc": "0xd502508b",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "__class_create",
+          "module_crc": "0xbc03a0cf",
+          "kernel_crc": "0xc20e9b59",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "pinctrl_select_state",
+          "module_crc": "0xc728b8a1",
+          "kernel_crc": "0xea77b5bc",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "gpiod_to_irq",
+          "module_crc": "0xa78d2595",
+          "kernel_crc": "0xbdb63247",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "gpiod_get_raw_value",
+          "module_crc": "0xf6da50ab",
+          "kernel_crc": "0x5a9d5f11",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "gpiod_direction_output_raw",
+          "module_crc": "0x93562524",
+          "kernel_crc": "0xcddcedc1",
+          "provider": "vmlinux"
+        },
+        {
+          "symbol": "gpio_to_desc",
+          "module_crc": "0x178f96ae",
+          "kernel_crc": "0xd84e800c",
+          "provider": "vmlinux"
+        }
+      ],
+      "not_exported_by_kernel_or_vendor_modules": [
+        "connectivity_export_clk_buf_show_status_info"
+      ],
+      "candidate_vendor_providers": {}
+    }
+  }
+}

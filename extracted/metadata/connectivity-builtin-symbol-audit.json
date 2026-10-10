@@ -1,0 +1,11 @@
+{
+  "objects_checked": 170,
+  "missing": [],
+  "duplicate_strong_symbols_in_existing_objects": {
+    "mmi_get_bootarg": [
+      "/home/dengxh/android3/lineage/out/target/product/S17Promini/obj/KERNEL_OBJ/drivers/misc/mediatek/connectivity/common/common_main/core/wmt_conf.o",
+      "/home/dengxh/android3/lineage/out/target/product/S17Promini/obj/KERNEL_OBJ/drivers/misc/mediatek/connectivity/wlan/core/gen4m/common/mot_config.o"
+    ]
+  },
+  "note": "Read-only scan of user-built objects before recompiling the WMT static-function fix; no compilation performed."
+}

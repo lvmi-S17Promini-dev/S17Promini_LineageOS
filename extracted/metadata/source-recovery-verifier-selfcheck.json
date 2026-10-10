@@ -1,0 +1,6 @@
+{
+  "temporary_fixture_from_existing_r10_inputs": "PASS",
+  "old_r9_image_rejected": "PASS",
+  "new_r11_build": "NOT RUN",
+  "device": "NO ADB DEVICE"
+}

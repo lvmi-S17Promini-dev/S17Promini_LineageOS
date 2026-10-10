@@ -6,6 +6,14 @@
 
 源码内核 cpufreq：[SRAM 基址修复与实机结果](89-cpufreq-sram-base-fix.md)。用户确认修复后启动成功，DevCheck 中 CPU 频率变化；默认构建已启用 cpufreq。
 
+源码内核 Wi-Fi：[原厂连接模块 ABI 不匹配](90-oss-wifi-module-abi.md)。现有触摸日志确认 WMT 加载被拒绝；离线模块审计已保存，后续接入见 r11。
+
+连接驱动源码：[MT6765 GitHub 候选](91-mt6765-connectivity-source-candidates.md)。Motorola 官方模块与三星来源完整树已下载，候选比较与固定提交已记录。
+
+连接驱动接入：[r11 内建 Wi-Fi／BT](92-connectivity-builtin-r11.md)。WMT、connfem、Wi-Fi 和 BT 已接入，GPS/FM 关闭；用户确认构建问题已修复，实机功能待验证。
+
+Recovery 切换：[OSS kernel／源码 DTB](93-source-recovery-switch.md)。去除原厂 DTB 覆盖，两构建入口共用源码内核；镜像验证工具已更新，等待构建和实机测试。
+
 当前已验证基线：LineageOS 19.1 system、原厂 prebuilt kernel/first-stage ramdisk 的正常 boot、源码生成 recovery、从展开 blob 重建的清理版 vendor，以及非 A/B 全量安装 zip r3。用户确认 recovery 安装完成、开机成功、基本功能正常，调试 ADB 符合需求。Git 标记 `lineage-r3-validated`；recovery 触摸暂缓，安装 zip r1/r2 停用。
 
 正式构建：`lunch lineage_S17Promini-userdebug` 后 `m -j8 bacon`；独立 recovery：`lunch lineage_S17Promini_recovery-userdebug` 后 `m recoveryimage`。已验证安装包位于工作目录 `artifacts/rom-install-r3/lineage-19.1-S17Promini-r3.zip`；原 r3 保留作为已验证基线；标准 target-files/全量 OTA 已接入、构建通过，用户确认正式包刷入正常，详见 37 号文档。增量 OTA 本轮未处理。

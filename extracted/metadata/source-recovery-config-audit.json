@@ -1,0 +1,18 @@
+[
+  {
+    "product": "lineage_S17Promini",
+    "KERNEL": "kernel/lvmi/mt6765",
+    "CONFIG": "S17Promini_defconfig S17Promini_boot_test.config",
+    "RECOVERY_ARGS": "--header_version 2 --kernel_offset 0x00008000 --ramdisk_offset 0x11a88000 --tags_offset 0x07808000 --dtb_offset 0x07808000 --os_version 12.0.0 --os_patch_level 2024-03",
+    "CMDLINE": "bootopt=64S3,32N2,64N2 buildvariant=user initcall_debug loglevel=8 ignore_loglevel enforcing=0 androidboot.selinux=permissive printk.disable_uart=0 printk.devkmsg=on",
+    "DTB_RULE": "device/lvmi/S17Promini/source-kernel-dtb.mk"
+  },
+  {
+    "product": "lineage_S17Promini_recovery",
+    "KERNEL": "kernel/lvmi/mt6765",
+    "CONFIG": "S17Promini_defconfig S17Promini_boot_test.config",
+    "RECOVERY_ARGS": "--header_version 2 --kernel_offset 0x00008000 --ramdisk_offset 0x11a88000 --tags_offset 0x07808000 --dtb_offset 0x07808000 --os_version 12.0.0 --os_patch_level 2024-03",
+    "CMDLINE": "bootopt=64S3,32N2,64N2 androidboot.hardware=mt6765",
+    "DTB_RULE": "device/lvmi/S17Promini/source-kernel-dtb.mk"
+  }
+]
