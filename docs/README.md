@@ -6,6 +6,8 @@
 
 源码内核 cpufreq：[SRAM 基址修复与实机结果](89-cpufreq-sram-base-fix.md)。用户确认修复后启动成功，DevCheck 中 CPU 频率变化；默认构建已启用 cpufreq。
 
+源码内核重启：[USB extcon 延迟探测清理修复](99-extcon-deferred-probe-cleanup-fix.md)。用户确认重启恢复；[关机采集服务](95-shutdown-critical-cache-collector.md) 已验证可在 ADB 停止、init 卸载 cache 后保存日志。
+
 源码内核 Wi-Fi：[原厂连接模块 ABI 不匹配](90-oss-wifi-module-abi.md)。现有触摸日志确认 WMT 加载被拒绝；离线模块审计已保存，后续接入见 r11。
 
 连接驱动源码：[MT6765 GitHub 候选](91-mt6765-connectivity-source-candidates.md)。Motorola 官方模块与三星来源完整树已下载，候选比较与固定提交已记录。

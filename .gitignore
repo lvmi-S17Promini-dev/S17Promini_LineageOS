@@ -176,6 +176,9 @@ __pycache__/
 /extracted/metadata/source-boot-r10-build.log
 /extracted/metadata/source-boot-r10-lunch.log
 /extracted/metadata/source-boot-r10-validation.json
+/extracted/metadata/connectivity-r11-resolved.config
+/extracted/metadata/ghidra-lk-pstore.log
+/extracted/metadata/ghidra-lk-pstore-followup.log
 /extracted/metadata/stock-dvfs-sram-address.txt
 /lineage-debug/cache-log-1/s17-bootlog/kmsg.log
 /lineage-debug/cache-log-1/s17-bootlog/logcat.log

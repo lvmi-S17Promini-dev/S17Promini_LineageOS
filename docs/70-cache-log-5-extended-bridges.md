@@ -1,5 +1,7 @@
 # cache-log-5：系统已启动，缺 vendor 扩展内存/渲染 bridge
 
+后续重启清理审计发现 ReserveRange2 注册了旧版释放回调；原 helper 测试未覆盖这条实际 handle 注册路径。修正和回归验证见 [96](96-gpu-mm2-release-callback-fix.md)。
+
 原始文件归档 lineage-debug/cache-log-5。不同会话的logcat不按统一时间轴混用。props显示sys.boot_completed=1；GPU dump的UM/KM/FW均1.13@5776728，FW OS active、HWR OK、CCB有已执行命令。SurfaceFlinger已能完整dumpsys。但采样显示powerMode=Off、无可见HWC层，这本身也可能是自动熄屏，不能当成持续黑屏的独立根因。s17-screen.png为0字节，不能当成有效黑色截图。
 
 ## 明确失败接口
