@@ -12,6 +12,7 @@
 - [x] 用户确认保留 data 升级、清 data 全新安装均正常，后续不作为未完成项重复验证。
 - [x] RIL、Wi-Fi、相机、声音、蓝牙、麦克风、充电、按键唤醒、Doze 已反馈正常；具体测试范围以已有记录为准。
 - [x] 调试 ADB 需求得到用户确认。
+- [x] IMS 注册成功；VoLTE 拨号崩溃与对方持续响铃故障经单独 APK 更新后由用户确认修复，见 [113](113-ims-audio-call-video-provider-crash.md)。其他 IMS 功能按专项测试记录。
 
 参考标记：lineage-standard-ota-validated、generated-recovery-validated。标准 OTA 与源码 recovery 的验收分别记录在 [37](37-standard-build-targets.md)、[38](38-generated-recovery.md)。
 

@@ -1,0 +1,15 @@
+{
+  "package": "com.mediatek.ims",
+  "version_code": 31,
+  "source_apk_sha256": "e241d7801f344e1927e04f0fbfa8c5aee187532b25e23d51fed45e672069b273",
+  "signed_apk_sha256": "1f237543f56643e18c45993b86a7da0323abdbf566739832edc9d499aa9938cb",
+  "certificate_sha256": "c8a2e9bccf597c2fb6dc66bee293fc13f2fc47ec77bc6b2b0d52c11f51192ab8",
+  "dt_commit": "2d391a6",
+  "vendor_commit": "945d16d",
+  "validation": "APK signatures and alignment verified; dex, manifest and resources match the fixed vendor APK",
+  "device_report": {
+    "date": "2026-10-11",
+    "result": "User confirmed this IMS dialing crash fix after the standalone APK update instructions",
+    "scope": "Reported dialing crash and persistent ringing issue; other telephony functions require their own validation"
+  }
+}

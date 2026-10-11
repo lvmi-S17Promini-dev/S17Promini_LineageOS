@@ -124,6 +124,7 @@ __pycache__/
 *:Zone.Identifier
 
 # Selected images/binaries <= 50 MiB; stage-size hook enforces the limit.
+!/artifacts/ims-call-r4/S17ImsService-voice-fix.apk
 !/artifacts/source-sensors-r3/boot.img
 !/artifacts/boot-kmsg-debug.img
 !/artifacts/boot-normal-r1.img

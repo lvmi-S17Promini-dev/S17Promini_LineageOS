@@ -130,3 +130,8 @@ Recovery 切换：[OSS kernel／源码 DTB](93-source-recovery-switch.md)。去�
 - [MIR3DA 与接近功能 r16/r17](109-mir3da-proximity-port.md)：驱动实现、r16 地址 ACK 失败及 r17 原厂 0x27 回退修复。
 
 - [电源方案](114-power-profiles.md)：参考 nabu 设置入口，适配 MTK PPM 的省电／平衡／高性能 CPU 上限。
+
+- [原厂语音 IMS 接入](110-ims-voice-bringup.md)：原厂 APK、40 个私有依赖类、平台签名和服务绑定配置。
+- [IMS 权限启动循环修复](111-ims-privapp-bootloop-fix.md)：补齐 PACKET_KEEPALIVE_OFFLOAD，并在打包前检查特权权限白名单。
+- [CarrierConfig 缺失修复](112-ims-carrierconfig-missing.md)：恢复运营商配置加载，用户随后确认 IMS 注册成功。
+- [VoLTE 拨号崩溃修复](113-ims-audio-call-video-provider-crash.md)：统一视频门控，用户确认单独更新 APK 后本次故障修复；[更新 APK 与验证记录](../artifacts/ims-call-r4/README.md)。

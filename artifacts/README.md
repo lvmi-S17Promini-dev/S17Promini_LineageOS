@@ -1,5 +1,7 @@
 # Recovery artifacts
 
+IMS standalone update: [ims-call-r4](ims-call-r4/README.md) contains the platform-signed voice-call crash fix APK and its hash/signature validation record. The user confirmed the reported issue was fixed after the APK update on 2026-10-11. This is an update for the existing IMS-enabled ROM, not a full ROM package.
+
 lk-volup-fastboot-r1.img: signed LK candidate adding a boot-time Volume UP fastboot branch. 28-byte code patch plus updated LK cert2 payload hash/signature; DT unchanged. Signature/hash checks and 16 ARM emulation scenarios pass. NOT hardware-validated. See ../docs/20-lk-key-entry-r1.md and lk-volup-fastboot-r1.json before device testing.
 
 lk-keys-fastboot-r2.img: current signed LK with user-confirmed boot-time key entry success. r1 cold-boot keys did not work after successful lk writes. r2 polls HW keys 0/1/17/19 for about 3 seconds, feeds the watchdog, and adds an S17-LK-r2 marker to the Orange State countdown line. Signature/hash checks and 44 ARM scenarios pass. Individual keys and behavior after Lineage flashing have not been separately reported. See ../docs/21-lk-key-entry-r2.md.
