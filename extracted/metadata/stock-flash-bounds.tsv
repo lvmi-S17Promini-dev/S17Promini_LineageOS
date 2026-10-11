@@ -1,0 +1,11 @@
+8c39c4	8c3a94	flash_dummy_pinctrl_set
+8c3a94	8c3f98	flash_dummy_probe
+8c3f98	8c407c	flash_dummy_remove
+8c407c	8c40c4	flash_dummy_work_disable
+8c40c4	8c40f4	flash_dummy_timer_func
+8c40f4	8c410c	flash_dummy_open
+8c410c	8c4124	flash_dummy_release
+8c4124	8c42dc	flash_dummy_ioctl
+8c42dc	8c4338	flash_dummy_strobe_store
+8c4338	8c4424	flash_dummy_set_driver
+8c07f0	8c0974	stock_flashlight_dev_register

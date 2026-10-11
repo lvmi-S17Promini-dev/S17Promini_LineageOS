@@ -48,6 +48,14 @@
 /extracted/metadata/camera-r13-lunch.log
 /extracted/metadata/ghidra-camera.log
 /extracted/metadata/ghidra-gc5025sub.log
+!/extracted/metadata/stock-flash-bounds.tsv
+!/extracted/metadata/ghidra-flash/
+/extracted/metadata/ghidra-flash/*
+!/extracted/metadata/ghidra-flash/*.c
+/extracted/metadata/ghidra-flash.log
+/extracted/metadata/flash-r14-build.log
+/extracted/metadata/flash-r14-lunch.log
+/extracted/metadata/flash-r14-host-tests.log
 
 # Keep the kernel config; third-party checkout contents are reproducible references.
 /ref/*

@@ -120,3 +120,5 @@ Recovery 切换：[OSS kernel／源码 DTB](93-source-recovery-switch.md)。去�
 - [Recovery 触摸修复确认](95-recovery-touch-fixed.md)：OSS 内核实测触摸正常，补充旧固件刷写失败原因。
 
 - [HWC private handle 刷日志修复](102-hwc-gralloc-extra-region-count.md)：GED 元数据区域由 13 对齐原厂 18，离线验证通过，用户确认实机修复成功。
+
+- [GPIO 闪光灯修复与日志采集](105-flashlight-stock-gpio.md)：恢复原厂高开低关和 pinctrl 状态，r14 boot 构建／离线验证通过，用户确认实机修复成功。

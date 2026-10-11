@@ -1,0 +1,22 @@
+{
+  "image": "/home/dengxh/android3/lineage/out/target/product/S17Promini/boot.img",
+  "size": 33554432,
+  "sha256": "58de7f3564b93d59d09634566ffba78daf2556fe742da22f46b2ef9db8f33f69",
+  "kernel_sha256": "51a7e90fa1172e15bd239ff9c1d9700c3752e60189e09a8a4a713d10586c56da",
+  "ramdisk_sha256": "b721b9e11d53e01c478986e26515ec68c032a83d9063c71b6cd15ee82df3ecf5",
+  "dtb_table_sha256": "c2d1d2ee2c281aac007158bf3df3f349ec9f47df230849aa12157d08b5d29ff7",
+  "kernel_identity": "Linux version 4.19.127-s17-bringup-r14-flash+ (nobody@android-build) (Android (7284624, based on r416183b) clang version 12.0.5 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee), GNU ld (binutils-2.27-bd24d23f) 2.27.0.20170315) #31 SMP PREEMPT Sun Oct 11 10:45:13 CST 2026\n",
+  "cmdline": "bootopt=64S3,32N2,64N2 buildvariant=user initcall_debug loglevel=8 ignore_loglevel enforcing=0 androidboot.selinux=permissive printk.disable_uart=0 printk.devkmsg=on",
+  "config_sha256": "7e433a8ab4946204c34bb4206b7198e3660c411c6ffb19e6ddaef2c41138199d",
+  "cpufreq_init": "enabled",
+  "dvfs_sram": "DT base 0x110c00, size 0x1400; PV table offset 0x10",
+  "checks": "PASS: source kernel/DTB, verified ramdisk/addresses, gzip, AXS/GPU config, AVB and stock-overlay survival",
+  "ramdisk_mode": "stock",
+  "device_boot": "NOT TESTED",
+  "android_ufdt_pinctrl_check": "NOT RUN",
+  "user_validation": {
+    "date": "2026-10-11",
+    "flashlight": "PASS: user confirmed repaired",
+    "scope": "Overall flashlight repair; individual scenarios not separately reported"
+  }
+}
