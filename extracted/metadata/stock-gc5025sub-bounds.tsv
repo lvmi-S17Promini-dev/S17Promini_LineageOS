@@ -1,0 +1,15 @@
+872bc0	872bd4	camera_kdSetI2CSpeed
+872bd4	872c38	camera_iReadRegI2C
+872ca0	872cf0	camera_iWriteRegI2C
+873b78	873bac	gc5025sub_GC5025SUB_MIPI_RAW_SensorInit
+873bac	875a44	gc5025sub_open
+875a44	875b30	gc5025sub_get_info
+875b30	875ba0	gc5025sub_get_resolution
+875ba0	8766b8	gc5025sub_feature_control
+8766b8	876a64	gc5025sub_control
+876a64	876aa8	gc5025sub_close
+876aa8	876c20	gc5025sub_gc5025sub_gcore_enable_otp
+876c20	876cec	gc5025sub_gc5025sub_select_page_otp
+876cec	876dfc	gc5025sub_gc5025sub_read_otp
+876dfc	876f54	gc5025sub_gc5025sub_read_otp_group
+876f54	877010	gc5025sub_preview

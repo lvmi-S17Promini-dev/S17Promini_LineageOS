@@ -1,0 +1,15 @@
+00872bc0 T kdSetI2CSpeed
+00872bd4 T iReadRegI2C
+00872ca0 T iWriteRegI2C
+00877010 T IMX278_MIPI_RAW_SensorInit
+00877044 t open
+0087721c t get_info
+00877308 t get_resolution
+00877388 t feature_control
+00877ff4 t control
+00879c28 t close
+00879c6c t return_sensor_id
+00879d70 t sensor_init
+0087bb18 t set_max_framerate
+0087bbdc t preview
+0087bca4 t preview_setting

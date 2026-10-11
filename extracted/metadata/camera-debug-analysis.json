@@ -1,0 +1,36 @@
+{
+  "logs": {
+    "logcat.txt": {
+      "sha256": "29867143e4e69204af527cb415b8304ec481ab8a80d1d8b2ab17d75b35e21d94",
+      "encoding": "UTF-16"
+    },
+    "dmesg-after.txt": {
+      "sha256": "dc0b492e276708b800cdc660f67121ca0597fae8e7a8e449cac37f3273e30550",
+      "encoding": "UTF-16"
+    },
+    "dmesg-before.txt": {
+      "sha256": "df36af5cfbadd4ad30df859a04670e1ecc7181f121b1dac86d27371e067fd13f",
+      "encoding": "UTF-16"
+    },
+    "kernel-version.txt": {
+      "sha256": "839fcd4faaf27ab37ece0ea03465ff6abcd4ef91626519cc941aa040d161f43b",
+      "encoding": "UTF-16"
+    },
+    "media-camera.txt": {
+      "sha256": "af0f7de318ba35e4d2cdc00b217a8a0fec48c1d82c8e47247f2dedafe25550b3",
+      "encoding": "UTF-16"
+    },
+    "processes.txt": {
+      "sha256": "8572e796ff8d92c0b9e7726baf6e31b7493cb826716e0d07be38296b393d5889",
+      "encoding": "UTF-16"
+    }
+  },
+  "main_detected_id": "0x278",
+  "front_detected_id": "0x5026",
+  "failing_capture_camera": "1 FRONT GC5025sub",
+  "first_seninf_failure": "10-11 10:17:07.432: vertical data 138 vs grab height 1944",
+  "provider_died": "10-11 10:17:15.342",
+  "project_driver_object_sha256": "68dcad8dd95a29c9b601d0d1de70b8362dcb7a2537d254d279821a8d483cca3c",
+  "new_boot_sha256": "dbde29902a14046d73f02d60816b1e993da814c5569fe6226481baff4f6dc7a6",
+  "device_test": "pending"
+}

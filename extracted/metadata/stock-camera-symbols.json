@@ -1,0 +1,92 @@
+[
+  {
+    "offset": 8858560,
+    "end": 8858580,
+    "name": "kdSetI2CSpeed",
+    "type": "T"
+  },
+  {
+    "offset": 8858580,
+    "end": 8858680,
+    "name": "iReadRegI2C",
+    "type": "T"
+  },
+  {
+    "offset": 8858784,
+    "end": 8858864,
+    "name": "iWriteRegI2C",
+    "type": "T"
+  },
+  {
+    "offset": 8876048,
+    "end": 8876100,
+    "name": "IMX278_MIPI_RAW_SensorInit",
+    "type": "T"
+  },
+  {
+    "offset": 8876100,
+    "end": 8876572,
+    "name": "open",
+    "type": "t"
+  },
+  {
+    "offset": 8876572,
+    "end": 8876808,
+    "name": "get_info",
+    "type": "t"
+  },
+  {
+    "offset": 8876808,
+    "end": 8876936,
+    "name": "get_resolution",
+    "type": "t"
+  },
+  {
+    "offset": 8876936,
+    "end": 8880116,
+    "name": "feature_control",
+    "type": "t"
+  },
+  {
+    "offset": 8880116,
+    "end": 8887336,
+    "name": "control",
+    "type": "t"
+  },
+  {
+    "offset": 8887336,
+    "end": 8887404,
+    "name": "close",
+    "type": "t"
+  },
+  {
+    "offset": 8887404,
+    "end": 8887664,
+    "name": "return_sensor_id",
+    "type": "t"
+  },
+  {
+    "offset": 8887664,
+    "end": 8895256,
+    "name": "sensor_init",
+    "type": "t"
+  },
+  {
+    "offset": 8895256,
+    "end": 8895452,
+    "name": "set_max_framerate",
+    "type": "t"
+  },
+  {
+    "offset": 8895452,
+    "end": 8895652,
+    "name": "preview",
+    "type": "t"
+  },
+  {
+    "offset": 8895652,
+    "end": 8897956,
+    "name": "preview_setting",
+    "type": "t"
+  }
+]

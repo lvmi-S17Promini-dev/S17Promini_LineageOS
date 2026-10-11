@@ -30,6 +30,25 @@
 /extracted/metadata/generate-*.log
 /extracted/metadata/vendor-inode-stats.txt
 
+# Camera reverse-engineering evidence; keep generated build chatter local.
+!/extracted/metadata/stock-camera-bounds.tsv
+!/extracted/metadata/stock-gc5025sub-bounds.tsv
+!/extracted/metadata/ghidra-camera/
+!/extracted/metadata/ghidra-gc5025sub/
+/extracted/metadata/ghidra-camera/*
+/extracted/metadata/ghidra-gc5025sub/*
+!/extracted/metadata/ghidra-camera/*.c
+!/extracted/metadata/ghidra-gc5025sub/*.c
+/extracted/metadata/imx278-build.log
+/extracted/metadata/imx278-boot-build.log
+/extracted/metadata/imx278-boot-lunch.log
+/extracted/metadata/imx278-subtree-build.log
+/extracted/metadata/gc5025sub-subtree-build.log
+/extracted/metadata/camera-r13-build.log
+/extracted/metadata/camera-r13-lunch.log
+/extracted/metadata/ghidra-camera.log
+/extracted/metadata/ghidra-gc5025sub.log
+
 # Keep the kernel config; third-party checkout contents are reproducible references.
 /ref/*
 !/ref/内核config.gz.txt

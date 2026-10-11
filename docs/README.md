@@ -4,6 +4,10 @@
 
 后续计划：[设备树成熟化 Roadmap](ROADMAP.md)（固定 LineageOS 19.1；vendor 模块迁移暂缓）。
 
+源码内核相机：[IMX278 移植](103-imx278-camera-port.md)。GitHub 驱动按原厂寄存器、裁剪、增益及上电表校准，主摄源码已接入。
+
+相机复测：[GC5025sub 板级修正与验收](104-camera-front-gc5025sub-stock.md)。用户确认 r13 修复相机，并纠正之前默认打开的是副摄；本次相机修复已实机通过。
+
 源码内核 cpufreq：[SRAM 基址修复与实机结果](89-cpufreq-sram-base-fix.md)。用户确认修复后启动成功，DevCheck 中 CPU 频率变化；默认构建已启用 cpufreq。
 
 源码内核重启：[USB extcon 延迟探测清理修复](99-extcon-deferred-probe-cleanup-fix.md)。用户确认重启恢复；[关机采集服务](95-shutdown-critical-cache-collector.md) 已验证可在 ADB 停止、init 卸载 cache 后保存日志。

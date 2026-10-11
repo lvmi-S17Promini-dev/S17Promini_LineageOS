@@ -1,0 +1,20 @@
+Verifying image /tmp/s17-boot-dtb-q_se7mwp/boot.img using embedded public key
+vbmeta: Successfully verified footer and NONE vbmeta struct in /tmp/s17-boot-dtb-q_se7mwp/boot.img
+boot: Successfully verified sha256 hash of /tmp/s17-boot-dtb-q_se7mwp/boot.img for image of 13815808 bytes
+{
+  "image": "/home/dengxh/S17Promini_LineageOS/artifacts/source-camera-r2/boot.img",
+  "size": 33554432,
+  "sha256": "dbde29902a14046d73f02d60816b1e993da814c5569fe6226481baff4f6dc7a6",
+  "kernel_sha256": "adc243f31eddf834bdd41f5d3dd98d57c6328021a0c9d254212ea7f3abee88d9",
+  "ramdisk_sha256": "b721b9e11d53e01c478986e26515ec68c032a83d9063c71b6cd15ee82df3ecf5",
+  "dtb_table_sha256": "c2d1d2ee2c281aac007158bf3df3f349ec9f47df230849aa12157d08b5d29ff7",
+  "kernel_identity": "Linux version 4.19.127-s17-bringup-r13-camera+ (nobody@android-build) (Android (7284624, based on r416183b) clang version 12.0.5 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee), GNU ld (binutils-2.27-bd24d23f) 2.27.0.20170315) #30 SMP PREEMPT Sun Oct 11 10:28:44 CST 2026\n",
+  "cmdline": "bootopt=64S3,32N2,64N2 buildvariant=user initcall_debug loglevel=8 ignore_loglevel enforcing=0 androidboot.selinux=permissive printk.disable_uart=0 printk.devkmsg=on",
+  "config_sha256": "8ea7a17204c16eefd982d2b03da6a7eeca7abe6680241f53a3d05e4a37a692f6",
+  "cpufreq_init": "enabled",
+  "dvfs_sram": "DT base 0x110c00, size 0x1400; PV table offset 0x10",
+  "checks": "PASS: source kernel/DTB, verified ramdisk/addresses, gzip, AXS/GPU config, AVB and stock-overlay survival",
+  "ramdisk_mode": "stock",
+  "device_boot": "NOT TESTED",
+  "android_ufdt_pinctrl_check": "NOT RUN"
+}
