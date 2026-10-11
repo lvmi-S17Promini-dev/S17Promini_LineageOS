@@ -1,0 +1,44 @@
+{
+  "vendor_library": "/home/dengxh/android3/lineage/vendor/lvmi/S17Promini/proprietary/vendor/lib64/libgralloc_extra.so",
+  "sha256": "8cf2a59aa43111072ad1509b998e4bef5c4ac3de3a23831d2a41cf4e08c56fc1",
+  "vendor_regions": 18,
+  "region_sizes_bytes": [
+    4,
+    272,
+    64,
+    24,
+    60,
+    224,
+    8,
+    16,
+    64,
+    16,
+    2572,
+    4,
+    60,
+    4,
+    96,
+    1024,
+    120,
+    64
+  ],
+  "source_regions": 18,
+  "hwc_queries": {
+    "114": {
+      "handler": "0x23e0",
+      "region": 10,
+      "words": 643
+    },
+    "117": {
+      "handler": "0x2298",
+      "region": 13,
+      "words": 1
+    },
+    "120": {
+      "handler": "0x22c8",
+      "region": 16,
+      "words": 30
+    }
+  },
+  "verification": "Actual source valid_parameters compiled with ASan/UBSan: old 13-region failure reproduced; fixed queries, all region boundaries and invalid arguments passed. Kernel compilation/device test not performed."
+}

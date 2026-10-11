@@ -114,3 +114,5 @@ Recovery 切换：[OSS kernel／源码 DTB](93-source-recovery-switch.md)。去�
 - [相机键唤醒](48-camera-key-wake.md)：将实体键 523 映射为 CAMERA WAKE，补上 Lineage 按钮能力声明；用户已确认功能符合预期，实机验证通过。
 
 - [Recovery 触摸修复确认](95-recovery-touch-fixed.md)：OSS 内核实测触摸正常，补充旧固件刷写失败原因。
+
+- [HWC private handle 刷日志修复](102-hwc-gralloc-extra-region-count.md)：GED 元数据区域由 13 对齐原厂 18，离线验证通过，用户确认实机修复成功。
