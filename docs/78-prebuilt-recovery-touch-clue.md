@@ -1,5 +1,7 @@
 # prebuilt recovery 也无触摸：历史记录与当前判断
 
+> 2026-10-11 更新：用户确认 OSS 内核 recovery 触摸已修复；下文保留当时的 prebuilt/测试状态。旧自动固件刷写失败的补充说明见 [修复确认](95-recovery-touch-fixed.md)。
+
 用户提供线索：Lineage recovery 使用 prebuilt 内核时也不能触摸。历史 docs/08-recovery-log-review.md、docs/09-touch-input-review.md 已记录此现象，并说明当时没有修改 prebuilt kernel。原始 recovery-debug/recovery-touch-events.txt 只有设备枚举，没有坐标或接触事件；设备为 axs_ts 和 mtk-tpd。它不是正常工作的触摸基线，不能要求当前源码仅复制其驱动就保证触摸工作。
 
 ## 原厂驱动历史日志

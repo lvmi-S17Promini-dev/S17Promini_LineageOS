@@ -1,5 +1,7 @@
 # 触摸正常基线、recovery 后截断与实机修复确认
 
+> 2026-10-11 更新：用户确认 OSS 内核 recovery 触摸已修复；下文保留当时的 prebuilt/测试状态。旧自动固件刷写失败的补充说明见 [修复确认](95-recovery-touch-fixed.md)。
+
 用户确认最新源码 boot 无需运行脚本即可正常触摸；touch-working-1 的内核为 4.19.127-s17-bringup-r9-cachelog+，编译时间 2026-10-10 22:54:52。live_version 为 0007，IRQ 报告 1205，contact 1113，empty 92，读/解码错误均 0。probe 在约 1.47 秒读到 0000，因此单次早期版本读取不足以断言存储损坏。此次没有自动固件升级证据。
 
 用户随后复现：直接冷启动正常；冷启动进入 prebuilt kernel 的 Lineage recovery，再重启系统则触摸失效。touch-after-recovery 的只读探测完成 197 页，written_pages=0，版本 ffff，IRQ 报告 0。CRC 5f7a71a3，期望 1655298b；first_mismatch=27764（0x6c74），trailing_ff=22428，差异字节 22067。用原厂 50192 字节文件前 27764 字节加全 FF 尾部构造模型，CRC、差异数量和首差异位置全部吻合。此次未收到 readout.bin，因此结论基于读出统计和精确匹配的模型，非离线逐字节比较。

@@ -1,5 +1,7 @@
 # Recovery 使用 OSS kernel 与源码 DTB
 
+> 2026-10-11 更新：用户确认 OSS 内核 recovery 触摸已修复；下文保留当时的 prebuilt/测试状态。旧自动固件刷写失败的补充说明见 [修复确认](95-recovery-touch-fixed.md)。
+
 2026-10-11。用户确认 cpufreq 修复后希望切换 recovery 并开始测试。编译继续由用户执行，本轮只调整配置和验证工具，未编译或刷写手机。
 
 ## 核对结果
