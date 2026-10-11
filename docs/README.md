@@ -125,4 +125,4 @@ Recovery 切换：[OSS kernel／源码 DTB](93-source-recovery-switch.md)。去�
 
 - [CPU 调频与息屏采集](105-cpufreq-and-suspend-diagnosis.md)：policy、PLL、PPM 和唤醒锁的采集与判读。
 - [充电线程忙循环定位](106-power-debug-charger-thread.md)：primary_chg 缺失导致重复注册 notifier，自环与持锁证据。
-- [PSC5425E 移植](107-psc5425e-port.md)：原厂 Ghidra 核对、r15 驱动及充电管理修复，用户确认 CPU 占用下降；充电与深睡待专项验收。
+- [PSC5425E 移植](107-psc5425e-port.md)：原厂 Ghidra 核对、r15 驱动及充电管理修复，用户确认 CPU 占用下降、深度休眠恢复；充电与 OTG 待专项验收。
