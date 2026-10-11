@@ -57,6 +57,13 @@
 /extracted/metadata/flash-r14-lunch.log
 /extracted/metadata/flash-r14-host-tests.log
 
+# PSC5425E reverse-engineering evidence; build and capture logs remain local.
+!/extracted/metadata/stock-psc5425e-bounds.tsv
+!/extracted/metadata/ghidra-psc5425e/
+/extracted/metadata/ghidra-psc5425e/*
+!/extracted/metadata/ghidra-psc5425e/*.c
+/extracted/metadata/psc5425e-*.log
+
 # Keep the kernel config; third-party checkout contents are reproducible references.
 /ref/*
 !/ref/内核config.gz.txt

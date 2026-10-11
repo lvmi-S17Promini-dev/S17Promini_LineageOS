@@ -1,0 +1,95 @@
+{
+  "stock_kernel_sha256": "5851e16038244576d0a863d9f36b4ad602af68ea45477f5c6f44a9dfb0127286",
+  "image_base": "0xffffff8008080000",
+  "callbacks": {
+    "driver_probe": [
+      [
+        "1",
+        "0xf8",
+        "0xff",
+        "0"
+      ],
+      [
+        "2",
+        "0x24",
+        "0x3f",
+        "2"
+      ],
+      [
+        "4",
+        "0x76",
+        "0xff",
+        "0"
+      ],
+      [
+        "5",
+        "0x24",
+        "0xff",
+        "0"
+      ]
+    ],
+    "enable_charging": [
+      [
+        "1",
+        "1",
+        "1",
+        "2"
+      ],
+      [
+        "1",
+        "0",
+        "1",
+        "2"
+      ]
+    ],
+    "set_current": [
+      [
+        "4",
+        "uVar1",
+        "7",
+        "4"
+      ]
+    ],
+    "set_cv_voltage": [
+      [
+        "2",
+        "uVar1",
+        "0x3f",
+        "2"
+      ]
+    ],
+    "set_input_current": [
+      [
+        "1",
+        "uVar1",
+        "3",
+        "6"
+      ]
+    ],
+    "enable_otg": [
+      [
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "1",
+        "1",
+        "1",
+        "0"
+      ]
+    ]
+  },
+  "stock_current_ua": [
+    656000,
+    786000,
+    1048000,
+    1180000,
+    1442000,
+    1574000,
+    1836000,
+    1966000
+  ],
+  "evidence": "Ghidra decompiled stock Image; no device access"
+}

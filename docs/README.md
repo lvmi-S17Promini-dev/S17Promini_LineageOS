@@ -122,3 +122,7 @@ Recovery 切换：[OSS kernel／源码 DTB](93-source-recovery-switch.md)。去�
 - [HWC private handle 刷日志修复](102-hwc-gralloc-extra-region-count.md)：GED 元数据区域由 13 对齐原厂 18，离线验证通过，用户确认实机修复成功。
 
 - [GPIO 闪光灯修复与日志采集](105-flashlight-stock-gpio.md)：恢复原厂高开低关和 pinctrl 状态，r14 boot 构建／离线验证通过，用户确认实机修复成功。
+
+- [CPU 调频与息屏采集](105-cpufreq-and-suspend-diagnosis.md)：policy、PLL、PPM 和唤醒锁的采集与判读。
+- [充电线程忙循环定位](106-power-debug-charger-thread.md)：primary_chg 缺失导致重复注册 notifier，自环与持锁证据。
+- [PSC5425E 移植](107-psc5425e-port.md)：原厂 Ghidra 核对、r15 驱动及充电管理修复，用户确认 CPU 占用下降；充电与深睡待专项验收。

@@ -1,0 +1,17 @@
+{
+  "image": "artifacts/source-charger-r1/boot.img",
+  "size": 33554432,
+  "sha256": "24ae1eac72a597901d1c7e7ec09d1a04e7f71ddcf1345155cfac94f5a1b70a06",
+  "kernel_sha256": "9e59b3cb08ec35de1bc0fa0e984cd0fadc00b132b64d95fd359a87541ab477bf",
+  "ramdisk_sha256": "b721b9e11d53e01c478986e26515ec68c032a83d9063c71b6cd15ee82df3ecf5",
+  "dtb_table_sha256": "c2d1d2ee2c281aac007158bf3df3f349ec9f47df230849aa12157d08b5d29ff7",
+  "kernel_identity": "Linux version 4.19.127-s17-bringup-r15-charger+ (nobody@android-build) (Android (7284624, based on r416183b) clang version 12.0.5 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee), GNU ld (binutils-2.27-bd24d23f) 2.27.0.20170315) #33 SMP PREEMPT Sun Oct 11 13:41:53 CST 2026\n",
+  "cmdline": "bootopt=64S3,32N2,64N2 buildvariant=user initcall_debug loglevel=8 ignore_loglevel enforcing=0 androidboot.selinux=permissive printk.disable_uart=0 printk.devkmsg=on",
+  "config_sha256": "75eb83658052041368bb4a1eb1914a85b52461af1c2e06aff87147f58b22bf60",
+  "cpufreq_init": "enabled",
+  "dvfs_sram": "DT base 0x110c00, size 0x1400; PV table offset 0x10",
+  "checks": "PASS: source kernel/DTB, verified ramdisk/addresses, gzip, AXS/GPU config, AVB and stock-overlay survival",
+  "ramdisk_mode": "stock",
+  "device_boot": "NOT TESTED",
+  "android_ufdt_pinctrl_check": "NOT RUN"
+}

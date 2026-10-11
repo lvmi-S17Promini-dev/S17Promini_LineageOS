@@ -1,0 +1,404 @@
+[
+  {
+    "offset": 10786008,
+    "end": 10786212,
+    "name": "psc5425e_read_interface",
+    "type": "T"
+  },
+  {
+    "offset": 10786212,
+    "end": 10786436,
+    "name": "psc5425e_config_interface",
+    "type": "T"
+  },
+  {
+    "offset": 10787192,
+    "end": 10787420,
+    "name": "psc5425e_read_byte",
+    "type": "T"
+  },
+  {
+    "offset": 10787420,
+    "end": 10787636,
+    "name": "psc5425e_write_byte",
+    "type": "T"
+  },
+  {
+    "offset": 10787636,
+    "end": 10787684,
+    "name": "psc5425e_reg_config_interface",
+    "type": "T"
+  },
+  {
+    "offset": 10787684,
+    "end": 10787736,
+    "name": "psc5425e_set_en_hiz",
+    "type": "T"
+  },
+  {
+    "offset": 10787736,
+    "end": 10787788,
+    "name": "psc5425e_set_iinlim",
+    "type": "T"
+  },
+  {
+    "offset": 10787788,
+    "end": 10787840,
+    "name": "psc5425e_set_stat_ctrl",
+    "type": "T"
+  },
+  {
+    "offset": 10787840,
+    "end": 10787892,
+    "name": "psc5425e_set_reg_rst",
+    "type": "T"
+  },
+  {
+    "offset": 10787892,
+    "end": 10787944,
+    "name": "psc5425e_set_pfm",
+    "type": "T"
+  },
+  {
+    "offset": 10787944,
+    "end": 10787996,
+    "name": "psc5425e_set_wdt_rst",
+    "type": "T"
+  },
+  {
+    "offset": 10787996,
+    "end": 10788048,
+    "name": "psc5425e_set_otg_config",
+    "type": "T"
+  },
+  {
+    "offset": 10788048,
+    "end": 10788140,
+    "name": "psc5425e_get_otg_config",
+    "type": "T"
+  },
+  {
+    "offset": 10788140,
+    "end": 10788192,
+    "name": "psc5425e_set_chg_config",
+    "type": "T"
+  },
+  {
+    "offset": 10788192,
+    "end": 10788244,
+    "name": "psc5425e_set_sys_min",
+    "type": "T"
+  },
+  {
+    "offset": 10788244,
+    "end": 10788296,
+    "name": "psc5425e_set_batlowv",
+    "type": "T"
+  },
+  {
+    "offset": 10788296,
+    "end": 10788388,
+    "name": "psc5425e_get_ce",
+    "type": "T"
+  },
+  {
+    "offset": 10788388,
+    "end": 10788440,
+    "name": "psc5425e_set_rdson",
+    "type": "T"
+  },
+  {
+    "offset": 10788440,
+    "end": 10788492,
+    "name": "psc5425e_set_boost_lim",
+    "type": "T"
+  },
+  {
+    "offset": 10788492,
+    "end": 10788544,
+    "name": "psc5425e_set_ichg",
+    "type": "T"
+  },
+  {
+    "offset": 10788544,
+    "end": 10788596,
+    "name": "psc5425e_set_iprechg",
+    "type": "T"
+  },
+  {
+    "offset": 10788596,
+    "end": 10788648,
+    "name": "psc5425e_set_iterm",
+    "type": "T"
+  },
+  {
+    "offset": 10788648,
+    "end": 10788700,
+    "name": "psc5425e_set_vreg",
+    "type": "T"
+  },
+  {
+    "offset": 10788700,
+    "end": 10788752,
+    "name": "psc5425e_set_topoff_timer",
+    "type": "T"
+  },
+  {
+    "offset": 10788752,
+    "end": 10788804,
+    "name": "psc5425e_set_vrechg",
+    "type": "T"
+  },
+  {
+    "offset": 10788804,
+    "end": 10788856,
+    "name": "psc5425e_set_en_term",
+    "type": "T"
+  },
+  {
+    "offset": 10788856,
+    "end": 10788908,
+    "name": "psc5425e_set_watchdog",
+    "type": "T"
+  },
+  {
+    "offset": 10788908,
+    "end": 10788960,
+    "name": "psc5425e_set_en_timer",
+    "type": "T"
+  },
+  {
+    "offset": 10788960,
+    "end": 10789012,
+    "name": "psc5425e_set_chg_timer",
+    "type": "T"
+  },
+  {
+    "offset": 10789012,
+    "end": 10789032,
+    "name": "psc5425e_set_treg",
+    "type": "T"
+  },
+  {
+    "offset": 10789032,
+    "end": 10789084,
+    "name": "psc5425e_set_vindpm",
+    "type": "T"
+  },
+  {
+    "offset": 10789084,
+    "end": 10789136,
+    "name": "psc5425e_set_ovp",
+    "type": "T"
+  },
+  {
+    "offset": 10789136,
+    "end": 10789188,
+    "name": "psc5425e_set_boostv",
+    "type": "T"
+  },
+  {
+    "offset": 10789188,
+    "end": 10789240,
+    "name": "psc5425e_set_tmr2x_en",
+    "type": "T"
+  },
+  {
+    "offset": 10789240,
+    "end": 10789292,
+    "name": "psc5425e_set_batfet_disable",
+    "type": "T"
+  },
+  {
+    "offset": 10789292,
+    "end": 10789344,
+    "name": "psc5425e_set_batfet_delay",
+    "type": "T"
+  },
+  {
+    "offset": 10789344,
+    "end": 10789396,
+    "name": "psc5425e_set_batfet_reset_enable",
+    "type": "T"
+  },
+  {
+    "offset": 10789396,
+    "end": 10789488,
+    "name": "psc5425e_get_system_status",
+    "type": "T"
+  },
+  {
+    "offset": 10789488,
+    "end": 10789580,
+    "name": "psc5425e_get_vbus_stat",
+    "type": "T"
+  },
+  {
+    "offset": 10789580,
+    "end": 10789672,
+    "name": "psc5425e_get_vsys_stat",
+    "type": "T"
+  },
+  {
+    "offset": 10789672,
+    "end": 10789764,
+    "name": "psc5425e_get_pg_stat",
+    "type": "T"
+  },
+  {
+    "offset": 10789764,
+    "end": 10789816,
+    "name": "psc5425e_set_int_mask",
+    "type": "T"
+  },
+  {
+    "offset": 10790032,
+    "end": 10790100,
+    "name": "psc5425e_set_opa_mode",
+    "type": "T"
+  },
+  {
+    "offset": 10790100,
+    "end": 10790168,
+    "name": "psc5425e_set_otg_pl",
+    "type": "T"
+  },
+  {
+    "offset": 10790168,
+    "end": 10790236,
+    "name": "psc5425e_set_otg_en",
+    "type": "T"
+  },
+  {
+    "offset": 10790236,
+    "end": 10791256,
+    "name": "psc5425e_driver_probe",
+    "type": "t"
+  },
+  {
+    "offset": 10791256,
+    "end": 10791664,
+    "name": "psc5425e_chg_get_property",
+    "type": "t"
+  },
+  {
+    "offset": 10791664,
+    "end": 10791744,
+    "name": "psc5425e_dump_register",
+    "type": "t"
+  },
+  {
+    "offset": 10791744,
+    "end": 10791852,
+    "name": "psc5425e_enable_charging",
+    "type": "t"
+  },
+  {
+    "offset": 10791852,
+    "end": 10791876,
+    "name": "psc5425e_get_current",
+    "type": "t"
+  },
+  {
+    "offset": 10791876,
+    "end": 10792116,
+    "name": "psc5425e_set_current",
+    "type": "t"
+  },
+  {
+    "offset": 10792116,
+    "end": 10792256,
+    "name": "psc5425e_set_cv_voltage",
+    "type": "t"
+  },
+  {
+    "offset": 10792256,
+    "end": 10792280,
+    "name": "psc5425e_get_input_current",
+    "type": "t"
+  },
+  {
+    "offset": 10792280,
+    "end": 10792368,
+    "name": "psc5425e_set_input_current",
+    "type": "t"
+  },
+  {
+    "offset": 10792368,
+    "end": 10792488,
+    "name": "psc5425e_reset_watch_dog_timer",
+    "type": "t"
+  },
+  {
+    "offset": 10792488,
+    "end": 10792744,
+    "name": "psc5425e_do_event",
+    "type": "t"
+  },
+  {
+    "offset": 10792744,
+    "end": 10792768,
+    "name": "psc5425e_set_vindpm_voltage",
+    "type": "t"
+  },
+  {
+    "offset": 10792768,
+    "end": 10792936,
+    "name": "psc5425e_enable_otg",
+    "type": "t"
+  },
+  {
+    "offset": 10792936,
+    "end": 10792960,
+    "name": "psc5425e_set_boost_current_limit",
+    "type": "t"
+  },
+  {
+    "offset": 10792960,
+    "end": 10793076,
+    "name": "psc5425e_get_charging_status",
+    "type": "t"
+  },
+  {
+    "offset": 10793076,
+    "end": 10793100,
+    "name": "psc5425e_enable_vbus",
+    "type": "t"
+  },
+  {
+    "offset": 10793100,
+    "end": 10793124,
+    "name": "psc5425e_disable_vbus",
+    "type": "t"
+  },
+  {
+    "offset": 10793124,
+    "end": 10793216,
+    "name": "psc5425e_is_enabled_vbus",
+    "type": "t"
+  },
+  {
+    "offset": 10793216,
+    "end": 10793288,
+    "name": "psc5425e_user_space_probe",
+    "type": "t"
+  },
+  {
+    "offset": 10793288,
+    "end": 10793372,
+    "name": "psc5425e_access_show",
+    "type": "t"
+  },
+  {
+    "offset": 10793372,
+    "end": 10793724,
+    "name": "psc5425e_access_store",
+    "type": "t"
+  },
+  {
+    "offset": 22350512,
+    "end": 22350700,
+    "name": "psc5425e_init",
+    "type": "t"
+  }
+]
