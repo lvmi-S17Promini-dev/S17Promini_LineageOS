@@ -12,7 +12,11 @@
 
 连接驱动源码：[MT6765 GitHub 候选](91-mt6765-connectivity-source-candidates.md)。Motorola 官方模块与三星来源完整树已下载，候选比较与固定提交已记录。
 
-连接驱动接入：[r11 内建 Wi-Fi／BT](92-connectivity-builtin-r11.md)。WMT、connfem、Wi-Fi 和 BT 已接入，GPS/FM 关闭；用户确认构建问题已修复，实机功能待验证。
+连接驱动接入：[r11 内建 Wi-Fi／BT](92-connectivity-builtin-r11.md)。WMT、connfem、Wi-Fi 和 BT 已接入，GPS/FM 关闭；Wi-Fi 启动、扫描、连接、联网及蓝牙扫描已由用户确认正常，蓝牙配对/音频待验证。
+
+Wi-Fi 实机跟进：[WMT 配置选择失败](100-wmt-config-empty-product-match.md)。修正空表尾项匹配后，wifi-debug-2 确认 WMT 初始化与设备节点正常。
+
+Wi-Fi 第二次复测：[DMA MPU region](101-wifi-dma-mpu-region.md)。按原厂反汇编对齐 region 后，用户确认 Wi-Fi 启动、扫描、连接、联网均正常；熄屏唤醒待验证。
 
 Recovery 切换：[OSS kernel／源码 DTB](93-source-recovery-switch.md)。去除原厂 DTB 覆盖，两构建入口共用源码内核；镜像验证工具已更新，等待构建和实机测试。
 

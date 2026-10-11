@@ -1,0 +1,32 @@
+{
+  "stock_module": "/home/dengxh/android3/lineage/vendor/lvmi/S17Promini/proprietary/vendor/lib/modules/wlan_drv_gen4m.ko",
+  "stock_sha256": "58480e2bdb8223ac3015eea671e640708f63bbc7313b65a36d354db9b8dd4d52",
+  "function": "kalSetDrvEmiMpuProtection",
+  "verified_arm64_instructions": {
+    "0x168": "0xd2800309",
+    "0x170": "0xf2db4509",
+    "0x174": "0xf2f016c9",
+    "0x178": "0x529b6daa",
+    "0x180": "0x72a016ca",
+    "0x184": "0xf9000fe9",
+    "0x194": "0xb90023ea"
+  },
+  "stock_region": 24,
+  "previous_source_region": 29,
+  "updated_source_region": 24,
+  "permission_words": [
+    "0x80b6da28",
+    "0xb6db6d"
+  ],
+  "permissions_match_stock": true,
+  "allowed_domains": [
+    0,
+    2
+  ],
+  "dma_range": [
+    "0xbe000000",
+    "0xbe2fffff"
+  ],
+  "first_violation": "0xbe002000",
+  "note": "Exact stock instruction and source mask checks only. SMC acceptance and device behavior await testing."
+}

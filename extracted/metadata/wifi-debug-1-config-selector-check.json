@@ -1,0 +1,14 @@
+{
+  "scope": "Python selector model using source table entries and checking actual terminator guards; not a kernel compile/runtime test",
+  "before": {
+    "missing_bootargs_wmt": "WMT_SOC_.cfg",
+    "missing_bootargs_wifi": ".cfg"
+  },
+  "after": {
+    "missing_bootargs_wmt": "WMT_SOC.cfg",
+    "missing_bootargs_wifi": "caller fallback",
+    "missing_bootargs_txpower": "caller fallback"
+  },
+  "existing_motorola_rows_preserved": 15,
+  "stock_config_sha256": "6845e0f30219d5aedaf3791b8318eaaf7ae22d0087702268a815c8724243e2e8"
+}
