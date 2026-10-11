@@ -1,0 +1,1 @@
+Linux localhost 4.19.127-s17-bringup-r17-sensors+ #36 SMP PREEMPT Sun Oct 11 14:30:08 CST 2026 aarch64

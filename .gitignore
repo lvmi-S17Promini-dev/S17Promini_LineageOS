@@ -64,6 +64,30 @@
 !/extracted/metadata/ghidra-psc5425e/*.c
 /extracted/metadata/psc5425e-*.log
 
+# Stock sensor reverse-engineering evidence and the small sensor capture set.
+!/extracted/metadata/stock-sensor-bounds.tsv
+!/extracted/metadata/ghidra-sensors/
+/extracted/metadata/ghidra-sensors/*
+!/extracted/metadata/ghidra-sensors/*.c
+/extracted/metadata/sensor-ghidra.log
+/extracted/metadata/sensors-r*-*.log
+!/oss-kernel-debug/
+/oss-kernel-debug/*
+!/oss-kernel-debug/sensor-debug/
+/oss-kernel-debug/sensor-debug/*
+!/oss-kernel-debug/sensor-debug/*.txt
+!/oss-kernel-debug/sensor-debug/normalized/
+/oss-kernel-debug/sensor-debug/normalized/*
+!/oss-kernel-debug/sensor-debug/normalized/*.txt
+!/oss-kernel-debug/sensor-r16-debug/
+!/oss-kernel-debug/sensor-r17-debug/
+!/oss-kernel-debug/sensor-r18-debug/
+/oss-kernel-debug/sensor-r*-debug/*
+!/oss-kernel-debug/sensor-r*-debug/*.txt
+!/oss-kernel-debug/sensor-r*-debug/normalized/
+/oss-kernel-debug/sensor-r*-debug/normalized/*
+!/oss-kernel-debug/sensor-r*-debug/normalized/*.txt
+
 # Keep the kernel config; third-party checkout contents are reproducible references.
 /ref/*
 !/ref/内核config.gz.txt
@@ -100,6 +124,7 @@ __pycache__/
 *:Zone.Identifier
 
 # Selected images/binaries <= 50 MiB; stage-size hook enforces the limit.
+!/artifacts/source-sensors-r3/boot.img
 !/artifacts/boot-kmsg-debug.img
 !/artifacts/boot-normal-r1.img
 !/artifacts/lk-keys-fastboot-r2.img

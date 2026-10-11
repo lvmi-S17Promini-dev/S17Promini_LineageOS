@@ -1,0 +1,66 @@
+=== /sys/class/thermal/thermal_zone0
+mtktsbattery
+28300
+=== /sys/class/thermal/thermal_zone1
+mtktscpu
+31200
+=== /sys/class/thermal/thermal_zone10
+tzimgs6
+-127000
+=== /sys/class/thermal/thermal_zone11
+tzimgs7
+-127000
+=== /sys/class/thermal/thermal_zone12
+mtktsAP
+29000
+=== /sys/class/thermal/thermal_zone13
+mtktsbtsmdpa
+29600
+=== /sys/class/thermal/thermal_zone14
+mtktspmic
+29259
+=== /sys/class/thermal/thermal_zone15
+mt6357tsbuck1
+27721
+=== /sys/class/thermal/thermal_zone16
+mt6357tsbuck2
+29868
+=== /sys/class/thermal/thermal_zone17
+battery
+28300
+=== /sys/class/thermal/thermal_zone18
+mtkflashlight
+29000
+=== /sys/class/thermal/thermal_zone19
+mtktscharger
+-127000
+=== /sys/class/thermal/thermal_zone2
+mtktspa
+31000
+=== /sys/class/thermal/thermal_zone20
+mtk-master-charger
+-12700
+=== /sys/class/thermal/thermal_zone21
+mtk-slave-charger
+0
+=== /sys/class/thermal/thermal_zone3
+mtktswmt
+0
+=== /sys/class/thermal/thermal_zone4
+tzimgs0
+-127000
+=== /sys/class/thermal/thermal_zone5
+tzimgs1
+-127000
+=== /sys/class/thermal/thermal_zone6
+tzimgs2
+-127000
+=== /sys/class/thermal/thermal_zone7
+tzimgs3
+-127000
+=== /sys/class/thermal/thermal_zone8
+tzimgs4
+-127000
+=== /sys/class/thermal/thermal_zone9
+tzimgs5
+-127000

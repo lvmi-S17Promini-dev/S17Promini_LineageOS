@@ -1,0 +1,557 @@
+{
+  "kernel_sha256": "5851e16038244576d0a863d9f36b4ad602af68ea45477f5c6f44a9dfb0127286",
+  "functions": [
+    {
+      "offset": 6472424,
+      "end": 6472476,
+      "name": "ps_data_report",
+      "type": "T"
+    },
+    {
+      "offset": 6472780,
+      "end": 6473076,
+      "name": "alsps_driver_add",
+      "type": "T"
+    },
+    {
+      "offset": 6473104,
+      "end": 6473244,
+      "name": "ps_report_interrupt_data",
+      "type": "T"
+    },
+    {
+      "offset": 6474924,
+      "end": 6475180,
+      "name": "psactive_store",
+      "type": "t"
+    },
+    {
+      "offset": 6475240,
+      "end": 6475552,
+      "name": "psbatch_store",
+      "type": "t"
+    },
+    {
+      "offset": 6476272,
+      "end": 6476428,
+      "name": "ps_register_data_path",
+      "type": "T"
+    },
+    {
+      "offset": 6476764,
+      "end": 6477092,
+      "name": "ps_register_control_path",
+      "type": "T"
+    },
+    {
+      "offset": 6478136,
+      "end": 6478704,
+      "name": "ps_enable_and_batch",
+      "type": "t"
+    },
+    {
+      "offset": 6484188,
+      "end": 6484388,
+      "name": "accenablenodata_store",
+      "type": "t"
+    },
+    {
+      "offset": 6484500,
+      "end": 6484716,
+      "name": "accactive_store",
+      "type": "t"
+    },
+    {
+      "offset": 6484776,
+      "end": 6485040,
+      "name": "accbatch_store",
+      "type": "t"
+    },
+    {
+      "offset": 6485696,
+      "end": 6485852,
+      "name": "acc_register_data_path",
+      "type": "T"
+    },
+    {
+      "offset": 6485852,
+      "end": 6486132,
+      "name": "acc_register_control_path",
+      "type": "T"
+    },
+    {
+      "offset": 6486728,
+      "end": 6486796,
+      "name": "gsensor_probe",
+      "type": "t"
+    },
+    {
+      "offset": 6486864,
+      "end": 6487688,
+      "name": "acc_enable_and_batch",
+      "type": "t"
+    },
+    {
+      "offset": 6488068,
+      "end": 6488596,
+      "name": "acc_work_func",
+      "type": "t"
+    },
+    {
+      "offset": 6490968,
+      "end": 6491036,
+      "name": "i2c_smbus_read",
+      "type": "T"
+    },
+    {
+      "offset": 6491036,
+      "end": 6491108,
+      "name": "i2c_smbus_read_block",
+      "type": "T"
+    },
+    {
+      "offset": 6491108,
+      "end": 6491172,
+      "name": "i2c_smbus_write",
+      "type": "T"
+    },
+    {
+      "offset": 6491172,
+      "end": 6491232,
+      "name": "msdelay",
+      "type": "T"
+    },
+    {
+      "offset": 6491232,
+      "end": 6491308,
+      "name": "get_address",
+      "type": "t"
+    },
+    {
+      "offset": 6491308,
+      "end": 6491444,
+      "name": "mir3da_local_init",
+      "type": "t"
+    },
+    {
+      "offset": 6491444,
+      "end": 6491520,
+      "name": "mir3da_local_remove",
+      "type": "t"
+    },
+    {
+      "offset": 6491520,
+      "end": 6492868,
+      "name": "mir3da_probe",
+      "type": "t"
+    },
+    {
+      "offset": 6492868,
+      "end": 6493036,
+      "name": "mir3da_remove",
+      "type": "t"
+    },
+    {
+      "offset": 6493036,
+      "end": 6493060,
+      "name": "ps_open_report_data",
+      "type": "t"
+    },
+    {
+      "offset": 6493060,
+      "end": 6493160,
+      "name": "ps_enable_nodata",
+      "type": "t"
+    },
+    {
+      "offset": 6493160,
+      "end": 6493184,
+      "name": "ps_set_delay",
+      "type": "t"
+    },
+    {
+      "offset": 6493184,
+      "end": 6493208,
+      "name": "ps_batch",
+      "type": "t"
+    },
+    {
+      "offset": 6493208,
+      "end": 6493232,
+      "name": "ps_flush",
+      "type": "t"
+    },
+    {
+      "offset": 6493232,
+      "end": 6493300,
+      "name": "ps_get_data",
+      "type": "t"
+    },
+    {
+      "offset": 6493300,
+      "end": 6493324,
+      "name": "mir3da_open_report_data",
+      "type": "t"
+    },
+    {
+      "offset": 6493324,
+      "end": 6493608,
+      "name": "mir3da_enable_nodata",
+      "type": "t"
+    },
+    {
+      "offset": 6493608,
+      "end": 6493660,
+      "name": "mir3da_batch",
+      "type": "t"
+    },
+    {
+      "offset": 6493660,
+      "end": 6493800,
+      "name": "mir3da_flush",
+      "type": "t"
+    },
+    {
+      "offset": 6493800,
+      "end": 6493912,
+      "name": "mir3da_set_delay",
+      "type": "t"
+    },
+    {
+      "offset": 6493912,
+      "end": 6495128,
+      "name": "mir3da_get_data",
+      "type": "t"
+    },
+    {
+      "offset": 6495128,
+      "end": 6495244,
+      "name": "tpd_enable_ps",
+      "type": "t"
+    },
+    {
+      "offset": 6495244,
+      "end": 6495392,
+      "name": "mir3da_factory_enable_sensor",
+      "type": "t"
+    },
+    {
+      "offset": 6495392,
+      "end": 6495532,
+      "name": "mir3da_factory_get_data",
+      "type": "t"
+    },
+    {
+      "offset": 6495532,
+      "end": 6495808,
+      "name": "mir3da_factory_get_raw_data",
+      "type": "t"
+    },
+    {
+      "offset": 6495808,
+      "end": 6495872,
+      "name": "mir3da_factory_enable_calibration",
+      "type": "t"
+    },
+    {
+      "offset": 6495872,
+      "end": 6496004,
+      "name": "mir3da_factory_clear_cali",
+      "type": "t"
+    },
+    {
+      "offset": 6496004,
+      "end": 6496588,
+      "name": "mir3da_factory_set_cali",
+      "type": "t"
+    },
+    {
+      "offset": 6496588,
+      "end": 6496748,
+      "name": "mir3da_factory_get_cali",
+      "type": "t"
+    },
+    {
+      "offset": 6496748,
+      "end": 6496772,
+      "name": "mir3da_factory_do_self_test",
+      "type": "t"
+    },
+    {
+      "offset": 6496772,
+      "end": 6496944,
+      "name": "mir3da_enable_show",
+      "type": "t"
+    },
+    {
+      "offset": 6496944,
+      "end": 6497056,
+      "name": "mir3da_enable_store",
+      "type": "t"
+    },
+    {
+      "offset": 6497056,
+      "end": 6497216,
+      "name": "mir3da_axis_data_show",
+      "type": "t"
+    },
+    {
+      "offset": 6497216,
+      "end": 6497268,
+      "name": "mir3da_reg_data_show",
+      "type": "t"
+    },
+    {
+      "offset": 6497268,
+      "end": 6497472,
+      "name": "mir3da_reg_data_store",
+      "type": "t"
+    },
+    {
+      "offset": 6497472,
+      "end": 6497532,
+      "name": "mir3da_log_level_show",
+      "type": "t"
+    },
+    {
+      "offset": 6497532,
+      "end": 6497596,
+      "name": "mir3da_log_level_store",
+      "type": "t"
+    },
+    {
+      "offset": 6497596,
+      "end": 6497732,
+      "name": "mir3da_primary_offset_show",
+      "type": "t"
+    },
+    {
+      "offset": 6497732,
+      "end": 6497792,
+      "name": "mir3da_vendor_show",
+      "type": "t"
+    },
+    {
+      "offset": 6497792,
+      "end": 6497860,
+      "name": "mir3da_version_show",
+      "type": "t"
+    },
+    {
+      "offset": 6497860,
+      "end": 6497944,
+      "name": "show_direction_value",
+      "type": "t"
+    },
+    {
+      "offset": 6497944,
+      "end": 6498128,
+      "name": "store_direction_value",
+      "type": "t"
+    },
+    {
+      "offset": 6498128,
+      "end": 6498348,
+      "name": "mir3da_setPowerMode",
+      "type": "t"
+    },
+    {
+      "offset": 6498348,
+      "end": 6498436,
+      "name": "squareRoot",
+      "type": "T"
+    },
+    {
+      "offset": 6498436,
+      "end": 6498512,
+      "name": "mir3da_register_read",
+      "type": "T"
+    },
+    {
+      "offset": 6498512,
+      "end": 6498604,
+      "name": "mir3da_register_read_continuously",
+      "type": "T"
+    },
+    {
+      "offset": 6498604,
+      "end": 6498680,
+      "name": "mir3da_register_write",
+      "type": "T"
+    },
+    {
+      "offset": 6498680,
+      "end": 6498856,
+      "name": "mir3da_register_mask_write",
+      "type": "T"
+    },
+    {
+      "offset": 6498856,
+      "end": 6499028,
+      "name": "mir3da_direction_remap",
+      "type": "T"
+    },
+    {
+      "offset": 6499028,
+      "end": 6499376,
+      "name": "mir3da_read_data",
+      "type": "T"
+    },
+    {
+      "offset": 6499376,
+      "end": 6499808,
+      "name": "mir3da_read_raw_data",
+      "type": "t"
+    },
+    {
+      "offset": 6499808,
+      "end": 6501156,
+      "name": "mir3da_temp_calibrate",
+      "type": "T"
+    },
+    {
+      "offset": 6501156,
+      "end": 6501448,
+      "name": "cycle_read_xyz",
+      "type": "T"
+    },
+    {
+      "offset": 6501448,
+      "end": 6501592,
+      "name": "mir3da_read_offset",
+      "type": "T"
+    },
+    {
+      "offset": 6501592,
+      "end": 6501736,
+      "name": "mir3da_write_offset",
+      "type": "T"
+    },
+    {
+      "offset": 6501736,
+      "end": 6501760,
+      "name": "mir3da_calibrate",
+      "type": "T"
+    },
+    {
+      "offset": 6501760,
+      "end": 6501836,
+      "name": "mir3da_interrupt_ops",
+      "type": "T"
+    },
+    {
+      "offset": 6501836,
+      "end": 6502020,
+      "name": "mir3da_get_enable",
+      "type": "T"
+    },
+    {
+      "offset": 6502020,
+      "end": 6502120,
+      "name": "mir3da_set_enable",
+      "type": "T"
+    },
+    {
+      "offset": 6502120,
+      "end": 6502196,
+      "name": "mir3da_get_reg_data",
+      "type": "T"
+    },
+    {
+      "offset": 6502196,
+      "end": 6502300,
+      "name": "mir3da_set_odr",
+      "type": "T"
+    },
+    {
+      "offset": 6502300,
+      "end": 6502568,
+      "name": "mir3da_module_detect",
+      "type": "T"
+    },
+    {
+      "offset": 6502568,
+      "end": 6503116,
+      "name": "mir3da_parse_chip_info",
+      "type": "T"
+    },
+    {
+      "offset": 6503116,
+      "end": 6503172,
+      "name": "mir3da_install_general_ops",
+      "type": "T"
+    },
+    {
+      "offset": 6503172,
+      "end": 6503392,
+      "name": "mir3da_core_init",
+      "type": "T"
+    },
+    {
+      "offset": 6503392,
+      "end": 6503836,
+      "name": "mir3da_chip_resume",
+      "type": "T"
+    },
+    {
+      "offset": 6503836,
+      "end": 6503940,
+      "name": "mir3da_soft_reset",
+      "type": "t"
+    },
+    {
+      "offset": 6503940,
+      "end": 6504496,
+      "name": "mir3da_get_primary_offset",
+      "type": "T"
+    },
+    {
+      "offset": 6504496,
+      "end": 6505024,
+      "name": "mir3da_temp_calibrate_detect_static",
+      "type": "T"
+    },
+    {
+      "offset": 6505024,
+      "end": 6505048,
+      "name": "NSA_NTO_calibrate",
+      "type": "t"
+    },
+    {
+      "offset": 6505048,
+      "end": 6505072,
+      "name": "NSA_NTO_auto_calibrate",
+      "type": "t"
+    },
+    {
+      "offset": 6505072,
+      "end": 6505916,
+      "name": "NSA_interrupt_ops",
+      "type": "t"
+    },
+    {
+      "offset": 6505916,
+      "end": 6506200,
+      "name": "NSA_get_reg_data",
+      "type": "t"
+    },
+    {
+      "offset": 22271948,
+      "end": 22272520,
+      "name": "alsps_init",
+      "type": "t"
+    },
+    {
+      "offset": 22272616,
+      "end": 22273480,
+      "name": "acc_init",
+      "type": "t"
+    },
+    {
+      "offset": 22273480,
+      "end": 22273556,
+      "name": "mir3da_init",
+      "type": "t"
+    }
+  ]
+}

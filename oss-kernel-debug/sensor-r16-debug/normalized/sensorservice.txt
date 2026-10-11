@@ -1,0 +1,27 @@
+Captured at: 14:27:25.825
+Sensor Device:
+Total 4 h/w sensors, 4 running 0 disabled clients:
+Sensor List:
+0x00000001) ACCELEROMETER             | MTK             | ver: 1 | type: android.sensor.accelerometer(1) | perm: n/a | flags: 0x00000000
+	continuous | minRate=50.00Hz | maxRate=200.00Hz | FIFO (max,reserved) = (4500, 3000) events | non-wakeUp | 
+0x00000003) ORIENTATION               | MTK             | ver: 1 | type: android.sensor.orientation(3) | perm: n/a | flags: 0x00000000
+	continuous | minRate=50.00Hz | maxRate=200.00Hz | no batching | non-wakeUp | 
+0x00000005) LIGHT                     | MTK             | ver: 1 | type: android.sensor.light(5) | perm: n/a | flags: 0x00000002
+	on-change | minRate=1.00Hz | minDelay=0us | no batching | non-wakeUp | 
+0x00000008) PROXIMITY                 | MTK             | ver: 1 | type: android.sensor.proximity(8) | perm: n/a | flags: 0x00000003
+	on-change | minRate=1.00Hz | minDelay=0us | FIFO (max,reserved) = (4500, 100) events | wakeUp | 
+Fusion States:
+9-axis fusion disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+game fusion(no mag) disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+geomag fusion (no gyro) disabled (0 clients), gyro-rate= 200.00Hz, q=< 0, 0, 0, 0 > (0), b=< 0, 0, 0 >
+Recent Sensor events:
+Active sensors:
+Socket Buffer size = 984 events
+WakeLock Status: not held 
+Mode : NORMAL
+Sensor Privacy: disabled
+0 active connections
+0 direct connections
+Previous Registrations:
+14:24:53 - 0x00000003 pid= 2475 uid=10106 package=flar2.devcheck.sensors.SensorActivity
+14:24:51 + 0x00000003 pid= 2475 uid=10106 package=flar2.devcheck.sensors.SensorActivity samplingPeriod=20000us batchingPeriod=0us

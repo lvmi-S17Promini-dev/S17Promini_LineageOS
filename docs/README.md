@@ -126,3 +126,5 @@ Recovery 切换：[OSS kernel／源码 DTB](93-source-recovery-switch.md)。去�
 - [CPU 调频与息屏采集](105-cpufreq-and-suspend-diagnosis.md)：policy、PLL、PPM 和唤醒锁的采集与判读。
 - [充电线程忙循环定位](106-power-debug-charger-thread.md)：primary_chg 缺失导致重复注册 notifier，自环与持锁证据。
 - [PSC5425E 移植](107-psc5425e-port.md)：原厂 Ghidra 核对、r15 驱动及充电管理修复，用户确认 CPU 占用下降、深度休眠恢复；充电与 OTG 待专项验收。
+- [原厂接近传感器逆向](108-stock-gsensor-proximity-reverse.md)：MIR3DA 姿态模拟接近、连续四次判定、唤醒锁及 ALSPS 框架生命周期差异；附 sensor-debug 解读。
+- [MIR3DA 与接近功能 r16/r17](109-mir3da-proximity-port.md)：驱动实现、r16 地址 ACK 失败及 r17 原厂 0x27 回退修复。

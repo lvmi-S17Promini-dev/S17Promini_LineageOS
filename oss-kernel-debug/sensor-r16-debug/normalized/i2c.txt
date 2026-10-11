@@ -1,0 +1,5 @@
+lrwxrwxrwx 1 root root 0 2026-10-11 14:26 /sys/bus/i2c/devices/1-0026 -> ../../../devices/platform/11008000.i2c1/i2c-1/1-0026
+
+/sys/bus/i2c/drivers/s17-mir3da:
+total 0
+--w------- 1 root root 4096 2026-10-11 14:26 uevent
