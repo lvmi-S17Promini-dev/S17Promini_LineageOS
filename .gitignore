@@ -276,3 +276,6 @@ __pycache__/
 /lineage-debug/oss-kernel-r5/console-ramoops-0
 /lineage-debug/oss-kernel-r8/s17-early-kmsg.log
 /lineage-debug/oss-kernel-r9/s17-early-kmsg.log
+
+# Small decoded stock power profiles and their provenance.
+!/extracted/metadata/stock-power-profiles/

@@ -135,3 +135,6 @@ Recovery 切换：[OSS kernel／源码 DTB](93-source-recovery-switch.md)。去�
 - [IMS 权限启动循环修复](111-ims-privapp-bootloop-fix.md)：补齐 PACKET_KEEPALIVE_OFFLOAD，并在打包前检查特权权限白名单。
 - [CarrierConfig 缺失修复](112-ims-carrierconfig-missing.md)：恢复运营商配置加载，用户随后确认 IMS 注册成功。
 - [VoLTE 拨号崩溃修复](113-ims-audio-call-video-provider-crash.md)：统一视频门控，用户确认单独更新 APK 后本次故障修复；[更新 APK 与验证记录](../artifacts/ims-call-r4/README.md)。
+
+- [原厂功耗表提取](115-stock-power-profile-extraction.md)：提取三份原厂 XML，确认屏幕功耗均为占位值。
+- [电池耗电归因估算表](116-battery-attribution-profile.md)：参考同平台功耗并接入 product RRO，附安装 ZIP 产物验证和实机检查方法。

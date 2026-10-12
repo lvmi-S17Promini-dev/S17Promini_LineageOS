@@ -1,0 +1,26 @@
+[
+  {
+    "apk": "extracted/filesystems/system/system/framework/framework-res.apk",
+    "resource": "res/xml/power_profile.xml",
+    "apk_sha256": "662abe11ec80a2eb6674a8c3372db2f87725b31d0692052cf2a8a1f604752b5d",
+    "binary_xml_sha256": "6b566e905004527190433242a596be5222aa83448baeca543f20a50e7e024666",
+    "decoded_xml": "system-framework-res.xml",
+    "decoded_xml_sha256": "cabf2ca27da83e64b0b57fd3ef9a639cc89e50f7ff9bdfa192f14a8a4f9aca94"
+  },
+  {
+    "apk": "extracted/filesystems/product/overlay/framework-res__auto_generated_rro_product.apk",
+    "resource": "res/xml/power_profile.xml",
+    "apk_sha256": "d96d4aa280f37dcd2e9360e1ef1ad8ffac5d937a2f9a1310c4a07442cc8e8ba8",
+    "binary_xml_sha256": "31117a5a5918554b3dcb4746e991935e25648a4792a80d4658e6e2bdc05d4b6f",
+    "decoded_xml": "product-framework-res__auto_generated_rro_product.xml",
+    "decoded_xml_sha256": "928bb4d79ca457329c4ae5b63b967ac4661209f333406fdc456f08cbcd9bbb26"
+  },
+  {
+    "apk": "extracted/filesystems/vendor/overlay/FrameworkResOverlay/FrameworkResOverlay.apk",
+    "resource": "res/xml/power_profile.xml",
+    "apk_sha256": "9245f4e771e66c2daf1e4d1bc84ee5515924a7639df76e59d2bb25cf108cc165",
+    "binary_xml_sha256": "c23217782b486dd143be4eb98df9a2209a2190c888066f635c4238aa74f85384",
+    "decoded_xml": "vendor-FrameworkResOverlay.xml",
+    "decoded_xml_sha256": "d9ef7a56f0f3f0cd96a2d4be13dd6f42238f02e8ca803e1640ee4c0da04cbee5"
+  }
+]
